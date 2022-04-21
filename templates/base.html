@@ -40,15 +40,15 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Boutique Ado {% block extra_title %}{% endblock %}</title>
+    <title>House of Books {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>Boutique</strong> Ado</h2>
+                    <h2 class="logo-font text-black my-0"><strong>House</strong> of <strong>Books</strong></h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -96,9 +96,9 @@
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
+                                    €{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                    $0.00
+                                    €0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -137,6 +137,25 @@
     {% block postloadjs %}
     {% endblock %}
 
+    <footer id="footer">
+        <div class="container">
+            <div id="footer-social">
+                <a href="https://facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f center" aria-hidden="true"></i><span> Facebook</span></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram center"
+                        aria-hidden="true"></i><span> Instagram</span></a>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fab fa-twitter-square center" aria-hidden="true"></i><span>Twitter</span></a>
+                <a href="https://pinterest.com/" target="_blank">
+                    <i class="fab fa-pinterest center" aria-hidden="true"></i><span> Pinterest</span>
+                </a></a>
+
+            </div>
+            <div id="footer-copyright">
+                <p class="copyright">© House of Books - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
