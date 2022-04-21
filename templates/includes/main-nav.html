@@ -6,9 +6,9 @@
                 Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="#" class="dropdown-item">All Books</a>
-                <a href="#" class="dropdown-item">By Price</a>
-                <a href="#" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
 
             </div>
         </li>
@@ -19,15 +19,15 @@
                 Category
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="#" class="dropdown-item">Romance</a>
-                <a href="#" class="dropdown-item">Mystery</a>
-                <a href="#" class="dropdown-item">Fiction</a>
-                <a href="#" class="dropdown-item">Nonfiction</a>
-                <a href="#" class="dropdown-item">Young Adult</a>
-                <a href="#" class="dropdown-item">Classics</a>
-                <a href="#" class="dropdown-item">Fantasy</a>
-                <a href="#" class="dropdown-item">Thriller</a>
-                <a href="#" class="dropdown-item">History</a>
+                <a href="{% url 'products' %}?category=romance" class="dropdown-item">Romance</a>
+                <a href="{% url 'products' %}?category=mystery" class="dropdown-item">Mystery</a>
+                <a href="{% url 'products' %}?category=fiction" class="dropdown-item">Fiction</a>
+                <a href="{% url 'products' %}?category=nonfiction" class="dropdown-item">Nonfiction</a>
+                <a href="{% url 'products' %}?category=young_adult" class="dropdown-item">Young Adult</a>
+                <a href="{% url 'products' %}?category=classics" class="dropdown-item">Classics</a>
+                <a href="{% url 'products' %}?category=fantasy" class="dropdown-item">Fantasy</a>
+                <a href="{% url 'products' %}?category=thriller" class="dropdown-item">Thriller</a>
+                <a href="{% url 'products' %}?category=history" class="dropdown-item">History</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -36,11 +36,12 @@
                 Irish Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="#" class="dropdown-item">Irish Fiction</a>
-                <a href="#" class="dropdown-item">Irish Non-Fiction</a>
-                <a href="#" class="dropdown-item">Irish True Crime</a>
-                <a href="#" class="dropdown-item">Irish Classics</a>
-                <a href="#" class="dropdown-item">All Irish Books</a>
+                <a href="{% url 'products' %}?category=irish_fiction" class="dropdown-item">Irish Fiction</a>
+                <a href="{% url 'products' %}?category=irish_nonfiction" class="dropdown-item">Irish Non-Fiction</a>
+                <a href="{% url 'products' %}?category=irish_truecrime" class="dropdown-item">Irish True Crime</a>
+                <a href="{% url 'products' %}?category=irish_classics" class="dropdown-item">Irish Classics</a>
+                <a href="{% url 'products' %}?category=irish_fiction,irish_nonfiction,irish_truecrime,irish_classics "
+                    class="dropdown-item">All Irish Books</a>
             </div>
         </li>
         <li class="nav-item dropdown">
