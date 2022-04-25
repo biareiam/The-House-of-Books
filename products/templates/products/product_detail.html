@@ -46,30 +46,14 @@
                 <small class="text-muted">No Rating</small>
                 {% endif %}
 
-                <!--<div class="more">{{ product.description|safe}}</div>-->
-
-
-
                 {% if product.description|wordcount > 150 %}
-                <p class="half-content" id="half-1">{{ product.description|truncatechars:300|linebreaksbr }}<a
+                <p class="half-content mt-3" id="half-1">{{ product.description|truncatechars:300|linebreaksbr }}<a
                         data-id="1" href="javascript:void();" class="show-hide-btn"><br> Read more</a></p>
-                <p class="full-content" id="full-1" style="display: none;">{{ product.description|linebreaksbr}}<a
-                        data-id="1" href="javascript:void();" class="show-hide-btn"><br> Read less</a></p>
+                <p class="full-content mt-3" id="full-1" style="display: none;">{{ product.description|linebreaksbr}}<a
+                        data-id="1" href="javascript:void();" class="show-hide-btn"><br> Show less</a></p>
                 {% else %}
                 <p>{{ product.description|linebreaksbr }}</p>
                 {% endif %}
-
-
-
-
-
-
-
-
-
-
-
-                <!--<p class=" mt-3">{{ product.description|safe|linebreaks }}</p>-->
                 <form action=" {% url 'add_to_bag' product.id %}" method="POST" class="form">
                     {% csrf_token %}
                     <div class="form-row">
