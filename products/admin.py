@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category
 
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
@@ -9,8 +10,8 @@ class ProductAdmin(admin.ModelAdmin):
         'category',
         'image'
         )
-    
-    ordering = ('sku','author','name','category')
+
+    ordering = ('sku', 'author', 'name', 'category')
 
 
 class CategoryAdmin(admin.ModelAdmin):
