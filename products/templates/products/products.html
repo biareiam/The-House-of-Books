@@ -52,8 +52,8 @@
                             href="{% url 'product_detail' product.id %}"> <img class="card-img-top img-fluid"
                                 src="{{ product.image.url }}" alt="{{ product.name }}"> </a> {% else %} <a
                             href="{% url 'product_detail' product.id %}"> <img class="card-img-top img-fluid"
-                                src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"> </a> {% endif %} <div
-                            class="card-body pb-0">
+                                src="{{ MEDIA_URL }}istockphoto-1354776450-612x612.jpg" alt="{{ product.name }}"> </a>
+                        {% endif %} <div class="card-body pb-0">
                             <p class="mb-0">{{ product.name }}</p>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
@@ -72,11 +72,6 @@
                     </div>
 
                 </div>
-
-
-
-
-
 
                 {% if forloop.counter|divisibleby:1 %} <div class="col-12 d-sm-none mb-5">
                     <hr>
