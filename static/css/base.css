@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 html {
     height: 100%;
 }
@@ -8,6 +10,17 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+}
+
+.free-delivery-banner {
+    background-color: #9dc1eb;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    padding-top: 0.5rem;
+}
+
+#delivery-banner h4 {
+    font-size: 1.2rem !important;
 }
 
 /* from Bulma */
@@ -312,9 +325,7 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    #delivery-banner h4 {
-        font-size: .9rem;
-    }
+
 
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {

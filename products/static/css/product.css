@@ -1,0 +1,9 @@
+.book-category {
+    border-top: 2px solid;
+    display: block;
+    max-width: 40px;
+    margin: 0 0 14px;
+    color: #161616;
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
