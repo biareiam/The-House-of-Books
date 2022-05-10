@@ -1,1 +1,1 @@
-Boutique Ado confirmation for order number {{ order.order_number }}
+House of Books confirmation for order number : {{ order.order_number }}
