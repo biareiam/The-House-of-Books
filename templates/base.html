@@ -45,7 +45,13 @@
 </head>
 
 <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid">
+        <div id="delivery-banner" class="row text-center">
+            <div class="col text-white free-delivery-banner">
+                <h4>Get free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+            </div>
+        </div>
+
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -108,6 +114,7 @@
                     </li>
                 </ul>
             </div>
+            <hr>
         </div>
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
@@ -118,11 +125,6 @@
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
-        </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col text-white free-delivery-banner">
-                <h4>Get free delivery on orders over €{{ free_delivery_threshold }}!</h4>
-            </div>
         </div>
     </header>
 
@@ -150,11 +152,62 @@
     {% block content %}
     {% endblock %}
 
+    {% block content_footer %}
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Shop</h3>
+                        <ul>
+                            <li><a href="{% url 'products' %}">Books</a></li>
+                            <li><a
+                                    href="{% url 'products' %}?category=irish_fiction,irish_nonfiction,irish_true_crime,irish_classics">Irish
+                                    Books</a></li>
+                            <li><a href="{% url 'products' %}?category=new_arrivals,deals">Offers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Company</h3>
+                        <ul>
+                            {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+
+                            <li><a href="{% url 'add_product' %}">Product Management</a></li>
+                            {% endif %}
+                            <li><a href="{% url 'profile' %}">My Profile</a></li>
+                            <li><a href="{% url 'account_logout' %}">Logout</a></li>
+                            {% else %}
+                            <li><a href="{% url 'account_signup' %}">Register</a></li>
+                            <li><a href="{% url 'account_login' %}">Login</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>House of Books</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
+                            rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
+                            vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="fab fa-facebook-f center"></i></a><a href="#"><i
+                                class="fab fa-twitter-square center"></i></a><a href="#"><i
+                                class="fab fa-pinterest center"></i></a><a href="#"><i
+                                class="fab fa-instagram center"></i></a></div>
+                </div>
+                <p class="copyright">House of Books © 2022</p>
+            </div>
+        </footer>
+    </div>
+    {% endblock %}
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
+
+
 
 
 </body>
