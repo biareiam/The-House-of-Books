@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/product.css' %}">
+{% endblock %}
+
 {% block page_header %}
-<div class="container header-container">
+<div class="container">
     <div class="row">
         <div class="col"></div>
     </div>
@@ -12,9 +16,10 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row ">
         <div class="col text-center mt-3">
-            <h2 class="logo-font">Products</h2>
+            <h2 class="logo-font">Books</h2>
+
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                 <span
@@ -55,9 +60,10 @@
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                        <span class="small"><a href="{% url 'products' %}">Home page</a> | </span>
                         {% endif %}
-                        {{ products|length }} Products{% if search_term %} found for
+                        {{ products|length }} Books
+                        {% if search_term %} found for
                         <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
                 </div>
@@ -82,7 +88,7 @@
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                     {% if product.category %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted"
@@ -133,11 +139,22 @@
         </div>
     </div>
 </div>
-
+<div class="btt-button shadow-sm rounded-0 border border-black">
+    <a class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+    </a>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('#btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
+
+
 <script type="text/javascript">
     $('#sort-selector').change(function () {
         var selector = $(this);
