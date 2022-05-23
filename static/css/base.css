@@ -25,6 +25,21 @@ body {
     font-size: 1.2rem !important;
 }
 
+
+
+#new-arrivals-link {
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+
+.nav-item a:hover {
+    border-bottom: 4px blue solid;
+}
+
+#new-arrivals-link:hover {
+    border-bottom: 4px blue solid;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -478,16 +493,24 @@ input[name='q']::placeholder {
     .footer-dark .item.text {
         margin-bottom: 0;
     }
-}
 
-.footer-dark .item.text p {
-    opacity: 0.6;
-    margin-bottom: 0;
-}
+    #new-arrivals-link {
+        padding-left: 0rem;
+    }
 
-.footer-dark .item.social {
-    text-align: center;
-    text-decoration: none;
+    .nav-link {
+        padding: 0.5rem;
+    }
+
+    .footer-dark .item.text p {
+        opacity: 0.6;
+        margin-bottom: 0;
+    }
+
+    .footer-dark .item.social {
+        text-align: center;
+        text-decoration: none;
+    }
 }
 
 @media (max-width:991px) {

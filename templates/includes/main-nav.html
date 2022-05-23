@@ -48,18 +48,19 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+        <li class="border-0 nav-item" aria-labelledby="specials-link">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=deals"
+                id="all-offers-link" aria-haspopup="true" aria-expanded="false">
                 Offers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals" class="dropdown-item">All
-                    Specials</a>
-            </div>
         </li>
+        <li class="border-0 nav-item" aria-labelledby="specials-link">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=new_arrivals"
+                id="new-arrivals-link" aria-haspopup="true" aria-expanded="false">
+                New Arrivals
+            </a>
+        </li>
+
     </ul>
 </div>
 <hr>
