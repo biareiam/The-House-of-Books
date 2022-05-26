@@ -53,15 +53,25 @@
             </div>
         </div>
 
-        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-8 my-auto py-1 py-lg-0 text-center text-lg-right">
+        <div id="topnav" class="row pt-lg-3 d-none d-lg-flex">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-right">
+                <form method="GET" action="{% url 'products' %}">
+                    <div class="input-group w-100 searchbar-field">
+                        <input class="form-control rounded-0 searchbar-input" type="text" name="q" placeholder="SEARCH">
+                        <div class="input-group-append">
+                            <button class="form-control btn rounded-0 border-0 search-icon" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="text-black my-0 logo-title"><strong class="logo-font">House</strong> of <strong
                             class="logo-font">Books</strong></h2>
-                    <div class="logo-img">
-                        <div class="logo"></div>
-                    </div>
-
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -77,18 +87,19 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item-2">Product
+                                Management</a>
                             {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'profile' %}" class="dropdown-item-2">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item-2">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item-2">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item-2">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        <a class="{% if grand_total %} basket font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>

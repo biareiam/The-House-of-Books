@@ -1,62 +1,63 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 menu-item" href="#" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item-1">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item-1 ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item-1 ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item-1">All Books</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="books-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 menu-item" href="#" id="books-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="books-link">
-                <a href="{% url 'products' %}?category=romance" class="dropdown-item">Romance</a>
-                <a href="{% url 'products' %}?category=mystery" class="dropdown-item">Mystery</a>
-                <a href="{% url 'products' %}?category=fiction" class="dropdown-item">Fiction</a>
-                <a href="{% url 'products' %}?category=nonfiction" class="dropdown-item">Nonfiction</a>
-                <a href="{% url 'products' %}?category=youngadults" class="dropdown-item">Young Adults</a>
-                <a href="{% url 'products' %}?category=classics" class="dropdown-item">Classics</a>
-                <a href="{% url 'products' %}?category=fantasy" class="dropdown-item">Fantasy</a>
-                <a href="{% url 'products' %}?category=thriller" class="dropdown-item">Thriller</a>
-                <a href="{% url 'products' %}?category=history" class="dropdown-item">History</a>
-                <a href="{% url 'products' %}?category=romance,mystery,fiction,nonfiction,youngadults,classics,fantasy,thriller,history"
-                    class="dropdown-item">All Categories</a>
+                <a href="{% url 'products' %}?category=romance" class="dropdown-item-1">Romance</a>
+                <a href="{% url 'products' %}?category=mystery" class="dropdown-item-1">Mystery</a>
+                <a href="{% url 'products' %}?category=fiction" class="dropdown-item-1">Fiction</a>
+                <a href="{% url 'products' %}?category=nonfiction" class="dropdown-item-1">Nonfiction</a>
+                <a href="{% url 'products' %}?category=classics" class="dropdown-item-1">Classics</a>
+                <a href="{% url 'products' %}?category=fantasy" class="dropdown-item-1">Fantasy</a>
+                <a href="{% url 'products' %}?category=thriller" class="dropdown-item-1">Thriller</a>
+                <a href="{% url 'products' %}?category=history" class="dropdown-item-1">History</a>
+                <a href="{% url 'products' %}?category=romance,mystery,fiction,nonfiction,classics,fantasy,thriller,history"
+                    class="dropdown-item-1">All Categories</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="irish-books-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 menu-item" href="#" id="irish-books-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Irish Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="irish-books-link">
-                <a href="{% url 'products' %}?category=irish_fiction" class="dropdown-item">Irish Fiction</a>
-                <a href="{% url 'products' %}?category=irish_nonfiction" class="dropdown-item">Irish NonFiction</a>
-                <a href="{% url 'products' %}?category=irish_truecrime" class="dropdown-item">Irish True Crime</a>
-                <a href="{% url 'products' %}?category=irish_cookery" class="dropdown-item">Irish Cookery</a>
+                <a href="{% url 'products' %}?category=irish_fiction" class="dropdown-item-1">Irish Fiction</a>
+                <a href="{% url 'products' %}?category=irish_nonfiction" class="dropdown-item-1">Irish NonFiction</a>
+                <a href="{% url 'products' %}?category=irish_truecrime" class="dropdown-item-1">Irish True Crime</a>
+                <a href="{% url 'products' %}?category=irish_cookery" class="dropdown-item-1">Irish Cookery</a>
                 <a href="{% url 'products' %}?category=irish_fiction,irish_nonfiction,irish_truecrime,irish_cookery"
-                    class="dropdown-item">All Irish Books</a>
+                    class="dropdown-item-1">All Irish Books</a>
             </div>
         </li>
 
         <li class="border-0 nav-item" aria-labelledby="specials-link">
-            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=deals"
-                id="all-offers-link" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black menu-item"
+                href="{% url 'products' %}?category=deals" id="all-offers-link" aria-haspopup="true"
+                aria-expanded="false">
                 Offers
             </a>
         </li>
         <li class="border-0 nav-item" aria-labelledby="specials-link">
-            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=new_arrivals"
-                id="new-arrivals-link" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black menu-item"
+                href="{% url 'products' %}?category=new_arrivals" id="new-arrivals-link" aria-haspopup="true"
+                aria-expanded="false">
                 New Arrivals
             </a>
         </li>

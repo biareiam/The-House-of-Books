@@ -64,3 +64,19 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
+
+.order-success {
+    margin: auto;
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+.last-deal-btn {
+    margin-bottom: 1rem;
+}
+
+.checkout-secure {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}

@@ -10,26 +10,19 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
+<div class="container h-100 hero-image">
     <div class="row h-100">
-        <div class="col-12 col-md-12 my-auto text-center">
-            <h1 class="display-8 logo-font text-black home-title">
-                Discover something <br>new to read!
+        <div class="col-8 col-md-8">
+            <h1 class="display-4 logo-font text-white pt-5">
+                Discover your next adventure
             </h1>
-            <div class="my-6">
+            <div class="my-5">
                 <h4>
                     <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
                         Now</a>
                 </h4>
-                <h4>
-                    <a href="{% url 'products' %}?category=new_arrivals,deals"
-                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Special
-                        Offers</a>
-                </h4>
-
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}

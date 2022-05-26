@@ -4,18 +4,16 @@ html {
     height: 100%;
 }
 
-
 body {
-    background: url('/media/heroimage.jpg') no-repeat center center !important;
+    background: url('/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
-
 }
 
-.home-title {
 
+.home-title {
     padding-bottom: 3rem;
 }
 
@@ -37,13 +35,59 @@ body {
     padding-right: 5rem;
 }
 
-.nav-item a:hover,
+.menu-item:hover,
 #new-arrivals-link:hover {
     text-decoration: underline;
     text-decoration-color: #007bff;
     text-decoration-style: solid;
     text-decoration-thickness: 4px;
-    text-underline-offset: 5px;
+    text-underline-offset: 17px;
+}
+
+.nav-item .dropdown-item-1 {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-item-1:hover,
+.dropdown-item-2:hover {
+    text-decoration: underline;
+    text-decoration-color: #007bff;
+    text-decoration-style: solid;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 2px;
+    color: #000;
+
+}
+
+.basket {
+    text-decoration: none;
+    color: black;
+}
+
+.basket:hover {
+    color: #284f6e;
+}
+
+.dropdown-item-2 {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
 }
 
 
@@ -66,28 +110,28 @@ body {
 
 
 .shop-now-button {
-    background: black;
+    background: #3e5962;
     color: white;
     min-width: 260px;
     margin-bottom: 1rem;
 }
 
 .btn-black {
-    background: black;
+    background: #3e5962;
     color: white;
 }
 
 .btn-outline-black {
     background: white;
-    color: black !important;
+    color: #3e5962 !important;
     /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    border: 1px solid #3e5962;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #3e5962;
     color: white !important;
 }
 
@@ -97,7 +141,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #3e5962;
     color: white;
 }
 
@@ -126,25 +170,30 @@ body {
 a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
-
 }
 
 .badge {
-    border: 1px solid #eee;
-    color: rgba(128, 128, 128, 0.767);
     font-size: 1rem;
     font-weight: 200;
     margin-left: 0.3rem;
-    margin-bottom: 1.4rem;
-    background-color: #eee;
-    border-radius: 0;
+    margin-bottom: 0.5rem;
+    color: gray;
+    border: 1px solid gray;
 
 }
 
 .badge:hover {
-    color: white;
-    background-color: black;
+    color: #656b71;
+    background-color: #cacaca;
+    border: none;
 }
+
+.category-banner {
+    margin-left: 6.6rem;
+    margin-right: 6.6rem;
+}
+
+
 
 .btt-button {
     height: 42px;
@@ -234,9 +283,47 @@ input[name='q']::placeholder {
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
+@media (min-width: 1440px) {
+    .h-100 {
+        height: 54.3% !important;
+    }
+
+    .lead {
+        margin-top: 1rem !important;
+    }
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
+    }
+
+    .h-100 {
+        height: 70% !important;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .lead {
+        margin-top: 1rem !important;
+    }
+
+    .logo-title {
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo-title {
+        margin-left: 1rem !important;
+        margin-right: 0 !important;
+    }
+
+    .lead {
+        margin-top: 0.1rem !important;
     }
 }
 
@@ -244,9 +331,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
-    /* mt-4 */
     color: #6c757d;
-    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -274,8 +359,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #3e5962;
+    border: 1px solid #3e5962;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -294,8 +379,20 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content a {
     color: #17a2b8;
-    /* text-info */
 }
+
+.register-login-form {
+    margin: 0 auto;
+}
+
+
+.form-btn {
+    margin: 0 auto;
+}
+
+
+
+
 
 /* Product Form */
 
@@ -325,6 +422,41 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    justify-content: start;
+}
+
+.input-group-1 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.fa-edit,
+.fa-trash-o {
+    font-size: 200%;
+}
+
+#remove-item {
+    margin-left: -18rem;
+}
+
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -341,9 +473,9 @@ input[name='q']::placeholder {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
+    /*.header-container {
         padding-top: 116px;
-    }
+    }*/
 
     body {
         height: calc(100vh - 116px);
@@ -438,7 +570,6 @@ input[name='q']::placeholder {
     justify-content: flex-start !important;
     border-bottom: 1px solid rgb(222, 222, 222);
     border-top: 1px solid rgb(222, 222, 222);
-
 }
 
 #topnav {
@@ -460,7 +591,6 @@ input[name='q']::placeholder {
 .footer-dark {
     padding: 30px 0;
     background-color: #eee;
-    margin-top: 1rem;
 
 }
 
@@ -550,7 +680,6 @@ input[name='q']::placeholder {
 
 .footer-dark .copyright {
     text-align: center;
-    padding-top: 24px;
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
@@ -584,6 +713,7 @@ input[name='q']::placeholder {
 
 .book-price {
     font-weight: 600 !important;
+    padding-bottom: 0.7rem;
 }
 
 .book-author {
@@ -592,6 +722,7 @@ input[name='q']::placeholder {
 
 .book-category {
     padding-bottom: 1rem;
+
 }
 
 .book-category a {
@@ -607,23 +738,24 @@ input[name='q']::placeholder {
     color: white !important;
 }
 
-
+.rating {
+    margin-top: 1rem;
+}
 
 .book-category-product-page a {
-
     padding: 0.3rem;
     text-decoration: none;
     color: #292b2c;
+    margin-bottom: 1rem;
 }
 
 .book-category-product-page a:hover {
-    background-color: rgb(0, 0, 0);
-    border: none;
-    color: white !important;
+    color: #2c87a2 !important;
+    font-weight: 700;
 }
 
-.rating {
-    margin-top: 1rem;
+small .rating {
+    margin-bottom: 2rem;
 }
 
 .book-author,
@@ -638,16 +770,19 @@ input[name='q']::placeholder {
 }
 
 .qty_input {
-    max-width: 200px;
+    max-width: 175px;
     border: none;
     text-align: center;
     font-weight: 600;
+
 }
+
+.quantity-form {}
 
 .decrement-qty,
 .increment-qty {
-    background-color: #6c757d;
-    border: none;
+    border-radius: 0;
+    border: 1px solid gray;
 }
 
 
@@ -683,6 +818,7 @@ input[name='q']::placeholder {
 
 .searchbar-field {
     border-bottom: rgb(175, 170, 170) solid 1px;
+    max-width: 300px;
 }
 
 .searchbar-input {
@@ -698,16 +834,139 @@ input[name='q']::placeholder {
 
 .title {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
 }
 
-.card {
-    padding-top: 2rem;
-}
 
 /******* Add to cart, add more for free delivery *****/
 .free-delivery {
-    background-color: #efb7b7 !important;
+    background-color: #eee !important;
+}
+
+/*** product detail page ****/
+
+.card-img-top {
+    max-width: 350px;
+    height: auto;
+}
+
+.card-img-top:hover {
+    transition: 0.1s;
+}
+
+.add-to-bag {
+    background-color: #007bff;
+    padding: 0.5rem 3rem;
+    margin: 0 auto;
+}
+
+.keep-shopping {
+    background-color: #007bff;
+    padding: 0.5rem 3rem;
+}
+
+.add_product {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 1rem;
+}
+
+/***** Cart *****/
+.cart {
+    padding-top: 0.5rem;
+    padding-bottom: 0.1rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.checkout-cart {
+    background-color: rgb(248, 248, 248);
+    padding-top: 0.5rem;
+}
+
+.total {
+    font-size: 1.1rem;
+}
+
+.chechout-btn {
+    font-size: 0.9rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-top: -2rem;
+    padding-bottom: 1rem;
+}
+
+.checkout-cart {
+    border: 1px solid #3e5962;
+    background-color: #3e5962;
+    color: white;
+}
+
+.checkout-cart:hover {
+    background-color: #3e596282;
+    color: white;
+
+}
+
+/* confirmation email*/
+
+.account_confirm_email {
+    margin: auto;
+}
+
+.edit-delete-btn {
+    padding: 0.3rem;
+    border: 1px solid gray;
+    margin-left: -1rem;
+    color: gray;
+}
+
+.edit-delete-btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    background-color: rgb(203, 101, 101);
+    border: none;
+}
+
+.edit-btn:hover {
+    background-color: #579265;
+    border: none;
+}
+
+.rating-book {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.card-body {
+    padding: 1.25rem 0.5rem 1.25rem;
+    margin-bottom: -2rem;
+}
+
+.card-footer {
+    margin-bottom: -2rem;
+}
+
+/*** Sort ***/
+.sort-selector {
+    height: 40px;
+    font-size: 1.4rem;
+    line-height: 40px;
+    padding: 0 38px 0 15px;
+    border: 1px solid #ccc;
+}
+
+.management {
+    font-size: 1.5rem;
 }

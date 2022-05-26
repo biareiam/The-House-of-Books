@@ -15,13 +15,16 @@
 <div class="container mb-2">
     <div class="row">
         <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Shopping Bag</h2>
-            <hr>
+            <div class="cart">
+                <hr class="line">
+                <h2 class="logo-font mb-4">My Cart</h2>
+                <hr class="line">
+            </div>
+
         </div>
     </div>
 
-    <div class="row">
+    <div class="row checkout-cart-order">
         <div class="col">
             {% if bag_items %}
             <div class="d-block d-md-none">
@@ -69,7 +72,7 @@
                     <thead class="text-black">
                         <tr>
                             <th scope="col">Product Info</th>
-                            <th scope="col"></th>
+                            <th scope="col">Book Title</th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
                             <th scope="col">Subtotal</th>
@@ -78,20 +81,20 @@
 
                     {% for item in bag_items %}
                     <tr>
-                        <td class="p-3 w-25">
+                        <td class="py-3 w-25">
                             {% include "bag/product-image.html" %}
                         </td>
                         <td class="py-3">
                             {% include "bag/product-info.html" %}
                         </td>
-                        <td class="py-3">
-                            <p class="my-0">${{ item.product.price }}</p>
+                        <td class="py-3 w-20">
+                            <p class="my-0">€{{ item.product.price }}</p>
                         </td>
-                        <td class="py-3 w-25">
+                        <td class="">
                             {% include "bag/quantity-form.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
@@ -108,13 +111,15 @@
                 </table>
             </div>
             {% else %}
-            <p class="lead mb-5">Your bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="text-uppercase">Keep Shopping</span>
-            </a>
+            <div class="text-center pb-4">
+                <p class="lead mb-5 pt-4">Nothing in your cart yet!</p>
+                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase chechout-btn">Keep Shopping</span>
+                </a>
+            </div>
             {% endif %}
         </div>
     </div>

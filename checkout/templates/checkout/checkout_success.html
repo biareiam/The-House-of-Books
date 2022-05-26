@@ -15,26 +15,26 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
-    <div class="row">
+<div class="container order-success">
+    <div class="row m-auto">
         <div class="col">
             <hr>
-            <h2 class=" mb-4">Thanks for your order!</h2>
+            <h2 class="mb-4 text-center">Thanks for your order!</h2>
             <hr>
-            <p class="text-black">Check below your order information. A confirmation email will be sent to you at
+            <p class="text-black text-center">Check below your order information. A confirmation email will be sent to
+                you at
                 <strong>{{ order.email }}</strong>.</p>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12 col-lg-7">
-            <div class="order-confirmation-wrapper p-2 border">
+    <div class="row m-auto">
+        <div class="col">
+            <div class="order-confirmation-wrapper pt-2 pb-5">
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Order Info:</small>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <p class="mb-0 text-black font-weight-bold">Order Number</p>
@@ -52,7 +52,7 @@
                         <p class="mb-0">{{ order.date }}</p>
                     </div>
                 </div>
-
+                <br>
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Order Details:</small>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 {% endfor %}
-
+                <br>
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Delivering To:</small>
@@ -155,7 +155,7 @@
                         <p class="mb-0">{{ order.phone_number }}</p>
                     </div>
                 </div>
-
+                <br>
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Billing Info:</small>
@@ -192,7 +192,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-lg-7 text-right">
+        <div class="col-12 m-auto">
             {% if from_profile %}
             <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
                 <span class="icon mr-2">
@@ -201,12 +201,14 @@
                 <span class="text-uppercase">Back to your profile</span>
             </a>
             {% else %}
-            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-black rounded-0 my-2">
-                <span class="icon mr-2">
-                    <i class="fas fa-gifts"></i>
-                </span>
-                <span class="text-uppercase">Now check out our latest deals!</span>
-            </a>
+            <div class="checkout-secure">
+                <a href="{% url 'products' %}?category=new_arrivals" class="btn btn-black rounded-0 my-2">
+                    <span class="icon mr-2">
+                        <i class="fas fa-gifts"></i>
+                    </span>
+                    <span class="text-uppercase">Check out our lastest arrival!</span>
+                </a>
+            </div>
             {% endif %}
         </div>
     </div>
