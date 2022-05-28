@@ -68,8 +68,8 @@
                 <table class="table table-sm table-borderless">
                     <thead class="text-black">
                         <tr>
-                            <th scope="col">Product Info</th>
-                            <th scope="col"></th>
+                            <th scope="col">Book Info</th>
+                            <th scope="col">Title</th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
                             <th scope="col">Subtotal</th>
@@ -87,7 +87,7 @@
                         <td class="py-3">
                             <p class="my-0">€{{ item.product.price }}</p>
                         </td>
-                        <td class="py-3 w-25">
+                        <td class="py-3 quantity-cart">
                             {% include "bag/quantity-form.html" %}
                         </td>
                         <td class="py-3">

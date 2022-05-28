@@ -13,9 +13,10 @@ body {
     font-family: 'sora';
 }
 
-
 .home-title {
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    font-weight: 600;
 }
 
 .free-delivery-banner {
@@ -336,6 +337,7 @@ input[name='q']::placeholder {
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     color: #6c757d;
+    text-align: center;
 }
 
 .allauth-form-inner-content input {
@@ -363,12 +365,15 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #3e5962;
-    border: 1px solid #3e5962;
-    padding: .375rem .75rem;
+    background: #f4402f;
+    padding: .4rem .85rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
+    border-radius: 20px;
+    border: none;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -382,7 +387,12 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-    color: #17a2b8;
+    background-color: white;
+    color: #f4402f;
+    border: 1px solid #f4402f;
+    border-radius: 20px;
+    margin-left: 9rem;
+    margin-bottom: 3rem;
 }
 
 .register-login-form {
@@ -394,7 +404,31 @@ input[name='q']::placeholder {
     margin: 0 auto;
 }
 
+.cancel {
+    margin-left: 2rem;
+}
 
+.member-form #account-exist {
+    color: rgb(165, 212, 223) !important;
+    border: none !important;
+    margin-left: 0;
+}
+
+.member-form #account-exist:hover {
+    background-color: white !important;
+    color: #f4402f !important;
+}
+
+.member-form .back-login {
+    border: 1px solid black !important;
+
+}
+
+.member-form .back-login:hover {
+    background-color: #f4402f !important;
+    color: white !important;
+    border: none !important;
+}
 
 
 
@@ -463,7 +497,7 @@ input[name='q']::placeholder {
 
 .card-img-top-1 {
     width: 430px !important;
-    max-height: 400px;
+    max-height: auto;
     margin-bottom: -3rem;
 }
 
@@ -797,8 +831,9 @@ input[name='q']::placeholder {
 }
 
 .content {
-    text-align: center !important;
+    text-align: justify !important;
     font-size: 0.8rem !important;
+    line-break: loose;
 
 }
 
@@ -1067,6 +1102,8 @@ small .rating {
 
 .chechout-btn:hover {
     color: white;
+    text-decoration: none !important;
+    background-color: #eda9a3;
 }
 
 .bg-information {
@@ -1076,6 +1113,7 @@ small .rating {
     margin-top: 1rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
+    font-size: 0.9rem;
 }
 
 .lead {
@@ -1133,6 +1171,9 @@ small .rating {
     padding: 0.3rem;
 }
 
+.qunatity-input {
+    max-width: 120px;
+}
 
 /* confirmation email*/
 
