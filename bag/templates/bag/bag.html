@@ -15,16 +15,13 @@
 <div class="container mb-2">
     <div class="row">
         <div class="col">
-            <div class="cart">
-                <hr class="line">
-                <h2 class="logo-font mb-4">My Cart</h2>
-                <hr class="line">
-            </div>
-
+            <hr>
+            <h2 class="logo-font mb-4 text-center">My Cart</h2>
+            <hr>
         </div>
     </div>
 
-    <div class="row checkout-cart-order">
+    <div class="row">
         <div class="col">
             {% if bag_items %}
             <div class="d-block d-md-none">
@@ -72,7 +69,7 @@
                     <thead class="text-black">
                         <tr>
                             <th scope="col">Product Info</th>
-                            <th scope="col">Book Title</th>
+                            <th scope="col"></th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
                             <th scope="col">Subtotal</th>
@@ -81,16 +78,16 @@
 
                     {% for item in bag_items %}
                     <tr>
-                        <td class="py-3 w-25">
+                        <td class="p-3 w-25">
                             {% include "bag/product-image.html" %}
                         </td>
                         <td class="py-3">
                             {% include "bag/product-info.html" %}
                         </td>
-                        <td class="py-3 w-20">
+                        <td class="py-3">
                             <p class="my-0">€{{ item.product.price }}</p>
                         </td>
-                        <td class="">
+                        <td class="py-3 w-25">
                             {% include "bag/quantity-form.html" %}
                         </td>
                         <td class="py-3">
@@ -111,13 +108,13 @@
                 </table>
             </div>
             {% else %}
-            <div class="text-center pb-4">
-                <p class="lead mb-5 pt-4">Nothing in your cart yet!</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+            <div class="text-center mt-5">
+                <p class="text-center no-products">No products in the cart.</p>
+                <a href=" {% url 'products' %}" class="btn btn-lg shopping mt-5">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
-                    <span class="text-uppercase chechout-btn">Keep Shopping</span>
+                    <span>Keep Shopping</span>
                 </a>
             </div>
             {% endif %}
@@ -146,11 +143,9 @@
     $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var size = $(this).data('product_size');
         var url = `/bag/remove/${itemId}/`;
         var data = {
             'csrfmiddlewaretoken': csrfToken,
-            'product_size': size
         };
 
         $.post(url, data)

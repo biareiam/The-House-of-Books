@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&display=swap');
 
 html {
     height: 100%;
@@ -9,7 +10,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'sora';
 }
 
 
@@ -117,21 +118,24 @@ body {
 }
 
 .btn-black {
-    background: #3e5962;
+    background: #f4402f;
     color: white;
+    border-radius: 20px !important;
 }
 
 .btn-outline-black {
     background: white;
-    color: #3e5962 !important;
-    /* use important to override link colors for <a> elements */
-    border: 1px solid #3e5962;
+    color: #1f2020 !important;
+    border: 1px solid #1f2020;
+    border-radius: 20px !important;
+
+
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: #3e5962;
+    background: #f4402f;
     color: white !important;
 }
 
@@ -457,6 +461,12 @@ input[name='q']::placeholder {
 }
 
 
+.card-img-top-1 {
+    width: 430px !important;
+    max-height: 400px;
+    margin-bottom: -3rem;
+}
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -753,20 +763,51 @@ input[name='q']::placeholder {
 }
 
 /*product page*/
+.product-border {
+    /* margin-top: 1rem; */
+    padding-left: 1rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    border-radius: 15px;
+}
+
+.product-border-2 {
+    margin-left: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 15px;
+}
+
+.product {
+    margin: auto;
+    padding-bottom: 1rem;
+
+}
+
+.product-detail {
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 .content {
-    text-align: justify;
+    text-align: center !important;
+    font-size: 0.8rem !important;
+
 }
 
-.book-title {
-    font-size: 1.3rem;
-    padding-bottom: 0.5rem;
-    font-weight: 900;
-}
+
 
 .book-price {
     font-weight: 600 !important;
     padding-bottom: 0.7rem;
+    font-size: 1.4rem;
 }
 
 .book-author {
@@ -791,8 +832,25 @@ input[name='q']::placeholder {
     color: white !important;
 }
 
+.details {
+    margin-top: -2rem;
+}
+
 .rating {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    margin-left: -2rem;
+}
+
+.tag {
+    font-size: 0.95rem;
+    margin-bottom: -2rem;
+    color: #858687;
+}
+
+.tag-2:hover {
+    color: #f4402f !important;
+    font-weight: 300;
+
 }
 
 .book-category-product-page a {
@@ -802,10 +860,6 @@ input[name='q']::placeholder {
     margin-bottom: 1rem;
 }
 
-.book-category-product-page a:hover {
-    color: #2c87a2 !important;
-    font-weight: 700;
-}
 
 small .rating {
     margin-bottom: 2rem;
@@ -822,34 +876,56 @@ small .rating {
     text-align: center;
 }
 
+.quantity {
+    color: #858687;
+    font-weight: 200;
+}
+
 .qty_input {
-    max-width: 175px;
-    border: none;
+    max-width: 55px;
+    border-top: 1px solid rgb(193, 193, 193);
+    border-bottom: 1px solid rgb(193, 193, 193);
+    border-right: none;
+    border-left: none;
     text-align: center;
     font-weight: 600;
 
 }
 
-.quantity-form {}
 
-.decrement-qty,
+.decrement-qty {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: none;
+    border-top: 1px solid rgb(193, 193, 193);
+    border-bottom: 1px solid rgb(193, 193, 193);
+    border-left: 1px solid rgb(193, 193, 193);
+    color: #858687;
+}
+
 .increment-qty {
-    border-radius: 0;
-    border: 1px solid gray;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: none;
+    border-top: 1px solid rgb(193, 193, 193);
+    border-bottom: 1px solid rgb(193, 193, 193);
+    border-right: 1px solid rgb(193, 193, 193);
+    color: #858687;
 }
 
 
-.decrement-qty:hover {
-    background-color: rgb(207, 122, 122);
-    color: rgb(112, 19, 19);
-    border: none;
-}
-
+.decrement-qty:hover,
 .increment-qty:hover {
-    background-color: rgb(81, 144, 96);
-    color: #1f4d29;
-    border: none;
+    background-color: #F65D4E;
+    color: rgb(255, 255, 255);
+
 }
+
+
 
 .content {
     padding-top: 1rem;
@@ -865,6 +941,16 @@ small .rating {
 .read-more:focus {
     text-decoration: none;
     color: rgb(44, 36, 36);
+}
+
+.product-container {
+    margin: auto;
+}
+
+.description {
+    margin-bottom: -0.5rem;
+    margin-top: 0.5rem;
+    color: #858687;
 }
 
 /*Search bar*/
@@ -889,7 +975,6 @@ small .rating {
     text-transform: uppercase;
     font-size: 1.8rem;
     padding-top: 1rem;
-    padding-bottom: 1.5rem;
 }
 
 
@@ -901,8 +986,9 @@ small .rating {
 /*** product detail page ****/
 
 .card-img-top {
-    max-width: 350px;
+    max-width: 650px;
     height: auto;
+    border-radius: 15px;
 }
 
 .card-img-top:hover {
@@ -915,9 +1001,34 @@ small .rating {
     margin: 0 auto;
 }
 
+.add-bag {
+    border-radius: 20px;
+    margin-left: 1rem;
+    background-color: #F65D4E;
+    color: white;
+}
+
+.btn-cart {
+    padding: 0.3rem 1.4rem;
+}
+
 .keep-shopping {
     background-color: #007bff;
     padding: 0.5rem 3rem;
+}
+
+.keep-shopping-cart {
+    border: solid 1px gray;
+    border-radius: 20px;
+    color: gray;
+    margin-bottom: 1rem;
+    margin-left: 8rem;
+    margin-top: 4rem;
+}
+
+.keep-shopping-cart:hover {
+    color: white;
+    background-color: #53575b;
 }
 
 .add_product {
@@ -949,12 +1060,44 @@ small .rating {
 
 .chechout-btn {
     font-size: 0.9rem;
+    border-radius: 20px;
+    background-color: #F65D4E;
+    color: white;
+}
+
+.chechout-btn:hover {
+    color: white;
+}
+
+.bg-information {
+    background-color: #eee;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
 }
 
 .lead {
     font-size: 1.3rem;
     margin-top: -2rem;
     padding-bottom: 1rem;
+    text-align: center;
+}
+
+.shopping {
+    border-radius: 20px;
+    border: 1px solid #eee;
+}
+
+.shopping:hover {
+    background-color: #F65D4E;
+    color: white;
+}
+
+
+.no-products {
+    font-size: 1.2rem;
 }
 
 .checkout-cart {
@@ -969,6 +1112,28 @@ small .rating {
 
 }
 
+.item-stock {
+    padding: 0.5rem;
+
+}
+
+.stock {
+    color: rgb(80, 119, 70);
+    padding-bottom: 2rem;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    font-size: 0.8rem;
+
+
+}
+
+.in-stock {
+    background-color: rgba(202, 232, 194, 0.575);
+    text-align: center;
+    padding: 0.3rem;
+}
+
+
 /* confirmation email*/
 
 .account_confirm_email {
@@ -976,11 +1141,19 @@ small .rating {
 }
 
 .edit-delete-btn {
-    padding: 0.3rem;
+    padding: 0.3rem 0.9rem;
     border: 1px solid gray;
     margin-left: -1rem;
     color: gray;
+    border-radius: 20px;
+
 }
+
+.edit-btn {
+    margin-left: -2rem;
+    margin-right: 0.3rem;
+}
+
 
 .edit-delete-btn:hover {
     color: white;
@@ -1011,6 +1184,48 @@ small .rating {
     margin-bottom: 1rem;
 }
 
+.book-title {
+    font-size: 1.7rem;
+    margin-top: -2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none !important;
+}
+
+.books-title {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: -1rem;
+    padding-bottom: 0.6rem;
+    padding-top: 0.5rem;
+    text-decoration: none !important;
+    color: red !important;
+}
+
+.books-title:hover {
+    text-decoration: none !important;
+}
+
+.author {
+    margin-left: -1rem;
+    margin-top: -1rem;
+    font-size: 0.9rem;
+}
+
+.rating-book {
+    margin-left: -1rem;
+    margin-top: -1rem;
+}
+
+.price {
+    margin-left: -1rem;
+    margin-top: -1rem;
+    font-size: 1rem;
+    color: gray;
+}
+
+
 /*** Sort ***/
 .sort-selector {
     height: 40px;
@@ -1023,3 +1238,10 @@ small .rating {
 .management {
     font-size: 1.5rem;
 }
+
+/*** bag ***/
+@media(max-width:500px) {
+    .bag {}
+}
+
+/******/

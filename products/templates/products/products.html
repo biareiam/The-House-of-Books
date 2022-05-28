@@ -14,7 +14,7 @@
 <div class="overlay"></div>
 <div class="container-fluid mt-3">
     <div class="row">
-        <div class="col text-center mt-5">
+        <div class="col text-center mt-1">
             <div class="title-color">
                 <h2 class="title"><strong>Books</strong></h2>
                 <p></p>
@@ -28,9 +28,9 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="product-container col-10 offset-1">
-            <div class="row mt-1">
+    <div class="row ">
+        <div class="product-container col-11">
+            <div class="row mt-1 product">
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
@@ -45,7 +45,7 @@
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector"
-                            class="custom-select custom-select-sm rounded-0 border {% if current_sorting != 'None_None' %}info{% else %}{% endif %}">
+                            class="custom-select custom-select-sm  border {% if current_sorting != 'None_None' %}info{% else %}{% endif %}">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
                             </option>
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
@@ -83,21 +83,13 @@
                                 alt="{{ product.name }}">
                         </a>
                         {% endif %}
-                        <div class="card-body">
-                            <p>{{ product.name }}</p>
-                        </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                                    {% if product.category %}
-                                    <p class="small mt-1 mb-0 book-category-product-page">
-                                        <a class="text-muted"
-                                            href="{% url 'products' %}?category={{ product.category.name }}">
-                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                        </a>
+                                    <p class="books-title"><strong><a
+                                                href="{% url 'product_detail' product.id %}">{{ product.name }}</a></strong>
                                     </p>
-                                    {% endif %}
+                                    <p class="author">{{ product.author}}</p>
                                     <div class="rating-book">
                                         {% if product.rating %}
                                         <small class="text-muted "><i class="fas fa-star mr-1"></i>{{ product.rating }}
@@ -108,6 +100,7 @@
                                         {% endif %}
                                     </div>
 
+                                    <p class="lead mb-0 text-left font-weight-bold price">€{{ product.price }}</p>
                                 </div>
                             </div>
                             <div class="row">
