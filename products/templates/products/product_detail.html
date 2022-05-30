@@ -56,32 +56,32 @@
                     </small>
                     {% endif %}
             </div>
-            <div class="row details">
-                <div class="col-5">
-                    <p class="mb-0 book-author">Author: {{ product.author }}</p>
+            <div class="details">
+
+                <p class="mb-0 book-author">By: {{ product.author }}</p>
+
+
+
+                {% if product.rating %}
+                <div class="rating">
+                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} </small>
                 </div>
 
-                <div class="col-2">
-                    {% if product.rating %}
-                    <div class="rating">
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} </small>
-                    </div>
+                {% else %}
+                <div class="rating">
+                    <small class="text-muted">No Rating</small>
+                </div>
+                {% endif %}
 
-                    {% else %}
-                    <div class="rating">
-                        <small class="text-muted">No Rating</small>
-                    </div>
-                    {% endif %}
-                </div>
-                <div class="col-5">
-                    {% if product.category %}
-                    <p class="small book-category-product-page tag">Category:
-                        <a class="text-muted tag-2" href="{% url 'products' %}?category={{ product.category.name }}">
-                            {{ product.category.friendly_name }}
-                        </a>
-                    </p>
-                    {% endif %}
-                </div>
+
+                {% if product.category %}
+                <p class="small book-category-product-page tag">Category:
+                    <a class="text-muted tag-2" href="{% url 'products' %}?category={{ product.category.name }}">
+                        {{ product.category.friendly_name }}
+                    </a>
+                </p>
+                {% endif %}
+
             </div>
             <hr>
             <div class="row">
@@ -89,8 +89,9 @@
                     <p class="lead-1 mb-0 text-left font-weight-bold book-price">€{{product.price}}</p>
                 </div>
             </div>
-            {% if product.description|wordcount > 150 %}
             <p class="description">Description:</p>
+            {% if product.description|wordcount > 150 %}
+
             <p class=" half-content content" id="half-1">
                 {{ product.description|truncatechars:530|linebreaksbr }}<a data-id="1" href="javascript:void();"
                     class="show-hide-btn read-more"><br> Read more</a></p>
@@ -126,13 +127,14 @@
                             </button>
                         </div>
                     </div>
-                    <input class="btn-cart border add-bag" value="Add to Cart" type="submit">
+                    <input type="submit" class="btn text-uppercase mt-5 add-bag" value="Add to Bag">
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
+            </form>
         </div>
     </div>
 </div>
-</form>
+
 
 
 {% endblock %}
