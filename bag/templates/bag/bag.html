@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4 text-center">My Cart</h2>
+            <h2 class="logo-font mb-4">Shopping Bag</h2>
             <hr>
         </div>
     </div>
@@ -45,8 +45,8 @@
                         {% include "bag/product-info.html" %}
                     </div>
                     <div class="col-12 col-sm-6 order-sm-last">
-                        <p class="my-0">Price Each: €{{ item.product.price }}</p>
-                        <p><strong>Subtotal: </strong>€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        <p class="my-0">Price Each: ${{ item.product.price }}</p>
+                        <p><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                     <div class="col-12 col-sm-6">
                         {% include "bag/quantity-form.html" %}
@@ -68,8 +68,8 @@
                 <table class="table table-sm table-borderless">
                     <thead class="text-black">
                         <tr>
-                            <th scope="col">Book Info</th>
-                            <th scope="col">Title</th>
+                            <th scope="col">Product Info</th>
+                            <th scope="col"></th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
                             <th scope="col">Subtotal</th>
@@ -85,13 +85,13 @@
                             {% include "bag/product-info.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">€{{ item.product.price }}</p>
+                            <p class="my-0">${{ item.product.price }}</p>
                         </td>
-                        <td class="py-3 quantity-cart">
+                        <td class="py-3 w-25">
                             {% include "bag/quantity-form.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
@@ -108,15 +108,13 @@
                 </table>
             </div>
             {% else %}
-            <div class="text-center mt-5">
-                <p class="text-center no-products">No products in the cart.</p>
-                <a href=" {% url 'products' %}" class="btn btn-lg shopping mt-5">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span>Keep Shopping</span>
-                </a>
-            </div>
+            <p class="lead mb-5">Your bag is empty.</p>
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
             {% endif %}
         </div>
     </div>
@@ -143,9 +141,11 @@
     $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
         var url = `/bag/remove/${itemId}/`;
         var data = {
             'csrfmiddlewaretoken': csrfToken,
+            'product_size': size
         };
 
         $.post(url, data)
