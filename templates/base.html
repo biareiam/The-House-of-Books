@@ -26,6 +26,7 @@
     {% endblock %}
 
     {% block corejs %}
+    <a href="https://www.flaticon.com/free-icons/trash" title="trash icons"></a>
     <script src="https://kit.fontawesome.com/2f0a37c469.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -75,12 +76,12 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    <li class="list-inline-item dropdown">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0 ">
+                    <li class="list-inline-item dropdown account-cart">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <div><img src="{{ MEDIA_URL }}user.png" alt="" width="33px"></div>
                                 <p class="my-0">Account</p>
                             </div>
                         </a>
@@ -98,11 +99,12 @@
                             {% endif %}
                         </div>
                     </li>
-                    <li class="list-inline-item">
+                    <li class="list-inline-item account-cart">
                         <a class="{% if grand_total %} basket font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <div><img src="{{ MEDIA_URL }}shopping-cart.png" alt="" width="33px"></div>
+
 
                                 <p class="my-0">
                                     {% if grand_total %}

@@ -107,8 +107,8 @@ input[name='q']::placeholder {
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
-    position: fixed;
-    top: 72px;
+    position: absolute;
+    top: 130px;
     right: 15px;
     z-index: 99999999999;
 }
@@ -250,14 +250,10 @@ input[name='q']::placeholder {
         margin-bottom: -1rem;
     }
 
+
 }
 
-@media(max-width: 458px) {
-
-
-    .form-row {
-        justify-content: center;
-    }
+@media(max-width: 430px) {
 
     .add-bag {
         margin-top: 1rem !important;
@@ -265,18 +261,74 @@ input[name='q']::placeholder {
     }
 
     .product-detail {
-        padding-left: 1rem !important;
+        padding-right: 1rem !important;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
         justify-content: space-around;
         align-items: stretch;
         flex-direction: column;
+    }
+
+
+    .book-title {
+        font-size: 1.2rem !important;
+    }
+
+    .book-author,
+    .tag-2 {
+        font-size: 0.9rem !important;
+    }
+
+    .tag {
+        margin-bottom: -0.5rem;
     }
 
     .keep-shopping-cart {
         margin-bottom: 3rem !important;
         margin-left: 4.5rem !important;
 
+    }
+
+    .details {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: stretch;
+    }
+
+    .input-group {
+
+        width: 100%;
+        justify-content: center;
+    }
+
+    .quantity-btn {
+        height: 38px;
+    }
+
+    .add-bag {
+        margin-left: 7.5rem;
+    }
+}
+
+@media(max-width: 400px) {
+    .add-bag {
+        margin-left: 6rem;
+    }
+
+    .message-container {
+        position: static;
+        top: 80px;
+        right: 15px;
+        z-index: 99999999999;
+    }
+}
+
+@media(max-width: 400px) {
+    .add-bag {
+        margin-left: 4rem;
     }
 }
 
@@ -360,6 +412,26 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+.edit-delete-btn {
+    border: 1px solid gray;
+    padding: 0.1rem 0.3rem;
+    margin-left: -1rem;
+    font-size: 1rem;
+    text-decoration: none !important;
+    color: grey;
+}
+
+.edit-btn:hover {
+    background-color: #6d8272;
+    color: white;
+    border: none;
+}
+
+.delete-btn:hover {
+    background-color: #d4524e;
+    color: white;
+    border: none;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -370,6 +442,43 @@ input[name='q']::placeholder {
         left: 0;
         z-index: 1030;
     }
+
+    .message-container {
+        position: absolute;
+        top: 130px;
+        right: 15px;
+        z-index: 99999999999;
+    }
+
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: flex-end !important;
+
+    }
+
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: flex-end;
+        padding: 0.5rem 1.3rem;
+        border-bottom: 1px solid #eee;
+        border-top: 1px solid #eee;
+        margin-top: 2rem;
+    }
+
 
 
 }
@@ -613,7 +722,22 @@ input[name='q']::placeholder {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
-    padding-right: 5rem !important;
+}
+
+.tag-2 {
+    color: gray;
+}
+
+.bg-information {
+    background-color: #f0f0f0b1;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tag-2:hover {
+    color: #F65D4E !important;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .content {
@@ -641,7 +765,11 @@ input[name='q']::placeholder {
 
 .book-price {
     padding-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.2rem
+}
+
+.price {
+    margin-bottom: 1rem !important;
 }
 
 .form-row {
