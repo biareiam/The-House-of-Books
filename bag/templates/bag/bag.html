@@ -112,14 +112,10 @@
                 <div class="cart text-center">
                     <img src="{{ MEDIA_URL}}grocery-cart-icon-9.png" alt="" width="200" class="mt-4 mb-5">
                 </div>
-                <p class="lead mb-5 text-center">No products in your cart.</p>
+                <p class="lead mb-5 text-center">Your cart is currently empty.</p>
                 <div class="text-center m-auto">
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-
-                        <span class="text-uppercase ">Keep Shopping</span>
+                    <a href="{% url 'products' %}" class="btn btn-lg buttons">
+                        <span class="">Return to Shop</span>
                     </a>
                 </div>
             </div>
