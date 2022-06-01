@@ -808,6 +808,24 @@ input[name='q']::placeholder {
     border-radius: 15px;
 }
 
+.add_product {
+    margin: auto;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.edit_product {
+    margin: auto;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+/*** Profile ***/
+.profile input,
+.profile select {
+    border-radius: 10px !important;
+}
+
 
 /*** search bar ***/
 
