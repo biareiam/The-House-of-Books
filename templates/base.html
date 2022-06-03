@@ -78,24 +78,28 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0 ">
                     <li class="list-inline-item dropdown account-cart">
+
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
+
                             <div class="text-center">
-                                <div><img src="{{ MEDIA_URL }}user.png" alt="" width="33px"></div>
-                                <p class="my-0">Account</p>
+
+                                <p class="my-0">
+                                    <img src="{{ MEDIA_URL }}user.png" alt="account-icon" width="25px"> Account
+                                </p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item-2">Product
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Product
                                 Management</a>
                             {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item-2">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item-2">Logout</a>
+                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item-2">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item-2">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -103,10 +107,11 @@
                         <a class="{% if grand_total %} basket font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
-                                <div><img src="{{ MEDIA_URL }}shopping-cart.png" alt="" width="33px"></div>
+
 
 
                                 <p class="my-0">
+                                    <img src="{{ MEDIA_URL }}shop-bag.png" alt="bag icon" width="25px">
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
                                     {% else %}

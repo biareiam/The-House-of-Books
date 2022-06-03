@@ -108,7 +108,7 @@ input[name='q']::placeholder {
 
 .message-container {
     position: absolute;
-    top: 130px;
+    top: 100px;
     right: 15px;
     z-index: 99999999999;
 }
@@ -167,7 +167,7 @@ input[name='q']::placeholder {
 }
 
 .bag-notification-wrapper {
-    height: 100px;
+    height: 110px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -201,6 +201,10 @@ input[name='q']::placeholder {
     #new-arrivals-link {
         padding-left: 5rem !important;
         padding-right: 5rem !important;
+    }
+
+    .order-success {
+        margin-left: 7rem !important;
     }
 }
 
@@ -250,6 +254,9 @@ input[name='q']::placeholder {
         margin-bottom: -1rem;
     }
 
+    .order-success {
+        padding: 0 !important;
+    }
 
 }
 
@@ -311,6 +318,15 @@ input[name='q']::placeholder {
     .add-bag {
         margin-left: 7.5rem;
     }
+
+    .order-success {
+        padding: 0.5rem !important;
+    }
+
+    .price-summary {
+        text-align: left !important;
+    }
+
 }
 
 @media(max-width: 400px) {
@@ -324,11 +340,18 @@ input[name='q']::placeholder {
         right: 15px;
         z-index: 99999999999;
     }
-}
 
-@media(max-width: 400px) {
     .add-bag {
         margin-left: 4rem;
+    }
+
+    .order-success {
+        margin-left: -1rem !important;
+
+    }
+
+    .return-checkout {
+        font-size: 0.8rem;
     }
 }
 
@@ -729,7 +752,7 @@ input[name='q']::placeholder {
 }
 
 .bg-information {
-    background-color: #f0f0f0b1;
+    background-color: #cececeef;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -821,23 +844,34 @@ input[name='q']::placeholder {
 }
 
 /*** Profile ***/
-.profile input,
-.profile select {
-    border-radius: 10px !important;
+.form-control {
+    border: 1px solid rgb(220, 217, 217) !important;
 }
 
+.btn-file {
+    background-color: #d3d3d3 !important;
+}
+
+.btn-file:hover {
+    color: white;
+    background-color: #535252d6 !important;
+}
 
 /*** search bar ***/
 
 .searchbar-input {
-    border: none;
-    border-bottom: 1px solid rgb(190, 189, 189);
-
+    border: none !important;
+    border-bottom: 1px solid rgb(190, 189, 189) !important;
 }
 
 .fa-search {
     color: gray;
+    border: none !important;
 
+}
+
+.search-icon {
+    border: none !important;
 }
 
 .dropdown-menu.show {
@@ -865,12 +899,12 @@ input[name='q']::placeholder {
 }
 
 .buttons {
-    background-color: #F65D4E;
+    background-color: #00355b;
     font-size: 1rem;
     color: white;
     display: inline-block;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 0;
     cursor: pointer;
     padding: 0.8rem 1rem;
     text-decoration: none;
@@ -882,28 +916,42 @@ input[name='q']::placeholder {
 }
 
 .buttons:hover {
-    background-color: #f4402f;
+    background-color: #8ec2e7;
+    ;
     color: #fff;
 }
 
 .buttons-1 {
     font-size: 1rem;
-    color: #f4402f;
+    color: #00355b;
     display: inline-block;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 0;
     cursor: pointer;
     padding: 0.8rem 1rem;
     text-decoration: none;
     text-shadow: none;
     -webkit-appearance: none;
     line-height: 1.2857142857;
-    border: 1px solid #f4402f;
+    border: 1px solid #00355b;
 }
 
 .buttons-1:hover {
-    background-color: #f4402f;
+    background-color: #8ec2e7;
     color: white;
+}
+
+.toast-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    color: #6c757d;
+    background-color: rgba(255, 255, 255, .85);
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    justify-content: flex-end !important;
 }
 
 /****** Register and login form ****/
@@ -953,7 +1001,7 @@ input[name='q']::placeholder {
 .chechout-btn {
     color: white;
     background-color: #F65D4E;
-    border-radius: 50px;
+
 }
 
 .chechout-btn:hover {
