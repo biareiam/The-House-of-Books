@@ -174,9 +174,13 @@ input[name='q']::placeholder {
 }
 
 .bag-notification-wrapper {
-    height: 200px;
+    height: 150px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.product-cart {
+    border-bottom: 1px solid #eee;
 }
 
 /* -------------------------------- Media Queries */
@@ -928,9 +932,24 @@ input[name='q']::placeholder {
 
 }
 
+.cart-bg {
+    background-color: #edf2f8e2;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.cart {
+    background-color: white;
+    padding: 1rem;
+}
+
 .pip {
     text-decoration: none !important;
     font-weight: 400;
+}
+
+.pip1 {
+    color: rgb(206, 204, 204) !important;
 }
 
 .pip1:hover {
@@ -940,6 +959,15 @@ input[name='q']::placeholder {
 .pip2:hover {
     cursor: auto;
 }
+
+.pip3 {
+    color: rgb(206, 204, 204) !important;
+}
+
+.pip3:hover {
+    cursor: auto;
+}
+
 
 .cart-empty {
     font-weight: 400;
@@ -954,7 +982,7 @@ input[name='q']::placeholder {
     font-weight: 600;
     border-radius: 0;
     cursor: pointer;
-    padding: 0.8rem 1rem;
+    padding: 1rem;
     text-decoration: none;
     text-shadow: none;
     -webkit-appearance: none;
@@ -1041,6 +1069,24 @@ input[name='q']::placeholder {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #eee !important;
+    border-top: 0;
+    padding: 1rem;
+}
+
+.table td,
+.table th {
+    padding: 0.4rem 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #eee;
+}
+
+
 
 /****** Register and login form ****/
 
