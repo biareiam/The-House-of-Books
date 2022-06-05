@@ -13,6 +13,11 @@ body {
     font-family: 'sora';
 }
 
+hr {
+    background-color: #eee;
+
+}
+
 .navbar {
     position: relative;
     display: -ms-flexbox;
@@ -28,6 +33,8 @@ body {
     border-top: 1px solid #eee;
     margin-top: 2rem;
 }
+
+/*----------------- Home page -----------------------*/
 
 
 /* from Bulma */
@@ -108,7 +115,7 @@ input[name='q']::placeholder {
 
 .message-container {
     position: absolute;
-    top: 100px;
+    top: 90px;
     right: 15px;
     z-index: 99999999999;
 }
@@ -167,7 +174,7 @@ input[name='q']::placeholder {
 }
 
 .bag-notification-wrapper {
-    height: 110px;
+    height: 200px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -236,8 +243,6 @@ input[name='q']::placeholder {
 
     .details {
         display: flex;
-        justify-content: space-between;
-        align-items: baseline !important;
     }
 
     .quantity-input,
@@ -735,7 +740,7 @@ input[name='q']::placeholder {
 
 /*** Porduct ***/
 .book-image {
-    border-radius: 16px;
+    border-radius: 0;
 }
 
 /**** Product detail page ***/
@@ -745,6 +750,8 @@ input[name='q']::placeholder {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
+    padding-top: 2rem !important;
+    padding-left: 2rem !important;
 }
 
 .tag-2 {
@@ -778,7 +785,7 @@ input[name='q']::placeholder {
     width: 300px;
     margin-left: -1rem;
     margin-bottom: 1rem;
-    margin-top: -2rem;
+    margin-top: -2.7rem;
 }
 
 .book-title {
@@ -799,20 +806,19 @@ input[name='q']::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-right: -5px;
     /* margin-left: -2rem; */
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .keep-shopping-cart {
     background-color: rgb(189, 185, 185);
-    margin-left: 7rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: white;
-    border-radius: 50px;
+    border-radius: 0;
 }
 
 .keep-shopping-cart:hover {
@@ -820,15 +826,18 @@ input[name='q']::placeholder {
     color: white;
 }
 
+
+
 .details {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-top: 1rem;
 }
 
 .card-img-top-1 {
-    width: 400px;
-    border-radius: 15px;
+    width: 300px;
+    margin-left: 2rem;
 }
 
 .add_product {
@@ -842,6 +851,24 @@ input[name='q']::placeholder {
     padding-left: 15rem;
     padding-right: 15rem;
 }
+
+.edit-delete-1,
+.edit-delete-2 {
+    font-size: 1rem !important;
+    text-decoration: none !important;
+}
+
+.edit-delete-1:hover,
+.edit-delete-1:focus {
+    font-weight: 600;
+}
+
+.edit-delete-2:hover,
+.edit-delete-2:focus {
+    font-weight: 600;
+}
+
+
 
 /*** Profile ***/
 .form-control {
@@ -895,11 +922,32 @@ input[name='q']::placeholder {
 
 /*** bag ***/
 .empty-cart {
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #edf2f8e2;
+
+}
+
+.pip {
+    text-decoration: none !important;
+    font-weight: 400;
+}
+
+.pip1:hover {
+    color: #3577ad !important;
+}
+
+.pip2:hover {
+    cursor: auto;
+}
+
+.cart-empty {
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .buttons {
-    background-color: #00355b;
+    background-color: #000000;
     font-size: 1rem;
     color: white;
     display: inline-block;
@@ -916,14 +964,13 @@ input[name='q']::placeholder {
 }
 
 .buttons:hover {
-    background-color: #8ec2e7;
-    ;
+    background-color: #969696;
     color: #fff;
 }
 
 .buttons-1 {
     font-size: 1rem;
-    color: #00355b;
+    color: #000000;
     display: inline-block;
     font-weight: 600;
     border-radius: 0;
@@ -937,7 +984,7 @@ input[name='q']::placeholder {
 }
 
 .buttons-1:hover {
-    background-color: #8ec2e7;
+    background-color: #969696;
     color: white;
 }
 
@@ -952,6 +999,47 @@ input[name='q']::placeholder {
     background-clip: padding-box;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     justify-content: flex-end !important;
+}
+
+.pipline {
+    border-bottom: 1px solid #eee;
+
+}
+
+.qty_input-bag {
+    max-width: 170px;
+    height: 40px !important;
+    border: none !important;
+    border-top: 1px solid #eee !important;
+    border-bottom: 1px solid #eee !important;
+}
+
+.plus-btn,
+.minus-btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 40px !important;
+}
+
+.plus-btn {
+    border: none !important;
+    border-top: 1px solid #eee !important;
+    border-bottom: 1px solid #eee !important;
+    border-right: 1px solid #eee !important;
+}
+
+.minus-btn {
+    border: none !important;
+    border-top: 1px solid #eee !important;
+    border-bottom: 1px solid #eee !important;
+    border-left: 1px solid #eee !important;
+}
+
+.total {
+    border-top: 1px solid #eee !important;
+    border-bottom: 1px solid #eee !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /****** Register and login form ****/
@@ -980,9 +1068,9 @@ input[name='q']::placeholder {
 }
 
 .quantity-btn {
-    background-color: #c7cacb;
     border-radius: 0;
     border: none;
+    height: 50px;
 }
 
 .qty_input {
@@ -990,21 +1078,41 @@ input[name='q']::placeholder {
 }
 
 .quantity-input {
-    max-width: 40% !important;
+    max-width: 30% !important;
+    height: 50px;
+    border-top: 1px solid rgb(220, 217, 217);
+    border-bottom: 1px solid rgb(220, 217, 217);
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.increment-qty {
+    border-top: 1px solid rgb(220, 217, 217);
+    border-right: 1px solid rgb(220, 217, 217);
+    border-bottom: 1px solid rgb(220, 217, 217);
+}
+
+.decrement-qty {
+    border-top: 1px solid rgb(220, 217, 217);
+    border-left: 1px solid rgb(220, 217, 217);
+    border-bottom: 1px solid rgb(220, 217, 217);
 }
 
 .add-bag {
-    margin-top: 1.3rem !important;
+    padding: 0.9rem 3rem !important;
+    font-weight: 300 !important;
 }
 
 /*** toast success ****/
 .chechout-btn {
     color: white;
-    background-color: #F65D4E;
+    background-color: #000000;
+    border-radius: 0;
+    padding-top: 0.6rem;
 
 }
 
 .chechout-btn:hover {
-    background-color: #f4402f;
+    background-color: #5a5a5a;
     color: white;
 }
