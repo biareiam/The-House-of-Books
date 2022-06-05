@@ -107,9 +107,6 @@
                         <a class="{% if grand_total %} basket font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
-
-
-
                                 <p class="my-0">
                                     <img src="{{ MEDIA_URL }}shop-bag.png" alt="bag icon" width="25px">
                                     {% if grand_total %}
@@ -166,7 +163,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
+                    <div class="col-sm-6 col-md-6 col-lg-3  item">
                         <h3>Shop</h3>
                         <ul>
                             <li><a href="{% url 'products' %}">Books</a></li>
@@ -177,7 +174,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-md-3 item">
+                    <div class="col-sm-6 col-md-6 col-lg-3  item">
                         <h3>Company</h3>
                         <ul>
                             {% if request.user.is_authenticated %}
@@ -193,18 +190,35 @@
                             {% endif %}
                         </ul>
                     </div>
-                    <div class="col-md-6 item text">
+                    <div class="col-sm-6 col-md-6 col-lg-3  item">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="{% url 'products' %}?category=romance" class="dropdown-item-1">Romance</a></li>
+                            <li><a href="{% url 'products' %}?category=mystery" class="dropdown-item-1">Mystery</a></li>
+                            <li><a href="{% url 'products' %}?category=fiction" class="dropdown-item-1">Fiction</a></li>
+                            <li><a href="{% url 'products' %}?category=nonfiction"
+                                    class="dropdown-item-1">Nonfiction</a></li>
+                            <li><a href="{% url 'products' %}?category=classics" class="dropdown-item-1">Classics</a>
+                            </li>
+                            <li> <a href="{% url 'products' %}?category=romance,mystery,fiction,nonfiction,classics,fantasy,thriller,history"
+                                    class="dropdown-item-1">All Categories</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3  item">
                         <h3>House of Books</h3>
                         <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
-                            rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
-                            vel in justo.</p>
+                            rhoncus elementum.</p>
                     </div>
-                    <div class="col item social"><a href="https://www.facebook.com/" target="_blank"><i
-                                class="fab fa-facebook-f center"></i></a>
-                        <a href="https://www.twitter.com/" target="_blank"><i
-                                class="fab fa-twitter-square center"></i></a>
-                        <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest center"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram center"></i></a>
+                    <div class="m-auto pb-3">
+                        <div class="col item social"><a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fab fa-facebook-f center"></i></a>
+                            <a href="https://www.twitter.com/" target="_blank"><i
+                                    class="fab fa-twitter-square center"></i></a>
+                            <a href="https://www.pinterest.com/" target="_blank"><i
+                                    class="fab fa-pinterest center"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fab fa-instagram center"></i></a>
+                        </div>
                     </div>
                 </div>
                 <p class="copyright">House of Books © 2022</p>

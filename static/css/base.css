@@ -265,6 +265,11 @@ input[name='q']::placeholder {
         padding: 0 !important;
     }
 
+    .sort-select-wrapper {
+        width: 100px;
+
+    }
+
 }
 
 @media(max-width: 430px) {
@@ -295,6 +300,7 @@ input[name='q']::placeholder {
 
     .tag {
         margin-bottom: -0.5rem;
+        border-radius: 0;
     }
 
     .keep-shopping-cart {
@@ -332,6 +338,15 @@ input[name='q']::placeholder {
 
     .price-summary {
         text-align: left !important;
+    }
+
+    .sort-select-wrapper {
+        width: 80px;
+
+    }
+
+    .order-md-first p {
+        font-size: 0.9rem;
     }
 
 }
@@ -664,6 +679,14 @@ input[name='q']::placeholder {
     opacity: 0.8;
 }
 
+.social a {
+    text-align: center;
+}
+
+.social {
+    padding-top: 1rem;
+}
+
 @media (max-width:767px) {
     .footer-dark .item:not(.social) {
         text-align: center;
@@ -745,6 +768,12 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+.sort-select-wrapper {
+    padding-bottom: 1rem;
+    width: 300px;
+
+}
+
 /**** Product detail page ***/
 .product-detail {
     padding-left: 1rem !important;
@@ -758,12 +787,15 @@ input[name='q']::placeholder {
 
 .tag-2 {
     color: gray;
+    border-radius: 0;
 }
+
 
 .bg-information {
     background-color: #cececeef;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
+    border-radius: 0;
 }
 
 .tag-2:hover {
@@ -912,7 +944,7 @@ input[name='q']::placeholder {
     border: 1px solid rgb(86, 84, 84);
     color: black;
     padding: 0.2rem 0.4rem !important;
-    border-radius: 10px;
+    border-radius: 0;
     margin-left: 0.5rem;
 }
 

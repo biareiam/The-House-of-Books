@@ -20,3 +20,78 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+.order-track {
+    padding: 0.3rem 2rem !important;
+    background-color: #000 !important;
+    text-decoration: none !important;
+    color: white !important;
+    border-radius: 0;
+}
+
+.order-track a {
+    text-decoration: none !important;
+    color: white !important;
+    font-size: 0.8rem;
+}
+
+#orders-tab {
+    text-decoration: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+#home2-tab {
+    text-decoration: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+#logout-tab {
+    text-decoration: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #a4c4e5 !important;
+}
+
+
+.tabs-to-dropdown .nav-pills li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.tabs-to-dropdown .tab-content .container-fluid {
+    max-width: 1250px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.tabs-to-dropdown .dropdown-menu {
+    border: none;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.08);
+}
+
+.tabs-to-dropdown .dropdown-item {
+    padding: 14px 28px;
+}
+
+.tabs-to-dropdown .dropdown-item:active {
+    color: var(--white);
+}
+
+@media (min-width: 1280px) {
+    .tabs-to-dropdown .nav-wrapper {
+        padding: 15px 30px;
+    }
+}
+
+
+@media (max-width:500px) {
+    .date-hidden {
+        display: none;
+    }
+
+
+
+}
