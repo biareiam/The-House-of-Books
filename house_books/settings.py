@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    # 'allauth.socialaccount.providers.facebook',
     'home',
     'products',
     'bag',
@@ -96,13 +97,13 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
+
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 )
-
 
 SITE_ID = 1
 
@@ -113,9 +114,13 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-
+SOCIAL_AUTH_FACEBOOK_KEY = '556337722747373'  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '76edea8954801db0bfe30ff0ad873669'  # App Secret
 
 WSGI_APPLICATION = 'house_books.wsgi.application'
+
+SOCIAL_AUTH_FACEBOOK_KEY='556337722747373'
+SOCIAL_AUTH_FACEBOOK_SECRET='76edea8954801db0bfe30ff0ad873669'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

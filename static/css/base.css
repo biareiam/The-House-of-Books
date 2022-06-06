@@ -1,17 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&display=swap');
 
-html {
+/*html {
     height: 100%;
+}*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sora';
 }
 
-body {
+/*body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'sora';
+}*/
+
+.hero {
+    background: url('/media/12.jpg') no-repeat center center;
+    background-size: cover;
 }
+
+.hero-image {
+
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
+
 
 hr {
     background-color: #eee;
@@ -99,6 +118,14 @@ a.category-badge>span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    border-radius: 50% !important;
+}
+
+.btt-button:hover,
+.btt-button:focus {
+    background-color: rgb(139, 134, 134);
+    border: none !important;
+    color: white;
 }
 
 .btt-link,
@@ -205,19 +232,33 @@ input[name='q']::placeholder {
         max-width: 80%;
     }
 
-
-}
-
-@media(min-width: 1024px) {
-    #new-arrivals-link {
-        padding-left: 5rem !important;
-        padding-right: 5rem !important;
+    .add_product,
+    .edit_product {
+        margin: auto;
+        padding-left: 15rem !important;
+        padding-right: 15rem !important;
     }
 
 
 }
 
-@media(min-width: 768px) {
+@media(max-width: 1024px) {
+    #new-arrivals-link {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+
+    .add_product,
+    .edit_product {
+        margin: auto;
+        padding-left: 15rem !important;
+        padding-right: 15rem !important;
+    }
+
+
+}
+
+@media(max-width: 768px) {
 
     .add-bag {
         margin-top: 0.5rem !important;
@@ -269,6 +310,14 @@ input[name='q']::placeholder {
         width: 100px;
 
     }
+
+    .add_product,
+    .edit_product {
+        margin: auto;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
 
 }
 
@@ -349,6 +398,14 @@ input[name='q']::placeholder {
         font-size: 0.9rem;
     }
 
+    .add_product,
+    .edit_product {
+        margin: auto;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+
 }
 
 @media(max-width: 400px) {
@@ -388,7 +445,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content input {
     border-color: rgb(115, 115, 115);
-    border-radius: 10px;
+
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -399,9 +456,9 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-.allauth-form-inner-content button,
+/*.allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-    /* btn */
+
     display: inline-block;
     font-weight: 400;
     color: #fff;
@@ -417,9 +474,9 @@ input[name='q']::placeholder {
     line-height: 1.5;
     border-radius: 50px;
 
-    /* standard bootstrap btn transitions */
+     standard bootstrap btn transitions 
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
+}*/
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
@@ -575,10 +632,11 @@ input[name='q']::placeholder {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 2px;
     padding-top: 0.5rem;
+
 }
 
 #delivery-banner h4 {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
 }
 
 
@@ -874,17 +932,8 @@ input[name='q']::placeholder {
     margin-left: 2rem;
 }
 
-.add_product {
-    margin: auto;
-    padding-left: 15rem;
-    padding-right: 15rem;
-}
 
-.edit_product {
-    margin: auto;
-    padding-left: 15rem;
-    padding-right: 15rem;
-}
+
 
 .edit-delete-1,
 .edit-delete-2 {
@@ -1011,7 +1060,7 @@ input[name='q']::placeholder {
     font-weight: 600;
     border-radius: 0;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.9rem 1rem;
     text-decoration: none;
     text-shadow: none;
     -webkit-appearance: none;
@@ -1190,4 +1239,33 @@ input[name='q']::placeholder {
 .chechout-btn:hover {
     background-color: #5a5a5a;
     color: white;
+}
+
+
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 80%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+}
+
+.carousel-control-next {
+    right: 30px;
+}
+
+.carousel-control-prev {
+    left: -15px;
 }
