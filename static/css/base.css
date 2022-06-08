@@ -12,8 +12,9 @@
 }
 
 .hero {
-    background: url('https://img.freepik.com/free-photo/abstract-watercolor-background-pastel-blue-colors_181627-1128.jpg') no-repeat center center;
+
     background-size: cover;
+    background: linear-gradient(to bottom, #ffffff 28%, #99ccff 100%);
 }
 
 .hero-image {
