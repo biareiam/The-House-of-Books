@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_meta %}
+<meta name="description" content="403 page on the House of Books site">
+<meta name="keywords"
+    content="books, romance, thriller, irish books, adventure, mystery, irish true crime, irish classics" href="">
+<!-- Facebook, LinkedIn, Google -->
+<meta property="og:title" name="title" content="Houseofbooks" />
+<meta property="og:description" content="403 page on the House of Books site" />
+<meta property="og:url" content="https://houseofbooks22.herokuapp.com/" />
+{% endblock %}
+
+{% block extra_js %}
+<!-- uni-form jquery  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Uniform.js/4.3.0/js/jquery.uniform.bundled.js"></script>
+{% endblock %}
+
+{% block extra_title %} 403 {% endblock %}
+
+{% block content %}
+<div class="hero-body">
+    <div class="container">
+        <div class="columns has-text-centered">
+            <div class="column">
+                <h2 class="title-heading has-text-centered is-justify-content-center my-4">403 ERROR!</h2>
+                <p>You don't have access to this page!</p>
+                <h3>Click <a href="{% url 'products' %}">here</a> to go back to the shop</h3>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
