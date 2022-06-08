@@ -43,14 +43,12 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    # 'allauth.socialaccount.providers.facebook',
+
     'home',
     'products',
     'bag',
     'checkout',
     'profiles',
-
-    # Other
     'crispy_forms',
     'storages',
 ]
@@ -107,20 +105,22 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 
+
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+# tells allauth we want to authenticate with username or email
+ACCOUNT_EMAIL_REQUIRED = True   # confirm email required for site
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'   # verify the email is valid
+# email required twice to check for typos
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
-ACCOUNT_USERNAME_MIN_LENGTH = 4
-LOGIN_URL = '/accounts/login/'
+ACCOUNT_USERNAME_MIN_LENGTH = 4   # username min length
+LOGIN_URL = '/accounts/login/'   # log in page
 LOGIN_REDIRECT_URL = '/'
-SOCIAL_AUTH_FACEBOOK_KEY = '556337722747373'  # App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '76edea8954801db0bfe30ff0ad873669'  # App Secret
+# used with django social auth tutorial
+ACCOUNT_LOGOUT_ON_GET = True
 
 WSGI_APPLICATION = 'house_books.wsgi.application'
 
-SOCIAL_AUTH_FACEBOOK_KEY='556337722747373'
-SOCIAL_AUTH_FACEBOOK_SECRET='76edea8954801db0bfe30ff0ad873669'
+
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -226,3 +226,9 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

@@ -65,8 +65,9 @@ select option[value=""] {
 
 .order-success {
     margin: auto;
-    padding-left: 8rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 70rem;
 }
 
 .last-deal-btn {

@@ -31,6 +31,10 @@
 
 }
 
+.mycardbooks {
+    width: 300px;
+    height: auto;
+}
 
 hr {
     background-color: #eee;
@@ -215,28 +219,147 @@ input[name='q']::placeholder {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 2560px) {
+    .hero {
+        padding-left: 40rem;
+        padding-right: 39rem;
+    }
+
     .product-detail {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center !important;
-        padding-left: 10rem !important;
-        padding-right: 10rem !important;
+        align-items: stretch;
+        padding-top: 2rem !important;
+        margin-left: 30rem !important;
+        margin-right: 30rem !important;
     }
 
+    .details {
+        margin-right: 30rem;
+    }
+
+    .searchbar-input {
+        margin-left: 35rem;
+    }
+
+    .account-icons {
+        margin-right: 33rem;
+    }
+
+    .message-container {
+        position: absolute;
+        top: 130px !important;
+        right: 35rem !important;
+        z-index: 99999999999;
+    }
+
+    #payment-form {
+        max-width: 60rem;
+        margin-left: 30rem;
+    }
+
+    .bg-1 {
+        max-width: 35rem;
+        margin-right: 10rem;
+    }
+
+    .register-login-form {
+        max-width: 30rem;
+
+    }
+
+    .add_product,
+    .edit_product {
+        max-width: 50rem !important;
+        margin: auto !important;
+        padding: 1.4rem;
+    }
+
+    .mycontainer {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .myprofilepage {
+        max-width: 55rem;
+        margin: auto !important;
+    }
+
+    .footer-dark {
+        padding-left: 25rem !important;
+        padding-right: 25rem !important;
+    }
+
+
+    .carousel-control-next {
+        right: 30px !important;
+    }
+
+    .carousel-control-prev {
+        left: -5px;
+    }
 }
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+    .product-detail {
+        padding-left: 0rem !important;
+        justify-content: center !important;
+    }
+
+    .details {
+        margin-right: 20rem;
+    }
+
+    .product-border-2 {
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .add_product,
+    .edit_product {
+        max-width: 50rem !important;
+    }
+
+    .myprofilepage {
+        max-width: 55rem;
+        margin: auto !important;
+    }
+
+    .carousel-control-next {
+        right: 85px !important;
+    }
+
+    .carousel-control-prev {
+        left: -5px;
+    }
+}
 
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
 
+    .product-detail {
+        justify-content: center !important;
+        padding-left: 0rem !important;
+    }
+
+    .details {
+        margin-right: 10rem;
+    }
+
     .add_product,
     .edit_product {
-        margin: auto;
-        padding-left: 15rem !important;
-        padding-right: 15rem !important;
+        max-width: 50rem !important;
+    }
+
+    .myprofilepage {
+        max-width: 50rem;
+        margin: auto !important;
+    }
+
+    .product-border-2 {
+        padding-bottom: 2rem;
     }
 
 
@@ -255,13 +378,29 @@ input[name='q']::placeholder {
         padding-right: 15rem !important;
     }
 
+    .hero-image {
+        padding-left: 5.5rem;
+        padding-right: 6rem;
+    }
+
+    .card-img-top-1 {
+        width: 430px !important;
+        margin-left: 0rem;
+    }
+
+    .cart {
+        padding: 1rem;
+        max-width: 60rem !important;
+    }
 
 }
 
 @media(max-width: 768px) {
 
     .add-bag {
-        margin-top: 0.5rem !important;
+        margin-top: 0rem !important;
+        margin-left: -9.5rem !important;
+        padding: 0.9rem 1.3rem !important;
     }
 
     .form-row {
@@ -319,12 +458,41 @@ input[name='q']::placeholder {
 
     .add_product,
     .edit_product {
-        margin: auto;
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
+
+        max-width: 30rem !important;
+        padding: 1rem !important;
     }
 
+    .hero-image {
+        padding-left: 1rem;
+        padding-right: 1rem;
 
+    }
+
+    .card-img-top-1 {
+        width: 280px !important;
+        margin-left: 1rem !important;
+    }
+
+    .content {
+        padding-bottom: 3rem;
+    }
+
+    .cart {
+        max-width: 45rem !important;
+
+    }
+
+    #payment-form {
+        background-color: transparent !important;
+    }
+
+    .message-container {
+        position: absolute;
+        top: 140px !important;
+        z-index: 99999999999;
+        right: 31.5rem !important;
+    }
 }
 
 @media(max-width: 430px) {
@@ -332,6 +500,7 @@ input[name='q']::placeholder {
     .add-bag {
         margin-top: 1rem !important;
         margin-bottom: 1rem !important;
+        margin-left: 5rem !important;
     }
 
     .product-detail {
@@ -366,11 +535,23 @@ input[name='q']::placeholder {
 
     .details {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 1rem;
         align-content: flex-start;
-        align-items: stretch;
+        flex-direction: row;
+    }
+
+    .form-row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: nowrap;
+        margin-right: -5px;
+        /* margin-left: -2rem; */
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
     .input-group {
@@ -411,13 +592,30 @@ input[name='q']::placeholder {
         padding-right: 1rem !important;
     }
 
+    .card-img-top-1 {
+        width: 350px !important;
+
+
+    }
+
 
 }
 
 @media(max-width: 400px) {
     .add-bag {
-        margin-left: 6rem;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+        margin-left: 2rem !important;
+        padding: 0.3rem 0.5rem !important;
     }
+
+    .card-img-top-1 {
+        width: 300px !important;
+        margin: auto !important;
+
+
+    }
+
 
     .message-container {
         position: static;
@@ -540,6 +738,11 @@ input[name='q']::placeholder {
     color: white;
     border: none;
 }
+
+.cart-qty-btn {
+    margin-top: -2rem;
+}
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -847,6 +1050,7 @@ input[name='q']::placeholder {
     align-items: stretch;
     padding-top: 2rem !important;
     padding-left: 2rem !important;
+
 }
 
 .tag-2 {
@@ -936,6 +1140,7 @@ input[name='q']::placeholder {
 .card-img-top-1 {
     width: 350px;
     margin-left: 1rem;
+
 }
 
 
@@ -1025,6 +1230,7 @@ input[name='q']::placeholder {
 .cart {
     background-color: white;
     padding: 1rem;
+    max-width: 70rem;
 }
 
 .pip {
@@ -1253,7 +1459,7 @@ input[name='q']::placeholder {
     position: relative;
     display: none;
     float: left;
-    width: 80%;
+    width: 100%;
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -1264,14 +1470,14 @@ input[name='q']::placeholder {
 
 .carousel-inner {
     position: relative;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
 }
 
 .carousel-control-next {
-    right: 30px;
+    right: -5px;
 }
 
 .carousel-control-prev {
-    left: -15px;
+    left: -5px;
 }
