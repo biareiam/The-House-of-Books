@@ -19,15 +19,12 @@
 {% block extra_title %} 500 {% endblock %}
 
 {% block content %}
-<div class="hero-body">
-    <div class="container">
-        <div class="columns has-text-centered">
-            <div class="column">
-                <h2 class="title-heading has-text-centered is-justify-content-center my-4">500 SERVER ERROR!</h2>
-                <p>How embarrassing... Sorry about that.</p>
-                <h3>Click <a href="{% url 'products' %}">here</a> to go back to the shop</h3>
-            </div>
-        </div>
-    </div>
+<div class="mainbox text-center" style="background-color: #9dc1eb88; padding:7rem;">
+    <p class="err" style="font-size: 5rem;">5
+        <i class="far fa-question-circle fa-spin"></i>
+        <span class="err2">0</span></p>
+    <p class="msg">How embarrassing... Sorry about that.</p>
+    <div><a href="{% url 'products' %}" class="erro_page">Click here</a> and go back to the home page</div>
 </div>
+
 {% endblock %}
