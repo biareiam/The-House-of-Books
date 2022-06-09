@@ -1499,3 +1499,15 @@ input[name='q']::placeholder {
 .carousel-control-prev {
     left: -5px;
 }
+
+/************** Error page ********************/
+.hero-body {
+    padding: 5rem 10rem;
+    background-color: #9dc1eb42;
+    text-align: center;
+}
+
+.clickhere {
+    text-decoration: none;
+    color: rgb(90, 155, 183);
+}

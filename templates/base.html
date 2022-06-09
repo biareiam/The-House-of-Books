@@ -7,21 +7,20 @@
 <head>
 
     {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% endblock %}
-
     <!-- meta tags  -->
-    {% block meta %}
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Buy book and embarque in a new adventure.">
     <meta name="keywords"
         content="books, romance books, thriller books, irish books, classic books, fiction, nonfiction books, house of book irish true crime books, literature">
-    {% endblock %}
+
     <!-- end meta tags  -->
+    {% endblock %}
+
+    {% block extra_meta %}
+    {% endblock %}
 
     {% block corecss %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -241,10 +240,6 @@
         $('.toast').toast('show');
     </script>
     {% endblock %}
-
-
-
-
 </body>
 
 </html>
