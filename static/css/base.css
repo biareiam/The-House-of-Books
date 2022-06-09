@@ -1512,7 +1512,7 @@ input[name='q']::placeholder {
 .err {
     color: #ffffff;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 11rem;
     position: absolute;
     left: 20%;
     top: 8%;
@@ -1529,7 +1529,7 @@ input[name='q']::placeholder {
 .err2 {
     color: #ffffff;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 11rem;
     position: absolute;
     left: 68%;
     top: 8%;
