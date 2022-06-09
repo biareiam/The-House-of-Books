@@ -284,7 +284,7 @@ input[name='q']::placeholder {
 
 
     .carousel-control-next {
-        right: 30px !important;
+        right: 340px !important;
     }
 
     .carousel-control-prev {
@@ -318,7 +318,7 @@ input[name='q']::placeholder {
     }
 
     .carousel-control-next {
-        right: 85px !important;
+        right: 140px !important;
     }
 
     .carousel-control-prev {
@@ -354,6 +354,13 @@ input[name='q']::placeholder {
         padding-bottom: 2rem;
     }
 
+    .carousel-control-next {
+        right: 70px !important;
+    }
+
+    .carousel-control-prev {
+        left: 0px !important;
+    }
 
 }
 
@@ -383,6 +390,10 @@ input[name='q']::placeholder {
     .cart {
         padding: 1rem;
         max-width: 60rem !important;
+    }
+
+    .carousel-control-next {
+        right: 30px !important;
     }
 
 }
@@ -489,6 +500,11 @@ input[name='q']::placeholder {
     .cart-img {
         max-width: 110px !important;
     }
+
+    .carousel-control-next {
+        right: -5px !important;
+    }
+
 }
 
 @media(max-width: 430px) {
@@ -593,6 +609,21 @@ input[name='q']::placeholder {
         margin: auto !important;
     }
 
+    .carousel-control-next {
+        right: 40px !important;
+    }
+
+    .carousel-control-prev {
+        left: 40px !important;
+    }
+
+    .mycardbooks {
+        width: 300px;
+        height: auto;
+        margin: auto !important;
+    }
+
+
 
 }
 
@@ -642,6 +673,11 @@ input[name='q']::placeholder {
         margin-bottom: 1rem;
         margin-top: -1rem;
     }
+
+    .mycardbooks {
+
+        margin: auto !important;
+    }
 }
 
 @media(max-width:350px) {
@@ -651,6 +687,14 @@ input[name='q']::placeholder {
 
     .product-detail {
         padding: 0.4rem !important;
+    }
+
+    .carousel-control-next {
+        right: 5px !important;
+    }
+
+    .carousel-control-prev {
+        left: 5px !important;
     }
 }
 
