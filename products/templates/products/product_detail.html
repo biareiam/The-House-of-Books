@@ -59,13 +59,20 @@
                     <a class="text-danger edit-delete-2" href="{% url 'delete_product' product.id %}">Delete</a>
                 </p>
                 {% endif %}
+                {% if product.category %}
+                <p class="small book-category-product-page tag">
+                    <a class="text-muted tag-2" href="{% url 'products' %}?category={{ product.category.name }}">
+                        {{ product.category.friendly_name }}
+                    </a>
+                </p>
+                {% endif %}
                 <div class="details">
 
                     <p class="mb-0 book-author">By: {{ product.author }}</p>
 
                     {% if product.rating %}
                     <div class="rating">
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} </small>
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i> Rating: {{ product.rating }} </small>
                     </div>
 
                     {% else %}
@@ -74,13 +81,6 @@
                     </div>
                     {% endif %}
 
-                    {% if product.category %}
-                    <p class="small book-category-product-page tag">
-                        <a class="text-muted tag-2" href="{% url 'products' %}?category={{ product.category.name }}">
-                            {{ product.category.friendly_name }}
-                        </a>
-                    </p>
-                    {% endif %}
                 </div>
                 <hr>
                 <div class="row">
@@ -89,13 +89,14 @@
                     </div>
                 </div>
                 <p class="description mb-2"><strong> Description:</strong></p>
+
                 {% if product.description|wordcount > 150 %}
                 <p class=" half-content content" id="half-1">
                     {{ product.description|truncatechars:530|linebreaksbr }}<a data-id="1" href="javascript:void();"
-                        class="show-hide-btn read-more"><br> Read more</a></p>
+                        class="show-hide-btn read-more"><br> + Show more</a></p>
                 <p class="full-content content" id="full-1" style="display: none;">
                     {{ product.description|linebreaksbr}}<a data-id="1" href="javascript:void();"
-                        class="show-hide-btn read-more"><br> Read less</a></p>
+                        class="show-hide-btn read-more"><br> - Show less</a></p>
                 {% else %}
                 <p class="content">{{ product.description|linebreaksbr }}</p>
                 {% endif %}

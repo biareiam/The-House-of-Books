@@ -69,7 +69,7 @@
                 </div>
 
             </div>
-            <div class="row">
+            <div class="row col-container">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-0">
@@ -104,6 +104,7 @@
                                     <p class="lead mb-0 text-left font-weight-bold price">€{{ product.price }}</p>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col">
                                     {% if request.user.is_superuser  %}
