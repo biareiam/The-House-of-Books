@@ -1502,7 +1502,7 @@ input[name='q']::placeholder {
 
 /************** Error page ********************/
 .mainbox {
-    background-color: #95c2de;
+    background-color: #95c2de !important;
     margin: auto;
     height: 600px;
     width: 600px;

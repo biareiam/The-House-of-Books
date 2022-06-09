@@ -3,8 +3,6 @@
 
 
 {% block extra_js %}
-<!-- uni-form jquery  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Uniform.js/4.3.0/js/jquery.uniform.bundled.js"></script>
 <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
 {% endblock %}
 
@@ -12,10 +10,10 @@
 
 {% block content %}
 
-<div class="mainbox text-center">
-    <div class="err">4</div>
-    <i class="far fa-question-circle fa-spin"></i>
-    <div class="err2">4</div>
+<div class="mainbox text-center pt-5 pb-5">
+    <p class="err">4
+        <i class="far fa-question-circle fa-spin"></i>
+        <span class="err2">4</span></p>
     <div class="msg">Ops! It seems you got lost<p>Return to the<a href="{% url 'products' %}" class="erro_page"> home
                 page</a> and try from there.</p>
     </div>
