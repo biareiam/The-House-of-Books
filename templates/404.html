@@ -14,20 +14,20 @@
 {% block extra_js %}
 <!-- uni-form jquery  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Uniform.js/4.3.0/js/jquery.uniform.bundled.js"></script>
+<script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
 {% endblock %}
 
 {% block extra_title %} 404 {% endblock %}
 
 {% block content %}
-<div class="hero-body">
-    <div class="container">
-        <div class="columns has-text-centered">
-            <div class="column">
-                <h3 class="title-heading has-text-centered is-justify-content-center my-4">404 ERROR!</h3>
-                <p>Looks like you are lost</p>
-                <h4>Click <a href="{% url 'products' %}" class="clickhere">here</a> to go back to the shop</h4>
-            </div>
-        </div>
+
+<div class="mainbox">
+    <div class="err">4</div>
+    <i class="far fa-question-circle fa-spin"></i>
+    <div class="err2">4</div>
+    <div class="msg">Ops! It seems you got lost<p>Return to the<a href="{% url 'products' %}" class="erro_page"> home
+                page</a> and try from there.</p>
     </div>
 </div>
+
 {% endblock %}
