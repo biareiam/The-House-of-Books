@@ -33,6 +33,10 @@ hr {
     color: #eee;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .navbar {
     position: relative;
     display: -ms-flexbox;
@@ -49,8 +53,40 @@ hr {
     margin-top: 2rem;
 }
 
-/*----------------- Home page -----------------------*/
+/*** Logo ****/
 
+.main-logo {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+}
+
+.main-logo::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    color: #6ba5c4 !important;
+    background-color: #6ba5c4;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.main-logo:hover {
+    color: #6ba5c4 !important;
+
+}
+
+.main-logo:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/*----------------- Home page -----------------------*/
 
 /* from Bulma */
 .icon {
@@ -443,8 +479,7 @@ input[name='q']::placeholder {
     }
 
     #new-arrivals-link {
-        margin-left: -3rem !important;
-
+        margin-left: -5rem !important;
     }
 
     .details {
@@ -504,6 +539,13 @@ input[name='q']::placeholder {
 
     .carousel-control-next {
         right: -5px !important;
+    }
+
+    .register-form {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        justify-content: space-evenly;
     }
 
 }
@@ -625,6 +667,11 @@ input[name='q']::placeholder {
     }
 
 
+    .inner_content {
+        width: 20rem !important;
+        margin-left: -4rem !important;
+    }
+
 
 }
 
@@ -679,6 +726,11 @@ input[name='q']::placeholder {
 
         margin: auto !important;
     }
+
+    .inner_content {
+        width: 20rem !important;
+        margin-left: -5rem !important;
+    }
 }
 
 @media(max-width:350px) {
@@ -696,6 +748,15 @@ input[name='q']::placeholder {
 
     .carousel-control-prev {
         left: 5px !important;
+    }
+
+    .inner_content {
+        width: 18rem !important;
+        margin-left: -5rem !important;
+    }
+
+    input .buttons {
+        margin-bottom: 1rem;
     }
 }
 
@@ -1033,9 +1094,6 @@ input[name='q']::placeholder {
         margin-bottom: 0;
     }
 
-    #new-arrivals-link {
-        padding-left: 0rem;
-    }
 
     .nav-link {
         padding: 0.5rem;
@@ -1353,7 +1411,7 @@ input[name='q']::placeholder {
 }
 
 .buttons:hover {
-    background-color: #969696;
+    background-color: #313131;
     color: #fff;
 }
 
@@ -1369,11 +1427,11 @@ input[name='q']::placeholder {
     text-shadow: none;
     -webkit-appearance: none;
     line-height: 1.2857142857;
-    border: 1px solid #000000;
+    border: 1px solid #313131;
 }
 
 .buttons-1:hover {
-    background-color: #969696;
+    background-color: #313131;
     color: white;
 }
 
