@@ -870,12 +870,12 @@ input[name='q']::placeholder {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
-    border-color: #dc3545;
+    border-color: #000000;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #000000;
+    border-color: #000000;
     border-radius: 0;
 }
 
@@ -1217,6 +1217,14 @@ input[name='q']::placeholder {
     padding: 0.3rem;
     color: white !important;
     background-color: #5a5a5a;
+}
+
+.tag a {
+    border-radius: 0 !important;
+    font-size: 0.8rem !important;
+    padding: 0.3rem !important;
+    color: white !important;
+    background-color: #5a5a5a !important;
 }
 
 
