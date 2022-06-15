@@ -1658,4 +1658,26 @@ input[name='q']::placeholder {
     text-decoration: underline;
 }
 
-/***************************/
+/********** Privacy Policy*****************/
+.privacy {
+    padding: 2.5rem 4rem;
+    background-color: #edf2f8e2;
+}
+
+.title-heading-1 {
+    font-size: 2rem;
+}
+
+
+.title-heading {
+    font-size: 1.7rem;
+}
+
+.title-heading-small {
+    font-size: 1.5rem;
+}
+
+.privacy-title {
+    font-size: 1.3rem;
+
+}
