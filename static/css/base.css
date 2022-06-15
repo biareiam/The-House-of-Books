@@ -14,7 +14,7 @@
 .hero {
 
     background-size: cover;
-    background: linear-gradient(to bottom, #ffffff 28%, #99ccff 100%);
+
 }
 
 .hero-image {
@@ -552,11 +552,7 @@ input[name='q']::placeholder {
 
 @media(max-width: 430px) {
 
-    .add-bag {
-        margin-top: 1rem !important;
-        margin-bottom: 1rem !important;
-        margin-left: 5rem !important;
-    }
+
 
     .product-detail {
         padding-right: 1rem !important;
@@ -620,7 +616,8 @@ input[name='q']::placeholder {
     }
 
     .add-bag {
-        margin-left: 5rem !important;
+        margin-left: 6rem !important;
+        margin-top: 1rem !important;
     }
 
     .order-success {
@@ -679,8 +676,8 @@ input[name='q']::placeholder {
     .add-bag {
         margin-top: 1rem !important;
         margin-bottom: 1rem !important;
-        margin-left: 2rem !important;
-        padding: 0.3rem 0.5rem !important;
+        margin-left: 4.5rem !important;
+        padding: 0.3rem 1rem !important;
     }
 
     .card-img-top-1 {
@@ -696,9 +693,7 @@ input[name='q']::placeholder {
         z-index: 99999999999;
     }
 
-    .add-bag {
-        margin-left: 3.5rem !important;
-    }
+
 
     .order-success {
         margin-left: -1rem !important;
@@ -735,7 +730,7 @@ input[name='q']::placeholder {
 
 @media(max-width:350px) {
     .add-bag {
-        margin-left: 2rem !important;
+        margin-left: 3rem !important;
     }
 
     .product-detail {
@@ -943,7 +938,7 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    .account {
+    .myaccount {
         padding-left: 1rem;
     }
 
@@ -1562,7 +1557,7 @@ input[name='q']::placeholder {
 }
 
 .add-bag {
-    padding: 0.9rem 3rem !important;
+    padding: 0.9rem 2rem !important;
     font-weight: 300 !important;
 }
 

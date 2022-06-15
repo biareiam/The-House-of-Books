@@ -11,12 +11,12 @@
         <div class="pt-4 px-5">
             <p><a href="{% url 'products' %}" class="text-black pip pip1">Home </a> <img
                     src="https://cdn-icons-png.flaticon.com/512/130/130884.png" alt="arrow-next" width="15"> <a href="#"
-                    class="text-black pip pip2">Cart</a></p>
+                    class="text-black pip pip2">Bag</a></p>
         </div>
     </div>
 
     <div class="text-center mt-3 mb-3">
-        <h3 class="">Your cart: {{ product_count }} {% if product_count == 1 %} item {% else %}
+        <h3 class="">Your bag: {{ product_count }} {% if product_count == 1 %} item {% else %}
             items {% endif %}</h3>
     </div>
     <div class="my-cart">
@@ -142,14 +142,14 @@
                 <div class=" pipline pt-4 px-5">
                     <p><a href="{% url 'products' %}" class="text-black pip pip1">Home </a> <img
                             src="https://cdn-icons-png.flaticon.com/512/130/130884.png" alt="arrow-next" width="15"> <a
-                            href="#" class="text-black pip pip2">Cart</a></p>
+                            href="#" class="text-black pip pip2">Bag</a></p>
                 </div>
                 <div class="empty-cart">
                     <div class="cart- text-center">
                         <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="bag image" width="200"
                             class=" cart-img mt-4 mb-5">
                     </div>
-                    <p class="mb-5 text-center cart-empty">Your cart is currently empty.</p>
+                    <p class="mb-5 text-center cart-empty">Your bag is currently empty.</p>
                     <div class="text-center m-auto">
                         <a href="{% url 'products' %}" class="btn btn-lg buttons">
                             <span class="">Return to Shop</span>

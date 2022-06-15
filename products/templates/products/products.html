@@ -91,6 +91,14 @@
                                                 href="{% url 'product_detail' product.id %}">{{ product.name }}</a></strong>
                                     </p>
                                     <p class="author">{{ product.author}}</p>
+                                    {% if product.category %}
+                                    <p class="small book-category-product-page tag">
+                                        <a class="text-muted tag-2"
+                                            href="{% url 'products' %}?category={{ product.category.name }}">
+                                            {{ product.category.friendly_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
                                     <div class="rating-book">
                                         {% if product.rating %}
                                         <small class="text-muted "><i class="fas fa-star mr-1"></i>{{ product.rating }}

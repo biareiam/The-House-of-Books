@@ -4,10 +4,10 @@
         <div class="text-center">
             <div> <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="account-icon" width="25px">
             </div>
-            <p class="my-0 account">My Account</p>
+            <p class="my-0 account myaccount">Account</p>
         </div>
     </a>
-    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+    <div class=" dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
         <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
