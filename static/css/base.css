@@ -1730,3 +1730,8 @@ input[name='q']::placeholder {
     font-size: 1.3rem;
 
 }
+
+.see-all a {
+    text-decoration: none;
+    color: white !important;
+}
