@@ -73,20 +73,20 @@
         </div>
     </div>
 </section>
-<div class="container-xl second-box ">
+<div class="container-xl  ">
     <div class=" mr-2 my-2 ">
-        <h2 class="text-center mt-3 mb-3">Most sold books</h2>
-        <div class="row">
+        <h2 class="text-center mt-3 mb-3 most-sold">Most sold books</h2>
+        <div class="row second-box">
             {% for product in products %}
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
                 <div class="card h-100 border-0">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
-                        <img class="" width="210" height="310" src="{{ product.image }}" alt="{{ product.name }}">
+                        <img class="images" width="210" height="310" src="{{ product.image }}" alt="{{ product.name }}">
                     </a>
                     {% else %}
                     <a href="#">
-                        <img class="" width="210" height="310" src="{{ MEDIA_URL }}no-image.png"
+                        <img class="images" width="210" height="310" src="{{ MEDIA_URL }}no-image.png"
                             alt="{{ product.name }}">
                     </a>
                     {% endif %}
@@ -118,12 +118,12 @@
 
             </div>
             {% endif %}
-            {% if forloop.counter|divisibleby:2 %}
+            {% if forloop.counter|divisibleby:3 %}
             <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
 
             </div>
             {% endif %}
-            {% if forloop.counter|divisibleby:3 %}
+            {% if forloop.counter|divisibleby:4 %}
             <div class="col-12 d-none d-lg-block d-xl-none mb-5">
 
             </div>

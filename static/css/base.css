@@ -264,6 +264,11 @@ input[name='q']::placeholder {
     border-bottom: 1px solid #eee;
 }
 
+.second-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* -------------------------------- Media Queries */
 
 
@@ -385,6 +390,10 @@ input[name='q']::placeholder {
         left: -5px;
     }
 
+    .tag a {
+        margin-bottom: -1rem;
+
+    }
 
 }
 
@@ -708,20 +717,32 @@ input[name='q']::placeholder {
         font-size: 1.1rem !important;
     }
 
+    .lead {
+        padding-top: 1.5rem !important;
+        margin-left: 3rem;
+    }
 
-}
+    .books-title,
+    .author-index,
+    .tag {
+        margin-left: 3rem;
+    }
 
-@media(max-width: 400px) {
-    .add-bag {
-        margin-top: 1rem !important;
-        margin-bottom: 1rem !important;
-        margin-left: 4.5rem !important;
-        padding: 0.3rem 1rem !important;
+    .images {
+        width: 300px !important;
+        height: auto;
+        margin-top: -1.4rem !important;
+        margin-left: 3rem;
     }
 
     .card-img-top-1 {
         width: 300px !important;
         margin: auto !important;
+    }
+
+    .most-sold {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
 
 
