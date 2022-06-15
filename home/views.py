@@ -1,14 +1,38 @@
 """ Library """
 from django.shortcuts import render
-
+import pandas as pd
+from django.db.models import Count
+from checkout.models import OrderLineItem
 
 
 def index(request):
-    """ Return the index page """
+    """ A view to return the index page """
+    data = OrderLineItem.objects.all().annotate(dcount=Count(
+                                                'quantity')).order_by(
+                                                '-quantity')
+    products = []
+    for row in data:
+        products.append({
+            'id': row.product.id,
+            'category': row.product.category,
+            'sku': row.product.sku,
+            'name': row.product.name,
+            'author': row.product.author,
+            'description': row.product.description,
+            'price': row.product.price,
+            'rating': row.product.rating,
+            'image_url': row.product.image_url,
+            'image': row.product.image.url
+        })
 
-    paginate_by = 6
+    products_df = pd.DataFrame(products)
 
-    return render(request, "home/index.html")
+    bool_series = products_df.duplicated()
+    products_df_dup = products_df[~bool_series]
+    context = {
+        'products': products_df_dup.head(4).to_dict('records')
+    }
+    return render(request, 'home/index.html', context)
 
 
 def privacy(request):
@@ -21,5 +45,4 @@ def terms(request):
     """ A view to return the terms and conditions page """
 
     return render(request, 'home/terms.html')
-
 

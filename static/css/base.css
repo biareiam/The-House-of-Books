@@ -11,6 +11,10 @@
     font-family: 'sora';
 }
 
+.see-all a {
+    color: white !important;
+}
+
 .hero {
 
     background-size: cover;
@@ -36,6 +40,23 @@ hr {
 a {
     text-decoration: none !important;
 }
+
+.most-sold {
+    margin-bottom: 3rem !important;
+    text-align: center !important;
+    font-size: 2rem;
+}
+
+.book-image-index {
+    max-width: 250px;
+}
+
+.author-index {
+    font-size: 0.8rem;
+    margin-bottom: 0rem;
+}
+
+
 
 .navbar {
     position: relative;
@@ -552,8 +573,6 @@ input[name='q']::placeholder {
 
 @media(max-width: 430px) {
 
-
-
     .product-detail {
         padding-right: 1rem !important;
         display: flex;
@@ -667,6 +686,22 @@ input[name='q']::placeholder {
     .inner_content {
         width: 20rem !important;
         margin-left: -4rem !important;
+    }
+
+    .privacy {
+        padding: 1rem !important;
+    }
+
+    .title-heading-1 {
+        font-size: 1.5rem !important;
+    }
+
+    .title-heading {
+        font-size: 1.3rem !important;
+    }
+
+    .title-heading-small {
+        font-size: 1.1rem !important;
     }
 
 
@@ -1680,4 +1715,9 @@ input[name='q']::placeholder {
 .privacy-title {
     font-size: 1.3rem;
 
+}
+
+.no-results p {
+    margin-left: 28rem;
+    font-size: 1.3rem;
 }

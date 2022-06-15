@@ -31,9 +31,12 @@
     <div class="row mt-3">
         <div class="product-container col-11">
             <div class="row  product">
+                {% if products %}
                 <div class="col-4 order-md-first pt-3">
                     <p class="text-muted  text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
+                        <span class="small"></span>
+                        {% else %}
                         <span class="small"></span>
                         {% endif %}
                         {{ products|length }} Books
@@ -41,6 +44,7 @@
                         <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
                 </div>
+
 
                 <div class="col-8 my-2 order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper">
@@ -67,6 +71,13 @@
                         </select>
                     </div>
                 </div>
+                {% else %}
+                <div class=" text-center pt-5 pb-5">
+                    <div class=" no-results ">
+                        <p>Sorry, no books available!</p>
+                    </div>
+                </div>
+                {% endif %}
 
             </div>
             <div class="row col-container">
