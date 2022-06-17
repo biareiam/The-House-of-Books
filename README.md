@@ -212,11 +212,309 @@ The site was designed to be mobile first as more users are using their mobile to
 
 ## Database
 - Postgres
+- SQLite
+    - Cloud based database to hold the product, user, and order fields.
 
 ### Database Design
   The database uses SQL through PostgreSQL and was originally formed from fixtures categories.json and products.json.The Database schema is below :
   
   ![data scheme](https://user-images.githubusercontent.com/65717229/174303224-7288256e-8418-4d82-b845-d86eaac86ef5.png)
 
+ ## Technologies
+ 
+ ### Languages
+ 
+**HTML5**
+- Used as the main markup language for the website content.
+**CSS3**
+- Used to style the individual webpages.
+**JavaScript**
+- Used to show the questions through pagination and for the game play.
+**Python 3**
+- Used to run the site and database
+
+ ### Frameworks and Libraries
+- Django
+    - High level framework used for rapid development of the site.
+- Panda Library
+    - It is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+built on top of the Python programming language. It was used to create the most sold books section on the home page. 
+ 
+## Tools
+**Git** 
+- Git was used for version control (commit to Git and push to GitHub).
+**GitHub**
+- Used to store, host and deploy the project files and source code after being pushed from Git. I also used it for the Project Kanban board to keep track and split tasks into smaller tasks to make them easier to fulfil.
+**Gitpod**
+- An online IDE linked to the GitHub repository used to write my code.
+**Heroku**
+- A Cloud Application Platform used to deploy the site
+**AWS** 
+- A cloud application to hold media files.
+**Google fonts**
+- Used to compare and choose fonts.
+**Favicons**
+- Used to generate a favicon for the website title.
+**Lighthouse**
+- Used to audit the site for quality and ensure responsiveness.
+**JSHint**
+- Used to detect errors in the JavaScript files
+**PEP8 Online**
+- Used to check PEP8 compliance in the code
+**W3C Markup Validator**
+- Markup validation service for HTML5
+**Jigsaw Validator**
+- CSS3 Validation Service
+
+## Testing
+
+### Automated Testing
+
+**Bag**
+  Automated testing of views was completed to:
+    - Test the calc_subtotal function works as expected.
+    - Test the bag views work correctly.
+    - Test the url works when loading the page.
+    - Test the correct template loads on page load.
+    - Test the products page is accessible by name.
+    - Test that the view_bag view works correctly.
+    - Test that the add to bag view works as expected.
+    - Test that the add_to_bag function adds the item to the bag.
+    - Test that the add_to_bag view adds the product to the bag.
+    - Test that the add_to_bag view increases the quantity of an item if the item is already present in the shopping bag.
+    - Test that the adjust bag view works as expected to calculate total.
+    - Test that the add_to_bag view updates the quantity of an item if the item is already in the bag.
+    - Test remove from bag view removes the product from the bag.
+    - Test that the remove_from_bag view removes an item from the bag.
+    - Test that the remove from bag view returns an error if something goes wrong.
+    
+**Checkout**
+  Automated testing of views was completed to:
+    - Test the checkout page loads correctly.
+    - Test that the cache_checkout_data view works as expected.
+    - Test the url works when loading the page.
+    - Test the correct template loads on page load.
+    - Test the products page is accessible by name.
+    - Test get checkout view when items in the bag.
+    - Test error msg appears when bag empty.
+    - Test error msg appears when no stripe key.
+
+**Check if user is authenticated then autofill the form with details**
+  Automated testing of models was completed to:
+    - Test the order model.
+    - Test order line model string method.
   
+  Automated testing of forms was completed to:
+    - Test to see if full name field is required.
+    - Test to see if email field is required.
+    - Test to see if phone number field is required.
+    - Test to see if country field is required.
+    - Test to see if town_or_city field is required.
+    - Test to see if street_address1 field is required.
+    - Check the field only displays certain fields.
+
+**Profiles**
+  Automated testing of views was completed to:
+    - Test the url works when loading the page.
+    - Test the correct template loads on page load.
+    - Test the profile page is accessible by name.
+    - Test the profile form works if form is valid.
+    - Test orders displayed on login to profile page.
+
+  Automated testing of models was completed to:
+    - Test retrieving the user profile.
+    - Test the user profile string method returns the username.
+    
+  Automated testing of forms was completed to:
+    - Test that none of the form fields are required.
+    
+**Products**
+  Automated testing of views was completed to:
+    - Test the url works when loading the page.
+    - Test the correct template loads on page load.
+    - Test the products page is accessible by name.
+    - Test products display.
+    - Test categories sort functionality.
+    - Test that the sort functionality works.
+    - Test that the search functionality works as expected.
+    - Test that the search error message display correctly.
+    - Test product detail page loads via url.
+    - Test product detail page loads via name.
+    - Test product detail page loads via template.
+
+  Automated testing of models was completed to:
+    - Test category model string method.
+    - Testing category models friendly name string method returns friendly name.
+    - Test product model string method.
+    - Test that the product name is returned.
+    - Test that the product description is returned.
+    - Test whether a product has sizes or not.
+    - Test whether a product has weights or not.
+
+  Automated testing of forms was completed to:
+    - Test to see if review title field is required.
+    - Test to see if review field is required.
+    - Check the field only displays certain fields.
+    - Test to see if review title field is required.
+
+**Blog**
+  Automated testing of views was completed to:
+    - Test the blog page loads correctly.
+    - Test the url works when loading the page.
+    - Test the correct template loads on page load.
+    - Test the blog page is accessible by name.
+    - Test blog posts display as expected.
+    - Test to see if the post string method returns the title as expected.
+
+**Home Page**
+  Automated testing of views was completed to:
+    - Test the url works when loading the page.
+    - Test the correct template loads on page load.
+    - Test the home page is accessible by name.
+    - Test the url works when loading the page.
+    - Test the correct template loads on page load.
+    - Test the privacy page is accessible by name.
+    - Test the url works when loading the page.
+    - Test the correct template loads on page load.
+    - Test the terms and conditions page is accessible by name.
+
+### Manual Testing
+**Browsers**
+The site was tested on:
+- Safari
+- Google Chrome
+- Firefox
+- Devices Used
+The site was tested in many different devices. 
+
+#### Navigation
+-  All users
+| Feature      | Expected                                                            | Testing                      | Result                                                                                                                | Pass/Fail |
+|--------------|---------------------------------------------------------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------|
+| Home button  | To redirect to home page                                            | Click the home button        | Button navigates to home                                                                                              | Pass      |
+| Navbar links | Clicking All books takes user to All books page                     | Click All books              | Redirected to All books page                                                                                          | Pass      |
+|              | Clicking category takes user to the specific category page          | Click each category in turn  | Redirected to specific category page                                                                                  | Pass      |
+|              | Click on bag icon and direct user to cart page                      | Click Bag                    | Redirected to cart page                                                                                               | Pass      |
+|              | Clicking Blog takes user to the Blog homepage                       | Click Blog                   | Redirected to Blog Page                                                                                               | Pass      |
+|              | Searching using Search Bar displays the books in the books page     | Type "fantasy" in search bar | Redirected to a page in which the relevant results are displayed, "fantasy" in the title or on the book description.  | Pass      |
+| Footer       | Redirect to Facebook in new tab                                     | Click Facebook icon          | Facebook page opened in new tab                                                                                       | Pass      |
+|              | Redirect to Instagram in new tab                                    | Click Instagram icon         | Instagram page opened in new tab                                                                                      | Pass      |
+|              | Redirect to Twitter in new tab                                      | Click Twkitter icon          | Twitter page opened in new tab                                                                                        | Pass      |
+|              | Redirect to Pinterest in new tab                                    | Click Pinterest icon         | Pinterest page opened in new tab                                                                                      | Pass      |
+|              | Clicking T&Cs takes user to the Terms and Conditions page           | Click T&Cs                   | Terms and conditions page opened                                                                                      | Pass      |
+|              | Clicking Privacy Policy takes user to the Terms and Conditions page | Click Privacy Policy         | Privacy Policy page opened                                                                                            | Pass      |
+
+- Users who are logged in 
+| Feature      | Expected                                              | Testing                             | Result                                       | Pass/Fail  |
+|--------------|-------------------------------------------------------|-------------------------------------|----------------------------------------------|------------|
+| Navbar links | Clicking Profile takes user to their profile page     | Click Profile                       | Redirected to Profile Page                   | Pass       |
+|              | Click Log Out logs out the user                       | Click Log Out, it logs out the user | User logged out and redirected to books page | Pass       |
+|              | Click on the bag icon and is directed to the bag page | Click bag icon                      | Redirected to the bag page                   | Pass       |
+
+
+- Users who are not logged in
+ | Feature      | Expected                                              | Testing         | Result                           | Pass/Fail  |
+|--------------|-------------------------------------------------------|-----------------|----------------------------------|------------|
+| Navbar links | Click Log In redirects to log in page                 | Click Log In    | User redirected to Log In Page   | Pass       |
+|              | Click Register redirects to log in page               | Click Register  | User redirected to Register Page | Pass       |
+|              | Click on the bag icon and is directed to the bag page | Click bag icon  | Redirected to the bag page       | Pass       |
+
+
+#### Home Page
+| Feature       | Expected                                                                   | Testing             | Result                          | Pass/Fail  |
+|---------------|----------------------------------------------------------------------------|---------------------|---------------------------------|------------|
+| See more      | Clicking on the "see more" button and be redicted to the books page        | Click see more      | Redirected to the products page | Pass       |
+| See all books | Clicking on the " see all books" button and be redicted to the books page  | Click see all books | Redirected to the products page | Pass       |
+
+#### Register Page
+| Register functionality | Form validation for email requires @ symbol                                        | Attempt to register without @ in input field                        | Form validation requests valid email address               | Pass |
+|------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------|------|
+|                        | E-mail Again value must be same as Email value                                     | Attempt to register with incorrect email in email again input field | Form validation requests email address must match          | Pass |
+|                        | Username must be between 4 and 15 characters                                       | Attempt to enter username with less than 4 characters               | Feedback error displayed                                   | Pass |
+|                        | Username must be between 4 and 15 characters                                       | Attempt to enter username with more than 15 characters              | Form restricts the user from using more than 15 characters | Pass |
+|                        | Password must be longer than 8 characters                                          | Attempt to enter password with less than 8 characters               | Form restricts the user from using less than 8 characters  | Pass |
+|                        | Register with new user and password to be logged in and redirected to Profile page | Enter email address, name, username, password and click register    | New account registered and profile page shown              | Pass |
+
+#### Log in Page
+| Feature              | Expected                                                                                    | Testing                                           | Result                                                                              | Pass/Fail  |
+|----------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------|-------------------------------------------------------------------------------------|------------|
+| Log in functionality | Correct user/pass combination directs user to their profile page with name displayed in tab | Log in with correct username/password combination | Redirected to user profile page with name displayed in tab                          | Pass       |
+|                      | Incorrect username/password combination shows error message                                 | Attempt to log in with incorrect credentials      | "The username and/or password you specified are not correct." error message appears | Pass       |
+| Link to Register     | Redirect to Register page                                                                   | Click link to register                            | Redirected to Register page                                                         | Pass       |
+
+#### Profile Page
+| Feature              | Expected                                                           | Testing                                                                          | Result                                                              | Pass/Fail |
+|----------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------|
+| Personal Information | Personal information is visible if previously saved                | Navigate to Profile page, view personal information                              | The personal information is visible in Personal Information section | Pass      |
+|                      | Personal information can be updated                                | Navigate to Profile page, change personal information, click update information. | The personal information is updated with the new details.           | Pass      |
+| Order History        | Order History is visible if order placed while logged in           | Navigate to Profile page, view Order History Section                             | The Order History is visible                                        | Pass      |
+|                      | Order information can be accessed by clicking on the "view" button | Navigate to Profile page, view Order History Section, click on "View" button     | Order Information is visible                                        | Pass      |
+
+#### Book Products Pages
+| Feature           | Expected                                             | Testing                                     | Result                                         | Pass/Fail  |
+|-------------------|------------------------------------------------------|---------------------------------------------|------------------------------------------------|------------|
+| All books visible | The books page shows all the available books         | Open the books page and view all the books  | All books visible                              | Pass       |
+|                   | Searching by category shows books from that category | Select to search by each category           | Book from each category successfully displayed | Pass       |
+
+#### Book Details Page
+| Feature      | Expected                                                                      | Testing                                               | Result                    | Pass/Fail |
+|--------------|-------------------------------------------------------------------------------|-------------------------------------------------------|---------------------------|-----------|
+| Book Details | Book description, among other informations are displayed for individual books | Open Book Detail page and view the book's information | Books details visible     | Pass      |
+| Add to bag   | Clicking Add to bag adds the book to the bag                                  | Open Book Detail page click add to bag                | Book displayed in the bag | Pass      |
+
+#### Add products
+| Feature         | Expected                                             | Testing                                                      | Result                                                                                 | Pass/Fail |
+|-----------------|------------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|
+| Add new books   | Only admin is allowed to visit add a new book        | Log in as non-superuser and attempt to access /products/add/ | Redirect to home page, error message displayed "Sorry, only store owners can do that." | Pass      |
+| Form Validation | Required fields must be completed to add the product | Attempt to add product without filling in a required field   | Error message "Please fill in this field"                                              | Pass      |
+
+#### Edit products
+| Feature         | Expected                                                 | Testing                                                                 | Result                                                                                 | Pass/Fail |
+|-----------------|----------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|
+| Edit books      | Only admin is allowed to visit edit a book's information | Log in as non-superuser and attempt to access /products/<item_id>/edit/ | Redirect to home page, error message displayed "Sorry, only store owners can do that." | Pass      |
+| Form Validation | Required fields must be completed to edit the product    | Attempt to edit product without filling in a required field             | Error message "Please fill in this field"                                              | Pass      |
+
+#### Bag
+| Feature      | Expected                                                                     | Testing                                                                | Result                        | Pass/Fail |
+|--------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------|-----------|
+| View Items   | Correct books are in the bag                                                 | Add book to bag, check quantity and total on the bag                   | Expected books are in the bag | Pass      |
+| Update Items | Update the number of a books in the bag and it will reflect in bag and price | Change number of books in bag and check quantity and total has updated | Total and quantity updated    | Pass      |
+| Remove Items | Click on the remove icon for item to be removed from the bag                 | Click remove beside relevant book                                      | Item removed from bag         | Pass      |
+
+#### Checkout
+| Feature         | Expected                                      | Testing                                                  | Result                                    | Pass/Fail |
+|-----------------|-----------------------------------------------|----------------------------------------------------------|-------------------------------------------|-----------|
+| View Items      | Correct books are in the checkout             | Add book to bag, click Checkout                          | Expected books are in the checkout list   | Pass      |
+| Form Validation | Required fields must be completed to complete | Attempt to check out without filling in a required field | Error message "Please fill in this field" | Pass      |
+
+### User Stories Testing
+| User Story ID                 | As a/an           | I want to be able to...                                     | So that I can...                                                                          | Testing                                                                                        | Result |
+|-------------------------------|-------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------|
+| Viewing Products & Navigation |                   |                                                             |                                                                                           |                                                                                                |        |
+| 1                             | User/Shopper      | view individual products                                    | See what the books are about.                                                             | View Products Page                                                                             | Pass   |
+| 2                             | User/Shopper      | be able to add, edit quantity and remove items from my cart | buy it after browsing.                                                                    | Add product to bag, view toast, update item quantity, remove from bag                          | Pass   |
+| 3                             | User/Shopper      | see any special offers and new arrivals                     | take advantage of saving money on products I'd like to buy and be aware of new books.     | Navigation bar displays free shipping if shopper spends €20 or more                            | Pass   |
+| Registration and Accounts     |                   |                                                             |                                                                                           |                                                                                                |        |
+| 4                             | User/Shopper      | register for an account                                     | keep track of my orders and check my personal details, being able to update it if needed. | Users can register for an account and view their orders in the profile page                    | Pass   |
+| 5                             |                   | receive email confirmation upon signing up                  | verify my set up was successful.                                                          | User receives email when they register for an account                                          | Pass   |
+| 6                             |                   | be able to reset my password in case I forget it            | regain access to my account.                                                              | User can request email to reset their password                                                 | Pass   |
+| 7                             |                   | have the ability to log in to the site with my details      | view my orders and personal details.                                                      | Users can log in using their registered details and view their orders and personal details     | Pass   |
+| 8                             |                   | update my personal details.                                 | keep my personal information updated.                                                     | Users can update their personal details in the profile section                                 | Pass   |
+| 9                             |                   | purchase from the site without having to create an account  | check out quickly and easily.                                                             | Users can use the checkout without registering for an account                                  | Pass   |
+| Searching products            |                   |                                                             |                                                                                           |                                                                                                |        |
+| 10                            | User/Shopper      | search for specific products                                | find books related to the keyword researched for.                                         | Users can search, on the site for products and if no product available message to confirm this | Pass   |
+| 13                            |                   | easily understand the search results                        | quickly decide which book interests me.                                                   | Users can search for products and quickly see how many match their criteria                    | Pass   |
+| 14                            |                   | sort by price, name, category and rating                    | view a wide range and choose which book(s) I would like to purchase.                      | Users can sort by price, name and category on the books page                                   | Pass   |
+| Checkout                      |                   |                                                             |                                                                                           |                                                                                                |        |
+| 15                            | Shopper           | have a running total of my bag                              | stay within my budget and be aware of my delivery cost.                                   | Users can see the total in the bag icon on the navbar.                                         | Pass   |
+| 16                            |                   | view my bag contents                                        | keep track of which books I have selected and how many of them.                           | Users can view their bag to see which products and quantities have been added                  | Pass   |
+| 17                            |                   | adjust the quantity of books to buy                         | update the order without going back to the product page.                                  | Users can update quantities in the shopping bag successfully. see before, after                | Pass   |
+| 18                            |                   | easily enter my payment details                             | checkout as quickly and easily as possible.                                               | Users can navigate the checkout form payment input easily                                      | Pass   |
+| 19                            |                   | Save the information I just entered on the checkout         | Easily create an account and have my information already saved.                           | Users can save thier information, if not saved yet, on the checkout page                       | Pass   |
+| 20                            |                   | view the full order before entering card details.           | check it before confirmation and make sure I have all I want to purchase.                 | The Order can be viewed on the checkout page before entering card details                      | Pass   |
+| 21                            |                   | receive email notifications when I make an order            | confirm my order has been placed and refer back to.                                       | Users receive an email when they make an order                                                 | Pass   |
+| Admin/Management              |                   |                                                             |                                                                                           |                                                                                                |        |
+| 22                            | Store owner/Admin | add a product                                               | Sell new books in the site                                                                | Super users can add a new book                                                                 | Pass   |
+| 23                            |                   | update a product                                            | change descriptions, proce, categories, and images of the books                           | Super users can edit the book's information                                                    | Pass   |
+| 24                            |                   | delete a product                                            | remove books which are no longer available to be purchased. .                             | Super users can delete a book                                                                  | Pass   |
 
