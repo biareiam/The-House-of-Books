@@ -51,8 +51,8 @@ Link to the [site](http://houseofbooks22.herokuapp.com/)
   
 ### Imagery and content
   The images used were taken from these sources as well as the books descriptions, for education purpose:
-    - [Goodreads] (https://www.goodreads.com/)
-    - [Easons] (https://www.easons.com/)
+    - [Goodreads](https://www.goodreads.com/)
+    - [Easons](https://www.easons.com/)
     
 ### Wireframes
   The wireframes were created using Balsamiq and can be found bellow:
@@ -633,7 +633,7 @@ if you can not deploy through Heroku, it is possible to do it through Gitpod.
 
 1. If Heroku can not be connected to gitpod. On the terminal, type “heroku login -i”.
 2. Your heroku email and password will be requested.
-3. Once it is done, type “ heroku git:remote -a travellifestyleblog22”.
+3. Once it is done, type “ heroku git:remote -a houseofbooks22”.
 4. The next step is to push it to heroku by typing “ git push heroku main”.
 5. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
@@ -714,12 +714,13 @@ To clone this project from GitHub follow the instructions taken from GitHub Docs
 
     
 #### Content
-- Terms and conditions, privacy page sources from https://www.termsfeed.com/
+  - Terms and conditions, privacy page sources from https://www.termsfeed.com/
   
 #### Media
   - All product images and descriptions were sourced from Goodreads and Easons. 
 
 #### Acknowledgements
+
 Thanks to my friend Authur Pereira Neto for all the support and help throughout this project, and the Slack groups.
 
 Disclaimer
