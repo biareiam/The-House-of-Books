@@ -277,9 +277,6 @@ built on top of the Python programming language. It was used to create the most 
 **W3C Markup Validator**
   - Markup validation service for HTML5.
   
-**Jigsaw Validator**
-  - CSS3 Validation Service
-  
 ## Testing
 
 ### Automated Testing
@@ -566,3 +563,166 @@ The site was tested in many different devices.
 | 23                            |                   | update a product                                            | change descriptions, proce, categories, and images of the books                           | Super users can edit the book's information                                                    | Pass   |
 | 24                            |                   | delete a product                                            | remove books which are no longer available to be purchased. .                             | Super users can delete a book                                                                  | Pass   |
 
+
+### Validators
+- W3C HTML Validator Passed tests without issues
+- W3C CSS Validator Passed tests without issues
+- PEP8 and AUTOPEP8. Online PEP8 warned out about some long lines on the settings. 
+
+#### Lighthouse
+Lighthouse testing was completed on all pages of the site
+
+- Home
+- Products
+- Product Detail
+- Bag
+- Checkout
+- Checkout Success
+- Profile
+- Add Product
+
+### Deployment
+
+#### Gitpod Workspaces
+
+1. Starting from GitHub clone the Code Institute template by clicking Use This Template and copying to my repository under the name biareiam. The workspace is then launched by clicking GitPod - this action only needs to be performed once and then workspace reopened from GitPod.
+2. Start the Gitpod Workspace which opens an online IDE editor window.
+
+#### Gitpod branching and committing to GitHub
+
+**Connecting to Heroku**
+
+The project was developed using GitPod and pushed to GitHub then deployed on Heroku using these instructions:
+1. Log in to Heroku and create a new app by clicking "New" and "Create New App" and giving it an original name and setting the region closest to your location.
+2. Navigate to Heroku Resources and add Postgres using the free plan.
+3. Create a requirements.txt file using command pip3 freeze > requirements.txt
+4. Create a Procfile with the terminal command web: gunicorn houseofbooks.wsgi:application and at this point check the Procfile to make sure there is no extra blank line as this can cause issues when deploying to Heroku.
+5. Use the loaddata command to load the fixtures for both json files: python3 manage.py loaddata categories.json and python3 manage.py loaddata products.json
+6. If it returns error message: django.db.utils.OperationalError: FATAL: role does not exist run unset PGHOSTADDR in your terminal and run the commands in step 11 again.
+7. From the CLI log in to Heroku using command heroku login -i.
+8. Temporarily disable Collectstatic by running: heroku:config:set DISABLE_COLLECTSTATIC=1 --app So that Heroku won't try to collect static files when we deploy.
+9. Add Heroku app name to ALLOWED_HOSTS in settings.py.
+10. Commit changes to GitHub using git add ., git commit -m , git push.
+11. Then deploy to Heroku using git push heroku main If the git remote isn't initialised you may have to do that first by running *heroku git:remote -a
+12. Create a superuser using command: heroku run python3 manage.py createsuperuser so that you can log in to admin as required.
+13. From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
+14. Search for your GitHub repo and connect then Enable Automatic Deploys.
+15. Generate a secret key.
+16. Add secret key to GitPod variables and Heroku config vars.
+17. Set up Amazon AWS S3 bucket using instructions below
+18. In the dashboard click "Settings" -> "Reveal Config Vars"
+19. Set config vars using advice below.
+
+if you can not deploy through Heroku, it is possible to do it through Gitpod.
+
+1. In the app.py file, ensure that debug is not enabled, i.e. set to True
+2. Create a file called ProcFile in the root directory, and add the line - “web: gunicorn PROJ_NAME.wsgi”. If this file already exists, just go to the next step.
+3. Run the command “pip freeze > requirements.txt” to create a requirements.txt file in your terminal if the file doesn't already exist.
+4. Both the ProcFile and requirements.txt files should be added to your git repo in the root directory
+5. Create an account on heroku.com
+6. Create a new application and give it a unique name
+7. In the application dashboard, navigate to the deploy section and connect your application to your git repo, by selecting your repo
+8. Select the branch, for example, master and enable automatic deploys if desired. Otherwise, a deployment will be manual
+9. The next step is to set the config variables in the Settings section
+10. Set key/value pairs for the following keys:DATABASE_URL, SECRET_KEY
+11. Go to the dashboard and trigger a deployment - “deploy branch”
+12. This will trigger a deployment, once the deployment has been successful click on the "Open App" link to open the app
+13 If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+
+**Note:**
+
+1. If Heroku can not be connected to gitpod. On the terminal, type “heroku login -i”.
+2. Your heroku email and password will be requested.
+3. Once it is done, type “ heroku git:remote -a travellifestyleblog22”.
+4. The next step is to push it to heroku by typing “ git push heroku main”.
+5. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+
+#### Amazon AWS
+1. Create Amazon AWS account and create a new bucket in the S3 services and choose your closest region.
+2. Uncheck block all public access and create bucket.
+3. From Properties tab turn on static website hosting using default values of index.html and errors.html.
+4. On permissions tab include CORS configuration:
+ [
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+5. Create security policy: S3 Bucket Policy, allow all principles by adding a * and Amazon S3 services and selecting Get Object action. Paste ARN from Bucket Policy, add statement, generate policy and copy and paste into Bucket Policy. Also add /* at the end of the resource key to allow use of all pages.
+6. Under public access select access to all List Objects.
+7. Create a Group for the bucket through IAM. Create policy by importing AWS S3 Full Access policy and add ARN from bucket to the policy resources. Attach policy to the group.
+8. Create users, give programmatic access and add users to the group. Download CSV file when prompted to save access key ID and secret access key to save to environment and config variables.
+9. Add AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME = 'eu-west-2' to settings.py.
+10. Add, commit and push to GitHub then navigate to Heroku to confirm static files collected successfully on the Build Log. The DISABLE_COLLECTSTATIC variable can now be deleted.
+
+#### Config Vars
+
+| Key                   | Value                       |
+|-----------------------|-----------------------------|
+| PORT                  | 8000                        |
+| IP                    | 0.0.0.0                     |
+| SECRET_KEY            | YOUR_SECRET_KEY             |
+| STRIPE_PUBLIC_KEY     | STRIPE_PUBLIC_KEY           |
+| STRIPE_SECRET_KEY     | YOUR_STRIPE_SECRET_KEY      |
+| STRIPE_WH_SECRET      | STRIPE_WEBHOOKS_KEY         |
+| DATABASE_URL          | YOUR_POSTGRES_URL           |
+| AWS_ACCESS_KEY_ID     | YOUR_AWS_ACCESS_KEY_ID      |
+| AWS_SECRET_ACCESS_KEY | YOUR_AWS_SECRET_ACCESS_KEY  |
+| USE_AWS               | TRUE                        |
+| EMAIL_HOST_PASS       | YOUR_EMAIL_HOST_PASSCODE    |
+| EMAIL_HOST_USER       | YOUR_EMAIL_HOST_USERNAME    |
+
+#### Where to find Config Var Key-value Pairs
+To find the values of each key:
+  - SECRET_KEY: This is a random string provided when creating the Django project and can easily be changed to ensure extra security.
+  - DATABASE_URL: This is temporary.
+  - STRIPE_PUBLIC_KEY: Retrieved from Stripe Dashboard in the Developer's API section (Publishable key).
+  - STRIPE_SECRET_KEY: Retrieved from Stripe Dashboard in the Developer's API section (Secret key)
+  - STRIPE_WH_SECRET: Retrieved from Stripe Dashboard in the Developer's after creating an endpoint for your webhook (Signing secret).
+  - EMAIL_HOST_USER: Your email address or username. 
+  - EMAIL_HOST_PASS: Your passcode from your email client. 
+  - AWS_SECRET_ACCESS_KEY: From the CSV file that you download having created a User in Amazon AWS S3. 
+  - AWS_ACCESS_KEY_ID: From the CSV file that you download having created a User in Amazon AWS S3. 
+
+#### How to run the project locally
+To clone this project from GitHub follow the instructions taken from GitHub Docs explained here:
+  
+1. Navigate to the GitHub Repository
+2. To clone using HTTPS click the clipboard symbol under "Clone with HTTPS". To clone using SSH key click Use SSH then click the clipboard symbol. To clone using GitHub CLI select Use GitHub CLI and click the clipboard symbol.
+3. Open Git Bash
+4. Change the working directory to the location you want the cloned directory to be.
+5. Type 'git clone' and paste the url copied from step 3.
+6. Press 'enter' to create your clone.
+
+### Credits
+#### Code
+- A good portion of the Django, Python and JavaScript code was developed following the Code Institute's Boutique Ado walkthrough.
+- CodeInstitute Full Stack Developer Course.
+- Code from - https://mdbootstrap.com/docs/standard/components/carousel/ - was used as inspiration for the creation of the carousel of the home page. 
+- Code from - https://mdbootstrap.com/docs/standard/components/carousel/ - was used as inspiration to create the footer.
+- Code from https://stackoverflow.com/questions/55023534/how-to-get-10-of-the-best-seller-selling-products-in-django was used as an inpsiration to create the most sold books on the home page. 
+- Code from https://www.geeksforgeeks.org/e-commerce-website-using-django/ was used as an inpsiration to create the ecommerce site. 
+- Code from https://www.educative.io/answers/what-are-built-in-error-views-in-django was used as an inpsiration to create the error pages. 
+
+    
+#### Content
+- Terms and conditions, privacy page sources from https://www.termsfeed.com/
+  
+#### Media
+  - All product images and descriptions were sourced from Goodreads and Easons. 
+
+#### Acknowledgements
+Thanks to my friend Authur Pereira Neto for all the support and help throughout this project, and the Slack groups.
+
+Disclaimer
+If there are any issues with the copyright of the content, please contact me. I will fix that as soon as possible. This project is for educational purposes only.
+
+Beatriz Amorim
