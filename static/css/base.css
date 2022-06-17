@@ -753,13 +753,6 @@ input[name='q']::placeholder {
         z-index: 99999999999;
     }
 
-
-
-    .order-success {
-        margin-left: -1rem !important;
-
-    }
-
     .return-checkout {
         font-size: 0.8rem;
     }
@@ -785,6 +778,14 @@ input[name='q']::placeholder {
     .inner_content {
         width: 20rem !important;
         margin-left: -5rem !important;
+    }
+
+    .order-success {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 22rem !important;
+        margin-left: 0.1rem !important;
+
     }
 }
 
