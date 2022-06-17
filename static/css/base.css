@@ -1679,9 +1679,8 @@ input[name='q']::placeholder {
 
 /************** Error page ********************/
 .mainbox {
-    background-color: #95c2de !important;
     margin: auto;
-    height: 600px;
+    height: 400px;
     width: 600px;
     position: relative;
 }
@@ -1730,6 +1729,41 @@ input[name='q']::placeholder {
 .erro_page:hover {
     text-decoration: underline;
 }
+
+
+
+
+main>center>p {
+    color: #ddd;
+}
+
+main>center>h1 {
+    text-transform: uppercase;
+    color: #0077ff;
+    font-size: 48px;
+}
+
+main>center>h3>a {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #000;
+    background-color: #0077ff;
+    text-decoration: none;
+    padding: 1px 5px;
+    border: 1px solid #0077ff;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /********** Privacy Policy*****************/
 .privacy {
