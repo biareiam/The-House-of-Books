@@ -50,8 +50,8 @@ Link to the [site](http://houseofbooks22.herokuapp.com/)
   The site uses tons of blue and black. 
   
 ### Imagery and content
-
   The images used were taken from these sources as well as the books descriptions, for education purpose:
+ <br>
     - [Goodreads](https://www.goodreads.com/)
     - [Easons](https://www.easons.com/)
     
