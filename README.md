@@ -349,6 +349,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test the user profile string method returns the username.
     
   Automated testing of forms was completed to:
+  
     - Test that none of the form fields are required.
     
 **Products**
