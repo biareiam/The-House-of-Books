@@ -9,8 +9,8 @@
 <section class="cart-bg">
     <div class="container pipline">
         <div class="pt-4 px-5">
-            <p><a href="{% url 'products' %}" class="text-black pip pip1">Home </a> <img src="{{ MEDIA_URL }}next.png"
-                    alt="arrow-next" width="15"> <a href="#" class="text-black pip pip2">Cart</a></p>
+            <p><a href="{% url 'products' %}" class="text-black pip pip1">Home </a> <i class="fas fa-chevron-right"></i>
+                <a href="#" class="text-black pip pip2">Cart</a></p>
         </div>
     </div>
 
@@ -144,13 +144,13 @@
                 </div>
                 {% else %}
                 <div class=" pipline pt-4 px-5">
-                    <p><a href="{% url 'products' %}" class="text-black pip pip1">Home </a> <img
-                            src="{{ MEDIA_URL }}next.png" alt="arrow-next" width="15"> <a href="#"
-                            class="text-black pip pip2">Cart</a></p>
+                    <p><a href="{% url 'products' %}" class="text-black pip pip1">Home </a> <i
+                            class="fas fa-chevron-right"></i><a href="#" class="text-black pip pip2">Cart</a></p>
                 </div>
                 <div class="empty-cart">
                     <div class="cart- text-center">
-                        <img src="{{ MEDIA_URL }}shop-bag.png" alt="" width="200" class="mt-4 mb-5">
+                        <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="" width="200"
+                            class="mt-4 mb-5">
                     </div>
                     <p class="mb-5 text-center cart-empty">Your cart is currently empty.</p>
                     <div class="text-center m-auto">
@@ -211,12 +211,9 @@
                                 </div>
                             </div>
                         </form>
-
-                        <a class="update-link text-info float-left"><small><img src="{{ MEDIA_URL }}refresh.png"
-                                    width="20px" alt="update"></small></a>
-                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
-                            data-product_size="{{ item.size }}"><small><img src="{{ MEDIA_URL }}delete.png" width="20px"
-                                    alt="remove-bin"></small></a>
+                        <a class="update-link text-info float-left"><small>Update</small></a>
+                        <a class="remove-item text-danger float-right"
+                            id="remove_{{ item.item_id }}"><small>Remove</small></a>
                     </div>
                 </div>
                 <div class="row">
@@ -251,11 +248,9 @@
                         </a>
                         <a href="{% url 'checkout' %}" class="btn buttons btn-lg">
                             <span class="">Proceed to checkout</span>
-
                         </a>
                     </div>
                 </div>
-
                 {% endfor %}
             </div>
         </div>
