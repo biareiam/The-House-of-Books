@@ -53,6 +53,7 @@ Link to the [site](http://houseofbooks22.herokuapp.com/)
   The images used were taken from these sources as well as the books descriptions, for education purpose:
  <br>
     - [Goodreads](https://www.goodreads.com/)
+     <br>
     - [Easons](https://www.easons.com/)
     
 ### Wireframes
