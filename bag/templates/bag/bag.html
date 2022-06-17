@@ -2,6 +2,10 @@
 {% load static %}
 {% load bag_tools %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'bag/bag.css' %}">
+{% endblock %}
+
 
 {% block content %}
 
@@ -96,11 +100,9 @@
                                     </div>
                                 </form>
 
-                                <a class="update-link text-info float-left"><small><img src="{{ MEDIA_URL }}refresh.png"
-                                            width="20px" alt="update"></small></a>
+                                <a class="update-link text-info float-left"><small>Update</small></a>
                                 <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
-                                    data-product_size="{{ item.size }}"><small><img src="{{ MEDIA_URL }}delete.png"
-                                            width="20px" alt="remove-bin"></small></a>
+                                    data-product_size="{{ item.size }}"><small>Remove</small></a>
                             </td>
                             <td class="py-3 w-20">
                                 <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
