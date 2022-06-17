@@ -105,8 +105,8 @@ The navigation bar displays different links depending on whether the user is log
  
  ### Create Profile
  - The users are able to:
-  - Create a profile to store their personal information and check their orders history.
-  - Confirm their details are correct via email verification.
+    - Create a profile to store their personal information and check their orders history.
+    - Confirm their details are correct via email verification.
 
 ### Log in to the profile page 
  - The users are able to:
@@ -115,44 +115,44 @@ The navigation bar displays different links depending on whether the user is log
 
 ### Products Page
 - The users are able to:
-  - See all the books for sale on the site
-  - Sort it by A-Z, Name, Category, and Price.
-  - Check the price of a book
-  - Check the different categories
-  - Check the rating of a book 
-  - Check who is the author of the book
-  - Check the image of the cover of the book
+    - See all the books for sale on the site
+    - Sort it by A-Z, Name, Category, and Price.
+    - Check the price of a book
+    - Check the different categories
+    - Check the rating of a book 
+    - Check who is the author of the book
+    - Check the image of the cover of the book
 
 ### Product Details Page
  - The users are able to:
-  - Click the book cover to find out more about the book.
-  - There, they can check the title of the book, author, rating, category, price and description. 
-  - Add books to the cart.
-  - Go back to the products page, if desired.
-  - Super users are able to:
-  -   Add, edit and delete books. 
+    - Click the book cover to find out more about the book.
+    - There, they can check the title of the book, author, rating, category, price and description. 
+    - Add books to the cart.
+    - Go back to the products page, if desired.
+    - Super users are able to:
+    -   Add, edit and delete books. 
 
 ### Products Management
 - If a super user, the user can:
-  - Add a book, including adding an image. In case, one is not provided, a default will be put in place. 
-  - Edit the information related to the books
-  - Delete a book not available for sale anymore. 
+    - Add a book, including adding an image. In case, one is not provided, a default will be put in place. 
+    - Edit the information related to the books
+    - Delete a book not available for sale anymore. 
 
 ### Bag
  - The users are able to:
-  - Adjust number of books on the cart
-  - Find out delivery costs
-  - Find out how much more they need to spend to get free delivery
-  - Clearly see the total of their items by quantity and how much it will cost.
-  - Remove and add the number of the existing books on the cart. 
+    - Adjust number of books on the cart
+    - Find out delivery costs
+    - Find out how much more they need to spend to get free delivery
+    - Clearly see the total of their items by quantity and how much it will cost.
+    - Remove and add the number of the existing books on the cart. 
 
 ### Checkout
 - The users are able to:
-  - Save time as personal details are pulled from the profile page if the user is logged in.
-  - Save their delivery information to their profile.
-  - Clearly see how much they will be charged for their items and delivery.
-  - Can see a summary of their order before completing it.
-  - Once the order is completed, the user can once again check the order, see the order number and be notified that a confirmation email was sent to the email provided.
+    - Save time as personal details are pulled from the profile page if the user is logged in.
+    - Save their delivery information to their profile.
+    - Clearly see how much they will be charged for their items and delivery.
+    - Can see a summary of their order before completing it.
+    - Once the order is completed, the user can once again check the order, see the order number and be notified that a confirmation email was sent to the email provided.
 
 ### Footer 
 - All users can access:
