@@ -389,6 +389,7 @@ The site was tested in many different devices.
 
 #### Navigation
 -  All users
+
 | Feature      | Expected                                                            | Testing                      | Result                                                                                                                | Pass/Fail |
 |--------------|---------------------------------------------------------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------|
 | Home button  | To redirect to home page                                            | Click the home button        | Button navigates to home                                                                                              | Pass      |
@@ -405,6 +406,7 @@ The site was tested in many different devices.
 |              | Clicking Privacy Policy takes user to the Terms and Conditions page | Click Privacy Policy         | Privacy Policy page opened                                                                                            | Pass      |
 
 - Users who are logged in 
+
 | Feature      | Expected                                              | Testing                             | Result                                       | Pass/Fail  |
 |--------------|-------------------------------------------------------|-------------------------------------|----------------------------------------------|------------|
 | Navbar links | Clicking Profile takes user to their profile page     | Click Profile                       | Redirected to Profile Page                   | Pass       |
@@ -413,6 +415,7 @@ The site was tested in many different devices.
 
 
 - Users who are not logged in
+
  | Feature      | Expected                                              | Testing         | Result                           | Pass/Fail  |
 |--------------|-------------------------------------------------------|-----------------|----------------------------------|------------|
 | Navbar links | Click Log In redirects to log in page                 | Click Log In    | User redirected to Log In Page   | Pass       |
@@ -421,12 +424,14 @@ The site was tested in many different devices.
 
 
 #### Home Page
+
 | Feature       | Expected                                                                   | Testing             | Result                          | Pass/Fail  |
 |---------------|----------------------------------------------------------------------------|---------------------|---------------------------------|------------|
 | See more      | Clicking on the "see more" button and be redicted to the books page        | Click see more      | Redirected to the products page | Pass       |
 | See all books | Clicking on the " see all books" button and be redicted to the books page  | Click see all books | Redirected to the products page | Pass       |
 
 #### Register Page
+
 | Register functionality | Form validation for email requires @ symbol                                        | Attempt to register without @ in input field                        | Form validation requests valid email address               | Pass |
 |------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------|------|
 |                        | E-mail Again value must be same as Email value                                     | Attempt to register with incorrect email in email again input field | Form validation requests email address must match          | Pass |
@@ -436,6 +441,7 @@ The site was tested in many different devices.
 |                        | Register with new user and password to be logged in and redirected to Profile page | Enter email address, name, username, password and click register    | New account registered and profile page shown              | Pass |
 
 #### Log in Page
+
 | Feature              | Expected                                                                                    | Testing                                           | Result                                                                              | Pass/Fail  |
 |----------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------|-------------------------------------------------------------------------------------|------------|
 | Log in functionality | Correct user/pass combination directs user to their profile page with name displayed in tab | Log in with correct username/password combination | Redirected to user profile page with name displayed in tab                          | Pass       |
@@ -443,6 +449,7 @@ The site was tested in many different devices.
 | Link to Register     | Redirect to Register page                                                                   | Click link to register                            | Redirected to Register page                                                         | Pass       |
 
 #### Profile Page
+
 | Feature              | Expected                                                           | Testing                                                                          | Result                                                              | Pass/Fail |
 |----------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------|
 | Personal Information | Personal information is visible if previously saved                | Navigate to Profile page, view personal information                              | The personal information is visible in Personal Information section | Pass      |
@@ -451,30 +458,35 @@ The site was tested in many different devices.
 |                      | Order information can be accessed by clicking on the "view" button | Navigate to Profile page, view Order History Section, click on "View" button     | Order Information is visible                                        | Pass      |
 
 #### Book Products Pages
+
 | Feature           | Expected                                             | Testing                                     | Result                                         | Pass/Fail  |
 |-------------------|------------------------------------------------------|---------------------------------------------|------------------------------------------------|------------|
 | All books visible | The books page shows all the available books         | Open the books page and view all the books  | All books visible                              | Pass       |
 |                   | Searching by category shows books from that category | Select to search by each category           | Book from each category successfully displayed | Pass       |
 
 #### Book Details Page
+
 | Feature      | Expected                                                                      | Testing                                               | Result                    | Pass/Fail |
 |--------------|-------------------------------------------------------------------------------|-------------------------------------------------------|---------------------------|-----------|
 | Book Details | Book description, among other informations are displayed for individual books | Open Book Detail page and view the book's information | Books details visible     | Pass      |
 | Add to bag   | Clicking Add to bag adds the book to the bag                                  | Open Book Detail page click add to bag                | Book displayed in the bag | Pass      |
 
 #### Add products
+
 | Feature         | Expected                                             | Testing                                                      | Result                                                                                 | Pass/Fail |
 |-----------------|------------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|
 | Add new books   | Only admin is allowed to visit add a new book        | Log in as non-superuser and attempt to access /products/add/ | Redirect to home page, error message displayed "Sorry, only store owners can do that." | Pass      |
 | Form Validation | Required fields must be completed to add the product | Attempt to add product without filling in a required field   | Error message "Please fill in this field"                                              | Pass      |
 
 #### Edit products
+
 | Feature         | Expected                                                 | Testing                                                                 | Result                                                                                 | Pass/Fail |
 |-----------------|----------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|
 | Edit books      | Only admin is allowed to visit edit a book's information | Log in as non-superuser and attempt to access /products/<item_id>/edit/ | Redirect to home page, error message displayed "Sorry, only store owners can do that." | Pass      |
 | Form Validation | Required fields must be completed to edit the product    | Attempt to edit product without filling in a required field             | Error message "Please fill in this field"                                              | Pass      |
 
 #### Bag
+
 | Feature      | Expected                                                                     | Testing                                                                | Result                        | Pass/Fail |
 |--------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------|-----------|
 | View Items   | Correct books are in the bag                                                 | Add book to bag, check quantity and total on the bag                   | Expected books are in the bag | Pass      |
@@ -482,10 +494,12 @@ The site was tested in many different devices.
 | Remove Items | Click on the remove icon for item to be removed from the bag                 | Click remove beside relevant book                                      | Item removed from bag         | Pass      |
 
 #### Checkout
+
 | Feature         | Expected                                      | Testing                                                  | Result                                    | Pass/Fail |
 |-----------------|-----------------------------------------------|----------------------------------------------------------|-------------------------------------------|-----------|
 | View Items      | Correct books are in the checkout             | Add book to bag, click Checkout                          | Expected books are in the checkout list   | Pass      |
 | Form Validation | Required fields must be completed to complete | Attempt to check out without filling in a required field | Error message "Please fill in this field" | Pass      |
+
 
 ### User Stories Testing
 | User Story ID                 | As a/an           | I want to be able to...                                     | So that I can...                                                                          | Testing                                                                                        | Result |
