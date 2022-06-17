@@ -225,13 +225,13 @@ The site was designed to be mobile first as more users are using their mobile to
  ### Languages
  
 **HTML5**
-- Used as the main markup language for the website content.
+  - Used as the main markup language for the website content.
 **CSS3**
-- Used to style the individual webpages.
+  - Used to style the individual webpages.
 **JavaScript**
-- Used to show the questions through pagination and for the game play.
+  - Used to show the questions through pagination and for the game play.
 **Python 3**
-- Used to run the site and database
+  - Used to run the site and database
 
  ### Frameworks and Libraries
 - Django
@@ -242,29 +242,29 @@ built on top of the Python programming language. It was used to create the most 
  
 ## Tools
 **Git** 
-- Git was used for version control (commit to Git and push to GitHub).
+  - Git was used for version control (commit to Git and push to GitHub).
 **GitHub**
-- Used to store, host and deploy the project files and source code after being pushed from Git. I also used it for the Project Kanban board to keep track and split tasks into smaller tasks to make them easier to fulfil.
+  - Used to store, host and deploy the project files and source code after being pushed from Git. I also used it for the Project Kanban board to keep track and split tasks into smaller tasks to make them easier to fulfil.
 **Gitpod**
-- An online IDE linked to the GitHub repository used to write my code.
+  - An online IDE linked to the GitHub repository used to write my code.
 **Heroku**
-- A Cloud Application Platform used to deploy the site
+  - A Cloud Application Platform used to deploy the site
 **AWS** 
-- A cloud application to hold media files.
+  - A cloud application to hold media files.
 **Google fonts**
-- Used to compare and choose fonts.
+  - Used to compare and choose fonts.
 **Favicons**
-- Used to generate a favicon for the website title.
+  - Used to generate a favicon for the website title.
 **Lighthouse**
-- Used to audit the site for quality and ensure responsiveness.
+  - Used to audit the site for quality and ensure responsiveness.
 **JSHint**
-- Used to detect errors in the JavaScript files
+  - Used to detect errors in the JavaScript files
 **PEP8 Online**
-- Used to check PEP8 compliance in the code
+  - Used to check PEP8 compliance in the code
 **W3C Markup Validator**
-- Markup validation service for HTML5
+  - Markup validation service for HTML5
 **Jigsaw Validator**
-- CSS3 Validation Service
+  - CSS3 Validation Service
 
 ## Testing
 
