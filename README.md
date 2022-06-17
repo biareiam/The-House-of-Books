@@ -243,35 +243,47 @@ built on top of the Python programming language. It was used to create the most 
 ## Tools
 **Git** 
   - Git was used for version control (commit to Git and push to GitHub).
+  
 **GitHub**
   - Used to store, host and deploy the project files and source code after being pushed from Git. I also used it for the Project Kanban board to keep track and split tasks into smaller tasks to make them easier to fulfil.
+  
 **Gitpod**
   - An online IDE linked to the GitHub repository used to write my code.
+  
 **Heroku**
-  - A Cloud Application Platform used to deploy the site
+  - A Cloud Application Platform used to deploy the site.
+  
 **AWS** 
   - A cloud application to hold media files.
+  
 **Google fonts**
   - Used to compare and choose fonts.
+  
 **Favicons**
   - Used to generate a favicon for the website title.
+  
 **Lighthouse**
   - Used to audit the site for quality and ensure responsiveness.
+  
 **JSHint**
-  - Used to detect errors in the JavaScript files
+  - Used to detect errors in the JavaScript files.
+  
 **PEP8 Online**
-  - Used to check PEP8 compliance in the code
+  - Used to check PEP8 compliance in the code.
+  
 **W3C Markup Validator**
-  - Markup validation service for HTML5
+  - Markup validation service for HTML5.
+  
 **Jigsaw Validator**
   - CSS3 Validation Service
-
+  
 ## Testing
 
 ### Automated Testing
 
 **Bag**
-  Automated testing of views was completed to:
+
+ Automated testing of views was completed to:
     - Test the calc_subtotal function works as expected.
     - Test the bag views work correctly.
     - Test the url works when loading the page.
@@ -289,6 +301,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test that the remove from bag view returns an error if something goes wrong.
     
 **Checkout**
+
   Automated testing of views was completed to:
     - Test the checkout page loads correctly.
     - Test that the cache_checkout_data view works as expected.
@@ -300,6 +313,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test error msg appears when no stripe key.
 
 **Check if user is authenticated then autofill the form with details**
+
   Automated testing of models was completed to:
     - Test the order model.
     - Test order line model string method.
@@ -314,6 +328,7 @@ built on top of the Python programming language. It was used to create the most 
     - Check the field only displays certain fields.
 
 **Profiles**
+
   Automated testing of views was completed to:
     - Test the url works when loading the page.
     - Test the correct template loads on page load.
@@ -329,6 +344,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test that none of the form fields are required.
     
 **Products**
+
   Automated testing of views was completed to:
     - Test the url works when loading the page.
     - Test the correct template loads on page load.
@@ -358,6 +374,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test to see if review title field is required.
 
 **Blog**
+
   Automated testing of views was completed to:
     - Test the blog page loads correctly.
     - Test the url works when loading the page.
@@ -367,6 +384,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test to see if the post string method returns the title as expected.
 
 **Home Page**
+
   Automated testing of views was completed to:
     - Test the url works when loading the page.
     - Test the correct template loads on page load.
@@ -379,7 +397,9 @@ built on top of the Python programming language. It was used to create the most 
     - Test the terms and conditions page is accessible by name.
 
 ### Manual Testing
+
 **Browsers**
+
 The site was tested on:
 - Safari
 - Google Chrome
