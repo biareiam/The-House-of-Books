@@ -226,10 +226,13 @@ The site was designed to be mobile first as more users are using their mobile to
  
 **HTML5**
   - Used as the main markup language for the website content.
+  
 **CSS3**
   - Used to style the individual webpages.
+  
 **JavaScript**
   - Used to show the questions through pagination and for the game play.
+  
 **Python 3**
   - Used to run the site and database
 
@@ -281,9 +284,10 @@ built on top of the Python programming language. It was used to create the most 
 
 ### Automated Testing
 
-**Bag**
+#### Bag
 
  Automated testing of views was completed to:
+ 
     - Test the calc_subtotal function works as expected.
     - Test the bag views work correctly.
     - Test the url works when loading the page.
@@ -303,6 +307,7 @@ built on top of the Python programming language. It was used to create the most 
 **Checkout**
 
   Automated testing of views was completed to:
+  
     - Test the checkout page loads correctly.
     - Test that the cache_checkout_data view works as expected.
     - Test the url works when loading the page.
@@ -315,10 +320,12 @@ built on top of the Python programming language. It was used to create the most 
 **Check if user is authenticated then autofill the form with details**
 
   Automated testing of models was completed to:
+  
     - Test the order model.
     - Test order line model string method.
   
   Automated testing of forms was completed to:
+  
     - Test to see if full name field is required.
     - Test to see if email field is required.
     - Test to see if phone number field is required.
@@ -330,6 +337,7 @@ built on top of the Python programming language. It was used to create the most 
 **Profiles**
 
   Automated testing of views was completed to:
+  
     - Test the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the profile page is accessible by name.
@@ -337,6 +345,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test orders displayed on login to profile page.
 
   Automated testing of models was completed to:
+  
     - Test retrieving the user profile.
     - Test the user profile string method returns the username.
     
@@ -346,6 +355,7 @@ built on top of the Python programming language. It was used to create the most 
 **Products**
 
   Automated testing of views was completed to:
+  
     - Test the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the products page is accessible by name.
@@ -359,6 +369,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test product detail page loads via template.
 
   Automated testing of models was completed to:
+  
     - Test category model string method.
     - Testing category models friendly name string method returns friendly name.
     - Test product model string method.
@@ -368,6 +379,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test whether a product has weights or not.
 
   Automated testing of forms was completed to:
+  
     - Test to see if review title field is required.
     - Test to see if review field is required.
     - Check the field only displays certain fields.
@@ -376,6 +388,7 @@ built on top of the Python programming language. It was used to create the most 
 **Blog**
 
   Automated testing of views was completed to:
+  
     - Test the blog page loads correctly.
     - Test the url works when loading the page.
     - Test the correct template loads on page load.
@@ -386,6 +399,7 @@ built on top of the Python programming language. It was used to create the most 
 **Home Page**
 
   Automated testing of views was completed to:
+  
     - Test the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the home page is accessible by name.
