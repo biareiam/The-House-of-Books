@@ -719,20 +719,20 @@ input[name='q']::placeholder {
 
     .lead {
         padding-top: 1.5rem !important;
-        margin-left: 3rem;
+
     }
 
     .books-title,
     .author-index,
     .tag {
-        margin-left: 3rem;
+        margin-left: 0rem;
     }
 
     .images {
         width: 300px !important;
         height: auto;
         margin-top: -1.4rem !important;
-        margin-left: 3rem;
+        margin-left: 0rem;
     }
 
     .card-img-top-1 {
