@@ -472,9 +472,9 @@ input[name='q']::placeholder {
 @media(max-width: 768px) {
 
     .add-bag {
-        margin-top: 0rem !important;
-        margin-left: -9.5rem !important;
         padding: 0.9rem 1.3rem !important;
+        margin-left: -9.5rem;
+        margin-top: -1.5rem !important;
     }
 
     .form-row {
@@ -505,6 +505,7 @@ input[name='q']::placeholder {
 
     .details {
         display: flex;
+
     }
 
     .quantity-input,
@@ -603,7 +604,11 @@ input[name='q']::placeholder {
         margin-top: -1rem !important;
     }
 
-
+    .add-bag {
+        padding: 0.9rem 1.3rem !important;
+        margin-left: 6.5rem !important;
+        margin-top: 1rem !important;
+    }
 
 
     .book-author,
@@ -625,7 +630,7 @@ input[name='q']::placeholder {
     .details {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: flex-end !important;
         padding-top: 1rem;
         align-content: flex-start;
         flex-direction: row;
@@ -653,10 +658,7 @@ input[name='q']::placeholder {
         height: 38px;
     }
 
-    .add-bag {
-        margin-left: 6rem !important;
-        margin-top: 1rem !important;
-    }
+
 
     .order-success {
         padding: 0.5rem !important;
@@ -804,17 +806,24 @@ input[name='q']::placeholder {
     .book-author {
         padding-top: 0.5rem;
     }
+
+
 }
 
 @media(max-width:375px) {
     .image-container {
         margin-left: 0rem !important;
     }
+
+    .add-bag {
+        margin-left: auto !important;
+    }
 }
 
 @media(max-width:350px) {
     .add-bag {
-        margin-left: 3rem !important;
+        margin-left: 3.5rem !important;
+
     }
 
     .product-detail {
@@ -840,7 +849,14 @@ input[name='q']::placeholder {
 
     .no-results p {
         font-size: 1.2rem !important;
+    }
 
+    .product-detail {
+        padding-left: 0rem !important;
+    }
+
+    .details {
+        align-items: flex-end !important;
     }
 }
 
@@ -1347,7 +1363,7 @@ input[name='q']::placeholder {
 .details {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
     padding-top: 1rem;
 }
 
