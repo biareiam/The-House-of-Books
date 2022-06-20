@@ -595,6 +595,14 @@ input[name='q']::placeholder {
         flex-direction: column;
     }
 
+    small i {
+        padding-top: 2rem;
+    }
+
+    .lead {
+        margin-top: -1rem !important;
+    }
+
 
     .book-title {
         font-size: 1.2rem !important;
@@ -612,7 +620,7 @@ input[name='q']::placeholder {
 
     .keep-shopping-cart {
         margin-bottom: 3rem !important;
-        margin-left: 4.5rem !important;
+        margin-left: 0.5rem !important;
 
     }
 
@@ -765,9 +773,9 @@ input[name='q']::placeholder {
 
     .stock {
         width: 300px;
-        margin-left: -1rem;
+        float: left;
         margin-bottom: 1rem;
-        margin-top: -1rem;
+        margin-top: -2.4rem !important;
     }
 
     .mycardbooks {
@@ -785,7 +793,24 @@ input[name='q']::placeholder {
         padding-right: 0 !important;
         width: 22rem !important;
         margin-left: 0.1rem !important;
+    }
 
+    .image-container {
+        margin-left: 2rem !important;
+    }
+
+    .edit-delete {
+        padding-bottom: 0.6rem;
+    }
+
+    .book-author {
+        padding-top: 0.5rem;
+    }
+}
+
+@media(max-width:375px) {
+    .image-container {
+        margin-left: 0rem !important;
     }
 }
 
