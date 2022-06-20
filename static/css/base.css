@@ -604,9 +604,7 @@ input[name='q']::placeholder {
     }
 
 
-    .book-title {
-        font-size: 1.2rem !important;
-    }
+
 
     .book-author,
     .tag-2 {
@@ -1248,13 +1246,11 @@ input[name='q']::placeholder {
 
 /**** Product detail page ***/
 .product-detail {
-    padding-left: 1rem !important;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
     padding-top: 2rem !important;
-    padding-left: 2rem !important;
 
 }
 

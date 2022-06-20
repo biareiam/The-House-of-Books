@@ -101,7 +101,7 @@
                 <p class="content">{{ product.description|linebreaksbr }}</p>
                 {% endif %}
                 <div class="cart-qty-btn">
-                    <form action=" {% url 'add_to_bag' product.id %}" method="POST" class="form">
+                    <form action="{% url 'add_to_bag' product.id %}" method="POST" class="form">
                         {% csrf_token %}
                         <div class="form-row">
                             <div class=" col-xs-6 col-sm-12 col-lg-4 detail-buttons">
