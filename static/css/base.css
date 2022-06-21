@@ -829,7 +829,6 @@ input[name='q']::placeholder {
 @media(max-width:350px) {
     .add-bag {
         margin-left: 3.5rem !important;
-
     }
 
     .second-box {
