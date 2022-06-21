@@ -880,7 +880,6 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content input {
     border-color: rgb(115, 115, 115);
-
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
