@@ -33,6 +33,7 @@
 
 .about {
     color: rgb(146, 143, 143) !important;
+    font-size: 0.95rem;
 }
 
 .hero-image {
@@ -68,6 +69,7 @@ a {
 .author-index {
     font-size: 0.8rem;
     margin-bottom: 1rem;
+    font-style: italic;
 }
 
 
@@ -554,10 +556,6 @@ input[name='q']::placeholder {
         margin-left: 1rem !important;
     }
 
-    .content {
-        padding-bottom: 3rem;
-    }
-
     .cart {
         max-width: 45rem !important;
 
@@ -786,12 +784,7 @@ input[name='q']::placeholder {
 
     }
 
-    .stock {
-        width: 300px;
-        float: left;
-        margin-bottom: 1rem;
-        margin-top: -2.4rem !important;
-    }
+
 
     .mycardbooks {
 
@@ -837,12 +830,20 @@ input[name='q']::placeholder {
         margin-left: 0rem !important;
     }
 
+    .add-to-bag {
+        margin-top: 1rem !important;
+    }
+
+    .form-row>.col,
+    .form-row>[class*=col-] {
+        padding-right: 5px;
+        padding-left: 5px;
+        text-align: center;
+    }
+
 }
 
 @media(max-width:350px) {
-    .add-bag {
-        margin-left: 3.5rem !important;
-    }
 
 
     .product-detail {
@@ -1333,15 +1334,9 @@ input[name='q']::placeholder {
     background-color: rgba(202, 232, 194, 0.575);
     text-align: center;
     padding: 0.3rem;
-
+    margin-bottom: 1rem !important;
 }
 
-.stock {
-    width: 300px;
-    margin-left: -1rem;
-    margin-bottom: 1rem;
-    margin-top: -2.7rem;
-}
 
 .book-title {
     font-size: 1.4rem;

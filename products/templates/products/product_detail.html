@@ -23,8 +23,13 @@
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="product-details-container mb-5 mt-md-5">
-                <p class="mb-2 book-title">{{ product.name }}</p>
+            <div class="product-details-container mb-3 mt-5">
+                <small class="in-stock">In Stock</small>
+                <p class="mb-2 book-title"><strong>{{ product.name }}</strong>
+
+                </p>
+
+
                 <small class="author-index">By {{ product.author }}</small>
 
                 <p class="small mt-3 mb-3">
@@ -39,8 +44,9 @@
                     {% else %}
                     <small class="text-muted">No Rating</small>
                     {% endif %}
+
+                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                 </p>
-                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                 <hr>
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
@@ -100,9 +106,11 @@
                                 </span>
                                 <span>Keep Shopping</span>
                             </a>
-                            <input type="submit" class="buttons" value=" Add to Bag">
+
+                            <input type="submit" class="buttons add-to-bag" value=" Add to Bag">
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+
 
                     </div>
                 </form>
