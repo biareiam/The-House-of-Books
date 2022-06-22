@@ -816,8 +816,6 @@ input[name='q']::placeholder {
     .card {
         margin-left: 1rem !important;
     }
-
-
 }
 
 @media(max-width:375px) {
