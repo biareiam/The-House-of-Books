@@ -40,6 +40,37 @@ Link to the [site](http://houseofbooks22.herokuapp.com/)
 ## UX (User Experience)
  
 ### User Stories
+
+| User Story ID                 | As a/an           | I want to be able to...                                     | So that I can...                                                                           |
+|-------------------------------|-------------------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Viewing Products & Navigation |                   |                                                             |                                                                                            |
+| 1                             | User/Shopper      | view individual products                                    | See what the books are about.                                                              |
+| 2                             |                   | be able to add, edit quantity and remove items from my cart | buy it after browsing.                                                                     |
+| 3                             |                   | see any special offers and new arrivals                     | take advantage of saving money on products I'd like to buy and be aware of new books.      |
+| Registration and Accounts     |                   |                                                             |                                                                                            |
+| 4                             | User/Shopper      | register for an account                                     | keep track of my orders and check my personal details, being able to update it if needed.  |
+| 5                             |                   | receive email confirmation upon signing up                  | verify my set up was successful.                                                           |
+| 6                             |                   | be able to reset my password in case I forget it            | regain access to my account.                                                               |
+| 7                             |                   | have the ability to log in to the site with my details      | view my orders and personal details.                                                       |
+| 8                             |                   | update my personal details.                                 | keep my personal information updated.                                                      |
+| 9                             |                   | purchase from the site without having to create an account  | check out quickly and easily.                                                              |
+| Searching products            |                   |                                                             |                                                                                            |
+| 10                            | User/Shopper      | search for specific products                                | find books related to the keyword researched for.                                          |
+| 13                            |                   | easily understand the search results                        | quickly decide which book interests me.                                                    |
+| 14                            |                   | sort by price, name, category and rating                    | view a wide range and choose which book(s) I would like to purchase.                       |
+| Checkout                      |                   |                                                             |                                                                                            |
+| 15                            | Shopper           | have a running total of my bag                              | stay within my budget and be aware of my delivery cost.                                    |
+| 16                            |                   | view my bag contents                                        | keep track of which books I have selected and how many of them.                            |
+| 17                            |                   | adjust the quantity of books to buy                         | update the order without going back to the product page.                                   |
+| 18                            |                   | easily enter my payment details                             | checkout as quickly and easily as possible.                                                |
+| 19                            |                   | Save the information I just entered on the checkout         | Easily create an account and have my information already saved.                            |
+| 20                            |                   | view the full order before entering card details.           | check it before confirmation and make sure I have all I want to purchase.                  |
+| 21                            |                   | receive email notifications when I make an order            | confirm my order has been placed and refer back to.                                        |
+| Admin/Management              |                   |                                                             |                                                                                            |
+| 22                            | Store owner/Admin | add a product                                               | Sell new books in the site                                                                 |
+| 23                            |                   | update a product                                            | change descriptions, proce, categories, and images of the books                            |
+| 24                            |                   | delete a product                                            | remove books which are no longer available to be purchased. .                              |
+
  
 ## Design Choices
  
