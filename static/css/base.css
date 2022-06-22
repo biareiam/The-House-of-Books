@@ -766,7 +766,6 @@ input[name='q']::placeholder {
         padding-top: 1rem;
     }
 
-
     .message-container {
         position: static;
         top: 80px;
@@ -781,7 +780,6 @@ input[name='q']::placeholder {
     .product-detail {
         padding-left: 1rem !important;
         padding-right: 1rem !important;
-
     }
 
 
