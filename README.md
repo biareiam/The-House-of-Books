@@ -89,11 +89,9 @@ Link to the [site](http://houseofbooks22.herokuapp.com/)
 ### Wireframes
   The wireframes were created using Balsamiq and can be found bellow:
   
-  Desktop:
-  
-  Tablet:
-  
-  Mobile:
+  Desktop, Tablet and Mobile:
+
+  ![New Wireframe 1 copy 3](https://user-images.githubusercontent.com/65717229/175126159-9d5cd591-babb-478e-84b7-dede1f5053d1.png)
   
 ## Features
 
@@ -202,13 +200,13 @@ The navigation bar displays different links depending on whether the user is log
 
 ### Error pages
 #### 404.html
-  404 page created to redirect users back to the main site in case of an error.
+- 404 page created to redirect users back to the main site in case of an error.
   
 #### 403.html
-  403 page created to redirect users back to the main site in case they try to access a page they are not authorised to.
+- 403 page created to redirect users back to the main site in case they try to access a page they are not authorised to.
   
 #### 500.html
-  500 error page created to redirect users to the main site after a server error.
+- 500 error page created to redirect users to the main site after a server error.
 
 ## Future Features
 - A chat bot where users can ask questions on the site.
@@ -469,7 +467,8 @@ The site was tested in many different devices.
 |              | Clicking T&Cs takes user to the Terms and Conditions page           | Click T&Cs                   | Terms and conditions page opened                                                                                      | Pass      |
 |              | Clicking Privacy Policy takes user to the Terms and Conditions page | Click Privacy Policy         | Privacy Policy page opened                                                                                            | Pass      |
 
-- Users who are logged in 
+  - Users who are logged in 
+
 
 | Feature      | Expected                                              | Testing                             | Result                                       | Pass/Fail  |
 |--------------|-------------------------------------------------------|-------------------------------------|----------------------------------------------|------------|
@@ -478,7 +477,8 @@ The site was tested in many different devices.
 |              | Click on the bag icon and is directed to the bag page | Click bag icon                      | Redirected to the bag page                   | Pass       |
 
 
-- Users who are not logged in
+  - Users who are not logged in
+
 
  | Feature      | Expected                                              | Testing         | Result                           | Pass/Fail  |
 |--------------|-------------------------------------------------------|-----------------|----------------------------------|------------|
@@ -600,7 +600,7 @@ The site was tested in many different devices.
 ### Validators
 - W3C HTML Validator Passed tests without issues
 - W3C CSS Validator Passed tests without issues
-- PEP8 and AUTOPEP8. Online PEP8 warned out about some long lines on the settings. 
+- PEP8 and AUTOPEP8. Online PEP8 warned out about some long lines on the settings.py. 
 
 ### Deployment
 
