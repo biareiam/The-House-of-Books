@@ -3,7 +3,8 @@
 
 
 {% block content %}
-<section class="hero"
+
+<div class="hero"
     style="background:url('https://img.freepik.com/free-vector/pastel-hand-painted-watercolour-background_1048-15468.jpg') no-repeat; background-size: cover;">
     <div class="container-fluid  hero-image pt-4 pb-4">
         <div class="row">
@@ -72,41 +73,42 @@
             </div>
         </div>
     </div>
-</section>
-<div class="container-xl  ">
-    <div class=" mr-2 my-2 ">
-        <h2 class="text-center mt-3 mb-3 most-sold">Most sold books</h2>
-        <div class="row second-box">
+</div>
+<section>
+    <div class="container">
+        <h2 class="text-center mt-4 mb-3 most-sold">Most sold books</h2>
+        <div class="row">
             {% for product in products %}
-            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
-                <div class="card h-100 border-0">
+            <div class=" col-sm-12 col-md-4">
+                <div class="card  border-0 ">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
-                        <img class="images" width="210" height="310" src="{{ product.image }}" alt="{{ product.name }}">
+                        <img class="images" width="220" height="auto" src="{{ product.image }}"
+                            alt="{{ product.name }}">
                     </a>
                     {% else %}
                     <a href="#">
-                        <img class="images" width="210" height="310" src="{{ MEDIA_URL }}no-image.png"
+                        <img class="images" width="220" height="auto" src="{{ MEDIA_URL }}no-image.png"
                             alt="{{ product.name }}">
                     </a>
                     {% endif %}
                     <div class="card-body-1">
-                        <p class="books-title pt-2">{{ product.name }}</p>
-                        <p class="author-index">By:{{ product.author}}</p>
+                        <p class="books-title pt-2 text-left">{{ product.name }}</p>
+                        <p class="author-index text-left">By:{{ product.author}}</p>
 
                     </div>
                     <div class="card-footer bg-white pt-0 border-0 text-left">
                         <div class="row">
                             <div class="col">
                                 {% if product.category %}
-                                <p class="small book-category-product-page tag">
+                                <p class="small tag">
                                     <a class="text-muted tag-2"
                                         href="{% url 'products' %}?category={{ product.category.name }}">
                                         {{ product.category.friendly_name }}
                                     </a>
                                 </p>
                                 {% endif %}
-                                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                <p class="font-weight-bold mostsold-price">€{{ product.price }}</p>
                             </div>
                         </div>
                     </div>
@@ -130,11 +132,13 @@
             {% endif %}
 
             {% endfor %}
+
+        </div>
+        <div class="text-center">
+            <button class="buttons see-all"><a href="{% url 'products' %}">See all books</a> </button>
         </div>
     </div>
 
-</div>
-<div class="text-center pb-3">
-    <button class="buttons see-all"><a href="{% url 'products' %}">See all books</a> </button>
-</div>
+
+</section>
 {% endblock %}
