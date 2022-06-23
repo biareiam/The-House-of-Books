@@ -914,7 +914,6 @@ input[name='q']::placeholder {
 
 @media(max-width:350px) {
 
-
     .product-detail {
         padding: 0.4rem !important;
     }

@@ -28,8 +28,6 @@
                 <p class="mb-2 book-title"><strong>{{ product.name }}</strong>
 
                 </p>
-
-
                 <small class="author-index">By {{ product.author }}</small>
 
                 <p class="small mt-3 mb-3">
@@ -37,7 +35,6 @@
                     <a class="text-muted mr-5 tag-2" href="{% url 'products' %}?category={{ product.category.name }}">
                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                     </a>
-
                     {% endif %}
                     {% if product.rating %}
                     <small class="text-muted rating"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
@@ -56,11 +53,7 @@
                 </p>
                 {% endif %}
                 <hr>
-
-
-
                 <p class="description mb-2"><strong> Description:</strong></p>
-
                 {% if product.description|wordcount > 150 %}
                 <p class="half-content content" id="half-1">
                     {{ product.description|truncatechars:530|linebreaksbr }}<a data-id="1" href="javascript:void();"
@@ -68,10 +61,8 @@
                 <p class="full-content content" id="full-1" style="display: none;">
                     {{ product.description|linebreaksbr}}<a data-id="1" href="javascript:void();"
                         class="show-hide-btn read-more mt-1"><br><br> - Show less</a></p>
-
                 {% else %}
                 <p class="content">{{ product.description|linebreaksbr }}</p>
-
                 {% endif %}
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
@@ -101,7 +92,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col{% if s %}-12 mt-2{% endif %}">
                             <a href="{% url 'products' %}" class=" buttons-1 rounded-0">
                                 <span class="icon">
@@ -113,8 +103,6 @@
                             <input type="submit" class="buttons add-to-bag" value=" Add to Bag">
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
-
-
                     </div>
                 </form>
             </div>
