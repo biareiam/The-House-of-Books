@@ -121,7 +121,61 @@
         </div>
     </div>
 </div>
+<div class="container-fluid bg" style="background-color: rgba(232, 234, 233, 0.185);">
+    <div class="row">
+        <!-- View Posted Reviews Section -->
+
+        <div class="col-lg-7 col-md-6 col-sm-12  mb-4 mt-3">
+            <div class="card-body">
+                <h5 class="text-black">Book Reviews:</h5>
+
+                {% for review in reviews %}
+                <div class="myreview">
+                    <div class="reviews" style="padding: 10px;">
+                        <p class="font-weight-bold" style="text-transform:capitalize;">
+                            {{ review.name }}
+                            <span class=" text-muted font-weight-normal">
+                                {{ review.created_on }}
+                            </span>
+                            wrote:
+                        </p>
+                        <p class="review">{{ review.comment | linebreaks }}</p>
+                    </div>
+                </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <!-- Leave a Review Section -->
+
+        <div class="col-lg-5 col-md-6 col-sm-12 mb-4 mt-3">
+            <div class="card-body">
+                {% if user.is_authenticated %}
+                <h5 class="text-black">Leave a review:</h5>
+
+                <p>Posting as: <span style="text-transform:capitalize;">{{ user.username }}</span></p>
+                <form method="POST" style="margin-top: 1.3em;">
+                    {{ review_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="buttons">Submit
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span></button>
+                </form>
+                {% else %}
+                <div>
+                    <a href="{% url 'account_signup' %}">Create an account</a> or
+                    <a href="{% url 'account_login' %}">login</a> to leave your review.
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
+
 
 {% block postloadjs %}
 {{ block.super }}
