@@ -1,32 +1,33 @@
 # The House of Books
-## Contents
+## Table of Contents
 
-- UX (User Experience)
-  - User Stories 
-- Design Choices
-  - Fonts
-  - Colours
-  - Imagery
-  - Wireframes
-- Features
-  - Site Navigation
-  - Features Implemented
-  - Future Features
-  - Responsive Design
-  - Defensive Design
-- Database
-- Technologies
-  - Languages
-  - Frameworks and Libraries
-  - Tools
-- Testing
-- Deployment
-  - Running locally
-- Credits
-  - Code
-  - Cotent
-  - Media
-  - Acknowledgements
+- [About](https://github.com/biareiam/The-House-of-Books#about) 
+- [UX (User Experience)](https://github.com/biareiam/The-House-of-Books#ux-user-experience)
+  - [User Stories](https://github.com/biareiam/The-House-of-Books#user-stories)
+- [Design Choices](https://github.com/biareiam/The-House-of-Books#design-choices)
+  - [Fonts](https://github.com/biareiam/The-House-of-Books#font)
+  - [Colors](https://github.com/biareiam/The-House-of-Books#colours)
+  - [Imagery](https://github.com/biareiam/The-House-of-Books#imagery-and-content)
+  - [Wireframes](https://github.com/biareiam/The-House-of-Books#wireframes)
+- [Features](https://github.com/biareiam/The-House-of-Books#features)
+  - [Site Navigation](https://github.com/biareiam/The-House-of-Books#site-navigation)
+  - [Features Implemented](https://github.com/biareiam/The-House-of-Books#features-implemented)
+  - [Future Features](https://github.com/biareiam/The-House-of-Books#future-features)
+- [Web Marketing & Business]()
+  - [Responsive Design](https://github.com/biareiam/The-House-of-Books#responsive-design)
+  - [Defensive Design](https://github.com/biareiam/The-House-of-Books#defensive-design)
+- [Datamodel](https://github.com/biareiam/The-House-of-Books#datamodel)
+- [Technologies](https://github.com/biareiam/The-House-of-Books#technologies)
+  - [Languages](https://github.com/biareiam/The-House-of-Books#languages)
+  - [Frameworks and Libraries](https://github.com/biareiam/The-House-of-Books#frameworks-and-libraries)
+  - [Tools](https://github.com/biareiam/The-House-of-Books#tools)
+- [Testing](https://github.com/biareiam/The-House-of-Books#testing)
+- [Deployment](https://github.com/biareiam/The-House-of-Books#deployment)
+- [Credits](https://github.com/biareiam/The-House-of-Books#credits)
+  - [Code](https://github.com/biareiam/The-House-of-Books#code)
+  - [Content](https://github.com/biareiam/The-House-of-Books#content)
+  - [Media](https://github.com/biareiam/The-House-of-Books#media)
+  - [Acknowledgements](https://github.com/biareiam/The-House-of-Books#acknowledgements)
 
 ## About
 
@@ -70,13 +71,12 @@ Link to the [site](http://houseofbooks22.herokuapp.com/)
 | 23                            |                   | update a product                                            | change descriptions, proce, categories, and images of the books                            |
 | 24                            |                   | delete a product                                            | remove books which are no longer available to be purchased. .                              |
 
- 
 ## Design Choices
  
 ### Font
   A unique font was used on the site - [Sora](https://fonts.google.com/specimen/Sora).
   
-### Colours
+### Colors
   The site uses tons of blue and black. 
   
 ### Imagery and content
@@ -114,33 +114,33 @@ The navigation bar displays different links depending on whether the user is log
  ### Navigation
  Header
 - All users, logged in or not, can:
-  - Navigate to home, view the different categories, special offers, new arrivals. 
-  - Create or login in to their profile page.
+  - Navigate to home, view the different categories, special offers, and new arrivals. 
+  - Create or login into their profile page.
   - Check their bag.
   - Search for a book.
 - Users logged in can access:
-  - Navigate to home, view the different categories, special offers, new arrivals. 
+  - Navigate to home, view the different categories, special offers, and new arrivals. 
   - Check their profile page.
   - Logout from their account. 
   - Make a search for a book.
 - Super user logged in can access:
-  - Navigate to home, view the different categories, special offers, new arrivals. 
+  - Navigate to home, view the different categories, special offers, and new arrivals. 
   - Product management, where they can add products to the site. 
   - Check their profile page. 
   - Make a search for a book.
 - Users who are not logged in can:
-  - Navigate to home, view the different categories, special offers, new arrivals. 
+  - Navigate to home, view the different categories, special offers, and new arrivals. 
   - Access register and login page.
   - Make a search for a book.
  
  ### Create Profile
  - The users are able to:
-    - Create a profile to store their personal information and check their orders history.
+    - Create a profile to store their personal information and check their order history.
     - Confirm their details are correct via email verification.
 
 ### Log in to the profile page 
  - The users are able to:
-    - Log in to profile page to see their orders history and personal information.
+    - Log in to the profile page to see their orders history and personal information.
     - If needed, users can update their personal information.
 
 ### Products Page
@@ -188,22 +188,22 @@ The navigation bar displays different links depending on whether the user is log
 - All users can access:
   - The social media links, terms and conditions and privacy policy pages.
 - If the user is not logged in, they can see:
-  - The different books categories.
+  - The different book categories.
   - Links to register and login. 
 - If the user is logged in, they can see:
-  - The different books categories.
+  - The different book categories.
   - Access their profile.
 - If a superuser is logged in, he/she can see:
-  - The different books categories.
+  - The different book categories.
   - Access their profile.
   - A link to product management. 
 
 ### Error pages
 #### 404.html
-- 404 page created to redirect users back to the main site in case of an error.
+- 404 pages created to redirect users back to the main site in case of an error.
   
 #### 403.html
-- 403 page created to redirect users back to the main site in case they try to access a page they are not authorised to.
+- 403 page created to redirect users back to the main site in case they try to access a page they are not authorized to.
   
 #### 500.html
 - 500 error page created to redirect users to the main site after a server error.
@@ -213,7 +213,14 @@ The navigation bar displays different links depending on whether the user is log
 - The ability to add many filters to their search criteria at the same time or combine filters. 
 - Give the user the ability to track their orders.
 - A star rating or upvote functionality for the books.
-- Add users reviews to the site. 
+- Add users' reviews to the site. 
+
+## Web Marketing & Business
+
+As part of web marketing a Facebook page was created for The House of Books.
+
+![house](https://user-images.githubusercontent.com/65717229/175274998-7b2b56e4-6338-4ad6-8acc-c7005b647e4d.PNG)
+
 
 ## Responsive Design
 The site was designed to be mobile first as more users are using their mobile to shop online but this has been adapted to allow the same good experience for desktop and tablet.
@@ -227,13 +234,13 @@ The site was designed to be mobile first as more users are using their mobile to
 **Default Image if none added**
 - In the event that a product is added without an image, a default image will be added. It is unlikely to happen due to the form validation, but just in case, a backup image was set.
 
-**Unauthorised Attempts**
+**Unauthorized Attempts**
 - An error is launched if a user attempts to visit a part of the site which they should not have access to. 
 
 **@login_required**
 - @login_required decorator added to restrict access to certain pages.
   - If a logged-out user tries to access a restricted page, they will be redirected to the login page.
-  - Only authorised users may perform certain actions, such as add, edit, delete books.
+  - Only authorized users may perform certain actions, such as add, edit, delete books.
 
 **Bag**
 - Validation was put into place to ensure a minimum of 0 product and maximum of 99 products is added to the bag. 
@@ -245,8 +252,8 @@ The site was designed to be mobile first as more users are using their mobile to
 - SQLite
     - Cloud based database to hold the product, user, and order fields.
 
-### Database Design
-  The database uses SQL through PostgreSQL and was originally formed from fixtures categories.json and products.json.The Database schema is below :
+### Data Model Design
+  The database uses SQL through PostgreSQL and was originally formed from fixtures categories.json and products.json.The Datamodel schema is below :
   
   ![data scheme](https://user-images.githubusercontent.com/65717229/174303224-7288256e-8418-4d82-b845-d86eaac86ef5.png)
 
@@ -278,7 +285,7 @@ built on top of the Python programming language. It was used to create the most 
   - Git was used for version control (commit to Git and push to GitHub).
   
 **GitHub**
-  - Used to store, host and deploy the project files and source code after being pushed from Git. I also used it for the Project Kanban board to keep track and split tasks into smaller tasks to make them easier to fulfil.
+  - Used to store, host and deploy the project files and source code after being pushed from Git. I also used it for the Project Kanban board to keep track and split tasks into smaller tasks to make them easier to fulfill.
   
 **Gitpod**
   - An online IDE linked to the GitHub repository used to write my code.
@@ -317,7 +324,7 @@ built on top of the Python programming language. It was used to create the most 
  
     - Test the calc_subtotal function works as expected.
     - Test the bag views work correctly.
-    - Test the url works when loading the page.
+    - Test if the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the products page is accessible by name.
     - Test that the view_bag view works correctly.
@@ -325,7 +332,7 @@ built on top of the Python programming language. It was used to create the most 
     - Test that the add_to_bag function adds the item to the bag.
     - Test that the add_to_bag view adds the product to the bag.
     - Test that the add_to_bag view increases the quantity of an item if the item is already present in the shopping bag.
-    - Test that the adjust bag view works as expected to calculate total.
+    - Test that the adjusted bag view works as expected to calculate total.
     - Test that the add_to_bag view updates the quantity of an item if the item is already in the bag.
     - Test remove from bag view removes the product from the bag.
     - Test that the remove_from_bag view removes an item from the bag.
@@ -337,11 +344,11 @@ built on top of the Python programming language. It was used to create the most 
   
     - Test the checkout page loads correctly.
     - Test that the cache_checkout_data view works as expected.
-    - Test the url works when loading the page.
+    - Test if the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the products page is accessible by name.
-    - Test get checkout view when items in the bag.
-    - Test error msg appears when bag empty.
+    - Test get checkout view when items are in the bag.
+    - Test error msg appears when the bag empty.
     - Test error msg appears when no stripe key.
 
 **Check if user is authenticated then autofill the form with details**
@@ -353,22 +360,22 @@ built on top of the Python programming language. It was used to create the most 
   
   Automated testing of forms was completed to:
   
-    - Test to see if full name field is required.
-    - Test to see if email field is required.
-    - Test to see if phone number field is required.
-    - Test to see if country field is required.
+    - Test to see if a full name field is required.
+    - Test to see if an email field is required.
+    - Test to see if a phone number field is required.
+    - Test to see if a country field is required.
     - Test to see if town_or_city field is required.
     - Test to see if street_address1 field is required.
-    - Check the field only displays certain fields.
+    - Check if the field only displays certain fields.
 
 **Profiles**
 
   Automated testing of views was completed to:
   
-    - Test the url works when loading the page.
+    - Test if the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the profile page is accessible by name.
-    - Test the profile form works if form is valid.
+    - Test if the profile form works if form is valid.
     - Test orders displayed on login to profile page.
 
   Automated testing of models was completed to:
@@ -384,14 +391,14 @@ built on top of the Python programming language. It was used to create the most 
 
   Automated testing of views was completed to:
   
-    - Test the url works when loading the page.
+    - Test if the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the products page is accessible by name.
     - Test products display.
     - Test categories sort functionality.
     - Test that the sort functionality works.
     - Test that the search functionality works as expected.
-    - Test that the search error message display correctly.
+    - Test that the search error message displays correctly.
     - Test product detail page loads via url.
     - Test product detail page loads via name.
     - Test product detail page loads via template.
@@ -408,17 +415,17 @@ built on top of the Python programming language. It was used to create the most 
 
   Automated testing of forms was completed to:
   
-    - Test to see if review title field is required.
-    - Test to see if review field is required.
-    - Check the field only displays certain fields.
-    - Test to see if review title field is required.
+    - Test to see if the review title field is required.
+    - Test to see if a review field is required.
+    - Check if the field only displays certain fields.
+    - Test to see if the review title field is required.
 
 **Blog**
 
   Automated testing of views was completed to:
   
     - Test the blog page loads correctly.
-    - Test the url works when loading the page.
+    - Test if the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the blog page is accessible by name.
     - Test blog posts display as expected.
@@ -428,13 +435,13 @@ built on top of the Python programming language. It was used to create the most 
 
   Automated testing of views was completed to:
   
-    - Test the url works when loading the page.
+    - Test if the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the home page is accessible by name.
-    - Test the url works when loading the page.
+    - Test if the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the privacy page is accessible by name.
-    - Test the url works when loading the page.
+    - Test if the url works when loading the page.
     - Test the correct template loads on page load.
     - Test the terms and conditions page is accessible by name.
 
@@ -447,7 +454,7 @@ The site was tested on:
 - Google Chrome
 - Firefox
 - Devices Used
-The site was tested in many different devices. 
+The site was tested on many different devices. 
 
 #### Navigation
 -  All users
@@ -473,7 +480,7 @@ The site was tested in many different devices.
 | Feature      | Expected                                              | Testing                             | Result                                       | Pass/Fail  |
 |--------------|-------------------------------------------------------|-------------------------------------|----------------------------------------------|------------|
 | Navbar links | Clicking Profile takes user to their profile page     | Click Profile                       | Redirected to Profile Page                   | Pass       |
-|              | Click Log Out logs out the user                       | Click Log Out, it logs out the user | User logged out and redirected to books page | Pass       |
+|              | Click LogOut logs out the user                       | Click Log Out, it logs out the user | User logged out and redirected to books page | Pass       |
 |              | Click on the bag icon and is directed to the bag page | Click bag icon                      | Redirected to the bag page                   | Pass       |
 
 
@@ -482,7 +489,7 @@ The site was tested in many different devices.
 
  | Feature      | Expected                                              | Testing         | Result                           | Pass/Fail  |
 |--------------|-------------------------------------------------------|-----------------|----------------------------------|------------|
-| Navbar links | Click Log In redirects to log in page                 | Click Log In    | User redirected to Log In Page   | Pass       |
+| Navbar links | Click Login redirects to log in page                 | Click Log In    | User redirected to Log In Page   | Pass       |
 |              | Click Register redirects to log in page               | Click Register  | User redirected to Register Page | Pass       |
 |              | Click on the bag icon and is directed to the bag page | Click bag icon  | Redirected to the bag page       | Pass       |
 
@@ -491,8 +498,8 @@ The site was tested in many different devices.
 
 | Feature       | Expected                                                                   | Testing             | Result                          | Pass/Fail  |
 |---------------|----------------------------------------------------------------------------|---------------------|---------------------------------|------------|
-| See more      | Clicking on the "see more" button and be redicted to the books page        | Click see more      | Redirected to the products page | Pass       |
-| See all books | Clicking on the " see all books" button and be redicted to the books page  | Click see all books | Redirected to the products page | Pass       |
+| See more      | Clicking on the "see more" button and be redirected to the books page        | Click see more      | Redirected to the products page | Pass       |
+| See all books | Clicking on the " see all books'' button and be redirected to the books page  | Click see all books | Redirected to the products page | Pass       |
 
 #### Register Page
 
@@ -600,7 +607,7 @@ The site was tested in many different devices.
 ### Validators
 - W3C HTML Validator Passed tests without issues
 - W3C CSS Validator Passed tests without issues
-- PEP8 and AUTOPEP8. Online PEP8 warned out about some long lines on the settings.py. 
+- PEP8 and AUTOPEP8. Online PEP8 warned about some long lines on the settings.py. 
 
 ### Deployment
 
@@ -611,107 +618,75 @@ The site was tested in many different devices.
 
 #### Gitpod branching and committing to GitHub
 
-**Connecting to Heroku**
+**Deploying to Heroku**
 
-The project was developed using GitPod and pushed to GitHub then deployed on Heroku using these instructions:
-1. Log in to Heroku and create a new app by clicking "New" and "Create New App" and giving it an original name and setting the region closest to your location.
-2. Navigate to Heroku Resources and add Postgres using the free plan.
-3. Create a requirements.txt file using command pip3 freeze > requirements.txt
-4. Create a Procfile with the terminal command web: gunicorn houseofbooks.wsgi:application and at this point check the Procfile to make sure there is no extra blank line as this can cause issues when deploying to Heroku.
-5. Use the loaddata command to load the fixtures for both json files: python3 manage.py loaddata categories.json and python3 manage.py loaddata products.json
-6. If it returns error message: django.db.utils.OperationalError: FATAL: role does not exist run unset PGHOSTADDR in your terminal and run the commands in step 11 again.
-7. From the CLI log in to Heroku using command heroku login -i.
-8. Temporarily disable Collectstatic by running: heroku:config:set DISABLE_COLLECTSTATIC=1 --app So that Heroku won't try to collect static files when we deploy.
-9. Add Heroku app name to ALLOWED_HOSTS in settings.py.
-10. Commit changes to GitHub using git add ., git commit -m , git push.
-11. Then deploy to Heroku using git push heroku main If the git remote isn't initialised you may have to do that first by running *heroku git:remote -a
-12. Create a superuser using command: heroku run python3 manage.py createsuperuser so that you can log in to admin as required.
-13. From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
-14. Search for your GitHub repo and connect then Enable Automatic Deploys.
-15. Generate a secret key.
-16. Add secret key to GitPod variables and Heroku config vars.
-17. Set up Amazon AWS S3 bucket using instructions below
-18. In the dashboard click "Settings" -> "Reveal Config Vars"
-19. Set config vars using advice below.
+The project has been deployed to Heroku and AWS. The steps for deployment were:
+ 
+Create an account in Heroku;
+Create a new app in Heroku: choose a unique name and region;
+On the resources tab provide a new Postgres database (used free plan for this project);
+Go back to gitpod and install dj_database_url and psycopg2 and freeze the requirements in requirements.txt file to ensure Heroku installs our apps requirements when we deploy;
+In settings.py import dj_database, comment out the default database configuration, replace it with a call to dj_database_url.parse and give it the database URL from Heroku (which can be found in the settings tab);
+Migrate all the changes;
+Import all the books, categories and subcategories using the command 'python3 manage.py load “data name”';
+Create a super user using command 'python3 manage.py createsuperuser' and follow terminal instructions;
+Create an if statement in settings.py to allow the system to take the database from os.environ if it exists otherwise it will use the default configuration.
+Create a Procfile to tell Heroku to create a web dyno;
+Temporarily disable collect_static using command 'heroku config:set DISABLE_COLLECT_STATIC=1';
+In settings.py add the hostname of the heroku app and a localhost so that gitpod will keep working;
+Deploy to Heroku;
+In Heroku, inside the app, go to the Deploy tab and set it to deploy to github, search for the project repository and click connect. Once connected set up automatic deploys (due to recent issues shared by the Heroku team automatic deploys have been temporarily disabled);
+Generate a secret key for the Heroku app and add it to the env.py file (which is included in .gitignore file to keep all the keys secret and safe);
+In settings.py set up debug to true only if there is a variable called development in the environment;
+Deployment to AWS S3:
+Navigate to https://aws.amazon.com/ and create an account;
+Once logged in, from the AWS Management Console page, find the S3 service in the 'Find Services' search bar to create a new bucket where our files will be stored;
+Create a bucket:
+With a matching name with your app to keep things organized;
+Select your closest region;
+Uncheck 'block all public access' and acknowledge that the bucket will be public;
+Under Bucket Ownership section select 'ACLs enabled';
+Select Create Bucket;
+Inside our new bucket:
+In the properties tab turn on static website hosting to create a new endpoint accessible from the internet;
+In the permissions tab we will make 3 changes:
+Paste in new CORS Configuration: [ { "AllowedHeaders": [ "Authorization" ], "AllowedMethods": [ "GET" ], "AllowedOrigins": [ "*" ], "ExposeHeaders": [] } ]
+In the policy tab click on policy generator and create a new policy and copy it in the policy editor and before saving add /* at the end of the resource key to allow access to all resources in the bucket;
+In the Access Control List tab click edit and enable List for Everyone (public access) and accept the warning box;
+Now that the bucket is ready, we need to create a user to access it, we will create through the service called IAM (Identity Access Management):
+Access IAM through the Services menu;
+Click User Groups on the side menu and click Create New Group and call it manage-houseofbooks-v3 (to match our website again and have consistency) and click on Create Group;
+On the side menu click on Policies and then click on Create Policies;
+In the JSON tab select 'import managed policy' which will let us import the 'S3 Full Access Policy' that AWS has pre-built for full access to S3. But because we only want to allow full access to our bucket we need to get the bucket ARN from the bucket policy page in S3 and paste it under Resource as a list. We will paste twice, the first item is the ARN as it is and the second item with /* at the end to add another rule for all files and folders in the bucket;
+Click review policy, give it a name and description and click Create Policy;
+To attach the policy to the group we created click on User Groups, select manage-houseofbooks-v3, click Attach Policy, search policy created, select it and click Attach Policy;
+Now we need to create a user to put in the group: click Users in the sidebar menu;
+Create the user houseofbooks-v3-staticfiles-user, select Programmatic Access and select Next;
+From the list provided select manage-houseofbooks-v3 and click Create User;
+Click on 'Download .csv' which will contain the users access key and secret access key that we will use to authenticate them from our Jango app. It is very important you download and save this CSV file as it won't be downloadable again after this process.
+Configure Django to connect to S3 using the keys we just created:
+In settings.py file, under the Static Files section create an IF statement to check if there is an environment variable called USE_AWS in the environment;
+In the IF statement define the AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME, access key and secret access key we will get from the environment to keep them secure;
+In Heroku, in the Config Vars section of the Settings tab:
+Add the AWS keys;
+Set USE_AWS to True;
+Remove the DISABLE_COLLECTSTATIC variable;
+In settings.py in gitpod set up the bucket name;
+Create a new file called custom_storages.py:
+Import settings from django and s3boto3 storage class from django storages;
+Create a new class called static_storages that inherits from django s3boto3;
+Tell the class that we want to store static files in a location from the settings that we'll define in a moment;
+Create an exact same class but for media;
+In settings.py and set a variable that points to the new storage classes we just created and that the location it should save static files is a folder called 'static'. Do the same for media files;
+Now we need to override and explicitly set the URLs for static and media files using our custom domain and the new locations.
+Deploy to Heroku. Once the deployment to Heroku is successful, if we go to S3, we can see that we have a static folder in our bucket with all our static files in it. Basically, what is happening now, when our project is deployed to Heroku, it will run python3 manage.py collectstatic during the build process and will search through all the apps and project folders looking for static files. It will use the S3 custom domain setting with our custom storage classes that will tell the location where we want to save things. This means that when USE_AWS is set to TRUE, whenever collectstatic is run, static files will be collected into a static folder in our s3 bucket;
+Go to S3 and create a new folder called 'media', inside this folder click 'upload', 'add files' and then select all the book cover images.
+Stripe:
+Add all the Stripe keys to the Heroku Config Variables;
+Create a new Stripe wehbhook endpoint using the new address: http://houseofbooks22.herokuapp.com/;
+Test the webhook is working correctly by creating and test order through our new deployed site in Heroku;
 
 if you can not deploy through Heroku, it is possible to do it through Gitpod.
-
-1. In the app.py file, ensure that debug is not enabled, i.e. set to True
-2. Create a file called ProcFile in the root directory, and add the line - “web: gunicorn PROJ_NAME.wsgi”. If this file already exists, just go to the next step.
-3. Run the command “pip freeze > requirements.txt” to create a requirements.txt file in your terminal if the file doesn't already exist.
-4. Both the ProcFile and requirements.txt files should be added to your git repo in the root directory
-5. Create an account on heroku.com
-6. Create a new application and give it a unique name
-7. In the application dashboard, navigate to the deploy section and connect your application to your git repo, by selecting your repo
-8. Select the branch, for example, master and enable automatic deploys if desired. Otherwise, a deployment will be manual
-9. The next step is to set the config variables in the Settings section
-10. Set key/value pairs for the following keys:DATABASE_URL, SECRET_KEY
-11. Go to the dashboard and trigger a deployment - “deploy branch”
-12. This will trigger a deployment, once the deployment has been successful click on the "Open App" link to open the app
-13 If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
-
-**Note:**
-
-1. If Heroku can not be connected to gitpod. On the terminal, type “heroku login -i”.
-2. Your heroku email and password will be requested.
-3. Once it is done, type “ heroku git:remote -a houseofbooks22”.
-4. The next step is to push it to heroku by typing “ git push heroku main”.
-5. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
-
-#### Amazon AWS
-1. Create Amazon AWS account and create a new bucket in the S3 services and choose your closest region.
-2. Uncheck block all public access and create bucket.
-3. From Properties tab turn on static website hosting using default values of index.html and errors.html.
-4. On permissions tab include CORS configuration:
- [
-  {
-      "AllowedHeaders": [
-          "Authorization"
-      ],
-      "AllowedMethods": [
-          "GET"
-      ],
-      "AllowedOrigins": [
-          "*"
-      ],
-      "ExposeHeaders": []
-  }
-]
-5. Create security policy: S3 Bucket Policy, allow all principles by adding a * and Amazon S3 services and selecting Get Object action. Paste ARN from Bucket Policy, add statement, generate policy and copy and paste into Bucket Policy. Also add /* at the end of the resource key to allow use of all pages.
-6. Under public access select access to all List Objects.
-7. Create a Group for the bucket through IAM. Create policy by importing AWS S3 Full Access policy and add ARN from bucket to the policy resources. Attach policy to the group.
-8. Create users, give programmatic access and add users to the group. Download CSV file when prompted to save access key ID and secret access key to save to environment and config variables.
-9. Add AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME = 'eu-west-2' to settings.py.
-10. Add, commit and push to GitHub then navigate to Heroku to confirm static files collected successfully on the Build Log. The DISABLE_COLLECTSTATIC variable can now be deleted.
-
-#### Config Vars
-
-| Key                   | Value                       |
-|-----------------------|-----------------------------|
-| PORT                  | 8000                        |
-| IP                    | 0.0.0.0                     |
-| SECRET_KEY            | YOUR_SECRET_KEY             |
-| STRIPE_PUBLIC_KEY     | STRIPE_PUBLIC_KEY           |
-| STRIPE_SECRET_KEY     | YOUR_STRIPE_SECRET_KEY      |
-| STRIPE_WH_SECRET      | STRIPE_WEBHOOKS_KEY         |
-| DATABASE_URL          | YOUR_POSTGRES_URL           |
-| AWS_ACCESS_KEY_ID     | YOUR_AWS_ACCESS_KEY_ID      |
-| AWS_SECRET_ACCESS_KEY | YOUR_AWS_SECRET_ACCESS_KEY  |
-| USE_AWS               | TRUE                        |
-| EMAIL_HOST_PASS       | YOUR_EMAIL_HOST_PASSCODE    |
-| EMAIL_HOST_USER       | YOUR_EMAIL_HOST_USERNAME    |
-
-#### Where to find Config Var Key-value Pairs
-To find the values of each key:
-  - SECRET_KEY: This is a random string provided when creating the Django project and can easily be changed to ensure extra security.
-  - DATABASE_URL: This is temporary.
-  - STRIPE_PUBLIC_KEY: Retrieved from Stripe Dashboard in the Developer's API section (Publishable key).
-  - STRIPE_SECRET_KEY: Retrieved from Stripe Dashboard in the Developer's API section (Secret key)
-  - STRIPE_WH_SECRET: Retrieved from Stripe Dashboard in the Developer's after creating an endpoint for your webhook (Signing secret).
-  - EMAIL_HOST_USER: Your email address or username. 
-  - EMAIL_HOST_PASS: Your passcode from your email client. 
-  - AWS_SECRET_ACCESS_KEY: From the CSV file that you download having created a User in Amazon AWS S3. 
-  - AWS_ACCESS_KEY_ID: From the CSV file that you download having created a User in Amazon AWS S3. 
 
 #### How to run the project locally
 To clone this project from GitHub follow the instructions taken from GitHub Docs explained here:
@@ -748,3 +723,5 @@ Disclaimer
 If there are any issues with the copyright of the content, please contact me. I will fix that as soon as possible. This project is for educational purposes only.
 
 Beatriz Amorim
+
+
