@@ -4,13 +4,15 @@
 
 {% block content %}
 
-<div class="hero"
-    style="background:url('https://img.freepik.com/free-vector/pastel-hand-painted-watercolour-background_1048-15468.jpg') no-repeat; background-size: cover;">
+<section class="hero"
+    style="background:url('https://i.pinimg.com/736x/a3/cd/d2/a3cdd2915d24263cc884823925c884b7.jpg') no-repeat; background-size: cover;">
     <div class="container-fluid  hero-image pt-4 pb-4">
         <div class="row">
-            <div class="col-lg-7 col-md-7">
+            <div class="col-lg-7 col-md-7 ">
+
                 <p class="pt-5">HOUSE OF BOOKS EDITORS'</p>
                 <h1 class="pt-2">
+
                     Featured Books of the month
                 </h1>
                 <div class="my-5">
@@ -18,6 +20,7 @@
                         <a href="{% url 'products' %}" class="home-button buttons btn btn-md py-3">See More</a>
                     </h4>
                 </div>
+
             </div>
 
             <div class="col-lg-5 col-md-5">
@@ -73,72 +76,136 @@
             </div>
         </div>
     </div>
-</div>
-<section>
-    <div class="container">
-        <h2 class="text-center mt-4 mb-3 most-sold">Most sold books</h2>
-        <div class="row">
-            {% for product in products %}
-            <div class=" col-sm-12 col-md-4">
-                <div class="card  border-0 ">
-                    {% if product.image %}
-                    <a href="{% url 'product_detail' product.id %}">
-                        <img class="images" width="220" height="auto" src="{{ product.image }}"
-                            alt="{{ product.name }}">
-                    </a>
-                    {% else %}
-                    <a href="#">
-                        <img class="images" width="220" height="auto" src="{{ MEDIA_URL }}no-image.png"
-                            alt="{{ product.name }}">
-                    </a>
-                    {% endif %}
-                    <div class="card-body-1">
-                        <p class="books-title pt-2 text-left"><strong>{{ product.name }}</strong></p>
-                        <p class="text-left">By:{{ product.author}}</p>
+</section>
 
-                    </div>
-                    <div class="card-footer bg-white pt-0 border-0 text-left">
-                        <div class="row">
-                            <div class="col">
-                                {% if product.category %}
-                                <p class="small tag">
-                                    <a class="text-muted tag-2"
-                                        href="{% url 'products' %}?category={{ product.category.name }}">
-                                        {{ product.category.friendly_name }}
-                                    </a>
-                                </p>
-                                {% endif %}
-                                <p class="font-weight-bold mostsold-price">€{{ product.price }}</p>
-                            </div>
+<div class="container">
+    <header class="mb-5 d-md-flex justify-content-between align-items-center">
+        <h3 class="font-size-7 mb-3 mb-md-0 mt-4">Featured Categories</h3>
+        <a href="{% url 'products' %}" class="h-primary d-block mt-4 text-black">All Categories <i
+                class="fas fa-chevron-right"></i></a>
+    </header>
+    <div class="row">
+        <div class="col-md-3 col-6">
+            <div class="category-card">
+                <div class="card-image img1">
+                    <img src="{{ MEDIA_URL }}2589054.png" alt="heart icon" width="50">
+                    <br>
+                    <span>Romance</span>
+                    <br>
+                    <button class="seemore-btn"><a href="{% url 'products' %}?category=romance" class="text-black">See
+                            more</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-card">
+                <div class="card-image img2">
+                    <img src="{{ MEDIA_URL }}5000882.png" alt="mystery icon" width="50">
+                    <br>
+
+                    <span>Mystery</span>
+                    <br>
+                    <button class="seemore-btn"><a href="{% url 'products' %}?category=mystery" class="text-black">See
+                            More </a></button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-card">
+                <div class="card-image img3">
+                    <img src="{{ MEDIA_URL }}7624763.png" alt="fantasy icon" width="50">
+                    <br>
+                    <span>Fantasy</span>
+                    <br>
+                    <button class="seemore-btn"><a href="{% url 'products' %}?category=fantasy" class="text-black">See
+                            more</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-card">
+                <div class="card-image img4">
+                    <img src="{{ MEDIA_URL }}3839555.png" alt="thriller icon" width="50">
+                    <br>
+                    <span>Thriller</span>
+                    <br>
+                    <button class="seemore-btn"><a href="{% url 'products' %}?category=thriller" class="text-black">See
+                            more</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <header class="mb-5 d-md-flex justify-content-between align-items-center">
+        <h3 class="font-size-7 mb-3 mb-md-0 mt-3">Bestselling Books</h3>
+        <a href="{% url 'products' %}" class="h-primary d-block mt-3 text-black">All Books <i
+                class="fas fa-chevron-right"></i></a>
+    </header>
+    <div class="row">
+        {% for product in products %}
+        <div class=" col-sm-12 col-md-3">
+            <div class="card  border-0 ">
+                {% if product.image %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="images" width="220" height="auto" src="{{ product.image }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="#">
+                    <img class="images" width="220" height="auto" src="{{ MEDIA_URL }}no-image.png"
+                        alt="{{ product.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body-1">
+                    <p class="books-title pt-2 text-left"><strong>{{ product.name }}</strong></p>
+                    <p class="text-left authorname">By:{{ product.author}}</p>
+
+                </div>
+                <div class="card-footer bg-white pt-0 border-0 text-left">
+                    <div class="row">
+                        <div class="col">
+                            {% if product.category %}
+                            <p class="small tag category">
+                                <a class="text-muted tag-2"
+                                    href="{% url 'products' %}?category={{ product.category.name }}">
+                                    {{ product.category.friendly_name }}
+                                </a>
+                            </p>
+                            {% endif %}
+                            <p class="font-weight-bold mostsold-price">€{{ product.price }}</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            {% if forloop.counter|divisibleby:1 %}
-            <div class="col-12 d-sm-none mb-5">
-
-            </div>
-            {% endif %}
-            {% if forloop.counter|divisibleby:3 %}
-            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-
-            </div>
-            {% endif %}
-            {% if forloop.counter|divisibleby:4 %}
-            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-
-            </div>
-            {% endif %}
-
-            {% endfor %}
+        {% if forloop.counter|divisibleby:1 %}
+        <div class="col-12 d-sm-none mb-5">
 
         </div>
-        <div class="text-center">
-            <button class="buttons see-all"><a href="{% url 'products' %}">See all books</a> </button>
+        {% endif %}
+        {% if forloop.counter|divisibleby:3 %}
+        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+
         </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:4 %}
+        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+
+        </div>
+        {% endif %}
+
+        {% endfor %}
+
     </div>
 
+</div>
 
-</section>
+
+
 {% endblock %}

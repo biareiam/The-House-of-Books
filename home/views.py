@@ -30,7 +30,7 @@ def index(request):
     bool_series = products_df.duplicated()
     products_df_dup = products_df[~bool_series]
     context = {
-        'products': products_df_dup.head(3).to_dict('records')
+        'products': products_df_dup.head(4).to_dict('records')
     }
     return render(request, 'home/index.html', context)
 

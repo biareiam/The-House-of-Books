@@ -47,13 +47,16 @@
 
                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                 </p>
-                <hr>
                 {% if request.user.is_superuser %}
-                <small class="ml-3">
-                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                </small>
+                <p class="ml-3">
+                    <button class="delete-edit-button edit"><a
+                            href="{% url 'edit_product' product.id %}">Edit</a></button>
+                    <button class="delete-edit-button delete"><a class="text-danger"
+                            href="{% url 'delete_product' product.id %}">Delete</a></button>
+                </p>
                 {% endif %}
+                <hr>
+
 
 
                 <p class="description mb-2"><strong> Description:</strong></p>
