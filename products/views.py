@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, Review
-from .forms import ProductForm, ReviewForm
+from .models import Product, Category
+from .forms import ProductForm
 
 
 def all_products(request):
@@ -61,26 +61,12 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    reviews = product.reviews.filter(approved=True).order_by("-created_on")
-    review_form = ReviewForm()
-
-    if request.method == 'POST' and request.user.is_authenticated:
-        Review.objects.create(
-                product=product,
-                name=request.user,
-                comment=request.POST.get('comment', '')
-        )
-        messages.success(request,
-                         'Success! Your review is pending approval.')
 
     context = {
         'product': product,
-        'reviews': reviews,
-        'review_form': review_form
     }
 
     return render(request, 'products/product_detail.html', context)
-
 
 
 @login_required

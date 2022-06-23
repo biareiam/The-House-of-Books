@@ -1007,11 +1007,7 @@ input[name='q']::placeholder {
 
 
 /* Product Form */
-.myreview {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgba(255, 253, 253, 0.313);
-    margin-bottom: 0.7rem;
-}
+
 
 .btn-file {
     position: relative;
