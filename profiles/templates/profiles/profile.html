@@ -24,7 +24,14 @@
             </li>
         </ul>
         <div id="myTab2Content" class="tab-content">
+
             <div id="home2" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+                <p class="text-center"><strong>Delivery information</strong></p>
+                <small>Add or update your saved delivery details using the form below. Any details you previously saved
+                    are
+                    shown below. Saved details will be prepopulated on the checkout form next time you make a purchase,
+                    making the
+                    checkout process quicker.</small>
                 <form action="{% url 'profile' %}" class="mt-3 " method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
@@ -34,6 +41,10 @@
                 </form>
             </div>
             <div id="orders" role="tabpanel" aria-labelledby="orders-tab" class="tab-pane fade px-4 py-5">
+                <p class="text-center"><strong>Order History</strong></p>
+                <small>Below you can find a list of your previous orders. Note, the order will only be shown here if you
+                    were logged in when you made the purchase.
+                    Click on <strong>"View"</strong> to see the details of your order.</small>
                 {% if not orders.all %}
                 <div class="no-post text-center">
                     <div class="not-allow-box">
@@ -43,13 +54,13 @@
                 </div>
                 {% else %}
 
-                <p class="">
+                <p>
                     <div class="order-history table-responsive">
                         <table class="table table-sm table-borderless">
                             <thead>
                                 <tr>
                                     <th>Actions</th>
-                                    <th>Order List</th>
+                                    <th>Order #</th>
                                     <th class="date-hidden">Date</th>
                                     <th>Items</th>
                                     <th>Order Total</th>

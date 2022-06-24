@@ -1,0 +1,136 @@
+<!-- events sorting row -->
+
+<div class="row pb-3 align-items-center">
+
+    <!-- select box with sorting options - works using selectBoxSorting function in script.js, event listener on id -->
+
+    <div class="col-12 col-md-6 col-lg-4">
+
+        <select id="sorting-selector" class="custom-select custom-select-sm rounded-0" aria-label="Sorting options">
+
+            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+
+            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>event name (A-Z)</option>
+
+            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>event name (Z-A)
+            </option>
+
+            <option value="date_asc" {% if current_sorting == 'date_asc' %}selected{% endif %}>Date (earliest to latest)
+            </option>
+
+            <option value="date_desc" {% if current_sorting == 'date_desc' %}selected{% endif %}>Date (latest to
+                earliest)</option>
+
+        </select>
+
+    </div>
+
+    <!-- Display results column. Show number of events being shown, and county name if county filter selected -->
+
+    <div class="col-12 col-md-6 col-lg-4">
+
+        <p class="text-muted font-90 mt-3">
+
+            {{ events|length }} event{% if events|length != 1 %}s{% endif %} in
+
+            {% if current_county %}
+
+            <strong>{{ current_county.get_friendly_name }}</strong>
+
+            {% else %}all counties. Choose county to filter.
+
+            {% endif %}
+
+        </p>
+
+    </div>
+
+    <!-- end of display results column -->
+
+    <!-- dropdown box to choose county to filter events by -->
+
+    <div class="col-12 col-md-6 col-lg-4">
+
+        <div class="dropdown">
+
+            <a class="btn btn-brand-dark-outline w-100 d-flex align-items-center justify-content-between" href="#"
+                id="filterByCounty" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                data-display="static">
+
+                <span>Filter by county...</span>
+
+                <i class="bi bi-chevron-down ml-1" aria-hidden="true"></i>
+
+            </a>
+
+            <div class="dropdown-menu county-dropdown" aria-labelledby="filterByCounty">
+
+                <!-- set the page url to be used in the filter links, depending on if we are on events or my_events -->
+
+                {% if on_my_events_page %}
+
+                {% url 'my_events' as page_url %}
+
+                {% else %}
+
+                {% url 'events' as page_url %}
+
+                {% endif %}
+
+                <!-- additionaly, if currently viewing past events, add this to the url to allow filtering by county of past events -->
+
+                <!-- option to select all counties, with active class if no county currently selected -->
+
+                <a class="dropdown-item{% if not current_county %} active{% endif %}"
+                    href="{{ page_url }}{% if current_view == 'past' %}?view=past{% endif %}">All</a>
+
+                {% for event in all_events %}
+
+                <!-- remaining options are the available counties from events in queryset, county name only shown once, active class if selected -->
+
+                {% ifchanged %}
+
+                <a class="dropdown-item{% if event.county.name == current_county.name %} active{% endif %}"
+                    href="{{ page_url }}?{% if current_view == 'past' %}view=past&{% endif %}county={{event.county.name}}">{{ event.county.friendly_name }}</a>
+
+                {% endifchanged %}
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- end of county filtering options column -->
+
+</div>
+
+{% if not request.user.is_superuser %}
+
+{% if not on_my_events_page %}
+
+<!-- Link to view old events. Only shown when not on my_events page or not a superuser as all events shown in those views -->
+
+<div class="row pb-2">
+
+    <div class="col-12 text-right">
+
+        {% if current_view == 'past' %}
+
+        <a href="{% url 'events' %}" class="btn btn-brand-dark ml-md-auto">View Upcoming events</a>
+
+        {% else %}
+
+        <a href="{% url 'events' %}?view=past" class="btn btn-brand-dark ml-md-auto">View Past events</a>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endif %}
+
+{% endif %}

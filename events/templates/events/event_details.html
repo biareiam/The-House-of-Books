@@ -1,0 +1,490 @@
+{% extends "base.html" %}
+
+
+
+
+{% load static %}
+
+
+
+
+
+
+
+{% block extra_meta %}
+
+
+<!-- specific meta description and keywords for individual events -->
+
+
+<meta name="description"
+    content="Enjoy fun and meaningful discussion with other book lovers while also getting to know dublin’s hidden gems">
+
+
+<meta name="keywords" content="events, book club, book club dublin, book club sessions, book club events in dublin ">
+
+
+{% endblock %}
+
+
+
+
+
+
+
+{% block extra_title %} | {{ event.name|title }}{% endblock %}
+
+
+
+
+
+
+
+{% block content %}
+
+
+<!-- page contents container -->
+
+
+<section class="py-5 container-fluid">
+
+
+    <!-- 1 row - with 2 columns - event image + details -->
+
+
+    <div class="row pt-5 justify-content-center">
+
+
+        <!-- 1st column - image -->
+
+
+        <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2 px-4 pt-md-5">
+
+
+            <!-- event image links to the event website (external) -->
+
+
+            <a href="{{ event.website }}" target="_blank" rel="noopener">
+
+
+                <!-- if there is no image, then src is the default image, and alt text changes accordingly -->
+
+
+                <img class="img-fluid"
+                    src="{% if event.image %}{{ event.image.url }}{% else %}{{ MEDIA_URL }}no-image.png{% endif %}"
+                    alt="{% if event.image %}Photo of {% else %}No image yet for {% endif %}{{ event.name }}{% if not event.image %}, image coming soon.{% endif %}">
+
+
+            </a>
+
+
+        </div>
+
+
+        <!-- 2nd column - event details -->
+
+
+        <div class="col-12 col-sm-10 col-md-5 col-lg-4 px-4 pt-md-5 mt-4 mt-md-0 align-items-center">
+
+
+            <h1 class="text-uppercase h6">{{ event.name }}</h1>
+
+
+            <p class="small my-1">
+
+
+                <!-- county name - also links to filter all events by that county -->
+
+
+                <a href="{% url 'events' %}?county={{event.county.name}}" class="text-muted">
+
+
+                    <i class="bi bi-geo-alt-fill icon" aria-hidden="true"></i>{{ event.county.friendly_name }}
+
+
+                </a>
+
+
+            </p>
+
+
+            <p class="small mb-2">{{ event.location }}</p>
+
+
+            <p class="font-90 mb-2"><a href="{{ event.website }}" target="_blank" rel="noopener">{{ event.website }}</a>
+            </p>
+
+
+            <p class="fw-600 mb-1">{{ event.date }}</p>
+
+
+            <p class="fw-600 font-90 mb-2">{{ event.start_time }} to {{ event.end_time }}</p>
+
+
+            {% if not event.date_passed %}
+
+
+            <!-- only show the buttons to save the event if not viewing a past event -->
+
+
+            {% if request.user.is_authenticated %}
+
+
+            <!-- Save/Remove event for logged in users -->
+
+
+            <form action="{% url 'update_my_events' event.id %}" method="POST">
+
+
+                {% csrf_token %}
+
+
+                <button type="submit" value="{{ event.id }}" name="event_id"
+                    class="bg-transparent border-0 p-0 my-2 small">
+
+
+                    {% if event in saved_events_list.event.all %}
+
+
+                    <i class="bi bi-heart-fill icon" aria-hidden="true"></i>
+
+
+                    <span class="text-muted">Remove from My events</span>
+
+
+                    {% else %}
+
+
+                    <i class="bi bi-heart icon" aria-hidden="true"></i>
+
+
+                    <span class="text-muted">Save to My events</span>
+
+
+                    {% endif %}
+
+
+                </button>
+
+
+                <!-- hidden input with url path, so view can redirect back to same page -->
+
+
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+
+
+            </form>
+
+
+            {% else %}
+
+
+            <p class="small text-muted my-2"><i class="bi bi-heart icon" aria-hidden="true"></i><a class="text-link"
+                    href="{% url 'account_login' %}">Sign In</a> or <a class="text-link"
+                    href="{% url 'account_signup' %}">Sign Up</a> to save to My events.
+
+
+            </p>
+
+
+            {% endif %}
+
+
+            <!-- end of if statement for if user is authenticated -->
+
+
+            {% endif %}
+
+
+            <!-- end of if statement for if not viewing past event -->
+
+
+            {% if event in saved_events_list.event.all or request.user.is_superuser %}
+
+
+            <!-- superuser can view all events so show status, or if user saved this event show the status -->
+
+
+            <p class="font-90 mt-2 mb-1"><span class="fw-600">Status:</span>
+
+
+                <span class="font-90">{% if event.date_passed %}
+
+
+                    <i class="bi bi-exclamation-circle-fill icon" aria-hidden="true"></i>Date has passed
+
+
+                    {% else %}Upcoming {% endif %}
+
+
+                </span>
+
+
+            </p>
+
+
+            {% endif %}
+
+
+            {% if request.user.is_superuser %}
+
+
+            <!-- if user is admin, show number of saves for the event, then the admin links -->
+
+
+            <p class="font-90 mb-1"><span class="fw-600">Number of saves:</span>
+
+
+                <span class="font-90">{{ event_saves }}</span>
+
+
+            </p>
+
+
+            <!-- admin actions - edit/delete the event -->
+
+
+            <div class="admin-link-container col-12 col-md-10 col-xl-8 mb-5">
+
+
+                <div class="row mx-0">
+
+
+                    <h5 class="fw-600 font-90">Admin actions:</h5>
+
+
+                </div>
+
+
+                <div class="row mx-0">
+
+
+                    <div class="col-6 px-0 text-center">
+
+
+                        <a class="small admin-link" href="{% url 'edit_event' event.id %}">Edit
+
+
+                            Details</a>
+
+
+                    </div>
+
+
+                    <div class="col-6 px-0 text-center">
+
+
+                        <a class="small admin-link" href="#deleteeventModal{{ event.id }}" data-toggle="modal">Delete
+
+
+                            event</a>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            {% endif %}
+
+
+        </div>
+
+
+        <!-- end of event details column -->
+
+
+        {% include '../events/includes/delete_event_modal.html' %}
+
+
+    </div>
+
+
+    <!-- end of event image + details row -->
+
+
+    <!-- start of comments row -->
+
+
+    <div class="row pt-2 pt-md-4 pt-lg-5 justify-content-center">
+
+
+        <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6">
+
+
+            <h3 class="h6 d-inline">The Conversation</h3>
+
+
+            <span class="text-muted small">({{ event.comments.all|length }}
+
+
+                Comment{% if event.comments.all|length != 1 %}s{% endif %})</span>
+
+
+            <hr class="mt-1">
+
+
+            <!-- card to show comment form + comments inside -->
+
+
+            <div class="card-body pt-0">
+
+
+                <div class="mb-4">
+
+
+                    {% if request.user.is_authenticated %}
+
+
+                    <!-- comment form -->
+
+
+                    <form method="POST" action="{% url 'event_details' event.id %}" class="brand-form">
+
+
+                        {% csrf_token %}
+
+
+                        {{ form|crispy }}
+
+
+                        <div class="text-right">
+
+
+                            <button type="submit" class="btn btn-brand">Post Comment</button>
+
+
+                        </div>
+
+
+                        <!-- hidden input with url path, so view can redirect back to same page -->
+
+
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+
+
+                    </form>
+
+
+                    {% else %}
+
+
+                    <p class="small text-muted mt-2"><i class="bi bi-chat-left icon" aria-hidden="true"></i><a
+                            class="text-link" href="{% url 'account_login' %}">Sign In</a> or <a class="text-link"
+                            href="{% url 'account_signup' %}">Sign Up</a> to add a comment.
+
+
+                    </p>
+
+
+                    {% endif %}
+
+
+                </div>
+
+
+                {% for comment in comments %}
+
+
+                <div>
+
+
+                    <p class="font-weight-bold mb-0">{{ comment.author }}</p>
+
+
+                    <p class="small text-muted mb-2">{{ comment.created_on }}</p>
+
+
+                    {{ comment.comment | linebreaks }}
+
+
+                    {% if request.user == comment.author %}
+
+
+                    <div>
+
+
+                        <a class="small text-muted text-link mr-2" href="#deleteCommentModal{{ comment.id }}"
+                            data-toggle="modal">Delete</a>
+
+
+                        <a class="small text-muted text-link" href="{% url 'edit_comment' comment.id %}">Edit</a>
+
+
+                    </div>
+
+
+                    {% endif %}
+
+
+                </div>
+
+
+                <!-- delete comment modal -->
+
+
+                {% include '../events/includes/delete_comment_modal.html' %}
+
+
+                <hr>
+
+
+                {% empty %}
+
+
+                <p>No comments on this event yet. Start the conversation...</p>
+
+
+                {% endfor %}
+
+
+            </div>
+
+
+            <!-- end of card holding comment form and comments -->
+
+
+            <!-- navigation - to main events page but if event is saved by this user, then option to go to My events -->
+
+
+            <div class="pl-3 pt-2">
+
+
+                {% if event in saved_events_list.event.all %}
+
+
+                <a class="btn btn-brand-outline" href="{% url 'events' %}">All events</a>
+
+
+                <a class="btn btn-brand-outline ml-3" href="{% url 'my_events' %}">My events</a>
+
+
+                {% else %}
+
+
+                <a class="btn btn-brand-outline" href="{% url 'events' %}">Back to events</a>
+
+
+                {% endif %}
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- End of comments row -->
+
+
+</section>
+
+
+{% endblock %}

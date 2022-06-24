@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from events.models import Event
 
 from django_countries.fields import CountryField
 
@@ -41,3 +42,18 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
     instance.userprofile.save()
+
+
+class SavedEventList(models.Model):
+    """
+    To hold the event(s) that a user can save to their profile.
+    Instance created when a user first saves a event, then events are
+    added to, or removed from, the list instance when user saves/removes
+    a Event via frontend buttons.
+    """
+    user = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
+    #event = models.ManyToManyField(Event(), blank=True)
+
+    def __str__(self):
+        """string method, return 'username's saved events'"""
+        return f'{self.user.user.username}\'s saved events'

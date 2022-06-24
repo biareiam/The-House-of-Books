@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Buy book and embarque in a new adventure.">
+    <meta name="description" content="The House of Books: Small indenpende bookstore located in the heart of Dublin.">
     <meta name="keywords"
         content="books, romance books, thriller books, irish books, classic books, fiction, nonfiction books, house of book irish true crime books, literature">
 
@@ -91,9 +91,7 @@
 
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-
                             <div class="text-center">
-
                                 <p class="my-0">
                                     <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
                                         alt="account-icon" width="25px"> Account
@@ -106,6 +104,7 @@
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'my_events' %}" class="dropdown-item">My Club Events</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -145,6 +144,7 @@
         </div>
     </header>
 
+    <!-- to display error/info/warning/success messages for user actions -->
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
@@ -169,80 +169,148 @@
     {% block content %}
     {% endblock %}
 
+    <!-- page footer for all pages -->
     {% block content_footer %}
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3  item">
-                        <h3>Shop</h3>
-                        <ul>
-                            <li><a href="{% url 'products' %}">Books</a></li>
-                            <li><a
-                                    href="{% url 'products' %}?category=irish_fiction,irish_nonfiction,irish_true_crime,irish_classics">Irish
-                                    Books</a></li>
-                            <li><a href="{% url 'products' %}?category=new_arrivals,deals">Offers</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3  item">
-                        <h3>Company</h3>
-                        <ul>
-                            {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-
-                            <li><a href="{% url 'add_product' %}">Product Management</a></li>
-                            {% endif %}
-                            <li><a href="{% url 'profile' %}">My Profile</a></li>
-                            <li><a href="{% url 'account_logout' %}">Logout</a></li>
-                            {% else %}
-                            <li><a href="{% url 'account_signup' %}">Register</a></li>
-                            <li><a href="{% url 'account_login' %}">Login</a></li>
-                            {% endif %}
-                            <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
-                            <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3  item">
-                        <h3>Categories</h3>
-                        <ul>
-                            <li><a href="{% url 'products' %}?category=romance" class="dropdown-item-1">Romance</a></li>
-                            <li><a href="{% url 'products' %}?category=mystery" class="dropdown-item-1">Mystery</a></li>
-                            <li><a href="{% url 'products' %}?category=fiction" class="dropdown-item-1">Fiction</a></li>
-                            <li><a href="{% url 'products' %}?category=nonfiction"
-                                    class="dropdown-item-1">Nonfiction</a></li>
-                            <li><a href="{% url 'products' %}?category=classics" class="dropdown-item-1">Classics</a>
-                            </li>
-                            <li> <a href="{% url 'products' %}?category=romance,mystery,fiction,nonfiction,classics,fantasy,thriller,history"
-                                    class="dropdown-item-1">All Categories</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3  item">
-                        <h3>House of Books</h3>
-                        <p class="about">This is a bookstore located at Grafton St, Dublin. We aim to create a space for
-                            book lovers to share their passion, inspiring others and being inspired.</p>
-                    </div>
-                    <div class="m-auto pb-3">
-                        <div class="col item social"><a href="https://www.facebook.com/" rel="noopener"
-                                target="_blank"><i class="fab fa-facebook-f center"></i></a>
-                            <a href="https://www.twitter.com/" target="_blank" rel="noopener"><i
-                                    class="fab fa-twitter-square center"></i></a>
-                            <a href="https://www.pinterest.com/" target="_blank" rel="noopener"><i
-                                    class="fab fa-pinterest center"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i
-                                    class="fab fa-instagram center"></i></a>
-                        </div>
-                    </div>
+    <footer>
+        <!-- container for footer grid - two rows -->
+        <div class="pt-5 pb-2 container-fluid bg-black">
+            <!-- row to hold social links, useful links + newsletter sign up -->
+            <div class="row pb-4 justify-content-md-center">
+                <!-- social media links section-->
+                <div class="col-12 col-md-6 col-lg-3 text-center">
+                    <h5 class="sm-heading">Connect with us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <!-- note this link may no longer work as the account has been disabled by FB -->
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                                aria-label="Visit our Facebook page. Link opens in new tab" class="footer-link"><i
+                                    class="fab fa-facebook-f center" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://instagram.com" target="_blank" rel="noopener"
+                                aria-label="Visit our Instagram page. Link opens in new tab" class="footer-link"><i
+                                    class="fab fa-instagram center" aria-hidden="true"></i></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com" target="_blank" rel="noopener"
+                                aria-label="Visit our Twitter page. Link opens in new tab" class="footer-link"><i
+                                    class="fab fa-twitter-square center" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.pinterest.com/" target="_blank" rel="noopener"
+                                aria-label="Visit our Pinterest page. Link opens in new tab" class="footer-link"><i
+                                    class="fab fa-pinterest center" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="copyright">House of Books © 2022</p>
+                <!-- end of social links column -->
+                <!-- Useful links column: terms of use + privacy policy links -->
+                <div class="col-12 col-md-6 col-lg-3 text-center mt-3 mt-md-0">
+                    <h5 class="sm-heading">Useful links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="{% url 'terms' %}" data-toggle="modal" class="footer-link">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'privacy' %}" data-toggle="modal" class="footer-link">Privacy policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end of useful links column -->
+                <!-- newsletter sign up column - Mailchimp embedded form -->
+                <div id="mc_embed_signup" class="col-12 col-md-10 col-lg-6 mt-4 mt-lg-0 px-4">
+                    <h5 class="sm-heading text-center">Sign up to our newsletter</h5>
+                    <p class="font-90 m-0">Be the first to hear about our new books, book club events and much more!</p>
+                    <form
+                        action="https://herokuapp.us14.list-manage.com/subscribe/post?u=1beeb9fe77b2622a8021637d3&amp;id=afabe6fb17"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                        class="validate brand-form" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <div class="form-row">
+                                <div class="col-12 col-sm-8">
+                                    ---
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL" class="sr-only">Email Address</label>
+                                        <input type="email" value="" name="EMAIL"
+                                            class="required email newsletter-form-input w-100" id="mce-EMAIL"
+                                            placeholder="Email address">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 mt-2 mt-sm-0">
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                        class="button btn btn-newsletter w-100">
+                                </div>
+                            </div>
+                            <!-- mailchimp containers for error or success msgs -->
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                    name="b_1beeb9fe77b2622a8021637d3_afabe6fb17" tabindex="-1" value="">
+                            </div>
+                            <!-- mailchimp credit for form -->
+                            <div class="form-row flex-row-reverse mx-0">
+                                <div class="clear foot col-4 mt-2 pr-0 pl-1">
+                                    <p class="brandingLogo mb-0"><a href="http://eepurl.com/hZys35" target="_blank"
+                                            rel="nofollow" title="Mailchimp - emailing made easy and fun"><img
+                                                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
+                                                alt="bage stating made with mailchimp, and mailchimp logo"
+                                                class="img-fluid"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- end of newsletter sign up column -->
             </div>
-        </footer>
-    </div>
+            <!-- end of row with social links, useful links + newsletter sign up -->
+            <!-- row for copyright info -->
+            <div class="row footnote text-center mt-4">
+                <div class="col">
+                    <p>
+                        <span>&copy; <a href="https://github.com/biareiam" target="_blank" rel="noopener"
+                                class="footer-link">Beatriz Amorim</a> 2022. Site created for educational purposes.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end of footer container -->
+    </footer>
+
     {% endblock %}
 
+
     {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
+    <!-- specific page scripts that need to load at end of body -->
+    <script>
+        // call Bootstrap toast method with show option on all elements with class toast
+        $(".toast").toast("show");
+    </script>
+    <!-- Mailchimp embedded form script -->
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <!-- Mailchimp embedded form script -->
+    <script>
+        (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+            fnames[3] = 'ADDRESS';
+            ftypes[3] = 'address';
+            fnames[4] = 'PHONE';
+            ftypes[4] = 'phone';
+            fnames[5] = 'BIRTHDAY';
+            ftypes[5] = 'birthday';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
     </script>
     {% endblock %}
 </body>
