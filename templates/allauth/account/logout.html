@@ -5,9 +5,9 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class=" mb-4 text-center">{% trans "Sign Out" %}</h2>
-<hr>
+
+<h2 class=" mb-4 text-center line">{% trans "Sign Out" %}</h2>
+
 <p class="text-center border-0">{% trans 'Are you sure you want to sign out?' %}</p>
 
 <form method="post" action="{% url 'account_logout' %}">
@@ -16,8 +16,8 @@
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
   <div class="register-form text-center mb-5 mt-5">
-    <a class="btn cancel buttons-1" href="{% url 'home' %}">Cancel</a>
-    <button type="submit" class="buttons">{% trans 'Sign Out' %}</button>
+    <a class="btn cancel general-btn-1" href="{% url 'home' %}">Cancel</a>
+    <button type="submit" class="btn general-btn">{% trans 'Sign Out' %}</button>
   </div>
 </form>
 

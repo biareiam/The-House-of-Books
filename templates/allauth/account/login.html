@@ -6,27 +6,24 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block inner_content %}
-<div class="member-form">
-  <hr>
-  <h2 class="mb-4 text-center">{% trans "Sign In" %}</h2>
-  <hr>
 
-  {% get_providers as socialaccount_providers %}
+<h2 class="mb-4 text-center line ">{% trans "Sign In" %}</h2>
+{% get_providers as socialaccount_providers %}
 
-  {% if socialaccount_providers %}
-  <p>{% blocktrans with site.name as site_name %}Please sign in with one
-    of your existing third party accounts. Or, <a href="{{ signup_url }}" id="account-exist">sign up</a>
-    for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+{% if socialaccount_providers %}
+<p>{% blocktrans with site.name as site_name %}Please sign in with one
+  of your existing third party accounts. Or, <a href="{{ signup_url }}" id="account-exist">sign up</a>
+  for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
-  <div class="socialaccount_ballot">
+<div class="socialaccount_ballot">
 
-    <ul class="socialaccount_providers">
-      {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-    </ul>
+  <ul class="socialaccount_providers">
+    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+  </ul>
 
-    <div class="login-or">{% trans 'or' %}</div>
+  <div class="login-or">{% trans 'or' %}</div>
 
-  </div>
+
 
   {% include "socialaccount/snippets/login_extra.html" %}
 
@@ -40,13 +37,15 @@
     {{ form|crispy }}
     {% if redirect_field_value %}
     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+
     {% endif %}
+    <hr class="line p-0">
     <div class="register-form text-center">
-      <a class="btn buttons-1" href="{% url 'home' %}">Home</a>
-      <button class="primaryAction buttons" type="submit">{% trans "Sign In" %}</button>
+      <a class=" btn general-btn-1" href="{% url 'home' %}">Home</a>
+      <button class="primaryAction btn general-btn" type="submit">{% trans "Sign In" %}</button>
     </div>
     <p class="mt-2">
-      <a class="button secondaryAction " href="{% url 'account_reset_password' %}"
+      <a class="button secondaryAction" href="{% url 'account_reset_password' %}"
         id="account-exist">{% trans "Forgot Password?" %}</a>
     </p>
   </form>

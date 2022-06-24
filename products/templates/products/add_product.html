@@ -8,11 +8,8 @@
 <div class="container add_product">
     <div class="row ">
         <div class="col-12">
-
             <h2 class="mb-4 text-center management">Product Management</h2>
-
             <p class="text-center">Complete the form below to <strong>add</strong> a new book to the shop.</p>
-
             <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}

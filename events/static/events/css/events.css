@@ -1,5 +1,24 @@
 .page-title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     border-bottom: 2px solid #6ba5c4;
     padding-bottom: 1rem;
+}
+
+.btn-brand-dark-outline {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    color: rgb(81, 81, 81);
+    font-size: 0.9rem;
+    height: 38px;
+}
+
+#sorting-selector {
+    height: 38px;
+    border-radius: 5px !important;
+}
+
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    width: 323px;
 }

@@ -543,7 +543,10 @@ input[name='q']::placeholder {
 }
 
 @media(max-width: 768px) {
-
+    .newsletter-form-input {
+        width: 50% !important;
+        margin-left: 10rem !important;
+    }
 
 
 
@@ -650,6 +653,11 @@ input[name='q']::placeholder {
 }
 
 @media(max-width: 430px) {
+    .newsletter-form-input {
+        width: 90% !important;
+        margin-left: 1rem !important;
+    }
+
     .bg {
         padding: 0.5rem;
     }
@@ -887,6 +895,8 @@ input[name='q']::placeholder {
 }
 
 @media(max-width:375px) {
+
+
     .card {
         margin-left: -0.2rem !important;
     }
@@ -908,6 +918,9 @@ input[name='q']::placeholder {
 }
 
 @media(max-width:350px) {
+    .newsletter-form-input {
+        margin-left: 0.5rem !important;
+    }
 
     .product-detail {
         padding: 0.4rem !important;
@@ -999,6 +1012,12 @@ input[name='q']::placeholder {
 
 }
 
+
+.line {
+    border-bottom: 2px solid #6ba5c4;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
 
 /* Product Form */
 .management {
@@ -1145,7 +1164,7 @@ input[name='q']::placeholder {
 }
 
 .free-delivery-banner {
-    background-color: #9dc1eb;
+    background-color: #6ba5c4;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 2px;
     padding-top: 0.5rem;
@@ -1166,7 +1185,7 @@ input[name='q']::placeholder {
 #new-arrivals-link:hover,
 .nav-item:hover {
     text-decoration: underline;
-    text-decoration-color: #007bff;
+    text-decoration-color: #6ba5c4 !important;
     text-decoration-style: solid;
     text-decoration-thickness: 4px;
     text-underline-offset: 17px;
@@ -1193,7 +1212,7 @@ input[name='q']::placeholder {
 .dropdown-item-1:hover,
 .dropdown-item-2:hover {
     text-decoration: underline;
-    text-decoration-color: #007bff;
+    text-decoration-color: #6ba5c4 !important;
     text-decoration-style: solid;
     text-decoration-thickness: 4px;
     text-underline-offset: 2px;
@@ -1222,18 +1241,40 @@ input[name='q']::placeholder {
     margin: 0 auto;
 }
 
+.general-btn {
+    background-color: #000000;
+    color: white;
+}
+
+.general-btn:hover,
+.general-btn:focus {
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(177, 174, 174) !important;
+}
+
+.general-btn-1 {
+    border: 1px solid black;
+}
+
+.general-btn-1:hover,
+.general-btn-1:focus {
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(177, 174, 174) !important;
+    border: 1px solid rgb(177, 174, 174);
+}
 
 /* Footer */
 .footer {
-    background-color: #eee;
+    background-color: rgba(198, 195, 195, 0.219);
 }
 
 .footer-link {
     color: black;
+    font-size: 0.95rem;
 }
 
 .footer-link:hover {
-    color: #007bff;
+    color: #6ba5c4;
     font-weight: 600;
 }
 
@@ -1257,7 +1298,7 @@ input[name='q']::placeholder {
 #mc_embed_signup div.mce_inline_error {
     margin: 0 0 1em 0;
     padding: 5px 10px;
-    background-color: #6B0505;
+    background-color: #773333;
     font-weight: 400 !important;
     z-index: 1;
     color: #fff;
@@ -1268,7 +1309,40 @@ input[name='q']::placeholder {
     color: #007bff;
 }
 
+.newsletter-form-input {
+    margin-top: 0.6rem;
+    width: 100%;
+    border: 1px solid rgba(198, 195, 195, 0.219);
+    height: 35px;
+    font-size: 0.95rem;
+    padding-left: 0.3rem;
+    background-color: rgba(198, 195, 195, 0.219);
+}
 
+.envelope {
+    font-size: 10px !important;
+}
+
+.icon1:hover,
+.icon1:focus {
+    color: #007bff;
+}
+
+.icon2:hover,
+.icon2:focus {
+    color: #e05c7b;
+}
+
+.icon3:hover,
+.icon3:focus {
+    color: #2a9dcb;
+}
+
+.icon4:hover,
+.icon4:focus {
+    color: #e92c2c;
+
+}
 
 /*** Porduct ***/
 .book-image {
@@ -1657,6 +1731,14 @@ input[name='q']::placeholder {
 
 
 /****** Register and login form ****/
+.header-container {
+    margin-top: -2rem;
+}
+
+.agreement {
+    margin-top: -1.5rem !important;
+    font-size: 0.9rem;
+}
 
 .register-login-form {
     margin: auto;
