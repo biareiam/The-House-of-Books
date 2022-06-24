@@ -1,6 +1,3 @@
-from django.db import models
-
-# Create your models here.
 """Models for 'events' app"""
 import datetime
 from django.db import models
@@ -46,7 +43,8 @@ class Event(models.Model):
     start_time = models.TimeField()
     end_time = models.TimeField()
     image = models.ImageField(null=True, blank=True)
-    website = models.URLField(max_length=254,)
+    event_description = models.TextField()
+
 
     @property
     def date_passed(self):
@@ -76,3 +74,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return f'Comment by {self.author_comment}, {self.created_on}, on {self.event}'
+

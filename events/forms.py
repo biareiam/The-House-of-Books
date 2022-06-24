@@ -2,8 +2,9 @@
 import datetime
 from django import forms
 from django.core.exceptions import ValidationError
+#from products.widgets import CustomClearableFileInput
 from .models import Event, County, Comment
-#from products.widgets import CustomsCleareableFileInput
+
 
 class EventForm(forms.ModelForm):
     """
@@ -18,7 +19,7 @@ class EventForm(forms.ModelForm):
         model = Event
         fields = (
             'name', 'location', 'county', 'date', 'start_time', 'end_time',
-            'image', 'website',
+            'image', 'event_description',
         )
         labels = {
             'name': 'Event Name',
@@ -28,7 +29,8 @@ class EventForm(forms.ModelForm):
             'or later are shown to users in the Upcoming Events page',
             'start_time': 'Must be before End time!',
             'end_time': 'Must be after Start time!',
-            'website': 'Use social media link if event does not have website',
+            'event_description': 'Please enter a description',
+            
             }
         widgets = {
             'date': forms.DateInput(
@@ -45,9 +47,8 @@ class EventForm(forms.ModelForm):
                 ),
             }
 
-   # image = forms.ImageField(
-        #label='image', required=False, widget=CustomClearableFileInput
-        #)
+    #image = forms.ImageField(
+        #label='Image', required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """
@@ -154,3 +155,4 @@ class CommentForm(forms.ModelForm):
                             'Comment is too long. Please shorten and re-submit'
                         )
                     )
+

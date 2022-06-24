@@ -14,5 +14,6 @@ urlpatterns = [
     path(
         'my_events/', views.show_saved_events, name='my_events'
         ),
+    
 ]
 

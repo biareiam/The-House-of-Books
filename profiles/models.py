@@ -52,7 +52,7 @@ class SavedEventList(models.Model):
     a Event via frontend buttons.
     """
     user = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
-    #event = models.ManyToManyField(Event(), blank=True)
+    event = models.ManyToManyField(Event(), blank=True)
 
     def __str__(self):
         """string method, return 'username's saved events'"""

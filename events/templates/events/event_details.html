@@ -61,18 +61,15 @@
         <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2 px-4 pt-md-5">
 
 
-            <!-- event image links to the event website (external) -->
 
 
-            <a href="{{ event.website }}" target="_blank" rel="noopener">
+
+            <!-- if there is no image, then src is the default image, and alt text changes accordingly -->
 
 
-                <!-- if there is no image, then src is the default image, and alt text changes accordingly -->
-
-
-                <img class="img-fluid"
-                    src="{% if event.image %}{{ event.image.url }}{% else %}{{ MEDIA_URL }}no-image.png{% endif %}"
-                    alt="{% if event.image %}Photo of {% else %}No image yet for {% endif %}{{ event.name }}{% if not event.image %}, image coming soon.{% endif %}">
+            <img class="img-fluid"
+                src="{% if event.image %}{{ event.image.url }}{% else %}{{ MEDIA_URL }}no-image.png{% endif %}"
+                alt="{% if event.image %}Photo of {% else %}No image yet for {% endif %}{{ event.name }}{% if not event.image %}, image coming soon.{% endif %}">
 
 
             </a>
@@ -111,8 +108,6 @@
             <p class="small mb-2">{{ event.location }}</p>
 
 
-            <p class="font-90 mb-2"><a href="{{ event.website }}" target="_blank" rel="noopener">{{ event.website }}</a>
-            </p>
 
 
             <p class="fw-600 mb-1">{{ event.date }}</p>

@@ -1,11 +1,11 @@
 /**
  * This file contains functions used throughout the site: select box sorting for shop
- * and markets pages, quantity inputs on cart and checkout, back to top btn, file name
- * for image upload field for markets and products.
+ * and eventss pages, quantity inputs on cart and checkout, back to top btn, file name
+ * for image upload field for eventss and products.
  */
 
 /**
- * Select dopdown box for sorting options on Shop and Markets pages. If it exists, listen for change on element.
+ * Select dopdown box for sorting options on Shop and eventss pages. If it exists, listen for change on element.
  * On change, get current URL + get value from the select option. If value not 'reset', get sort and direction 
  * from select option value, set these into the search parameters on the url, then put new url into window
  * Otherwise, clear any sort and direction so that all results will be shown
@@ -134,7 +134,7 @@ function scrollBackToTop() {
 }
 
 /**
- * Listen for change on file input for image upload on product + market form. On change,
+ * Listen for change on file input for image upload on product + events form. On change,
  * set text in the paragraph below it to show the name of the file being uploaded.
  */
 function fileInputShowFileName() {
