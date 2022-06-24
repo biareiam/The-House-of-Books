@@ -173,51 +173,45 @@
     <!-- page footer for all pages -->
     {% block content_footer %}
     <footer>
-        <!-- container for footer grid - two rows -->
-        <div class="pt-5 pb-2 container-fluid bg-black">
-            <!-- row to hold social links, useful links + newsletter sign up -->
+        <div class="pt-5 pb-2 container-fluid footer">
             <div class="row pb-4 justify-content-md-center">
-                <!-- social media links section-->
                 <div class="col-12 col-md-6 col-lg-3 text-center">
                     <h5 class="sm-heading">Connect with us</h5>
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <!-- note this link may no longer work as the account has been disabled by FB -->
                             <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                                aria-label="Visit our Facebook page. Link opens in new tab" class="footer-link"><i
+                                aria-label="Visit our Facebook page. Link opens in new tab" class="footer-link-1"><i
                                     class="fab fa-facebook-f center" aria-hidden="true"></i></a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://instagram.com" target="_blank" rel="noopener"
-                                aria-label="Visit our Instagram page. Link opens in new tab" class="footer-link"><i
+                                aria-label="Visit our Instagram page. Link opens in new tab" class="footer-link-1"><i
                                     class="fab fa-instagram center" aria-hidden="true"></i></i></a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://twitter.com" target="_blank" rel="noopener"
-                                aria-label="Visit our Twitter page. Link opens in new tab" class="footer-link"><i
+                                aria-label="Visit our Twitter page. Link opens in new tab" class="footer-link-1"><i
                                     class="fab fa-twitter-square center" aria-hidden="true"></i></a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://www.pinterest.com/" target="_blank" rel="noopener"
-                                aria-label="Visit our Pinterest page. Link opens in new tab" class="footer-link"><i
+                                aria-label="Visit our Pinterest page. Link opens in new tab" class="footer-link-1"><i
                                     class="fab fa-pinterest center" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
-                <!-- end of social links column -->
                 <!-- Useful links column: terms of use + privacy policy links -->
                 <div class="col-12 col-md-6 col-lg-3 text-center mt-3 mt-md-0">
                     <h5 class="sm-heading">Useful links</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="{% url 'terms' %}" data-toggle="modal" class="footer-link">Terms of use</a>
+                            <a href="{% url 'terms' %}" class="footer-link">Terms of use</a>
                         </li>
                         <li>
-                            <a href="{% url 'privacy' %}" data-toggle="modal" class="footer-link">Privacy policy</a>
+                            <a href="{% url 'privacy' %}" class="footer-link">Privacy policy</a>
                         </li>
                     </ul>
                 </div>
-                <!-- end of useful links column -->
                 <!-- newsletter sign up column - Mailchimp embedded form -->
                 <div id="mc_embed_signup" class="col-12 col-md-10 col-lg-6 mt-4 mt-lg-0 px-4">
                     <h5 class="sm-heading text-center">Sign up to our newsletter</h5>
@@ -229,7 +223,6 @@
                         <div id="mc_embed_signup_scroll">
                             <div class="form-row">
                                 <div class="col-12 col-sm-8">
-                                    ---
                                     <div class="mc-field-group">
                                         <label for="mce-EMAIL" class="sr-only">Email Address</label>
                                         <input type="email" value="" name="EMAIL"
@@ -265,28 +258,24 @@
                         </div>
                     </form>
                 </div>
-                <!-- end of newsletter sign up column -->
             </div>
-            <!-- end of row with social links, useful links + newsletter sign up -->
-            <!-- row for copyright info -->
+
             <div class="row footnote text-center mt-4">
                 <div class="col">
-                    <p>
+                    <small>
                         <span>&copy; <a href="https://github.com/biareiam" target="_blank" rel="noopener"
-                                class="footer-link">Beatriz Amorim</a> 2022. Site created for educational purposes.
+                                class="footer-link">Beatriz Amorim</a> 2022.<br> Site created for educational purposes.
                         </span>
-                    </p>
+                    </small>
                 </div>
             </div>
         </div>
-        <!-- end of footer container -->
     </footer>
 
     {% endblock %}
 
 
     {% block postloadjs %}
-    <!-- specific page scripts that need to load at end of body -->
     <script>
         // call Bootstrap toast method with show option on all elements with class toast
         $(".toast").toast("show");

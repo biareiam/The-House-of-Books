@@ -1,57 +1,20 @@
 {% extends "base.html" %}
-
-
-
-
 {% load static %}
 
-
-
-
-
-
-
 {% block extra_meta %}
-
-
-<!-- specific meta description and keywords for individual events -->
-
-
 <meta name="description"
     content="Enjoy fun and meaningful discussion with other book lovers while also getting to know dublin’s hidden gems">
-
-
 <meta name="keywords" content="events, book club, book club dublin, book club sessions, book club events in dublin ">
-
-
 {% endblock %}
 
-
-
-
-
-
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'events/css/events.css' %}">
+{% endblock %}
 
 {% block extra_title %} | {{ event.name|title }}{% endblock %}
-
-
-
-
-
-
-
 {% block content %}
-
-
-<!-- page contents container -->
-
-
 <section class="py-5 container-fluid">
-
-
     <!-- 1 row - with 2 columns - event image + details -->
-
-
     <div class="row pt-5 justify-content-center">
 
 
@@ -64,15 +27,11 @@
 
 
 
-            <!-- if there is no image, then src is the default image, and alt text changes accordingly -->
-
-
-            <img class="img-fluid"
-                src="{% if event.image %}{{ event.image.url }}{% else %}{{ MEDIA_URL }}no-image.png{% endif %}"
-                alt="{% if event.image %}Photo of {% else %}No image yet for {% endif %}{{ event.name }}{% if not event.image %}, image coming soon.{% endif %}">
-
-
-            </a>
+            {% if event.image %}
+            <img class="img-fluid" src="{{ event.image.url }}" alt="{{ event.name }}">
+            {% else %}
+            <img class="img-fluid" src="{{ MEDIA_URL }}default.png" alt="{{ event.name }}">
+            {% endif %}
 
 
         </div>

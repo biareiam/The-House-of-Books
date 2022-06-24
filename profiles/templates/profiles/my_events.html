@@ -42,9 +42,11 @@
                         <!-- event image links to the event details page -->
                         <a href="{% url 'event_details' event.id %}">
                             <!-- if there is no image, then src is the default image, and alt text changes accordingly -->
-                            <img class="card-img-top img-fluid"
-                                src="{% if event.image %}{{ event.image.url }}{% else %}{{ MEDIA_URL }}no-image.png{% endif %}"
-                                alt="{% if event.image %}Photo of {% else %}No image yet for {% endif %}{{ event.name }}{% if not event.image %}, image coming soon.{% endif %}">
+                            {% if event.image %}
+                            <img class="img-fluid" src="{{ event.image.url }}" alt="{{ event.name }}">
+                            {% else %}
+                            <img class="img-fluid" src="{{ MEDIA_URL }}default.png" alt="{{ event.name }}">
+                            {% endif %}
                         </a>
                         <!-- card body - event details -->
                         <div class="card-body pt-3 pb-0 px-1 px-md-2">
