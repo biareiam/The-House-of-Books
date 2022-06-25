@@ -11,7 +11,7 @@
 
 {% if request.user.is_authenticated %}
 <div class="container py-2 mycontainer">
-    <div class="p-1 bg-white rounded shadow mb-4 mt-4 myprofilepage">
+    <div class="p-1 bg-white rounded shadow myprofilepage">
         <ul id="myTab2" role="tablist"
             class="nav nav-tabs nav-pills with-arrow lined flex-column flex-sm-row text-center border-0">
             <li class="nav-item flex-sm-fill">
@@ -36,7 +36,7 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-center">
-                        <button class="btn buttons mb-1 profile1">Update Information</button>
+                        <button class="btn general-btn">Update Information</button>
                     </div>
                 </form>
             </div>
@@ -49,7 +49,7 @@
                 <div class="no-post text-center">
                     <div class="not-allow-box">
                         <p>No orders yet!</p>
-                        <p><a href="{% url 'products' %}" class="buttons">Choose your next adventure</a></p>
+                        <p><a href="{% url 'products' %}" class="btn general-btn">Back to Shop</a></p>
                     </div>
                 </div>
                 {% else %}
@@ -70,7 +70,7 @@
                                 {% for order in orders %}
                                 <tr>
                                     <td>
-                                        <button class=" btn order-track"><a
+                                        <button class="btn general-btn text-white"><a
                                                 href="{% url 'order_history' order.order_number %}"
                                                 title="{{ order.order_number }}">
                                                 View

@@ -6,9 +6,9 @@
             <p class="my-0">Search</p>
         </div>
     </a>
-    <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+    <div class="dropdown-menu border-0 p-3 rounded-0" aria-labelledby="mobile-search">
         <form class="form" method="GET" action="{% url 'products' %}">
-            <div class="input-group w-100">
+            <div class="input-group search-input">
                 <input class="form-control border border-black rounded-0" type="text" name="q"
                     placeholder="Search our site">
                 <div class="input-group-append">
@@ -25,18 +25,19 @@
 <li class="list-inline-item dropdown account-icons">
     <a class="text-black d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
-        <div class="text-center">
-            <div> <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="account-icon" width="25px">
-            </div>
-            <p class="my-0 account myaccount">Account</p>
+        <div class="text-center mt-2">
+            <i class="bi bi-person " style="font-size: 1.7rem;"></i>
+            <p class="account myaccount">Account</p>
         </div>
     </a>
     <div class=" dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
         <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+        <a href="{% url 'add_event' %}" class="dropdown-item nav-text">Events Management</a>
         {% endif %}
         <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+        <a href="{% url 'my_events' %}" class="dropdown-item">My Club Events</a>
         <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
         {% else %}
         <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -44,11 +45,11 @@
         {% endif %}
     </div>
 </li>
-<li class="list-inline-item ">
-    <a class="{% if grand_total %}text-primary account font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
+<li class="list-inline-item total-icon">
+    <a class="{% if grand_total %} account font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
         href="{% url 'view_bag' %}">
         <div class="text-center">
-            <div> <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="bag icon" width="25px"></div>
+            <i class="bi bi-bag"></i>
             <p class="my-0">
                 {% if grand_total %}
                 €{{ grand_total|floatformat:2 }}

@@ -13,16 +13,16 @@
 <link rel="stylesheet" href="{% static 'events/css/events.css' %}">
 {% endblock %}
 
-{% block extra_title %} | events in {% if current_county %} {{ current_county.friendly_name }}
+{% block extra_title %} | Events in {% if current_county %} {{ current_county.friendly_name }}
 {% else %}Ireland{% endif %}{% endblock %}
 
 {% block content %}
-<section class="container-fluid pb-5">
-    <div class="row pt-md-1 pb-3">
+<section class="container-fluid pb-5 pb-sm-2 ">
+    <div class="row ">
         <div class="col-10 offset-1 pt-5 pb-4">
-            <h2 class="page-title">
+            <h2 class="page-title ">
                 {% if current_view == 'past' %}<span>Past{% elif request.user.is_superuser %}All{% else %}Upcoming{% endif %}
-                    events</span></h2>
+                    Events</span></h2>
         </div>
         {% if current_view == 'past' %}
         <div class="col-10 offset-1">
@@ -38,7 +38,7 @@
                 opportunity also to explore Dublin and discover new hidden gems. We love to support local business as
                 us, so if you know the perfect place, do not hesite to share with us!</p>
         </div>
-        <div class="col-10 offset-1 col-lg-5 offset-lg-0">
+        <div class="col-10 offset-1 col-lg-5 offset-lg-0 ">
             <p>We update our list of events regularly, so check back for updates!</p>
             <p>To make sure you don't miss out, you can save
                 the events you are interested in. You can then view it in the <a href="{% url 'my_events' %}"
@@ -58,23 +58,22 @@
             {% include '../events/includes/events_sort_and_filter.html' %}
             <div class="row mt-3">
                 {% for event in events %}
-                <!-- each event displayed in a card within columns -->
                 <div class="col-12 col-sm-10 col-md-6 col-lg-4 col-xl-3 card-group">
                     <div class="card h-100 border-0">
-                        <!-- event image links to the event details page -->
+
                         <a href="{% url 'event_details' event.id %}">
-                            <!-- if there is no image, then src is the default image, and alt text changes accordingly -->
+
                             {% if event.image %}
                             <img class="img-fluid" src="{{ event.image.url }}" alt="{{ event.name }}">
                             {% else %}
                             <img class="img-fluid" src="{{ MEDIA_URL }}default.png" alt="{{ event.name }}">
                             {% endif %}
                         </a>
-                        <!-- card body - event details -->
+
                         <div class="card-body pt-3 pb-0 px-1 px-md-2">
                             <p class="card-title mb-0 text-uppercase">{{ event.name }}</p>
                             <p class="small mt-1 mb-2">
-                                <!-- county name - also links to filter all events by that county -->
+
                                 <a href="{% url 'events' %}?county={{event.county.name}}" class="text-muted">
                                     <i class="bi bi-geo-alt-fill icon" aria-hidden="true"></i>
                                     {{ event.county.friendly_name }}
@@ -84,11 +83,9 @@
                             <p class="details-event">Date: {{ event.date }}</p>
                             <p class="details-event"> Time: {{ event.start_time }} to
                                 {{ event.end_time }}</p>
-
                             {% if current_view != 'past' %}
-
                             {% if request.user.is_authenticated %}
-                            <!-- if logged in and not viewing past events, buttons to save/remove event -->
+
                             <form action="{% url 'update_my_events' event.id %}" method="POST">
                                 {% csrf_token %}
                                 <button type="submit" value="{{ event.id }}" name="event_id"
@@ -125,7 +122,7 @@
                                 {% endif %}
                             </a>
                             {% if current_view == 'past' %}
-                            <!-- If viewing past events, show the status -->
+
                             <p class="font-90 mt-2 mb-1"><span class="fw-600">Status:</span>
                                 <span class="font-90"><i class="bi bi-exclamation-circle-fill icon"
                                         aria-hidden="true"></i> Date has passed.
@@ -133,14 +130,14 @@
                             </p>
                             {% endif %}
                             {% if request.user.is_superuser %}
-                            <!-- superuser can view all events so show status -->
+
                             <p class="font-90 mt-2 mb-1"><strong>Status: </strong>
                                 <span class="font-90">{% if event.date_passed %}
                                     <i class="bi bi-exclamation-circle-fill icon" aria-hidden="true"></i> Date has
                                     passed {% else %} Upcoming {% endif %}
                                 </span>
                             </p>
-                            <!-- show number of saves the event has, for admin user -->
+
                             <p class="font-90 mb-1"><strong>Number of saves: </strong>
                                 <span class="font-90">
                                     {% for key, value in events_saves.items %}
@@ -150,26 +147,24 @@
                                     {% endfor %}
                                 </span>
                             </p>
-                            <!-- admin actions - edit/delete, if user is admin user -->
+
                             <p class="px-2 pt-2">Admin actions: </p>
-
-                            <div class=" admin-link-container">
-                                <div class="row">
+                            <div class="admin-link-container">
+                                <div class="row update-btn">
                                     <div class="col">
-                                        <a class="small admin-link edit-delete-btn edit-btn"
-                                            href="{% url 'edit_event' event.id %}">Edit
-                                        </a>
+                                        <button class="delete-edit-button edit mt-1"><a
+                                                href="{% url 'edit_event' event.id %}">
+                                                Edit</a></button>
                                     </div>
                                     <div class="col">
-                                        <a class="small admin-link edit-delete-btn delete-btn"
-                                            href="#deleteeventModal{{ event.id }}" data-toggle="modal">Delete</a>
+                                        <button class="delete-edit-button delete mt-1"><a
+                                                href="#deleteeventModal{{ event.id }}" data-toggle="modal">
+                                                Delete</a></button>
                                     </div>
-
                                 </div>
-
                             </div>
                             {% endif %}
-                            <!-- end of if statement for superuser -->
+
                         </div>
                         {% include '../events/includes/delete_event_modal.html' %}
                     </div>
@@ -195,14 +190,10 @@
                 </div>
                 {% endif %}
                 {% endfor %}
-                <!-- end of events for loop -->
+
             </div>
-            <!-- end of events row inside events container-->
         </div>
-        <!-- end of outer container for events -->
     </div>
-    <!-- end of events row -->
-    <!-- back to top link -->
     <div class="btt-button shadow-sm rounded-0">
         <a class="btt-link d-flex h-100 justify-content-center align-items-center" aria-label="Back to top">
             <i class="bi bi-arrow-up" aria-hidden="true"></i>

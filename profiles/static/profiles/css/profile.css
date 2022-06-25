@@ -1,3 +1,12 @@
+.mycontainer {
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
+}
+
+.text-white a {
+    color: white !important;
+}
+
 .order-history {
     max-height: 416px;
     overflow-y: auto;
@@ -49,10 +58,19 @@
     color: rgb(0, 0, 0) !important;
 }
 
+
+#home2-tab .active {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+
+
+
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff !important;
-    background-color: #a4c4e5 !important;
+    background-color: #6ba5c4 !important;
 }
 
 

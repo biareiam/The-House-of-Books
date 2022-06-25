@@ -1,17 +1,12 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&display=swap');
 
-/*html {
-    height: 100%;
-}*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'sora';
 }
-
-
 
 .see-all a {
     color: white;
@@ -98,6 +93,26 @@ a {
     margin-top: 2rem;
 }
 
+.underline a {
+    color: black;
+}
+
+.underline a:hover {
+    text-decoration: underline !important;
+    text-decoration-color: #6ba5c4 !important;
+    text-decoration-thickness: 4px !important;
+    text-underline-offset: 16px;
+
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline !important;
+    text-decoration-color: #6ba5c4 !important;
+    text-decoration-thickness: 2px !important;
+    background-color: transparent;
+    text-underline-offset: 2px;
+}
+
 /*** Logo ****/
 
 .main-logo {
@@ -123,12 +138,37 @@ a {
 
 .main-logo:hover {
     color: #6ba5c4 !important;
-
 }
 
 .main-logo:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+
+.bi-person,
+.bi-bag {
+    font-size: 1.5rem;
+}
+
+.bi-envelope-open-heart {
+    font-size: 2rem;
+}
+
+.bi-arrow-right {
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.btn-black {
+    background-color: #000;
+    color: white;
+}
+
+.btn-black:hover {
+    background-color: rgb(126, 117, 117);
+
 }
 
 /*----------------- Home page -----------------------*/
@@ -142,36 +182,19 @@ a {
     width: 1.5rem;
 }
 */
+
+/* Price in the navbar */
+.total-icon a {
+    color: #6ba5c4 !important;
+}
+
+/*logo*/
 .main-logo-link {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
-
 .text-black {
     color: #000 !important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-.bg-black {
-    background: #000 !important;
 }
 
 .overlay {
@@ -218,6 +241,27 @@ a.category-badge>span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+/* Category banner on the home page*/
+.img1 i {
+    color: red;
+    font-size: 3rem !important;
+}
+
+.img2 i {
+    color: rgb(149, 128, 10);
+    font-size: 3rem !important;
+}
+
+.img3 i {
+    color: rgb(0, 153, 255);
+    font-size: 3rem !important;
+}
+
+.img4 i {
+    color: rgb(212, 0, 255);
+    font-size: 3rem !important;
 }
 
 .img1 {
@@ -304,7 +348,7 @@ input[name='q']::placeholder {
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
-    border-bottom-color: #007bff !important;
+    border-bottom-color: #6ba5c4 !important;
 }
 
 .arrow-secondary {
@@ -312,15 +356,15 @@ input[name='q']::placeholder {
 }
 
 .arrow-success {
-    border-bottom-color: #28a745 !important;
+    border-bottom-color: #497b55 !important;
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 !important;
+    border-bottom-color: #c94b57 !important;
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 !important;
+    border-bottom-color: #f8ba01 !important;
 }
 
 .arrow-info {
@@ -653,9 +697,19 @@ input[name='q']::placeholder {
 }
 
 @media(max-width: 430px) {
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        width: 300px !important;
+    }
+
     .newsletter-form-input {
         width: 90% !important;
         margin-left: 1rem !important;
+    }
+
+    .main-title {
+        font-size: 1.5rem;
     }
 
     .bg {
@@ -892,6 +946,10 @@ input[name='q']::placeholder {
     .card {
         margin-left: 1rem !important;
     }
+
+    .image-container {
+        margin-bottom: -1rem !important;
+    }
 }
 
 @media(max-width:375px) {
@@ -915,15 +973,29 @@ input[name='q']::placeholder {
         padding-left: 5px;
         text-align: center;
     }
+
+
 }
 
 @media(max-width:350px) {
+    .dropdown-menu.show {
+        left: -90% !important;
+    }
+
     .newsletter-form-input {
         margin-left: 0.5rem !important;
     }
 
     .product-detail {
         padding: 0.4rem !important;
+    }
+
+    .page-title {
+        font-size: 1.3rem !important;
+    }
+
+    .image-container {
+        margin-bottom: -2rem !important;
     }
 
     .carousel-control-next {
@@ -955,20 +1027,14 @@ input[name='q']::placeholder {
         align-items: flex-end !important;
     }
 
-    .navbar {
 
-        flex-wrap: nowrap;
-
-    }
 }
 
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
-    /* mt-4 */
     color: #6c757d;
-    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -1052,26 +1118,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-.edit-delete-btn {
-    border: 1px solid gray;
-    padding: 0.1rem 0.3rem;
-    margin-left: -1rem;
-    font-size: 1rem;
-    text-decoration: none !important;
-    color: grey;
-}
 
-.edit-btn:hover {
-    background-color: #6d8272;
-    color: white;
-    border: none;
-}
-
-.delete-btn:hover {
-    background-color: #d4524e;
-    color: white;
-    border: none;
-}
 
 .cart-qty-btn {
     margin-top: -2rem;
@@ -1181,15 +1228,7 @@ input[name='q']::placeholder {
     padding-right: 5rem;
 }
 
-.menu-item:hover,
-#new-arrivals-link:hover,
-.nav-item:hover {
-    text-decoration: underline;
-    text-decoration-color: #6ba5c4 !important;
-    text-decoration-style: solid;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 17px;
-}
+
 
 .nav-item .dropdown-item-1 {
     display: block;
@@ -1197,7 +1236,6 @@ input[name='q']::placeholder {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -1205,19 +1243,7 @@ input[name='q']::placeholder {
     text-decoration: none;
 }
 
-.dropdown-item-2 {
-    color: #212529;
-}
 
-.dropdown-item-1:hover,
-.dropdown-item-2:hover {
-    text-decoration: underline;
-    text-decoration-color: #6ba5c4 !important;
-    text-decoration-style: solid;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 2px;
-    color: #000;
-}
 
 .product-container {
     margin: 0 auto;
@@ -1359,24 +1385,37 @@ input[name='q']::placeholder {
 .delete-edit-button {
     padding: 0.3rem 0.5rem;
     border: none;
+
 }
 
 .delete-edit-button a {
-    color: black !important;
+    color: rgb(0, 0, 0);
+}
+
+.delete-edit-button a:hover,
+.delete-edit-button a:focus {
+    color: white;
 }
 
 .edit {
     margin-left: -1rem;
 }
 
+.edit a:hover,
+.edit a:focus {
+    color: white;
+}
+
 .edit:hover {
-    background-color: #9dc1eb;
+    background-color: #6d8272 !important;
 }
 
 .delete:hover {
-    background-color: #f4a397;
-    color: black;
+    background-color: #d4524e;
 }
+
+
+
 
 .product-detail {
     display: flex;
@@ -1534,10 +1573,7 @@ input[name='q']::placeholder {
     border: none !important;
 }
 
-.dropdown-menu.show {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .category-banner {
     font-size: 1rem;
@@ -1616,48 +1652,6 @@ input[name='q']::placeholder {
     font-size: 1.2rem;
 }
 
-.buttons {
-    background-color: #000000;
-    font-size: 1rem;
-    color: white;
-    display: inline-block;
-    font-weight: 600;
-    border-radius: 0;
-    cursor: pointer;
-    padding: 0.9rem 1rem;
-    text-decoration: none;
-    text-shadow: none;
-    -webkit-appearance: none;
-    line-height: 1.2857142857;
-    border: none;
-    color: #fff;
-}
-
-.buttons:hover {
-    background-color: #313131;
-    color: #fff;
-}
-
-.buttons-1 {
-    font-size: 1rem;
-    color: #000000;
-    display: inline-block;
-    font-weight: 600;
-    border-radius: 0;
-    cursor: pointer;
-    padding: 0.8rem 1rem;
-    text-decoration: none;
-    text-shadow: none;
-    -webkit-appearance: none;
-    line-height: 1.2857142857;
-    border: 1px solid #313131;
-}
-
-.buttons-1:hover {
-    background-color: #313131;
-    color: white;
-}
-
 .toast-header {
     display: -ms-flexbox;
     display: flex;
@@ -1673,7 +1667,6 @@ input[name='q']::placeholder {
 
 .pipline {
     border-bottom: 1px solid #eee;
-
 }
 
 .qty_input-bag {
@@ -1902,7 +1895,7 @@ main>center>p {
 
 main>center>h1 {
     text-transform: uppercase;
-    color: #0077ff;
+    color: #6ba5c4;
     font-size: 48px;
 }
 
@@ -1910,10 +1903,10 @@ main>center>h3>a {
     text-transform: uppercase;
     font-size: 18px;
     color: #000;
-    background-color: #0077ff;
+    background-color: #6ba5c4;
     text-decoration: none;
     padding: 1px 5px;
-    border: 1px solid #0077ff;
+    border: 1px solid #6ba5c4;
     border-radius: 5px;
 }
 

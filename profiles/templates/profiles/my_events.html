@@ -101,22 +101,20 @@
                                 </span>
                             </p>
                             {% if request.user.is_superuser %}
-                            <!-- admin actions - edit/delete, if user is admin user -->
                             <p class="px-2 pt-2">Admin actions: </p>
-                            <div class=" admin-link-container">
-                                <div class="row">
+                            <div class="admin-link-container">
+                                <div class="row update-btn">
                                     <div class="col">
-                                        <a class="small admin-link edit-delete-btn edit-btn"
-                                            href="{% url 'edit_event' event.id %}">Edit
-                                        </a>
+                                        <button class="delete-edit-button edit mt-1"><a
+                                                href="{% url 'edit_event' event.id %}">
+                                                Edit</a></button>
                                     </div>
                                     <div class="col">
-                                        <a class="small admin-link edit-delete-btn delete-btn"
-                                            href="#deleteeventModal{{ event.id }}" data-toggle="modal">Delete</a>
+                                        <button class="delete-edit-button delete mt-1"><a
+                                                href="#deleteeventModal{{ event.id }}" data-toggle="modal">
+                                                Delete</a></button>
                                     </div>
-
                                 </div>
-
                             </div>
                             {% endif %}
                         </div>

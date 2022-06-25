@@ -8,8 +8,8 @@
 <div class="container add_product">
     <div class="row ">
         <div class="col-12">
-            <h2 class="mb-4 text-center management">Product Management</h2>
-            <p class="text-center">Complete the form below to <strong>add</strong> a new book to the shop.</p>
+            <h2 class="mb-4 text-center line">Product Management</h2>
+            <p class="text-center">Complete the form below to <strong>ADD</strong> a new book to the shop.</p>
             <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
@@ -20,8 +20,8 @@
                 {% endif %}
                 {% endfor %}
                 <div class="text-center mt-3">
-                    <a class="btn  buttons-1 " href="{% url 'products' %}">Cancel</a>
-                    <button class="btn buttons " type="submit">Add Product</button>
+                    <a class="btn  general-btn-1 " href="{% url 'products' %}">Cancel</a>
+                    <button class="btn general-btn" type="submit">Add Product</button>
                 </div>
             </form>
         </div>

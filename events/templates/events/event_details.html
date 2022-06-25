@@ -13,19 +13,19 @@
 
 {% block extra_title %} | {{ event.name|title }}{% endblock %}
 {% block content %}
-<section class=" container-fluid mt-5">
+<section class=" container-fluid mt-5 events-container">
     <div class="row  justify-content-center">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-2 text-center">
             {% if event.image %}
-            <img class="" src="{{ event.image.url }}" alt="{{ event.name }}" width="300">
+            <img src="{{ event.image.url }}" alt="{{ event.name }}" width="300">
             {% else %}
-            <img class="" src="{{ MEDIA_URL }}default.png" alt="{{ event.name }}" width="300">
+            <img src="{{ MEDIA_URL }}default.png" alt="{{ event.name }}" width="300">
             {% endif %}
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 event-name">
 
-            <h1 class="text-uppercase h3">{{ event.name }}</h1>
+            <h1 class=" h3">{{ event.name }}</h1>
             <p class="small pb-1">
                 <a href="{% url 'events' %}?county={{event.county.name}}" class="text-muted">
                     <i class="bi bi-geo-alt-fill icon" aria-hidden="true"></i> {{ event.county.friendly_name }}
@@ -42,10 +42,10 @@
                     class="bg-transparent border-0 p-0 my-2 small">
                     {% if event in saved_events_list.event.all %}
                     <i class="bi bi-heart-fill icon" aria-hidden="true"></i>
-                    <span class="text-muted"> Remove from My events</span>
+                    <span class="text-muted"> Remove from My Events</span>
                     {% else %}
                     <i class="bi bi-heart icon" aria-hidden="true"></i>
-                    <span class="text-muted"> Save to My events</span>
+                    <span class="text-muted"> Save to My Events</span>
                     {% endif %}
                 </button>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -75,18 +75,19 @@
             <p class="font-90 mb-1"><span class="fw-600">Number of saves:</span>
                 <span class="font-90">{{ event_saves }}</span>
             </p>
-            <p class="fw-600 font-90">Admin actions:
-                <a class="admin-link update-delete-btn update" href="{% url 'edit_event' event.id %}">Edit
-                </a>
-                <a class="admin-link update-delete-btn delete" href="#deleteeventModal{{ event.id }}"
-                    data-toggle="modal">Delete</a>
+            <p class="fw-600 font-90">Admin actions:<br>
+                <button class="delete-edit-button edit ml-1 mt-1"><a href="{% url 'edit_event' event.id %}">
+                        Edit</a></button>
+                <button class="delete-edit-button delete ml-1 mt-1"><a href="#deleteeventModal{{ event.id }}"
+                        data-toggle="modal">
+                        Delete</a></button>
             </p>
         </div>
         {% endif %}
     </div>
     {% include '../events/includes/delete_event_modal.html' %}
     </div>
-    <div class="row pb-3 pt-lg-5 justify-content-center">
+    <div class=" row pb-3 pt-lg-5 justify-content-center">
         <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6">
             <h3 class="h6 d-inline">This event has {{ event.comments.all|length }}
                 comment{% if event.comments.all|length != 1 %}s{% endif %}</h3>
@@ -117,14 +118,13 @@
                     {{ comment.comment | linebreaks }}
                     {% if request.user == comment.author_comment %}
                     <div class="row">
-                        <div class="col">
-                            <p> <a class="small edit-delete-btn edit-btn ml-1 mr-4"
-                                    href="{% url 'edit_comment' comment.id %}">Edit</a>
+                        <button class="delete-edit-button edit mt-1 ml-2"><a href="{% url 'edit_comment' comment.id %}">
+                                Edit</a></button>
 
-                                <a class="small  edit-delete-btn delete-btn" href="#deleteCommentModal{{ comment.id }}"
-                                    data-toggle="modal">Delete</a></p>
+                        <button class="delete-edit-button delete mt-1"><a href="#deleteCommentModal{{ comment.id }}"
+                                data-toggle="modal">
+                                Delete</a></button>
 
-                        </div>
                     </div>
                     {% endif %}
                 </div>

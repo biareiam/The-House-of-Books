@@ -65,7 +65,7 @@
             </div>
         </div>
         <div id="topnav" class="row pt-lg-3 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-right">
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-right">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100 searchbar-field">
                         <input class="form-control rounded-0 searchbar-input" type="text" name="q" placeholder="SEARCH">
@@ -79,8 +79,8 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link main-logo">
+            <div class="col-12 col-lg-5 py-lg-0 text-center">
+                <a href="{% url 'home' %}" class="nav-link main-logo">
                     <h2 class="text-black my-0 logo-title text-right"><strong><img
                                 src="https://cdn-icons-png.flaticon.com/512/1164/1164620.png" width="35" height="auto"
                                 alt="book icon"> House</strong> of
@@ -88,19 +88,17 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0 account-icons ">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0 account-icons">
                     <li class="list-inline-item dropdown account-cart">
-
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <p class="my-0">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
-                                        alt="account-icon" width="25px"> Account
+                                    <i class="bi bi-person"></i> Account
                                 </p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0 underline" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -115,13 +113,12 @@
                             {% endif %}
                         </div>
                     </li>
-                    <li class="list-inline-item account-cart">
-                        <a class="{% if grand_total %} basket font-weight-bold{% else %}text-black{% endif %} nav-link"
+                    <li class="list-inline-item total-icon">
+                        <a class="{% if grand_total %} font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <p class="my-0">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="bag icon"
-                                        width="25px">
+                                    <i class="bi bi-bag"></i>
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -206,7 +203,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- Useful links column: terms of use + privacy policy links -->
+
                 <div class="col-12 col-md-6 col-lg-3 text-center mt-3 mt-md-0">
                     <h6 class="sm-heading">Useful links</h6>
                     <ul class="list-unstyled">
@@ -220,7 +217,11 @@
                 </div>
 
                 <div id="mc_embed_signup" class="col-12 col-md-10 col-lg-4 mt-4 mt-lg-0 px-4">
-                    <h6 class="sm-heading text-center pb-1">Sign up to our newsletter</h6>
+                    <div class="text-center">
+                        <i class="bi bi-envelope-open-heart"></i>
+                    </div>
+                    <h6 class="sm-heading text-center pb-1">Sign up to our
+                        newsletter</h6>
                     <p class="font-90 m-0  pb-1">Be the first to hear about our new books, book club events
                         and
                         much more!</p>
@@ -232,6 +233,7 @@
                             <div class="form-row">
                                 <div class="col">
                                     <div class="mc-field-group">
+
                                         <label for="mce-EMAIL" class="sr-only">Email Address</label>
                                         <input type="email" value="" name="EMAIL"
                                             class="required email newsletter-form-input " id="mce-EMAIL"
