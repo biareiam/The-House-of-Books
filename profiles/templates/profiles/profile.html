@@ -44,10 +44,10 @@
                     were logged in when you made the purchase.
                     Click on <strong>"View"</strong> to see the details of your order.</small>
                 {% if not orders.all %}
-                <div class="no-post text-center">
+                <div class="no-post text-center mt-5">
                     <div class="not-allow-box">
-                        <p>No orders yet!</p>
-                        <p><a href="{% url 'products' %}" class="btn general-btn">Back to Shop</a></p>
+                        <p>You have no orders yet!</p>
+                        <p><a href="{% url 'products' %}" class="btn general-btn mt-5">Back to Shop</a></p>
                     </div>
                 </div>
                 {% else %}

@@ -105,7 +105,7 @@
                             <a href="{% url 'add_event' %}" class="dropdown-item nav-text">Events Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'my_events' %}" class="dropdown-item">My Club Events</a>
+                            <a href="{% url 'my_events' %}" class="dropdown-item">My Events</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -235,7 +235,7 @@
                                     <div class="response" id="mce-error-response" style="display:none"></div>
                                     <div class="response" id="mce-success-response" style="display:none"></div>
                                 </div>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                                         name="b_07311e87c65e2ae47fbe376bd_3a20864bfe" tabindex="-1" value=""></div>
                                 <div class="optionalParent">
@@ -266,7 +266,7 @@
         </div>
     </footer>
 </body>
-<!-- privacy policy modal + terms of use modal -->
+
 {% include 'includes/privacy_policy.html' %}
 {% include 'includes/terms_of_use.html' %}
 {% endblock %}
@@ -274,7 +274,6 @@
 {% block postloadjs %}
 
 <script>
-    // call Bootstrap toast method with show option on all elements with class toast
     $(".toast").toast("show");
 </script>
 <!-- Mailchimp embedded form script -->
