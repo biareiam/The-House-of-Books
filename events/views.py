@@ -1,4 +1,4 @@
-"""Views for 'events' app - craft events seller will be attending"""
+""" Libraries and frameworks """
 import datetime
 from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.contrib.auth.decorators import login_required
@@ -107,10 +107,6 @@ def show_events(request):
 def event_details(request, event_id):
     """
     View to show an individual event and the comments on that event.
-    Need to also retrieve the user's saved event list if they have one,
-    so that the page shows whether the event is saved or not.
-    Show comment form and handle posting of the form. If user not logged
-    in then raise 403 as must be logged in to post comment.
     """
     saved_events_list = None
     event = get_object_or_404(Event, pk=event_id)
@@ -166,8 +162,6 @@ def event_details(request, event_id):
 def delete_comment(request, comment_id):
     """
     View for user to delete a comment they posted on a event.
-    Raise 403 if the user is not the user who posted the comment.
-    Post request only: delete comment, show success message.
     """
     comment = get_object_or_404(Comment, pk=comment_id)
     if not request.user == comment.author_comment:
@@ -225,7 +219,6 @@ def edit_comment(request, comment_id):
 def add_event(request):
     """
     Show event form for admin user to add event. Raise 403 if not admin.
-    Handle posting of form, show success/error messages.
     """
     if not request.user.is_superuser:
         raise PermissionDenied()
@@ -256,8 +249,6 @@ def add_event(request):
 def edit_event(request, event_id):
     """
     Show form for admin user to edit existing event. Raise 403 if not admin.
-    Handle posting of form, show success/error messages.
-    Show alert if editing a event with a past date.
     """
     if not request.user.is_superuser:
         raise PermissionDenied()
@@ -274,7 +265,7 @@ def edit_event(request, event_id):
         else:
             messages.error(
                 request,
-                'Event NOT updated. Please check the form for errors and '
+                'Event NOT updated. Please check the form for any errors and '
                 're-submit.'
                 )
     else:
@@ -306,7 +297,6 @@ def delete_event(request, event_id):
     """
     View for admin user to delete event from front end.
     Raise 403 if not admin.
-    Post request only: delete event, show success message.
     """
     if not request.user.is_superuser:
         raise PermissionDenied()

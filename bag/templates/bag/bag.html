@@ -19,8 +19,8 @@
     </div>
 
     <div class="text-center mt-3 mb-3">
-        <h3 class="">Your cart: {{ product_count }} {% if product_count == 1 %} item {% else %}
-            items {% endif %}</h3>
+        <h2 class="h3">Your cart: {{ product_count }} {% if product_count == 1 %} item {% else %}
+            items {% endif %}</h2>
     </div>
     <div class="my-cart">
         <div class="container cart">
@@ -57,7 +57,6 @@
                                 {% endif %}
                             </td>
                             <td>
-
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                 <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                             </td>
@@ -65,7 +64,6 @@
                                 <p class="my-0">€{{ item.product.price }}</p>
                             </td>
                             <td class="py-3 w-20">
-
                                 <form class="form update-form" method="POST"
                                     action="{% url 'adjust_bag' item.item_id %}">
                                     {% csrf_token %}
@@ -115,7 +113,7 @@
                                 <div class="mycart">
                                     <h6><strong>Subtotal: €{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Shipping cost: €{{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+                                    <h4 class="mt-4 h5"><strong>Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
                                     <p class="mb-1">
                                         You could get free delivery by spending just <strong
@@ -257,7 +255,6 @@
             </div>
         </div>
     </div>
-
 </section>
 {% endblock %}
 

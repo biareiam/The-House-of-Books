@@ -44,6 +44,9 @@ class Event(models.Model):
     end_time = models.TimeField()
     image = models.ImageField(null=True, blank=True)
     event_description = models.TextField()
+    month_book = models.CharField(max_length=200, default="The Club")
+    book_author = models.CharField(max_length=200, default="Jane Austen")
+    other_image = models.ImageField(null=True, blank=True)
 
 
     @property

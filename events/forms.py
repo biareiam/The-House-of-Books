@@ -9,17 +9,15 @@ from .models import Event, County, Comment
 class EventForm(forms.ModelForm):
     """
     Event form for admin user to add/edit event from frontend.
-    Image field - uses custom file input widget that overrides Django one
     """
     class Meta:
         """
-        Form based on Event model.
         Helptexts and labels specified for some fields.
         """
         model = Event
         fields = (
-            'name', 'location', 'county', 'date', 'start_time', 'end_time',
-            'image', 'event_description',
+            'month_book', 'book_author', 'location', 'county', 'date', 'start_time', 'end_time',
+            'event_description', 'image', 'other_image',
         )
         labels = {
             'name': 'Event Name',
@@ -30,6 +28,8 @@ class EventForm(forms.ModelForm):
             'start_time': 'Must be before End time!',
             'end_time': 'Must be after Start time!',
             'event_description': 'Please enter a description',
+            'month_book': "Please enter the month's book",
+            'book_author' :" Please enter the name of the author of the book"
             
             }
         widgets = {
@@ -52,11 +52,7 @@ class EventForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         """
-        Override init method to make changes to fields:
-        Create tuple of county ids and friendly names, use this to set the
-        choices in the County field dropdown. Add CSS class to all fields.
-        Add time-input class for time fields, to be used by JS validation.
-        Amend the helptext on date field if existing date in past.
+        Override init method to make changes to fields
         """
         super().__init__(*args, **kwargs)
         counties = County.objects.all()
@@ -83,9 +79,6 @@ class EventForm(forms.ModelForm):
     def clean(self):
         """
         Override the clean method on form to include checks on date and times.
-        Date not earlier than today, unless it is equal to existing date,
-        start time must be before end time.
-        Raise errors on field + remove helptext (as error msgs are similar).
         """
         cleaned_data = super().clean()
         event_date = cleaned_data.get('date')

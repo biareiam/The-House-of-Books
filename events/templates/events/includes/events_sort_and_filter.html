@@ -11,7 +11,6 @@
                 earliest)</option>
         </select>
     </div>
-
     <div class="col-12 col-md-6 col-lg-4">
         <div class="dropdown">
             <a class="btn btn-brand-dark-outline w-100 d-flex align-items-center justify-content-between" href="#"
@@ -21,14 +20,11 @@
                 <i class="fas fa-chevron-" aria-hidden="true"></i>
             </a>
             <div class="dropdown-menu county-dropdown" aria-labelledby="filterByCounty">
-
                 {% if on_my_events_page %}
-
                 {% url 'my_events' as page_url %}
                 {% else %}
                 {% url 'events' as page_url %}
                 {% endif %}
-
 
                 <a class="dropdown-item{% if not current_county %} active{% endif %}"
                     href="{{ page_url }}{% if current_view == 'past' %}?view=past{% endif %}">All</a>
@@ -45,7 +41,6 @@
             </div>
         </div>
     </div>
-
     <div class="col-12 col-md-6 col-lg-4">
         {% if not request.user.is_superuser %}
         {% if not on_my_events_page %}
@@ -54,15 +49,11 @@
             <div class="col-12 text-right">
                 {% if current_view == 'past' %}
                 <a href="{% url 'events' %}" class="btn general-btn ml-md-auto">View Upcoming events</a>
-
                 {% else %}
-
                 <a href="{% url 'events' %}?view=past" class="btn general-btn ml-md-auto">View Past events</a>
 
                 {% endif %}
-
             </div>
-
         </div>
         {% endif %}
         {% endif %}
@@ -78,5 +69,4 @@
             {% endif %}
         </p>
     </div>
-
 </div>
