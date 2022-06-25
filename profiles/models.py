@@ -46,14 +46,11 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 class SavedEventList(models.Model):
     """
-    To hold the event(s) that a user can save to their profile.
-    Instance created when a user first saves a event, then events are
-    added to, or removed from, the list instance when user saves/removes
-    a Event via frontend buttons.
+    To hold the event(s) that a user can save to their profile.S
     """
     user = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
     event = models.ManyToManyField(Event(), blank=True)
 
     def __str__(self):
         """string method, return 'username's saved events'"""
-        return f'{self.user.user.username}\'s saved events'
+        return f'{self.user.username}\'s saved events'
