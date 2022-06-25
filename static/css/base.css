@@ -179,6 +179,10 @@ a {
     color: #6ba5c4 !important;
 }
 
+.sm-heading span {
+    margin-top: -1rem;
+}
+
 /*-------------------- Home page */
 .main-logo-link {
     width: fit-content;
@@ -568,6 +572,15 @@ input[name='q']::placeholder {
     margin-top: 1rem;
 }
 
+
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 10px 0 10px 3%;
+    margin-top: -1rem;
+}
+
 #mc-embedded-subscribe:hover,
 #mc-embedded-subscribe:focus {
     background-color: #96a2ae70;
@@ -596,6 +609,18 @@ input[name='q']::placeholder {
     font-size: 0.95rem;
     padding-left: 0.3rem;
     background-color: rgba(198, 195, 195, 0.219);
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100% !important;
+    padding: 8px 0;
+    text-indent: 2%;
+}
+
+.brandingLogo {
+    margin-top: 0.2rem;
+    height: 28px;
 }
 
 .envelope {
@@ -1475,10 +1500,7 @@ main>center>h3>a {
 }
 
 @media(max-width: 768px) {
-    .newsletter-form-input {
-        width: 50% !important;
-        margin-left: 10rem !important;
-    }
+
 
 
     .book-author {
@@ -1811,10 +1833,21 @@ main>center>h3>a {
     }
 }
 
+@media screen and (max-width: 400px) {
+    #mc_embed_signup .brandingLogo {
+        justify-self: center !important;
+    }
+}
+
 @media(max-width:375px) {
     .card {
         margin-left: -0.2rem !important;
     }
+
+    .images {
+        margin-left: 1rem;
+    }
+
 
     .image-container {
         margin-left: 0rem !important;
@@ -1835,6 +1868,10 @@ main>center>h3>a {
 }
 
 @media(max-width:350px) {
+    .images {
+        margin-left: -1rem;
+    }
+
     .dropdown-menu.show {
         left: -90% !important;
     }
