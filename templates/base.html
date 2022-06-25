@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The House of Books: Small indenpende bookstore located in the heart of Dublin.">
+    <meta name="description" content="Buy book and embarque in a new adventure.">
     <meta name="keywords"
         content="books, romance books, thriller books, irish books, classic books, fiction, nonfiction books, house of book irish true crime books, literature">
 
@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="icon" href="https://pics.freeicons.io/uploads/icons/png/4308435971543238863-512.png">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     {% endblock %}
 
     {% block extra_css %}
@@ -35,11 +37,14 @@
 
     {% block corejs %}
     <a href="https://www.flaticon.com/free-icons/trash" title="trash icons"></a>
-    <script src="https://kit.fontawesome.com/82e8dfd6a3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f0a37c469.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
@@ -47,6 +52,7 @@
 
     {% block extra_js %}
     {% endblock %}
+
 
     <title>House of Books {% block extra_title %}{% endblock %}</title>
 </head>

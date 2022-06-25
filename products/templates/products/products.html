@@ -132,15 +132,19 @@
                                     <p class="ml-3">
                                         <button class="delete-edit-button edit"><a
                                                 href="{% url 'edit_product' product.id %}">Edit</a></button>
-                                        <button class="delete-edit-button delete"><a class="text-danger"
-                                                href="{% url 'delete_product' product.id %}">Delete</a></button>
+                                        <button class="delete-edit-button delete"><a class="delete-edit-button delete"
+                                                href="#deleteproductModal{{ product.id }}"
+                                                data-toggle="modal">Delete</a></button>
                                     </p>
                                     {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {% include '../products/includes/delete_product.html' %}
                 </div>
+
+
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
 

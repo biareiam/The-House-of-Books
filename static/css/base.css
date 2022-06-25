@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&display=swap');
 
 /*html {
@@ -133,7 +133,7 @@ a {
 
 /*----------------- Home page -----------------------*/
 
-/* from Bulma */
+/* from Bulma 
 .icon {
     align-items: center;
     display: inline-flex;
@@ -141,7 +141,7 @@ a {
     height: 1.5rem;
     width: 1.5rem;
 }
-
+*/
 .main-logo-link {
     width: fit-content;
 }
@@ -1857,13 +1857,13 @@ input[name='q']::placeholder {
     top: 8%;
 }
 
-.far {
+/*.far {
     position: absolute;
     font-size: 5.5rem;
     left: 42%;
     top: 15%;
     color: #ffffff;
-}
+}*/
 
 .err2 {
     color: #ffffff;

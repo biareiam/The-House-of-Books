@@ -125,23 +125,22 @@
     <div class="row text-center">
         <div class="col-12 col-lg-12 text-center">
             {% if from_profile %}
-            <a href="{% url 'profile' %}" class="btn buttons rounded-0 my-2">
+            <a href="{% url 'profile' %}" class="btn general-btn my-2">
                 <span class="icon mr-2">
                     <i class="fas fa-angle-left"></i>
                 </span>
-                <span class="text-uppercase">Back to Profile</span>
+                <span>Back to Profile</span>
             </a>
             {% else %}
-            <a href="{% url 'products' %}?category=new_arrivals"
-                class="btn btn-black rounded-0 my-2 text-center buttons mt-4 mb-2">
+            <a href="{% url 'products' %}?category=new_arrivals" class="btn general-btn mt-4 mb-2">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>
-                <span class="return-checkout">Check out our new arrivals!</span>
+                <span class="return-checkout">Return to the shop</span>
             </a>
             {% endif %}
         </div>
     </div>
-    </div>
+
 </section>
 {% endblock %}
