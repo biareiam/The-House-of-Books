@@ -96,13 +96,6 @@ def update_saved_events_list(request, event_id):
 @login_required
 def show_saved_events(request):
     """
-    Displays the events in the user's saved event list, if they have one.
-    Get the saved event list, then get the events from it (for sorting)
-    If sort is present in the get request, then sort the events by that
-    option + pass current sorting back to context.
-    If 'county' in get request then filter results by that county. all_events
-    variable used to generate list of counties for dropdown filter in template
-    'on_my_events_page' Boolean used in template to set url for dropdown.
     """
     user_profile = get_object_or_404(UserProfile, user=request.user)
     sort = None
