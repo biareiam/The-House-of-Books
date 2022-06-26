@@ -22,7 +22,7 @@ def index(request):
             'price': row.product.price,
             'rating': row.product.rating,
             'image_url': row.product.image_url,
-            'image': row.product.image.url
+            'image': row.product.image
         })
 
     products_df = pd.DataFrame(products)

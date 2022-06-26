@@ -1,5 +1,4 @@
-[
-    {
+[{
         "pk": 1,
         "model": "products.product",
         "fields": {
@@ -10,8 +9,10 @@
             "price": 12.60,
             "category": 1,
             "rating": 4.17,
-            "image_url": "https://www.easons.com/globalassets/5637150827/all/books/fiction/mills-and-boon/romance/9781787394841.jpg",
-            "image": "9781787394841.jpg"
+            "image": "The Winemaker's Wife.jpg"
+
+
+
         }
     },
     {
@@ -25,8 +26,9 @@
             "price": 12.60,
             "category": 1,
             "rating": 4.09,
-            "image_url": "https://www.easons.com/globalassets/5637150827/all/books/fiction/mills-and-boon/romance/9781398515628.jpg",
-            "image": "9781398515628.jpg"
+            "image": "The Spanish Love Deception.jpg"
+
+
         }
     },
     {
@@ -40,8 +42,7 @@
             "price": 11.20,
             "category": 1,
             "rating": 3.79,
-            "image_url": "https://www.easons.com/globalassets/5637150827/all/books/fiction/mills-and-boon/romance/9781405950305.jpg",
-            "image": "9781405950305.jpg"
+            "image": "Baby It's Cold Outside.jpg"
         }
     },
     {
@@ -55,8 +56,9 @@
             "price": 18.20,
             "category": 1,
             "rating": 3.68,
-            "image_url": "https://www.easons.com/globalassets/book-covers/2021-06/the-unexpected-love-story-of.jpg",
-            "image": "the-unexpected-love-story-of.jpg"
+            "image": "The Unexpected Love Story of Lexie Byrne.jpg"
+
+
         }
     },
     {
@@ -70,8 +72,9 @@
             "price": 12.60,
             "category": 1,
             "rating": 3.94,
-            "image_url": "https://www.easons.com/globalassets/5637150827/all/books/fiction/mills-and-boon/romance/97802419886882.jpg",
-            "image": "97802419886882.jpg"
+            "image": "Ghosts.jpg"
+
+
         }
     },
     {
@@ -85,8 +88,9 @@
             "price": 12.60,
             "category": 1,
             "rating": 4.02,
-            "image_url": "https://www.easons.com/globalassets/5637150827/all/books/fiction/mills-and-boon/romance/9780241992234.jpg",
-            "image": "9780241992234.jpg"
+            "image": "You and Me on Vacation.jpg"
+
+
         }
     },
     {
@@ -96,12 +100,13 @@
             "sku": "pp5002440521",
             "name": "Grown Ups",
             "author": "Marian Keyes",
-            "description": "They're a glamorous family, the Caseys. Johnny Casey, his two brothers Ed and Liam, their beautiful, talented wives and all their kids spend a lot of time together - birthday parties, anniversary celebrations, weekends away. And they're a happy family. Johnny's wife, Jessie - who has the most money - insists on it. Under the surface, though, conditions are murkier. While some people clash, other people like each other far too much . . . Everything stays under control until Ed's wife Cara, gets a concussion and can't keep her thoughts to herself. One careless remark at Johnny's birthday party, with the entire family present, starts Cara spilling out all their secrets. In the subsequent unravelling, every one of the adults finds themselves wondering if it's time - finally - to grow up?",
+            "description": "They're a glamorous family, the Caseys. Johnny Casey, his two brothers Ed and Liam, their beautiful, talented wives and all their kids spend a lot of time together - birthday parties, anniversary celebrations, weekends away. And they're a happy family. Johnny's wife, Jessie - who has the most money - insists on it. Under the surface, though, conditions are murkier. While some people clash, other people like each other far too much . . . Everything stays under control until Ed's wife Cara, gets a concussion and can't keep her thoughts to herself. One careless remark at Johnny's birthday party, with the entire family present, starts Cara spilling out all their secrets. In the subsequent unraveling, every one of the adults finds themselves wondering if it's time - finally - to grow up?",
             "price": 12.60,
             "category": 1,
             "rating": 3.96,
-            "image_url": "https://www.easons.com/globalassets/5637150827/all/books/fiction/mills-and-boon/romance/9781405918787.jpg",
-            "image": "9781405918787.jpg"
+            "image": "Grown.jpg"
+
+
         }
     },
     {
@@ -115,8 +120,9 @@
             "price": 12.60,
             "category": 1,
             "rating": 4.61,
-            "image_url": "https://www.easons.com/globalassets/5637150827/all/books/fiction/science-fantasy/fantasy/9781526617163.jpg",
-            "image": "9781526617163.jpg"
+            "image": "A Court of Mist and Fury.jpg"
+
+
         }
     },
     {
@@ -126,12 +132,12 @@
             "sku": "pp5002690715",
             "name": "The Storm Sister",
             "author": "Lucinda Riley",
-            "description": "Ally D'Apliese is about to compete in one of the world's most perilous yacht races, when she hears the news of her adoptive father's sudden, mysterious death. Rushing back to meet her five sisters at their family home, she discovers that her father - an elusive billionaire affectionately known to his daughters as Pa Salt - has left each of them a tantalising clue to their true heritage. Ally has also recently embarked on a deeply passionate love affair that will change her destiny forever. But with her life now turned upside down, Ally decides to leave the open seas and follow the trail that her father left her, which leads her to the icy beauty of Norway...There, Ally begins to discover her roots and how her story is inextricably bound to that of a young unknown singer, Anna Landvik, who lived there over 100 years before, and sang in the first performance of Grieg's iconic music set to Ibsen's play 'Peer Gynt'. As Ally learns more about Anna, she also begins to question who her father, Pa Salt, really was. And why is the seventh sister missing? Following the bestselling The Seven Sisters, The Storm Sister is the second book in Lucinda Riley's spellbinding series based loosely on the mythology surrounding the famous star constellation.",
+            "description": "Ally D'Apliese is about to compete in one of the world's most perilous yacht races, when she hears the news of her adoptive father's sudden, mysterious death. Rushing back to meet her five sisters at their family home, she discovers that her father - an elusive billionaire affectionately known to his daughters as Pa Salt - has left each of them a tantalizing clue to their true heritage. Ally has also recently embarked on a deeply passionate love affair that will change her destiny forever. But with her life now turned upside down, Ally decides to leave the open seas and follow the trail that her father left her, which leads her to the icy beauty of Norway...There, Ally begins to discover her roots and how her story is inextricably bound to that of a young unknown singer, Anna Landvik, who lived there over 100 years before, and sang in the first performance of Grieg's iconic music set to Ibsen's play 'Peer Gynt'. As Ally learns more about Anna, she also begins to question who her father, Pa Salt, really was. And why is the seventh sister missing? Following the bestselling The Seven Sisters, The Storm Sister is the second book in Lucinda Riley's spellbinding series based loosely on the mythology surrounding the famous star constellation.",
             "price": 12.60,
             "category": 1,
             "rating": 4.25,
-            "image_url": "https://www.easons.com/globalassets/5637150827/all/books/fiction/mills-and-boon/romance/9781529003468.jpg",
-            "image": "9781529003468.jpg"
+            "image": "The Storm Sister.jpg"
+
         }
     },
     {
@@ -145,8 +151,9 @@
             "price": 12.99,
             "category": 2,
             "rating": 4.06,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81W35+Tj7dL.jpg",
-            "image": "81W35+Tj7dL.jpg"
+            "image": "The Night Shift.jpg"
+
+
         }
     },
     {
@@ -160,8 +167,9 @@
             "price": 19.99,
             "category": 2,
             "rating": 3.80,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51h0kgxwYqL._SX329_BO1,204,203,200_.jpg",
-            "image": "51h0kgxwYqL._SX329_BO1,204,203,200_.jpg"
+            "image": "The Cartographers.jpg"
+
+
         }
     },
     {
@@ -171,12 +179,13 @@
             "sku": "pp5002820069",
             "name": "Nine Lives",
             "author": "Peter Swanson",
-            "description": "Nine strangers receive a list with their names on it in the mail. Nothing else, just a list of names on a single sheet of paper. None of the nine people know or have ever met the others on the list. They dismiss it as junk mail, a fluke until very, very bad things begin happening to people on the list. First, a well-liked old man drowned on a beach in the small town of Kennewick, Maine. Then, a father is shot in the back while running through his quiet neighbourhood in suburban Massachusetts. A frightening pattern is emerging, but what do these nine people have in common? Their professions range from oncology nurse to aspiring actor. FBI agent Jessica Winslow, who is on the list herself, is determined to find out. Could there be some dark secret that binds them all together? Or is this the work of a murderous madman? As the mysterious sender stalks these nine strangers, they find themselves constantly looking over their shoulders, wondering who will be crossed off next...",
+            "description": "Nine strangers receive a list with their names on it in the mail. Nothing else, just a list of names on a single sheet of paper. None of the nine people know or have ever met the others on the list. They dismiss it as junk mail, a fluke until very, very bad things begin happening to people on the list. First, a well-liked old man drowned on a beach in the small town of Kennewick, Maine. Then, a father is shot in the back while running through his quiet neighborhood in suburban Massachusetts. A frightening pattern is emerging, but what do these nine people have in common? Their professions range from oncology nurse to aspiring actor. FBI agent Jessica Winslow, who is on the list herself, is determined to find out. Could there be some dark secret that binds them all together? Or is this the work of a murderous madman? As the mysterious sender stalks these nine strangers, they find themselves constantly looking over their shoulders, wondering who will be crossed off next...",
             "price": 12.99,
             "category": 2,
             "rating": 3.65,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/918H8+3vrML.jpg",
-            "image": "918H8+3vrML.jpg"
+            "image": "Nine Lives.jpg"
+
+
         }
     },
     {
@@ -190,8 +199,9 @@
             "price": 12.99,
             "category": 2,
             "rating": 3.92,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1624639782l/51941042.jpg",
-            "image": "1624639782l/51941042.jpg"
+            "image": "A Forgery of Roses.jpg"
+
+
         }
     },
     {
@@ -201,12 +211,13 @@
             "sku": "pp5002910572",
             "name": "The Resting Place",
             "author": "Camilla Sten",
-            "description": "A spine-chilling, propulsive psychological suspense from international sensation Camilla Sten. The medical term is prosopagnosia. The average person calls it face blindness the inability to recognize a familiar person's face, even the faces of those closest to you. When Eleanor walked in on the scene of her capriciously cruel grandmother, Vivianne's, murder, she came face to face with the killer a maddening expression that means nothing to someone like her. With each passing day, her anxiety mounts. The dark feelings of having been brushed by a killer, yet not knowing who could do this or if they'd be back overtakes both her dreams and her waking moments, thwarting her perception of reality. Then a lawyer calls. Vivianne has left her a house a looming estate tucked away in the Swedish woods. The place where her grandfather died, suddenly. A place that has housed a dark past for over fifty years. Eleanor. Her steadfast boyfriend, Sebastian. Her reckless aunt, Veronika. The lawyer. All will go to this house of secrets, looking for answers. But as they get closer to bringing the truth to light, they'll wish they had never come to disturb what rests there. A heart-thumping, relentless thriller that will shake you to your core, The Resting Place is an unforgettable novel of horror and suspense.",
+            "description": "A spine-chilling, propulsive psychological suspense from international sensation Camilla Sten. The medical term is prosopagnosia. The average person calls it face blindness, the inability to recognize a familiar person's face, even the faces of those closest to you. When Eleanor walked in on the scene of her capriciously cruel grandmother, Vivianne's, murder, she came face to face with the killer a maddening expression that means nothing to someone like her. With each passing day, her anxiety mounts. The dark feelings of having been brushed by a killer, yet not knowing who could do this or if they'd be back overtakes both her dreams and her waking moments, thwarting her perception of reality. Then a lawyer calls. Vivianne has left her a house, a looming estate tucked away in the Swedish woods. The place where her grandfather died, suddenly. A place that has housed a dark past for over fifty years. Eleanor. Her steadfast boyfriend, Sebastian. Her reckless aunt, Veronika. The lawyer. All will go to this house of secrets, looking for answers. But as they get closer to bringing the truth to light, they'll wish they had never come to disturb what rests there. A heart-thumping, relentless thriller that will shake you to your core, The Resting Place is an unforgettable novel of horror and suspense.",
             "price": 14.99,
             "category": 2,
             "rating": 3.72,
-            "image_url": "https://m.media-amazon.com/images/I/41eH70d+D-L.jpg",
-            "image": "41eH70d+D-L.jpg"
+            "image": "The Resting Place.jpg"
+
+
         }
     },
     {
@@ -216,12 +227,13 @@
             "sku": "pp5002990740",
             "name": "The Love of My Life",
             "author": "Rosie Walsh",
-            "description": "From the New York Times bestselling author of Ghosted comes a love story wrapped in a mystery: an up-all-night page-turner with a dark secret at its core I have held you at night for ten years and I didn't even know your name. We have a child together. A dog, a house. Who are you? Emma loves her husband Leo and their young daughter Ruby: she'd do anything for them. But almost everything she's told them about herself is a lie. And she might just have got away with it, if it weren't for her husband's job. Leo is an obituary writer; Emma a well-known marine biologist. When she suffers a serious illness, Leo copes by doing what he knows best researching and writing about his wife's life. But as he starts to unravel the truth, he discovers the woman he loves doesn't really exist. Even her name isn't real. When the very darkest moments of Emma's past finally emerge, she must somehow prove to Leo that she really is the woman he always thought she was . . . But first, she must tell him about the other love of her life. ",
+            "description": "From the New York Times bestselling author of Ghosted comes a love story wrapped in a mystery: an up-all-night page-turner with a dark secret at its core. I have held you at night for ten years and I didn't even know your name. We have a child together. A dog, a house. Who are you? Emma loves her husband Leo and their young daughter Ruby: she'd do anything for them. But almost everything she's told them about herself is a lie. And she might just have got away with it, if it weren't for her husband's job. Leo is an obituary writer; Emma a well-known marine biologist. When she suffers a serious illness, Leo copes by doing what he knows best, researching and writing about his wife's life. But as he starts to unravel the truth, he discovers the woman he loves doesn't really exist. Even her name isn't real. When the very darkest moments of Emma's past finally emerge, she must somehow prove to Leo that she really is the woman he always thought she was . . . But first, she must tell him about the other love of her life. ",
             "price": 14.99,
             "category": 2,
             "rating": 4.03,
-            "image_url": "https://kbimages1-a.akamaihd.net/64fa5de5-414f-4a48-9b42-19380d7d70ad/1200/1200/False/the-love-of-my-life-11.jpg",
-            "image": "the-love-of-my-life-11.jpg"
+            "image": "The Love of My Life.jpg"
+
+
         }
     },
     {
@@ -231,12 +243,13 @@
             "sku": "pp5003050248",
             "name": "The Bone Orchard",
             "author": "Sara A. Mueller",
-            "description": "Charm is a witch, and she is alone. The last of a line of conquered necromantic workers, now confined within the yard of regrown bone trees at Orchard House, and the secrets of their marrow. Charm is a prisoner, and a survivor. Charm tends the trees and their clattering fruit for the sake of her children, painstakingly grown and regrown with its fruit: Shame, Justice, Desire, Pride, and Pain. Charm is a whore, and a madam. The wealthy and powerful of Borenguard come to her house to buy time with the girls who aren't real. Except on Tuesdays, which is when the Emperor himself lays claim to his mistress, Charm herself. now Charm is also the only person who can keep an empire together, as the Emperor summons her to his deathbed, and charges her with choosing which of his awful, faithless sons will carry on the empire by discovering which one is responsible for his own murder. If she does this last thing, she will finally have what has been denied her since the fall of Inshil her freedom. But she will also be betraying the ghosts past and present that live on within her heart. Charm must choose. Her dead Emperor's will or the whispers of her own ghosts. Justice for the empire or her own revenge.",
+            "description": "Charm is a witch, and she is alone. The last of a line of conquered necromantic workers, now confined within the yard of regrown bone trees at Orchard House, and the secrets of their marrow. Charm is a prisoner, and a survivor. Charm tends the trees and their clattering fruit for the sake of her children, painstakingly grown and regrown with its fruit: Shame, Justice, Desire, Pride, and Pain. Charm is a whore, and a madam. The wealthy and powerful of Borenguard come to her house to buy time with the girls who aren't real. Except on Tuesdays, which is when the Emperor himself lays claim to his mistress, Charm herself. now Charm is also the only person who can keep an empire together, as the Emperor summons her to his deathbed, and charges her with choosing which of his awful, faithless sons will carry on the empire by discovering which one is responsible for his own murder. If she does this last thing, she will finally have what has been denied her since the fall of Initial her freedom. But she will also be betraying the ghosts past and present that live on within her heart. Charm must choose. Her dead Emperor's will or the whispers of her own ghosts. Justice for the empire or her own revenge.",
             "price": 15.99,
             "category": 2,
             "rating": 3.76,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81vZaw-ZydL.jpg",
-            "image": "81vZaw-ZydL.jpg"
+            "image": "The Bone Orchard.jpg"
+
+
         }
     },
     {
@@ -246,12 +259,13 @@
             "sku": "pp5003070787",
             "name": "Girl in Ice",
             "author": "Erica Ferencik ",
-            "description": "From the author of The River at Night and Into the Jungle comes a harrowing new thriller set in the unforgiving landscape of the Arctic Circle, as a brilliant linguist struggling to understand the apparent suicide of her twin brother ventures hundreds of miles north to try to communicate with a young girl who has thawed from the ice alive. Valerie 'Val' Chesterfield is a linguist trained in the most esoteric of disciplines: dead Nordic languages. Despite her successful career, she leads a sheltered life and languishes in the shadow of her twin brother Andy, an accomplished climate scientist stationed on a remote island off Greenland's barren coast. But Andy is gone: a victim of suicide, having willfully ventured unprotected into 50 degree below zero weather. Val is inconsolable and disbelieving. She suspects foul play. When Wyatt, Andy's fellow researcher in the Arctic, discovers a scientific impossibility­ a young girl frozen in the ice who thaws out alive, speaking a language no one understands Val is his first call. Will she travel to the frozen North and meet this girl, try to comprehend what she is so passionately trying to communicate? Under the auspices of helping Wyatt interpret the girl's speech, Val musters every ounce of her courage and journeys to the Arctic to solve the mystery of her brother's death. The moment she steps off the plane, her fear threatens to overwhelm her. The landscape is fierce, and Wyatt, brilliant but difficult, is an enigma. But the girl is special, and Val's connection with her is profound. Only something is terribly wrong; the child is sick, maybe dying, and the key to saving her lies in discovering the truth about Wyatt's research. Can his data be trusted? And does it have anything to do with how and why Val's brother died? With time running out, Val embarks on an incredible frozen odyssey led by the unlikeliest of guides to rescue the new family she has found in the most unexpected of places.",
+            "description": "From the author of The River at Night and Into the Jungle comes a harrowing new thriller set in the unforgiving landscape of the Arctic Circle, as a brilliant linguist struggling to understand the apparent suicide of her twin brother ventures hundreds of miles north to try to communicate with a young girl who has thawed from the ice alive. Valerie 'Val' Chesterfield is a linguist trained in the most esoteric of disciplines: dead Nordic languages. Despite her successful career, she leads a sheltered life and languishes in the shadow of her twin brother Andy, an accomplished climate scientist stationed on a remote island off Greenland's barren coast. But Andy is gone: a victim of suicide, having willfully ventured unprotected into 50 degree below zero weather. Val is inconsolable and disbelieving. She suspects foul play. When Wyatt, Andy's fellow researcher in the Arctic, discovers a scientific impossibility­ a young girl frozen in the ice who thaws out alive, speaking a language no one understands, Val is his first call. Will she travel to the frozen North and meet this girl, try to comprehend what she is so passionately trying to communicate? Under the auspices of helping Wyatt interpret the girl's speech, Val musters every ounce of her courage and journeys to the Arctic to solve the mystery of her brother's death. The moment she steps off the plane, her fear threatens to overwhelm her. The landscape is fierce, and Wyatt, brilliant but difficult, is an enigma. But the girl is special, and Val's connection with her is profound. Only something is terribly wrong; the child is sick, maybe dying, and the key to saving her lies in discovering the truth about Wyatt's research. Can his data be trusted? And does it have anything to do with how and why Val's brother died? With time running out, Val embarks on an incredible frozen odyssey led by the unlikeliest of guides to rescue the new family she has found in the most unexpected of places.",
             "price": 12.99,
             "category": 2,
             "rating": 3.83,
-            "image_url": "https://m.media-amazon.com/images/I/61x5463riML.jpg",
-            "image": "61x5463riML.jpg"
+            "image": "Girl in Ice.jpg"
+
+
         }
     },
     {
@@ -265,8 +279,9 @@
             "price": 14.99,
             "category": 2,
             "rating": 3.62,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/816bOKCJWkL.jpg",
-            "image": "816bOKCJWkL.jpg"
+            "image": "Girl in Ice.jpg"
+
+
         }
     },
     {
@@ -280,8 +295,9 @@
             "price": 12.99,
             "category": 2,
             "rating": 3.74,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636282560l/59559565._SY475_.jpg",
-            "image": "59559565._SY475_.jpg"
+            "image": "The Interview.jpg"
+
+
         }
     },
     {
@@ -295,8 +311,9 @@
             "price": 12.99,
             "category": 3,
             "rating": 4.52,
-            "image_url": "https://m.media-amazon.com/images/I/71be8HNSHYL.jpg",
-            "image": "71be8HNSHYL.jpg"
+            "image": "Again, Rachel.jpg"
+
+
         }
     },
     {
@@ -306,12 +323,13 @@
             "sku": "pp5003230723",
             "name": "Lessons in Chemistry",
             "author": "Bonnie Garmus",
-            "description": "A delight for readers of Where'd You Go, Bernadette and The Marvellous Mrs. Maisel, this blockbuster debut set in 1960s California features the singular voice of Elizabeth Zott, a scientist whose career takes a detour when she becomes the star of a beloved TV cooking show. Chemist Elizabeth Zott is not your average woman. In fact, Elizabeth Zott would be the first to point out that there is no such thing as an average woman. But it's the early 1960s and her all-male team at Hastings Research Institute takes a very unscientific view of equality. Except for one: Calvin Evans; the lonely, brilliant, Nobel-prize nominated grudge-holder who falls in love with--of all things--her mind. True chemistry results. But like science, life is unpredictable. Which is why a few years later Elizabeth Zott finds herself not only a single mother, but the reluctant star of America's most beloved cooking show Supper at Six. Elizabeth's unusual approach to cooking ('combine one tablespoon acetic acid with a pinch of sodium chloride') proves revolutionary. But as her following grows, not everyone is happy. Because as it turns out, Elizabeth Zott isn't just teaching women to cook. She's daring them to change the status quo. Laugh-out-loud funny, shrewdly observant, and studded with a dazzling cast of supporting characters, Lessons in Chemistry is as original and vibrant as its protagonist.",
+            "description": "A delight for readers of Where'd You Go, Bernadette and The Marvelous Mrs. Maisel, this blockbuster debut set in 1960s California features the singular voice of Elizabeth Zott, a scientist whose career takes a detour when she becomes the star of a beloved TV cooking show. Chemist Elizabeth Zott is not your average woman. In fact, Elizabeth Zott would be the first to point out that there is no such thing as an average woman. But it's the early 1960s and her all-male team at Hastings Research Institute takes a very unscientific view of equality. Except for one: Calvin Evans; the lonely, brilliant, Nobel-prize nominated grudge-holder who falls in love with--of all things--her mind. True chemistry results. But like science, life is unpredictable. Which is why a few years later Elizabeth Zott finds herself not only a single mother, but the reluctant star of America's most beloved cooking show Supper at Six. Elizabeth's unusual approach to cooking ('combine one tablespoon acetic acid with a pinch of sodium chloride') proves revolutionary. But as her following grows, not everyone is happy. Because as it turns out, Elizabeth Zott isn't just teaching women to cook. She's daring them to change the status quo. Laugh-out-loud funny, shrewdly observant, and studded with a dazzling cast of supporting characters, Lessons in Chemistry is as original and vibrant as its protagonist.",
             "price": 18.20,
             "category": 3,
             "rating": 4.52,
-            "image_url": "https://images.penguinrandomhouse.com/cover/9780385547345",
-            "image": "9780385547345.jpg"
+            "image": "Lessons in Chemistry.jpg"
+
+
         }
     },
     {
@@ -325,8 +343,7 @@
             "price": 18.20,
             "category": 3,
             "rating": 3.58,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1632760172l/59085460._SY475_.jpg",
-            "image": "59085460._SY475_.jpg"
+            "image": "None of This is Serious.jpg"
         }
     },
     {
@@ -340,8 +357,9 @@
             "price": 12.60,
             "category": 3,
             "rating": 3.98,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/41THlZ3l7DL.jpg",
-            "image": "41THlZ3l7DL.jpg"
+            "image": "None of This is Serious.jpg"
+
+
         }
     },
     {
@@ -349,14 +367,15 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5003440111",
-            "name": "Royal Velvet Down Chamber Pillow",
-            "author": "Taylor Jenkins Reid",
-            "description": "Ageing and reclusive Hollywood movie icon Evelyn Hugo is finally ready to tell the truth about her glamorous and scandalous life. But when she chooses unknown magazine reporter Monique Grant for the job, no one is more astounded than Monique herself. Why her? Why now? Monique is not exactly on top of the world. Her husband has left her, and her professional life is going nowhere. Regardless of why Evelyn has selected her to write her biography, Monique is determined to use this opportunity to jump start her career. Summoned to Evelyn's luxurious apartment, Monique listens in fascination as the actress tells her story. From making her way to Los Angeles in the 1950s to her decision to leave show business in the '80s, and, of course, the seven husbands along the way, Evelyn unspools a tale of ruthless ambition, unexpected friendship, and a great forbidden love. Monique begins to feel a very real connection to the legendary star, but as Evelyn's story near its conclusion, it becomes clear that her life intersects with Monique's own in tragic and irreversible ways.",
+            "name": "Red, White & Royal Blue",
+            "author": "Casey McQuiston",
+            "description": "First Son Alex Claremont-Diaz is the closest thing to a prince this side of the Atlantic. With his intrepid sister and the Veep’s genius granddaughter, they’re the White House Trio, a beautiful millennial marketing strategy for his mother, President Ellen Claremont. International socialite duties do have downsides—namely, when photos of a confrontation with his longtime nemesis Prince Henry at a royal wedding leak to the tabloids and threaten American/British relations. The plan for damage control: staging a fake friendship between the First Son and the Prince. As President Claremont kicks off her reelection bid, Alex finds himself hurtling into a secret relationship with Henry that could derail the campaign and upend two nations.What is worth the sacrifice ? How do you do all the good you can do ?And, most importantly, how will history remember you ? ",
             "price": 12.60,
             "category": 3,
             "rating": 4.48,
-            "image_url": "https://m.media-amazon.com/images/I/51kVpauOUAL.jpg",
-            "image": "51kVpauOUAL.jpg"
+            "image": "Red, White & Royal Blue.jpg"
+
+
         }
     },
     {
@@ -370,8 +389,9 @@
             "price": 16.99,
             "category": 3,
             "rating": 4.0,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1641777418l/58490567.jpg",
-            "image": "58490567.jpg"
+            "image": "The Diamond Eye.jpg"
+
+
         }
     },
     {
@@ -381,12 +401,13 @@
             "sku": "pp5003560513",
             "name": "The Paris Apartment",
             "author": "Lucy Foley",
-            "description": "From the New York Times bestselling author of The Guest List comes a new locked room mystery, set in a Paris apartment building in which every resident has something to hide. Jess needs a fresh start. She's broke and alone, and she's just left her job under less than ideal circumstances. Her half-brother Ben didn't sound thrilled when she asked if she could crash with him for a bit, but he didn't say no, and surely everything will look better from Paris. Only when she shows up to find a very nice apartment, could Ben really have afforded this? he's not there. The longer Ben stays missing, the more Jess starts to dig into her brother's situation, and the more questions she has. Ben's neighbours are an eclectic bunch, and not particularly friendly. Jess may have come to Paris to escape her past, but it's starting to look like it's Ben's future that's in question. The socialite The nice guy The alcoholic The girl on the verge The concierge Everyone's a neighbour. Everyone's a suspect. And everyone knows something they're not telling.",
+            "description": "From the New York Times bestselling author of The Guest List comes a new locked room mystery, set in a Paris apartment building in which every resident has something to hide. Jess needs a fresh start. She's broke and alone, and she's just left her job under less than ideal circumstances. Her half-brother Ben didn't sound thrilled when she asked if she could crash with him for a bit, but he didn't say no, and surely everything will look better from Paris. Only when she shows up to find a very nice apartment, could Ben really have afforded this? he's not there. The longer Ben stays missing, the more Jess starts to dig into her brother's situation, and the more questions she has. Ben's neighbors are an eclectic bunch, and not particularly friendly. Jess may have come to Paris to escape her past, but it's starting to look like it's Ben's future that's in question. The socialite The nice guy The alcoholic The girl on the verge The concierge Everyone's a neighbor. Everyone's a suspect. And everyone knows something they're not telling.",
             "price": 18.20,
             "category": 3,
             "rating": 3.72,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/8168WpLC11L.jpg",
-            "image": "8168WpLC11L.jpg"
+            "image": "The Paris Apartment.jpg"
+
+
         }
     },
     {
@@ -396,12 +417,13 @@
             "sku": "pp5003560948",
             "name": "It Ends with Us",
             "author": "Colleen Hoover",
-            "description": "Sometimes it is the one who loves you who hurts you the most. Lily hasn't always had it easy, but that's never stopped her from working hard for the life she wants. She's come a long way from the small town in Maine where she grew up she graduated from college, moved to Boston, and started her own business. So when she feels a spark with a gorgeous neurosurgeon named Ryle Kincaid, everything in Lily's life suddenly seems almost too good to be true. Ryle is assertive, stubborn, maybe even a little arrogant. He's also sensitive, brilliant, and has a total soft spot for Lily. And the way he looks in scrubs certainly doesn't hurt. Lily can't get him out of her head. But Ryle's complete aversion to relationships is disturbing. Even as Lily finds herself becoming the exception to his 'no dating' rule, she can't help but wonder what made him that way in the first place.",
+            "description": "Sometimes it is the one who loves you who hurts you the most. Lily hasn't always had it easy, but that's never stopped her from working hard for the life she wants. She's come a long way from the small town in Maine where she grew up. She graduated from college, moved to Boston, and started her own business. So when she feels a spark with a gorgeous neurosurgeon named Ryle Kincaid, everything in Lily's life suddenly seems almost too good to be true. Ryle is assertive, stubborn, maybe even a little arrogant. He's also sensitive, brilliant, and has a total soft spot for Lily. And the way he looks in scrubs certainly doesn't hurt. Lily can't get him out of her head. But Ryle's complete aversion to relationships is disturbing. Even as Lily finds herself becoming the exception to his 'no dating' rule, she can't help but wonder what made him that way in the first place.",
             "price": 12.60,
             "category": 3,
             "rating": 4.43,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81PdOsc95OL.jpg",
-            "image": "81PdOsc95OL.jpg"
+            "image": "It Ends with Us.jpg"
+
+
         }
     },
     {
@@ -411,12 +433,13 @@
             "sku": "pp5003570628",
             "name": "Ugly Love",
             "author": "Colleen Hoover",
-            "description": "When Tate Collins meets airline pilot Miles Archer, she knows it isn't love at first sight. They wouldn't even go so far as to consider themselves friends. The only thing Tate and Miles have in common is an undeniable mutual attraction. Once their desires are out in the open, they realise they have the perfect set-up. He doesn't want love, she doesn't have time for love, so that just leaves the sex. Their arrangement could be surprisingly seamless, as long as Tate can stick to the only two rules Miles has for her. Never ask about the past. Don't expect a future. They think they can handle it, but realise almost immediately they can't handle it at all. Hearts get infiltrated. Promises get broken. Rules get shattered. Love gets ugly.",
+            "description": "When Tate Collins meets airline pilot Miles Archer, she knows it isn't love at first sight. They wouldn't even go so far as to consider themselves friends. The only thing Tate and Miles have in common is an undeniable mutual attraction. Once their desires are out in the open, they realize they have the perfect set-up. He doesn't want love, she doesn't have time for love, so that just leaves the sex. Their arrangement could be surprisingly seamless, as long as Tate can stick to the only two rules Miles has for her. Never ask about the past. Don't expect a future. They think they can handle it, but realize almost immediately they can't handle it at all. Hearts get infiltrated. Promises get broken. Rules get shattered. Love gets ugly.",
             "price": 12.60,
             "category": 3,
             "rating": 4.26,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/613KCs7szvL.jpg",
-            "image": "613KCs7szvL.jpg"
+            "image": "Ugly Love.jpg"
+
+
         }
     },
     {
@@ -426,12 +449,13 @@
             "sku": "pp5003620308",
             "name": "Where the Crawdads Sing",
             "author": "Delia Owens",
-            "description": "For years, rumours of the 'Marsh Girl' haunted Barkley Cove, a quiet fishing village. Kya Clark is barefoot and wild; unfit for polite society. So in late 1969, when the popular Chase Andrews was found dead, locals immediately suspected her. But Kya is not what they say. A born naturalist with just one day of school, she takes life's lessons from the land, learning the real ways of the world from the dishonest signals of fireflies. But while she has the skills to live in solitude forever, the time comes when she yearns to be touched and loved. Drawn to two young men from town, who are each intrigued by her wild beauty, Kya opens herself to a new and startling world until the unthinkable happens. In Where the Crawdads Sing, Owens juxtaposes an exquisite ode to the natural world against a profound coming of age story and haunting mystery. Thought-provoking, wise, and deeply moving, Owens's debut novel reminds us that we are forever shaped by the child within us, while also subject to the beautiful and violent secrets that nature keeps. The story asks how isolation influences the behaviour of a young woman, who like all of us, has the genetic propensity to belong to a group. The clues to the mystery are brushed into the lush habitat and natural histories of its wild creatures.",
+            "description": "For years, rumors of the 'Marsh Girl' haunted Barkley Cove, a quiet fishing village. Kya Clark is barefoot and wild; unfit for polite society. So in late 1969, when the popular Chase Andrews was found dead, locals immediately suspected her. But Kya is not what they say. A born naturalist with just one day of school, she takes life's lessons from the land, learning the real ways of the world from the dishonest signals of fireflies. But while she has the skills to live in solitude forever, the time comes when she yearns to be touched and loved. Drawn to two young men from town, who are each intrigued by her wild beauty, Kya opens herself to a new and startling world until the unthinkable happens. In Where the Crawdads Sing, Owens juxtaposes an exquisite ode to the natural world against a profound coming of age story and haunting mystery. Thought-provoking, wise, and deeply moving, Owens's debut novel reminds us that we are forever shaped by the child within us, while also subject to the beautiful and violent secrets that nature keeps. The story asks how isolation influences the behavior of a young woman, who like all of us, has the genetic propensity to belong to a group. The clues to the mystery are brushed into the lush habitat and natural histories of its wild creatures.",
             "price": 12.99,
             "category": 3,
             "rating": 4.46,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81HA6TJ5K-L.jpg",
-            "image": "81HA6TJ5K-L.jpg"
+            "image": "Where the Crawdads Sing.jpg"
+
+
         }
     },
     {
@@ -445,8 +469,9 @@
             "price": 14.99,
             "category": 4,
             "rating": 4.80,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/41%2BJi-NplNL._SX342_SY445_QL70_ML2_.jpg",
-            "image": "41%2BJi-NplNL._SX342_SY445_QL70_ML2_.jpg"
+            "image": "Journey's End.jpg"
+
+
         }
     },
     {
@@ -460,8 +485,8 @@
             "price": 19.99,
             "category": 4,
             "rating": 4.0,
-            "image_url": "https://m.media-amazon.com/images/I/51BKPXkkihL.jpg",
-            "image": "51BKPXkkihL.jpg"
+            "image": "Let's Talk.jpg"
+
         }
     },
     {
@@ -475,8 +500,8 @@
             "price": 15.99,
             "category": 4,
             "rating": 4.43,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/31R6sKenehL.jpg",
-            "image": "31R6sKenehL.jpg"
+            "image": "Manifest.jpg"
+
         }
     },
     {
@@ -486,12 +511,12 @@
             "sku": "pp5003790542",
             "name": "The Irish Difference: A Tumultuous History of Ireland's Breakup with Britain",
             "author": "Fergal Tobin",
-            "description": "A fascinating and entertaining investigation into what makes Ireland so different from its neighbours, by a respected Irish historian. For hundreds of years, the islands and their constituent tribes that make up the British Isles have lived next door to each other in a manner that, over time, suggested some movement towards political union. It was an uneven, stop-start business and it worked better in some places than in others. Still, England, Wales and Scotland have hung together through thick and thin, despite internal divisions of language, religion, law, culture and disposition that might have broken up a less resilient polity. And, for a long time, it seemed that something similar might have been said about the smaller island to the west: Ireland. Ireland was always a more awkward fit in the London-centric mini-imperium but no one imagined that it might detach itself altogether, until the moment came for rupture, quite suddenly and dramatically, in the fall-out from World War I. So, what was it - is it - about Ireland that is so different? Different enough to sever historical ties of centuries with such sudden violence and unapologetic efficiency. Wherein lies the Irish difference, a difference sufficient to have caused a rupture of that nature? In a wide-ranging and witty narrative, historian Fergal Tobin traces the relationship between Ireland and her neighbours, taking in everything from sports and culture to religion and politics, and reveals what it is that makes the Irish so different.",
+            "description": "A fascinating and entertaining investigation into what makes Ireland so different from its neighbors, by a respected Irish historian. For hundreds of years, the islands and their constituent tribes that make up the British Isles have lived next door to each other in a manner that, over time, suggested some movement towards political union. It was an uneven, stop-start business and it worked better in some places than in others. Still, England, Wales and Scotland have hung together through thick and thin, despite internal divisions of language, religion, law, culture and disposition that might have broken up a less resilient polity. And, for a long time, it seemed that something similar might have been said about the smaller island to the west: Ireland. Ireland was always a more awkward fit in the London-centric mini-imperium but no one imagined that it might detach itself altogether, until the moment came for rupture, quite suddenly and dramatically, in the fall-out from World War I. So, what was it - is it - about Ireland that is so different? Different enough to sever historical ties of centuries with such sudden violence and unapologetic efficiency. Wherein lies the Irish difference, a difference sufficient to have caused a rupture of that nature? In a wide-ranging and witty narrative, historian Fergal Tobin traces the relationship between Ireland and her neighbors, taking in everything from sports and culture to religion and politics, and reveals what it is that makes the Irish so different.",
             "price": 23.80,
             "category": 4,
             "rating": 4.0,
-            "image_url": "https://cdn.waterstones.com/bookjackets/large/9781/8389/9781838952617.jpg",
-            "image": "9781838952617.jpg"
+            "image": "The Irish Difference.jpg"
+
         }
     },
     {
@@ -505,8 +530,7 @@
             "price": 15.40,
             "category": 4,
             "rating": 4.09,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/61TGDPQr+YL.jpg",
-            "image": "61TGDPQr+YL.jpg"
+            "image": "Good Vibes, Good Life.jpg"
         }
     },
     {
@@ -516,12 +540,11 @@
             "sku": "pp5003861402",
             "name": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
             "author": "James Clear",
-            "description": "No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviours that lead to remarkable results. If you're having trouble changing your habits, the problem isn't you. The problem is your system. Bad habits repeat themselves again and again not because you don't want to change, but because you have the wrong system for change. You do not rise to the level of your goals. You fall to the level of your systems. Here, you'll get a proven system that can take you to new heights. Clear is known for his ability to distil complex topics into simple behaviours that can be easily applied to daily life and work. Here, he draws on the most proven ideas from biology, psychology, and neuroscience to create an easy-to-understand guide for making good habits inevitable and bad habits impossible. Along the way, readers will be inspired and entertained with true stories from Olympic gold medalists, award-winning artists, business leaders, life-saving physicians, and star comedians who have used the science of small habits to master their craft and vault to the top of their field. Learn how to: make time for new habits (even when life gets crazy); overcome a lack of motivation and willpower; design your environment to make success easier; get back on track when you fall off course; ...and much more. Atomic Habits will reshape the way you think about progress and success, and give you the tools and strategies you need to transform your habits--whether you are a team looking to win a championship, an organisation hoping to redefine an industry, or simply an individual who wishes to quit smoking, lose weight, reduce stress, or achieve any other goal.",
+            "description": "No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results. If you're having trouble changing your habits, the problem isn't you. The problem is your system. Bad habits repeat themselves again and again not because you don't want to change, but because you have the wrong system for change. You do not rise to the level of your goals. You fall to the level of your systems. Here, you'll get a proven system that can take you to new heights. Clear is known for his ability to distill complex topics into simple behaviors that can be easily applied to daily life and work. Here, he draws on the most proven ideas from biology, psychology, and neuroscience to create an easy-to-understand guide for making good habits inevitable and bad habits impossible. Along the way, readers will be inspired and entertained with true stories from Olympic gold medalists, award-winning artists, business leaders, life-saving physicians, and star comedians who have used the science of small habits to master their craft and vault to the top of their field. Learn how to: make time for new habits (even when life gets crazy); overcome a lack of motivation and willpower; design your environment to make success easier; get back on track when you fall off course; ...and much more. Atomic Habits will reshape the way you think about progress and success, and give you the tools and strategies you need to transform your habits--whether you are a team looking to win a championship, an organization hoping to redefine an industry, or simply an individual who wishes to quit smoking, lose weight, reduce stress, or achieve any other goal.",
             "price": 13.80,
             "category": 4,
             "rating": 4.38,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL.jpg",
-            "image": "81wgcld4wxL.jpg"
+            "image": "Atomic Habits.jpg"
         }
     },
     {
@@ -535,8 +558,7 @@
             "price": 23.80,
             "category": 4,
             "rating": 4.58,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81PdkxXJObL.jpg",
-            "image": "81PdkxXJObL.jpg"
+            "image": "The Boy, the Mole, the Fox and the Horse.jpg"
         }
     },
     {
@@ -550,8 +572,8 @@
             "price": 18.20,
             "category": 4,
             "rating": 4.15,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81Iet7um1QL.jpg",
-            "image": "81Iet7um1QL.jpg"
+            "image": "The Secret to Love, Health, and Money.jpg"
+
         }
     },
     {
@@ -561,12 +583,12 @@
             "sku": "pp5003950576",
             "name": "Your One Wild and Precious Life: An Inspiring Guide to Becoming Your Best Self At Any Age",
             "author": "Maureen Gaffney",
-            "description": "WINNER OF THE AUDIENCE CHOICE IRISH BOOK AWARD 2021. Once you've got a few decades on the clock, life can seem sort of cross-roads. Once you're no longer thinking of yourself as 'young', you may be looking back, thinking 'How did I get here?' And also looking ahead, wondering: 'What do I do now?' This realisation that neither time nor choices are limitless is both daunting and exciting. This is the moment to take stock and figure out how to make the best of every precious moment of the rest of your life. And to develop the tools to be able to do so again and again. Your One Wild and Precious Life is an eye-opening account of this surprisingly liberating process. Using the latest ground-breaking research, leading psychologist Maureen Gaffney has written an inspiring and practical guide for getting to grips with time. Taking the key stages of our life - from infancy to old age - she explores what we learn at each stage. And, crucially, she explains how, no matter what has happened in the past, and what age you are, you can find a better route forward. Your One Wild and Precious Life is both profound and reassuring. It will transform your thinking, connect you with who you truly are and help you to reclaim control over your life. Crucially, it will empower you to face the future with optimism. It is a book to fundamentally alter your relationship with time and show you that every age can be your best age. 'A profound, important work; simultaneously wise, instructive and a love letter to humanity' IRISH TIMES 'Fascinating and engaging' SUNDAY TIMES 'A must-read' IRISH DAILY MAIL '[It] will transform your thinking' IRISH FARMERS JOURNAL",
+            "description": "WINNER OF THE AUDIENCE CHOICE IRISH BOOK AWARD 2021. Once you've got a few decades on the clock, life can seem sort of cross-roads. Once you're no longer thinking of yourself as 'young', you may be looking back, thinking 'How did I get here?' And also looking ahead, wondering: 'What do I do now?' This realization that neither time nor choices are limitless is both daunting and exciting. This is the moment to take stock and figure out how to make the best of every precious moment of the rest of your life. And to develop the tools to be able to do so again and again. Your One Wild and Precious Life is an eye-opening account of this surprisingly liberating process. Using the latest ground-breaking research, leading psychologist Maureen Gaffney has written an inspiring and practical guide for getting to grips with time. Taking the key stages of our life - from infancy to old age - she explores what we learn at each stage. And, crucially, she explains how, no matter what has happened in the past, and what age you are, you can find a better route forward. Your One Wild and Precious Life is both profound and reassuring. It will transform your thinking, connect you with who you truly are and help you to reclaim control over your life. Crucially, it will empower you to face the future with optimism. It is a book to fundamentally alter your relationship with time and show you that every age can be your best age. 'A profound, important work; simultaneously wise, instructive and a love letter to humanity' IRISH TIMES 'Fascinating and engaging' SUNDAY TIMES 'A must-read' IRISH DAILY MAIL '[It] will transform your thinking' IRISH FARMERS JOURNAL",
             "price": 21.00,
             "category": 4,
             "rating": 3.67,
-            "image_url": "https://kbimages1-a.akamaihd.net/d56d2217-8ccb-4bcb-ab37-3a9d90ce5aa4/353/569/90/False/your-one-wild-and-precious-life-4.jpg",
-            "image": "your-one-wild-and-precious-life-4.jpg"
+            "image": "Your One Wild and Precious Life.jpg"
+
         }
     },
     {
@@ -574,14 +596,13 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5003960062",
-            "name": "Home Expressions Microfiber Twin XL Sheet Set",
-            "author": "Professor Rose Anne Kenny",
-            "description": "Did you know that we can lead longer and healthier lives by making simple changes right now? Professor Rose Anne Kenny has 35 years of experience at the forefront of ageing medicine. In Age Proof, she draws on her own pioneering research and the latest evidence to demystify why we age and shows us that 80% of our ageing biology is within our control: we can not only live longer lives but become happier and healthier deep into our later years. Effortlessly distilling scientific theory into practical advice that we can apply to our everyday lives, Professor Kenny examines the impact that food, genetics, friendships, purpose, sex, exercise and laughter have on how our cells age. This illuminating book will show you the steps you can take to stay younger for longer - and will prove that you really are just as young as you feel.",
+            "name": "The World According to Physics",
+            "author": "Jim Al-Khalili",
+            "description": "Al-Khalili begins by introducing the fundamental concepts of space, time, energy, and matter, and then describes the three pillars of modern physics--quantum theory, relativity, and thermodynamics--showing how all three must come together if we are ever to have a full understanding of reality. Using wonderful examples and thought-provoking analogies, Al-Khalili illuminates the physics of the extreme cosmic and quantum scales, the speculative frontiers of the field, and the physics that underpins our everyday experiences and technologies, bringing the reader up to speed with the biggest ideas in physics in just a few sittings. Physics is revealed as an intrepid human quest for ever more foundational principles that accurately explain the natural world we see around us, an undertaking guided by core values such as honesty and doubt. The knowledge discovered by physics both empowers and humbles us, and still, physics continues to delve valiantly into the unknown.",
             "price": 21.00,
             "category": 4,
             "rating": 3.79,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/61w3zbkqweL.jpg",
-            "image": "61w3zbkqweL.jpg"
+            "image": "The World According to Physics.jpg"
         }
     },
     {
@@ -595,8 +616,8 @@
             "price": 8.99,
             "category": 5,
             "rating": 4.02,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91rcpJsm-HL.jpg",
-            "image": "91rcpJsm-HL.jpg"
+            "image": "One of Us Is Lying.jpg"
+
         }
     },
     {
@@ -610,8 +631,8 @@
             "price": 11.20,
             "category": 5,
             "rating": 4.37,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91r3afbnQsL.jpg",
-            "image": "91r3afbnQsL.jpg"
+            "image": "A Good Girl's Guide to Murder.jpg"
+
         }
     },
     {
@@ -621,12 +642,12 @@
             "sku": "pp5003990736",
             "name": "Harry Potter and the Sorcerer's Stone",
             "author": "J. K. Rowling",
-            "description": "Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry. After a lifetime of bottling up his magical powers, Harry finally feels like a normal kid. But even within the Wizarding community, he is special. He is the boy who lived: the only person to have ever survived a killing curse inflicted by the evil Lord Voldemort, who launched a brutal takeover of the Wizarding world, only to vanish after failing to kill Harry. Though Harry's first year at Hogwarts is the best of his life, not everything is perfect. There is a dangerous secret object hidden within the castle walls, and Harry believes it's his responsibility to prevent it from falling into evil hands. But doing so will bring him into contact with forces more terrifying than he ever could have imagined. Full of sympathetic characters, wildly imaginative situations, and countless exciting details, the first instalment in the series assembles an unforgettable magical world and sets the stage for many high-stakes adventures to come. ",
+            "description": "Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry. After a lifetime of bottling up his magical powers, Harry finally feels like a normal kid. But even within the Wizarding community, he is special. He is the boy who lived: the only person to have ever survived a killing curse inflicted by the evil Lord Voldemort, who launched a brutal takeover of the Wizarding world, only to vanish after failing to kill Harry. Though Harry's first year at Hogwarts is the best of his life, not everything is perfect. There is a dangerous secret object hidden within the castle walls, and Harry believes it's his responsibility to prevent it from falling into evil hands. But doing so will bring him into contact with forces more terrifying than he ever could have imagined. Full of sympathetic characters, wildly imaginative situations, and countless exciting details, the first installment in the series assembles an unforgettable magical world and sets the stage for many high-stakes adventures to come. ",
             "price": 11.20,
             "category": 5,
             "rating": 4.48,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg",
-            "image": "81YOuOGFCJL.jpg"
+            "image": "Harry Potter and the Sorcerer's Stone.jpg"
+
         }
     },
     {
@@ -640,8 +661,8 @@
             "price": 11.20,
             "category": 5,
             "rating": 3.84,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91nwftv13xL.jpg",
-            "image": "91nwftv13xL.jpg"
+            "image": "The Weight of Water.jpg"
+
         }
     },
     {
@@ -655,8 +676,8 @@
             "price": 11.20,
             "category": 5,
             "rating": 4.39,
-            "image_url": "https://m.media-amazon.com/images/I/41I-nm31zmL._AC_SY780_.jpg",
-            "image": "41I-nm31zmL._AC_SY780_.jpg"
+            "image": "Good girl, bad blood.jpg"
+
         }
     },
     {
@@ -666,12 +687,12 @@
             "sku": "pp5004230059",
             "name": "Guard Your Heart",
             "author": "Sue Divin",
-            "description": "Derry. Summer 2016. Aidan and Iona, now eighteen, were both born on the day of the Northern Ireland peace deal. Aidan is Catholic, Irish, and Republican. With his expolitical prisoner father gone and his mother dead, Aidan's hope is pinned on exam results earning him a one-way ticket out of Derry. To anywhere. Iona, Protestant and British, has a brother and father in the police. She's got university ambitions, a strong faith and a fervent belief that boys without one track minds are a myth. At a post-exam party, Aidan wanders alone across the Peace Bridge and becomes the victim of a brutal sectarian attack. Iona witnessed the attack; picked up Aidan's phone and filmed what happened, and got in touch with him to return the phone. When the two meet, alone and on neutral territory, the differences between them seem insurmountable. Both their fathers held guns, but safer to keep that secret for now Despite their differences and the secrets they have to keep from each other, there is mutual intrigue, and their friendship grows. And so what? It's not the Troubles. But for both Iona and Aidan it seems like everything is keeping them apart , when all they want is to be together . . . (less) GET A COPY",
+            "description": "Derry. Summer 2016. Aidan and Iona, now eighteen, were both born on the day of the Northern Ireland peace deal. Aidan is Catholic, Irish, and Republican. With his ex political prisoner father gone and his mother dead, Aidan's hope is pinned on exam results earning him a one-way ticket out of Derry. To anywhere. Iona, Protestant and British, has a brother and father in the police. She's got university ambitions, a strong faith and a fervent belief that boys without one track minds are a myth. At a post-exam party, Aidan wanders alone across the Peace Bridge and becomes the victim of a brutal sectarian attack. Iona witnessed the attack; picked up Aidan's phone and filmed what happened, and got in touch with him to return the phone. When the two meet, alone and on neutral territory, the differences between them seem insurmountable. Both their fathers held guns, but safer to keep that secret for now Despite their differences and the secrets they have to keep from each other, there is mutual intrigue, and their friendship grows. And so what? It's not the Troubles. But for both Iona and Aidan it seems like everything is keeping them apart , when all they want is to be together . . .",
             "price": 11.20,
             "category": 5,
             "rating": 4.12,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51xsfGDrjGL.jpg",
-            "image": "51xsfGDrjGL.jpg"
+            "image": "Guard Your Heart.jpg"
+
         }
     },
     {
@@ -685,8 +706,8 @@
             "price": 16.80,
             "category": 5,
             "rating": 4.5,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1634197354l/56871462._SY475_.jpg",
-            "image": "56871462._SY475_.jpg"
+            "image": "Two for Joy.jpg"
+
         }
     },
     {
@@ -694,14 +715,13 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5004610254",
-            "name": "Konitz Dots and Stripes Set of 2 Bone China Mugs",
+            "name": "The Love Hypothesis",
             "author": "Ali Hazelwood",
             "description": "As a third-year Ph.D. candidate, Olive Smith doesn't believe in lasting romantic relationships--but her best friend does, and that's what got her into this situation. Convincing Anh that Olive is dating and well on her way to a happily ever after was always going to take more than hand-wavy Jedi mind tricks: Scientists require proof. So, like any self-respecting biologist, Olive panics and kisses the first man she sees. That man is none other than Adam Carlsen, a young hotshot professor--and well-known ass. Which is why Olive is positively floored when Stanford's reigning lab tyrant agrees to keep her charade a secret and be her fake boyfriend. But when a big science conference goes haywire, putting Olive's career on the Bunsen burner, Adam surprises her again with his unyielding support and even more unyielding... six-pack abs. Suddenly their little experiment feels dangerously close to combustion. And Olive discovers that the only thing more complicated than a hypothesis on love is putting her own heart under the microscope.",
             "price": 12.60,
             "category": 5,
             "rating": 4.36,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81kYj5Uyu8L.jpg",
-            "image": "81kYj5Uyu8L.jpg"
+            "image": "The Love Hypothesis.jpg"
         }
     },
     {
@@ -715,8 +735,8 @@
             "price": 11.20,
             "category": 5,
             "rating": 3.96,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91i7MSrNHXL.jpg",
-            "image": "91i7MSrNHXL.jpg"
+            "image": "Shadow and Bone.jpg"
+
         }
     },
     {
@@ -730,8 +750,8 @@
             "price": 12.60,
             "category": 5,
             "rating": 4.10,
-            "image_url": "https://kbimages1-a.akamaihd.net/0feaa855-7baa-4bf1-9756-b931e138d75c/1200/1200/False/the-cruel-prince-the-folk-of-the-air.jpg",
-            "image": "the-cruel-prince-the-folk-of-the-air.jpg"
+            "image": "The Cruel Prince.jpg"
+
         }
     },
     {
@@ -741,12 +761,11 @@
             "sku": "pp5004900522",
             "name": "Pride and Prejudice",
             "author": "Jane Austen",
-            "description": "Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. Jane Austen called this brilliant work 'her own darling child' and its vivacious heroine, Elizabeth Bennet, 'as delightful a creature as ever appeared in print.' The romantic clash between the opinionated Elizabeth and her proud beau, Mr. Darcy, is a splendid performance of civilised sparring. And Jane Austen's radiant wit sparkles as her characters dance a delicate quadrille of flirtation and intrigue, making this book the most superb comedy of manners of Regency England.",
+            "description": "Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. Jane Austen called this brilliant work 'her own darling child' and its vivacious heroine, Elizabeth Bennet, 'as delightful a creature as ever appeared in print.' The romantic clash between the opinionated Elizabeth and her proud beau, Mr. Darcy, is a splendid performance of civilized sparring. And Jane Austen's radiant wit sparkles as her characters dance a delicate quadrille of flirtation and intrigue, making this book the most superb comedy of manners of Regency England.",
             "price": 9.80,
             "category": 6,
             "rating": 4.28,
-            "image_url": "https://almabooks.com/wp-content/uploads/2016/10/9781847493699.jpg",
-            "image": "9781847493699.jpg"
+            "image": "Pride and Prejudice.jpg"
         }
     },
     {
@@ -754,14 +773,13 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5004910158",
-            "name": "Stylus Short-Sleeve V-Neck Slub Tee - Plus",
+            "name": "Rebecca",
             "author": "Daphne Du Maurier",
             "description": "Last night I dreamt I went to Manderley again . . .The novel begins in Monte Carlo, where our heroine is swept off her feet by the dashing widower Maxim de Winter and his sudden proposal of marriage. Orphaned and working as a lady's maid, she can barely believe her luck. It is only when they arrive at his massive country estate that she realises how large a shadow his late wife will cast over their lives--presenting her with a lingering evil that threatens to destroy their marriage from beyond the grave.",
             "price": 12.60,
             "category": 6,
             "rating": 4.24,
-            "image_url": "https://cdn.waterstones.com/bookjackets/large/9781/8440/9781844080380.jpg",
-            "image": "9781844080380.jpg"
+            "image": "Rebecca.jpg"
         }
     },
     {
@@ -775,8 +793,7 @@
             "price": 3.99,
             "category": 6,
             "rating": 4.01,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91wOUFZCE+L.jpg",
-            "image": "91wOUFZCE+L.jpg"
+            "image": "Dracula.jpg"
         }
     },
     {
@@ -790,8 +807,7 @@
             "price": 9.80,
             "category": 6,
             "rating": 4.12,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91l1EHFs8dL.jpg",
-            "image": "91l1EHFs8dL.jpg"
+            "image": "Little Women.jpg"
         }
     },
     {
@@ -805,8 +821,8 @@
             "price": 3.99,
             "category": 6,
             "rating": 4.10,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/71Yl9WYd4+S.jpg",
-            "image": "71Yl9WYd4+S.jpg"
+            "image": "The Picture of Dorian Gray.jpg"
+
         }
     },
     {
@@ -814,14 +830,14 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5004991162",
-            "name": "adidas climacool Boxer Briefs",
-            "author": "Arizona Original Bootcut Jeans",
-            "description": "These climacool mesh boxer briefs are the ideal blend of performance and comfort, with a streamlined fit to complement your body's movement. fabric combines soft finish with moisture-wicking management mesh panels for ventilation double-lined support pouch no ride-up leg construction non-chafing stitching tag free polyester/spandex washable imported",
-            "price": 28.99,
+            "name": "Persuasion",
+            "author": "Jane Austen",
+            "description": "Persuasion is Jane Austen's last completed novel. She began it soon after she had finished Emma, completing it in August 1816. She died, aged 41, in 1817; Persuasion was published in December that year (but dated 1818). Persuasion is linked to Northanger Abbey not only by the fact that the two books were originally bound up in one volume and published together, but also because both stories are set partly in Bath, a fashionable city with which Austen was well acquainted, having lived there from 1801 to 1805. Besides the theme of persuasion, the novel evokes other topics, such as the Royal Navy, in which two of Jane Austen's brothers ultimately rose to the rank of admiral. As in Northanger Abbey, the superficial social life of Bath-well known to Austen, who spent several relatively unhappy and unproductive years there-is portrayed extensively and serves as a setting for the second half of the book. In many respects Persuasion marks a break with Austen's previous works, both in the more biting, even irritable satire directed at some of the novel's characters and in the regretful, resigned outlook of its otherwise admirable heroine, Anne Elliot, in the first part of the story. Against this is set the energy and appeal of the Royal Navy, which symbolises for Anne and the reader the possibility of a more outgoing, engaged, and fulfilling life, and it is this worldview which triumphs for the most part at the end of the novel.",
+            "price": 8.99,
             "category": 6,
             "rating": 4.5,
-            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0428201617042837M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-            "image": "DP0428201617042837M.jpg"
+            "image": "Persuasion.jpg"
+
         }
     },
     {
@@ -835,8 +851,7 @@
             "price": 3.50,
             "category": 6,
             "rating": 3.93,
-            "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg",
-            "image": "The_Great_Gatsby_Cover_1925_Retouched.jpg"
+            "image": "The Great Gatsby.jpg"
         }
     },
     {
@@ -850,8 +865,7 @@
             "price": 3.99,
             "category": 6,
             "rating": 3.74,
-            "image_url": "https://c8.alamy.com/comp/EXTFE5/1960s-uk-ulysses-book-cover-EXTFE5.jpg",
-            "image": "1960s-uk-ulysses-book-cover-EXTFE5.jpg"
+            "image": "Ulysses.jpg"
         }
     },
     {
@@ -865,8 +879,7 @@
             "price": 12.59,
             "category": 6,
             "rating": 4.06,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328343048l/11602151.jpg",
-            "image": "1328343048l/11602151.jpg"
+            "image": "The Murder at the Vicarage.jpg"
         }
     },
     {
@@ -880,8 +893,7 @@
             "price": 3.99,
             "category": 6,
             "rating": 3.83,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/61O0anb7sjL.jpg",
-            "image": "61O0anb7sjL.jpg"
+            "image": "Frankenstein.jpg"
         }
     },
     {
@@ -895,8 +907,7 @@
             "price": 21.00,
             "category": 7,
             "rating": 4.4,
-            "image_url": "https://www.norli.no/media/catalog/product/cache/c4a11e66ee9433953f551e1adfcb16b9/9/7/9781526620644_1_4.jpg",
-            "image": "9781526620644_1_4.jpg"
+            "image": "Court of Silver Flames.jpg"
         }
     },
     {
@@ -910,8 +921,7 @@
             "price": 18.20,
             "category": 7,
             "rating": 4.53,
-            "image_url": "https://www.easons.com/globalassets/book-covers/2021-01/project-hail-mary.png",
-            "image": "project-hail-mary.png"
+            "image": "Project Hail Mary.png"
         }
     },
     {
@@ -925,8 +935,7 @@
             "price": 11.20,
             "category": 7,
             "rating": 3.81,
-            "image_url": "https://www.norli.no/media/catalog/product/cache/c4a11e66ee9433953f551e1adfcb16b9/9/7/9781526617187_1_5.jpg",
-            "image": "9781526617187_1_5.jpg"
+            "image": "A Court of Frost and Starligh.jpg"
         }
     },
     {
@@ -940,8 +949,7 @@
             "price": 12.60,
             "category": 7,
             "rating": 3.92,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91WbTtMDZ+L.jpg",
-            "image": "91WbTtMDZ+L.jpg"
+            "image": "The Silence of the Girls.jpg"
         }
     },
     {
@@ -949,14 +957,14 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5005330595",
-            "name": "Arizona Graphic Tee - Boys 8-20 and Husky",
+            "name": "V.E. Schwab's ExtraOrdinary #0",
             "author": "Schwab V E",
-            "description": "A Life No One Will Remember. A Story You Will Never Forget. France, 1714: in a moment of desperation, a young woman makes a Faustian bargain to live forever and is cursed to be forgotten by everyone she meets. Thus begins the extraordinary life of Addie LaRue, and a dazzling adventure that will play out across centuries and continents, across history and art, as a young woman learns how far she will go to leave her mark on the world. But everything changes when, after nearly 300 years, Addie stumbles across a young man in a hidden bookstore and he remembers her name. ",
+            "description": "A brand-new series that expands deeper into the world of V. E. Schwab’s critically acclaimed novels Vicious and Vengeful. Set in the years between Vicious and Vengeful, ExtraOrdinary follows a teenage girl named Charlotte Tills who survives a bus crash and becomes EO – ExtraOrdinary – gaining the ability to see people’s deaths in reflective surfaces. This issue 0 leads into an all-new 4-part comic series! ",
             "price": 19.60,
             "category": 7,
             "rating": 4.23,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91Ql48Y0mqL.jpg",
-            "image": "91Ql48Y0mqL.jpg"
+            "image": "V.E. Schwab's ExtraOrdinary.jpg"
+
         }
     },
     {
@@ -970,8 +978,8 @@
             "price": 14.00,
             "category": 7,
             "rating": 4.0,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81ym3QUd3KL.jpg",
-            "image": "81ym3QUd3KL.jpg"
+            "image": "Dune.jpg"
+
         }
     },
     {
@@ -985,8 +993,9 @@
             "price": 14.00,
             "category": 7,
             "rating": 4.18,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91cJ0-MXtGL.jpg",
-            "image": "91cJ0-MXtGL.jpg"
+            "image": "The Eye of the World.jpg"
+
+
         }
     },
     {
@@ -997,11 +1006,12 @@
             "name": "These Violent Delights",
             "author": "Chloe Gong",
             "description": "The year is 1926, and Shanghai hums to the tune of debauchery. A blood feud between two gangs runs the streets red, leaving the city helpless in the grip of chaos. At the heart of it all is eighteen-year-old Juliette Cai, a former flapper who has returned to assume her role as the proud heir of the Scarlet Gang a network of criminals far above the law. Their only rivals in power are the White Flowers, who have fought the Scarlets for generations. And behind every move is their heir, Roma Montagov, Juliette's first love, and first betrayal. But when gangsters on both sides show signs of instability culminating in clawing their own throats out, the people start to whisper. Of a contagion, a madness. Of a monster in the shadows. As the deaths stack up, Juliette and Roma must set their guns and grudges aside and work together, for if they can't stop this mayhem, then there will be no city left for either to rule. Perfect for fans of The Last Magician and Descendant of the Crane, this heart-stopping debut is an imaginative Romeo and Juliet retelling set in 1920s Shanghai, with rival gangs and a monster in the depths of the Huangpu River.",
-            "price": 72.99,
+            "price": 12.99,
             "category": 7,
             "rating": 4.0,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91a9UDAbngL.jpg",
-            "image": "91a9UDAbngL.jpg"
+            "image": "These Violent Delights.jpg"
+
+
         }
     },
     {
@@ -1015,8 +1025,7 @@
             "price": 14.00,
             "category": 7,
             "rating": 4.03,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91ndIrptO4L.jpg",
-            "image": "91ndIrptO4L.jpg"
+            "image": "Pet Sematary.jpg"
         }
     },
     {
@@ -1030,8 +1039,9 @@
             "price": 19.60,
             "category": 7,
             "rating": 3.68,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51+QySyLaXS._SX329_BO1,204,203,200_.jpg",
-            "image": "51+QySyLaXS._SX329_BO1,204,203,200_.jpg"
+            "image": "Realm Breaker.jpg"
+
+
         }
     },
     {
@@ -1045,8 +1055,9 @@
             "price": 18.99,
             "category": 8,
             "rating": 3.96,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91UDguUf+cL.jpg",
-            "image": "91UDguUf+cL.jpg"
+            "image": "The Book of Cold Cases.jpg"
+
+
         }
     },
     {
@@ -1060,8 +1071,8 @@
             "price": 18.99,
             "category": 8,
             "rating": 4.34,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/516z-D3WmCL._SX329_BO1,204,203,200_.jpg",
-            "image": "516z-D3WmCL._SX329_BO1,204,203,200_.jpg"
+            "image": "The Match.jpg"
+
         }
     },
     {
@@ -1075,8 +1086,7 @@
             "price": 10.99,
             "category": 8,
             "rating": 3.89,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/919iXZLwgrL.jpg",
-            "image": "919iXZLwgrL.jpg"
+            "image": "My Dearest Darkest.jpg"
         }
     },
     {
@@ -1090,8 +1100,7 @@
             "price": 10.99,
             "category": 8,
             "rating": 3.80,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91totM2rThS.jpg",
-            "image": "91totM2rThS.jpg"
+            "image": "Tell Me Everything.jpg"
         }
     },
     {
@@ -1105,8 +1114,8 @@
             "price": 15.99,
             "category": 8,
             "rating": 3.70,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91UlKL3QpTL.jpg",
-            "image": "91UlKL3QpTL.jpg"
+            "image": "Tell Me an Ending.jpg"
+
         }
     },
     {
@@ -1120,8 +1129,7 @@
             "price": 18.99,
             "category": 8,
             "rating": 3.48,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/71zxq-LTYbL.jpg",
-            "image": "71zxq-LTYbL.jpg"
+            "image": "The Club.jpg"
         }
     },
     {
@@ -1135,8 +1143,7 @@
             "price": 20.99,
             "category": 8,
             "rating": 4.08,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91nFH1d6lqL.jpg",
-            "image": "91nFH1d6lqL.jpg"
+            "image": "Remember Me Gone.jpg"
         }
     },
     {
@@ -1150,8 +1157,7 @@
             "price": 16.99,
             "category": 8,
             "rating": 4.19,
-            "image_url": "https://img1.od-cdn.com/ImageType-100/2390-1%7B0A74045E-378B-4B3E-BCCF-C46CB3824A3F%7DImg100.jpg/",
-            "image": "%7B0A74045E-378B-4B3E-BCCF-C46CB3824A3F%7DImg100.jpg"
+            "image": "This Golden State.jpg"
         }
     },
     {
@@ -1162,11 +1168,10 @@
             "name": "Smile and Look Pretty",
             "author": "Amanda Pellegrino",
             "description": "A whip-smart, piercing debut novel, Smile and Look Pretty follows four assistants who band together to take on their toxic office environments in the ultimate comeuppance. Online they're the Aggressive One, the Bossy One, the Bitchy One and the Emotional One. In real life, best friends Cate, Lauren, Olivia and Max all have one thing in common--they're overworked, overtired and underpaid assistants to some of the most powerful men in the entertainment industries. When they secretly start an anonymous blog detailing their experiences, their posts go viral and hundreds of other women come forward with stories of their own. Confronted with the risks of newfound fame and the possibility of their identities being revealed, they have to contend with what happens when you try to change the world. Gripping, razor sharp and scathingly funny, Smile and Look Pretty is a fast-paced millennial rallying cry about the consequences of whistleblowing for an entire generation, and a testament to the strength of female friendship and what can be accomplished when women come together.",
-            "price": 20.99,
+            "price": 10.99,
             "category": 8,
             "rating": 3.79,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81qwagoRCdL.jpg",
-            "image": "81qwagoRCdL.jpg"
+            "image": "Smile and Look Pretty.jpg"
         }
     },
     {
@@ -1180,8 +1185,8 @@
             "price": 10.99,
             "category": 8,
             "rating": 3.71,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51yst7Xx-GL._SX326_BO1,204,203,200_.jpg",
-            "image": "51yst7Xx-GL._SX326_BO1,204,203,200_.jpg"
+            "image": "The Summer We Forgot.jpg"
+
         }
     },
     {
@@ -1195,8 +1200,7 @@
             "price": 29.0,
             "category": 9,
             "rating": 4.09,
-            "image_url": "https://m.media-amazon.com/images/I/31-y51sQV4L.jpg",
-            "image": "31-y51sQV4L.jpg"
+            "image": "A Brief History of Equality.jpg"
         }
     },
     {
@@ -1210,8 +1214,7 @@
             "price": 13.99,
             "category": 9,
             "rating": 4.36,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/41q6Uo1lcnL._SX342_SY445_QL70_ML2_.jpg",
-            "image": "41q6Uo1lcnL._SX342_SY445_QL70_ML2_.jpg"
+            "image": "A Short History of the Blockade.jpg"
         }
     },
     {
@@ -1225,8 +1228,7 @@
             "price": 12.60,
             "category": 9,
             "rating": 4.14,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/91EWBiFTnGL.jpg",
-            "image": "91EWBiFTnGL.jpg"
+            "image": "The Secret History.jpg"
         }
     },
     {
@@ -1240,8 +1242,8 @@
             "price": 46.19,
             "category": 9,
             "rating": 3.83,
-            "image_url": "https://media.wiley.com/product_data/coverImage300/29/14443517/1444351729.jpg",
-            "image": "1444351729.jpg"
+            "image": "Gender in History.jpg"
+
         }
     },
     {
@@ -1255,8 +1257,7 @@
             "price": 18.19,
             "category": 9,
             "rating": 3.74,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/41d-ifxdSrL._SX327_BO1,204,203,200_.jpg",
-            "image": "41d-ifxdSrL._SX327_BO1,204,203,200_.jpg"
+            "image": "History Has Begun.jpg"
         }
     },
     {
@@ -1270,8 +1271,7 @@
             "price": 14.00,
             "category": 9,
             "rating": 4.20,
-            "image_url": "https://dj4fsg3e1je59.cloudfront.net/9780857501004/img/0",
-            "image": "0.jpg"
+            "image": "A Brief History of Time.jpg"
         }
     },
     {
@@ -1285,8 +1285,7 @@
             "price": 28.00,
             "category": 9,
             "rating": 4.18,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51z7N4qFGCL._SX323_BO1,204,203,200_.jpg",
-            "image": "14201504201760M.jpg"
+            "image": "The Secret History of Here.jpg"
         }
     },
     {
@@ -1300,8 +1299,7 @@
             "price": 28.00,
             "category": 9,
             "rating": 4.8,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/71NxsIt7iVS.jpg",
-            "image": "71NxsIt7iVS.jpg"
+            "image": "A History of Coventry.jpg"
         }
     },
     {
@@ -1315,8 +1313,8 @@
             "price": 3.73,
             "category": 9,
             "rating": 4.0,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/41BYRtJEKEL._SX330_BO1,204,203,200_.jpg",
-            "image": "41BYRtJEKEL._SX330_BO1,204,203,200_.jpg"
+            "image": "A History of Solitude.jpg"
+
         }
     },
     {
@@ -1330,8 +1328,8 @@
             "price": 12.99,
             "category": 9,
             "rating": 4.02,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/71D5OByLh0L.jpg",
-            "image": "71D5OByLh0L.jpg"
+            "image": "The Plague.jpg"
+
         }
     },
     {
@@ -1345,8 +1343,9 @@
             "price": 19.60,
             "category": 10,
             "rating": 3.63,
-            "image_url": "https://m.media-amazon.com/images/I/41CjdYRow8L.jpg",
-            "image": "41CjdYRow8L.jpg"
+            "image": "The Guinness Girls.jpg"
+
+
         }
     },
     {
@@ -1354,14 +1353,15 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5005870638",
-            "name": "Arizona Raglan-Sleeve Thermal Pullover",
+            "name": "It Could Never Happen Here",
             "author": "Eithne Shortall",
             "description": "Their school is about to be taught a lesson... Beverley Franklin will do whatever it takes to protect her local school's reputation. So when a scandal involving her own daughter threatens to derail the annual school musical's appearance on national television, Beverley goes into overdrive. But in her efforts to protect her daughter and keep the musical on track, she misses what's really going, both in her own house and in the insular Glass Lake community - with dramatic consequences. Glass Lake primary school's reputation is about to be shattered...",
             "price": 18.20,
             "category": 10,
             "rating": 3.97,
-            "image_url": "https://www.biblioimages.com/atlantic/getimage.aspx?class=books&assetversionid=181450&cat=default&size=origjpg&id=7696",
-            "image": "9781838951849.jpg"
+            "image": "It Could Never Happen Here.jpg"
+
+
         }
     },
     {
@@ -1375,8 +1375,9 @@
             "price": 18.20,
             "category": 10,
             "rating": 4.3,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51MieO3H8pL._SX308_BO1,204,203,200_.jpg",
-            "image": "51MieO3H8pL._SX308_BO1,204,203,200_.jpg"
+            "image": "The Colony.jpg"
+
+
         }
     },
     {
@@ -1390,8 +1391,9 @@
             "price": 12.60,
             "category": 10,
             "rating": 4.34,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51aWCtd+fzL._SX325_BO1,204,203,200_.jpg",
-            "image": "51aWCtd+fzL._SX325_BO1,204,203,200_.jpg"
+            "image": "The Book Club.jpg"
+
+
         }
     },
     {
@@ -1405,8 +1407,9 @@
             "price": 21.99,
             "category": 10,
             "rating": 4.03,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/41esA6PrKnL._SX307_BO1,204,203,200_.jpg",
-            "image": "41esA6PrKnL._SX307_BO1,204,203,200_.jpg"
+            "image": "Other Women.jpg"
+
+
         }
     },
     {
@@ -1420,8 +1423,9 @@
             "price": 19.60,
             "category": 10,
             "rating": 4.08,
-            "image_url": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7515/9780751582383.jpg",
-            "image": "9780751582383.jpg"
+            "image": "Breaking Point.jpg"
+
+
         }
     },
     {
@@ -1435,8 +1439,8 @@
             "price": 19.60,
             "category": 10,
             "rating": 3.64,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/41RfHWoMEQS._SX308_BO1,204,203,200_.jpg",
-            "image": "41RfHWoMEQS._SX308_BO1,204,203,200_.jpg"
+            "image": "Beautiful World, Where Are You.jpg"
+
         }
     },
     {
@@ -1444,14 +1448,13 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5005980058",
-            "name": "Arizona Quilted Sweatshirt - Toddler Girls 2t-5t",
+            "name": "The Letter Home",
             "author": "Rachael English",
             "description": "A rich, heartbreaking novel, moving between west of Ireland and Boston, of a mother's love, a baby girl, a courageous voyage, and a forgotten story that binds two families separated by an ocean... She had left behind everything she loved to forge a future for the one she treasured most... 2019 Dublin. When Jessie Daly loses her job, her flat and her relationship, she travels home to Ireland's west coast and helps an old friend researching what happened in the area during the 1840s Famine. They are drawn into the remarkable story of a brave young mother called Bridget Moloney, and Jessie becomes determined to find out what happened to Bridget and her daughter, Norah. On the other side of the Atlantic, Kaitlin Wilson is researching her family tree. She knows her ancestors left Ireland for Boston in the 19th century. Everything else is a mystery. Kaitlin unearths a fascinating story, but her research forces her to confront uncomfortable truths about herself and her family and also uncover a heartbreaking connection to a young woman in the west of Ireland... ",
             "price": 19.60,
             "category": 10,
             "rating": 4.35,
-            "image_url": "https://www.hachette.co.uk/wp-content/uploads/2021/08/hbg-title-9781472264701-33.jpg?fit=440%2C675",
-            "image": "hbg-title-9781472264701-33.jpg"
+            "image": "The Letter Home.jpg"
         }
     },
     {
@@ -1465,8 +1468,8 @@
             "price": 14.99,
             "category": 10,
             "rating": 4.09,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81sMSNqhUkL.jpg",
-            "image": "81sMSNqhUkL.jpg"
+            "image": "Aisling and the City.jpg"
+
         }
     },
     {
@@ -1480,8 +1483,8 @@
             "price": 18.20,
             "category": 10,
             "rating": 3.76,
-            "image_url": "hhttps://kbimages1-a.akamaihd.net/a74cca92-be96-429e-9392-cacfc25c0ef2/1200/1200/False/freckles-46.jpg",
-            "image": "freckles-46.jpg"
+            "image": "Freckles.jpg"
+
         }
     },
     {
@@ -1495,8 +1498,8 @@
             "price": 17.99,
             "category": 11,
             "rating": 4.8,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1590065523l/53449596._SY475_.jpg",
-            "image": "53449596._SY475_.jpg"
+            "image": "Jump.jpg"
+
         }
     },
     {
@@ -1510,8 +1513,8 @@
             "price": 12.60,
             "category": 11,
             "rating": 3.96,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81B6bmppTAL.jpg",
-            "image": "81B6bmppTAL.jpg"
+            "image": "The Women Who Ran Away.jpg"
+
         }
     },
     {
@@ -1525,8 +1528,7 @@
             "price": 18.20,
             "category": 11,
             "rating": 3.89,
-            "image_url": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781398507241/falling-9781398507241_hr.jpg",
-            "image": "falling-9781398507241_hr.jpg"
+            "image": "Falling.jpg"
         }
     },
     {
@@ -1540,8 +1542,7 @@
             "price": 14.00,
             "category": 11,
             "rating": 3.98,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/71dX-JtV0qL.jpg",
-            "image": "71dX-JtV0qL.jpg"
+            "image": "Why We Swim.jpg"
         }
     },
     {
@@ -1555,8 +1556,7 @@
             "price": 12.59,
             "category": 11,
             "rating": 4.23,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/612pABPz9zL.jpg",
-            "image": "612pABPz9zL.jpg"
+            "image": "You Had Me At Halloumi.jpg"
         }
     },
     {
@@ -1570,8 +1570,7 @@
             "price": 13.99,
             "category": 11,
             "rating": 3.85,
-            "image_url": "https://cdn.waterstones.com/override/v1/large/9780/0084/9780008412159.jpg",
-            "image": "9780008412159.jpg"
+            "image": "If You Were There.jpg"
         }
     },
     {
@@ -1585,8 +1584,7 @@
             "price": 27.99,
             "category": 11,
             "rating": 4.14,
-            "image_url": "https://uofrpress.ca/var/site/storage/images/books/t/the-way-of-the-gardener/9780889778061_cover/437201-1-eng-CA/9780889778061_cover1_rb_modalcover.jpg",
-            "image": "9780889778061_cover1_rb_modalcover.jpg"
+            "image": "The Way of the Gardener.jpg"
         }
     },
     {
@@ -1600,8 +1598,7 @@
             "price": 21.99,
             "category": 11,
             "rating": 4.68,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/A1z7ywkr2wL.jpg",
-            "image": "A1z7ywkr2wL.jpg"
+            "image": "Kobe Bryant.jpg"
         }
     },
     {
@@ -1615,8 +1612,7 @@
             "price": 49.00,
             "category": 11,
             "rating": 3.7,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51YAQ-4BzTS._SX414_BO1,204,203,200_.jpg",
-            "image": "51YAQ-4BzTS._SX414_BO1,204,203,200_.jpg"
+            "image": "The Historic Heart of Oxford University.jpg"
         }
     },
     {
@@ -1630,8 +1626,7 @@
             "price": 29.99,
             "category": 11,
             "rating": 4.18,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/81TCaEoIggL.jpg",
-            "image": "81TCaEoIggL.jpg"
+            "image": "Marram.jpg"
         }
     },
     {
@@ -1645,8 +1640,7 @@
             "price": 12.60,
             "category": 12,
             "rating": 4.28,
-            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/511XPTyoKGL._SX342_SY445_QL70_ML2_.jpg",
-            "image": "511XPTyoKGL._SX342_SY445_QL70_ML2_.jpg"
+            "image": "The Murder of Mr Moonlight.jpg"
         }
     },
     {
@@ -1660,8 +1654,7 @@
             "price": 18.20,
             "category": 12,
             "rating": 4.09,
-            "image_url": "https://m.media-amazon.com/images/I/41JT2JvztHS.jpg",
-            "image": "41JT2JvztHS.jpg"
+            "image": "Murder At Roaringwater.jpg"
         }
     },
     {
@@ -1675,8 +1668,7 @@
             "price": 19.99,
             "category": 12,
             "rating": 4.18,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51LHSZeRyOL._SX342_SY445_QL70_ML2_.jpg",
-            "image": "v51LHSZeRyOL._SX342_SY445_QL70_ML2_.jpg"
+            "image": "Crowded House.jpg"
         }
     },
     {
@@ -1690,8 +1682,7 @@
             "price": 16.99,
             "category": 12,
             "rating": 3.20,
-            "image_url": "https://pbs.twimg.com/media/FLok7teX0AIHW_E.jpg",
-            "image": "FLok7teX0AIHW_E.jpg"
+            "image": "Death on Ireland's Eye.jpg"
         }
     },
     {
@@ -1705,8 +1696,7 @@
             "price": 24.99,
             "category": 12,
             "rating": 3.97,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/71PxBbYJIiL.jpg",
-            "image": "71PxBbYJIiL.jpg"
+            "image": "A Dream of Death.jpg"
         }
     },
     {
@@ -1720,8 +1710,7 @@
             "price": 28.99,
             "category": 12,
             "rating": 3.93,
-            "image_url": "https://m.media-amazon.com/images/I/513Xc3Jh2yS.jpg",
-            "image": "513Xc3Jh2yS.jpg"
+            "image": "The Hitmen.jpg"
         }
     },
     {
@@ -1735,8 +1724,7 @@
             "price": 21.0,
             "category": 12,
             "rating": 4.40,
-            "image_url": "https://www.dubraybooks.ie/images/thumbs/084/0844995_9781913406653_625.jpeg",
-            "image": "0844995_9781913406653_625.jpeg"
+            "image": "Clash of the Clans.jpeg"
         }
     },
     {
@@ -1744,14 +1732,14 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5006280064",
-            "name": "Clarks Lexi Alloy Slide Strap Sandals",
+            "name": "Wedding of the Century",
             "author": "Pat Marry",
             "description": "But as a newly qualified garda in 1985, Marry had no idea how to become a detective. He soon realised he would have to learn on the job - put himself forward and show that he had what it took. Taking initiative, following up hunches (even far-fetched ones), obsessing about details, trying new investigative techniques, thinking laterally - these were essential. In addition, you had to be a bit of a psychologist. The Making of a Detective follows Pat Marry's path from rookie to Detective Inspector through the stories of key cases he worked on and investigations he led. It includes high profile cases like Rachel Calally's murder by her husband Joe O'Reilly. But there are also stories that have faded from public memory, such as the 1995 murder of Marilyn Rynn, which involved the first use of DNA evidence to solve a crime in Ireland. Or the 2001 murder of Mary Gough, a case solved mainly by scrutinizing her husband's internet use - then a new investigative tool. The Making of a Detective is a unique and gripping insight into the work of a dedicated garda operating at the very top of his profession.",
             "price": 14.00,
             "category": 12,
             "rating": 4.38,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51XlyuoGukL._SX325_BO1,204,203,200_.jpg",
-            "image": "51XlyuoGukL._SX325_BO1,204,203,200_.jpg"
+            "image": "Wedding of the Century.jpg"
+
         }
     },
     {
@@ -1765,8 +1753,7 @@
             "price": 12.60,
             "category": 12,
             "rating": 4.14,
-            "image_url": "https://m.media-amazon.com/images/I/51WctOMfQ0L.jpg",
-            "image": "51WctOMfQ0L.jpg"
+            "image": "Almost the Perfect Murder.jpg"
         }
     },
     {
@@ -1780,8 +1767,9 @@
             "price": 9.99,
             "category": 12,
             "rating": 4.40,
-            "image_url": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7171/9780717181285.jpg",
-            "image": "9780717181285.jpg"
+            "image": "My Brother Jason.jpg"
+
+
         }
     },
     {
@@ -1795,8 +1783,8 @@
             "price": 28.00,
             "category": 13,
             "rating": 5.0,
-            "image_url": "https://www.easons.com/globalassets/5637150827/all/books/lifestyle-hobbies-and-leisure/cookery--food-and-drink/vegetarian-cookingand-vegetarianism/97818448848722.jpg",
-            "image": "97818448848722.jpg"
+            "image": "The Happy Pear.jpg"
+
         }
     },
     {
@@ -1810,8 +1798,7 @@
             "price": 22.99,
             "category": 13,
             "rating": 4.4,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51+3f92XfKL._SX389_BO1,204,203,200_.jpg",
-            "image": "51+3f92XfKL._SX389_BO1,204,203,200_.jpg"
+            "image": "The Daly Dish Rides Again.jpg"
         }
     },
     {
@@ -1825,8 +1812,7 @@
             "price": 14.39,
             "category": 13,
             "rating": 4.6,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601939198l/55115995.jpg",
-            "image": "55115995.jpg"
+            "image": "The Daly Dish Diary.jpg"
         }
     },
     {
@@ -1840,8 +1826,7 @@
             "price": 28.00,
             "category": 13,
             "rating": 4.4,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/51V48QHjehL.jpg",
-            "image": "51V48QHjehL.jpg"
+            "image": "Clodagh's Weeknight Kitchen.jpg"
         }
     },
     {
@@ -1849,14 +1834,13 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5006311067",
-            "name": "THE JOY OF FOOD H/B",
-            "author": "Rory O'Connell",
-            "description": "This is the book Rory O'Connell was born to write. Not only a collection of good things to eat, showcasing the best of Irish seasonal produce from Rustic Chicken, Swiss Chard and Tarragon Tart to Blackberry and Sweet Geranium Posset, The Joy of Food is also a celebration of everything Rory is passionate about: first-rate ingredients, simple and respectful cooking techniques and the absolute pleasure that comes from enjoying and sharing the result. Accompanying the recipes are Rory's charming original illustrations and personal essays in praise of everything from hazelnuts to the humble hen.",
+            "name": "Joy of Cooking",
+            "author": "Irma S. Rombauer",
+            "description": "John and Megan developed more than six hundred new recipes for this edition, tested and tweaked thousands of classic recipes, and updated every section of every chapter to reflect the latest ingredients and techniques available to today’s home cooks. Their strategy for revising this edition was the same one Irma and Marion employed: Vet, research, and improve Joy’s coverage of legacy recipes while introducing new dishes, modern cooking techniques, and comprehensive information on ingredients now available at farmers’ markets and grocery stores.",
             "price": 27.99,
             "category": 13,
             "rating": 4.8,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/716E3lVux4L.jpg",
-            "image": "716E3lVux4L.jpg"
+            "image": "Joy of Cooking.jpg"
         }
     },
     {
@@ -1870,8 +1854,7 @@
             "price": 19.99,
             "category": 13,
             "rating": 4.5,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/61lAnSnVPIL.jpg",
-            "image": "61lAnSnVPIL.jpg"
+            "image": "TRISHA'S TRANSFORMATION.jpg"
         }
     },
     {
@@ -1885,8 +1868,7 @@
             "price": 22.99,
             "category": 13,
             "rating": 5.0,
-            "image_url": "https://images-na.ssl-images-amazon.com/images/I/71iTuOBskTL.jpg",
-            "image": "1iTuOBskTL.jpg"
+            "image": "Neven Maguire's Midweek Meals.jpg"
         }
     },
     {
@@ -1900,8 +1882,7 @@
             "price": 21.99,
             "category": 13,
             "rating": 5.0,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1647259812l/59063650.jpg",
-            "image": "59063650.jpg"
+            "image": "The Veg Box.jpg"
         }
     },
     {
@@ -1915,8 +1896,7 @@
             "price": 28.00,
             "category": 13,
             "rating": 5.0,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636978596l/56776793.jpg",
-            "image": "56776793.jpg"
+            "image": "Soup Broth Bread.jpg"
         }
     },
     {
@@ -1930,8 +1910,7 @@
             "price": 35.00,
             "category": 13,
             "rating": 4.3,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1623119872l/56624971.jpg",
-            "image": "56624971.jpg"
+            "image": "Everyday Cook.jpg"
         }
     },
     {
@@ -1945,8 +1924,7 @@
             "price": 21.99,
             "category": 14,
             "rating": 3.89,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1633555319l/59230711._SY475_.jpg",
-            "image": "59230711._SY475_.jpg"
+            "image": "Blind Spot.jpg"
         }
     },
     {
@@ -1960,8 +1938,7 @@
             "price": 12.99,
             "category": 14,
             "rating": 4.31,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1626710416l/58446227.jpg",
-            "image": "58446227.jpg"
+            "image": "Sea of Tranquility.jpg"
         }
     },
     {
@@ -1970,13 +1947,12 @@
         "fields": {
             "sku": "pp5006380337",
             "name": "The Candy House",
-            "author": "Arizona Original Bootcut Jeans",
+            "author": "Jennifer Egan",
             "description": "It's 2010. Staggeringly successful and brilliant tech entrepreneur Bix Bouton is desperate for a new idea. He's forty, with four kids, and restless when he stumbles into a conversation with mostly Columbia professors, one of whom is experimenting with downloading or 'externalising' memory. Within a decade, Bix's new technology, Own Your Unconscious—that allows you access to every memory you've ever had, and to share every memory in exchange for access to the memories of others has seduced multitudes. But not everyone. In spellbinding linked narratives, Egan spins out the consequences of Own Your Unconscious through the lives of multiple characters whose paths intersect over several decades. Egan introduces these characters in an astonishing array of styles from omniscient to first person plural to a duet of voices, an epistolary chapter, and a chapter of tweets. In the world of Egan's spectacular imagination, there are 'counters' who track and exploit desires and there are 'eluders,' those who understand the price of taking a bite of the Candy House. Intellectually dazzling and extraordinarily moving, The Candy House is a bold, brilliant imagining of a world that is moments away. With a focus on social media, gaming, and alternate worlds, you can almost experience moving among dimensions in a role-playing game. Egan delivers a fierce and exhilarating testament to the tenacity and transcendence of human longing for real connection, love, family, privacy and redemption.",
             "price": 14.99,
             "category": 14,
             "rating": 3.86,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1642351487l/58437521.jpg",
-            "image": "58437521.jpg"
+            "image": "The Candy House.jpg"
         }
     },
     {
@@ -1990,8 +1966,7 @@
             "price": 13.99,
             "category": 14,
             "rating": 5.0,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1646584666l/57021127._SY475_.jpg",
-            "image": "57021127._SY475_.jpg"
+            "image": "Portrait of a Thief.jpg"
         }
     },
     {
@@ -2005,8 +1980,9 @@
             "price": 18.99,
             "category": 14,
             "rating": 3.94,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630583980l/57693338.jpg",
-            "image": "57693338.jpg"
+            "image": "The Younger Wife.jpg"
+
+
         }
     },
     {
@@ -2020,8 +1996,7 @@
             "price": 18.99,
             "category": 14,
             "rating": 4.15,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1637603058l/58678549.jpg",
-            "image": "58678549.jpg"
+            "image": "The No-Show.jpg"
         }
     },
     {
@@ -2035,8 +2010,7 @@
             "price": 14.99,
             "category": 14,
             "rating": 4.46,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1637602267l/58891551.jpg",
-            "image": "58891551.jpg"
+            "image": "Young Mungo.jpg"
         }
     },
     {
@@ -2050,8 +2024,7 @@
             "price": 12.0,
             "category": 14,
             "rating": 3.94,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628095000l/55812605.jpg",
-            "image": "55812605.jpg"
+            "image": "Hotel Magnifique.jpg"
         }
     },
     {
@@ -2065,8 +2038,9 @@
             "price": 16.0,
             "category": 14,
             "rating": 3.94,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627893250l/55506996.jpg",
-            "image": "55506996.jpg"
+            "image": "The Wedding Crasher.jpg"
+
+
         }
     },
     {
@@ -2080,8 +2054,9 @@
             "price": 28.99,
             "category": 14,
             "rating": 4.30,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1626515519l/52268640.jpg",
-            "image": "52268640.jpg"
+            "image": "Memphis.jpg"
+
+
         }
     },
     {
@@ -2095,8 +2070,7 @@
             "price": 5.99,
             "category": 15,
             "rating": 3.93,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631251689l/4214._SY475_.jpg",
-            "image": "4214._SY475_.jpg"
+            "image": "Life of Pi.jpg"
         }
     },
     {
@@ -2110,8 +2084,7 @@
             "price": 5.99,
             "category": 15,
             "rating": 4.5,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1622355533l/4667024._SY475_.jpg",
-            "image": "4667024._SY475_.jpg"
+            "image": "The Help.jpg"
         }
     },
     {
@@ -2125,8 +2098,7 @@
             "price": 4.99,
             "category": 15,
             "rating": 4.10,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1494428973l/43641._SY475_.jpg",
-            "image": "43641._SY475_.jpg"
+            "image": "Water for Elephants.jpg"
         }
     },
     {
@@ -2140,8 +2112,8 @@
             "price": 10.99,
             "category": 15,
             "rating": 3.83,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457810586l/12232938.jpg",
-            "image": "12232938.jpg"
+            "image": "The Lovely Bones.jpg"
+
         }
     },
     {
@@ -2155,8 +2127,8 @@
             "price": 12.99,
             "category": 15,
             "rating": 4.10,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554086139l/19288043.jpg",
-            "image": "19288043.jpg"
+            "image": "Gone Girl.jpg"
+
         }
     },
     {
@@ -2170,8 +2142,7 @@
             "price": 13.99,
             "category": 15,
             "rating": 3.95,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1574805682l/22557272.jpg",
-            "image": "22557272.jpg"
+            "image": "The Girl on the Train.jpg"
         }
     },
     {
@@ -2185,8 +2156,9 @@
             "price": 9.99,
             "category": 15,
             "rating": 4.7,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1614275199l/55829194.jpg",
-            "image": "55829194.jpg"
+            "image": "The Final Girl Support Group.jpg"
+
+
         }
     },
     {
@@ -2200,8 +2172,9 @@
             "price": 9.99,
             "category": 15,
             "rating": 4.09,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1614122544l/57190892._SY475_.jpg",
-            "image": "57190892._SY475_.jpg"
+            "image": "The Spanish Love Deception.jpg"
+
+
         }
     },
     {
@@ -2215,8 +2188,9 @@
             "price": 9.99,
             "category": 15,
             "rating": 4.41,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1616514130l/55145261.jpg",
-            "image": "55145261.jpg"
+            "image": "The Anthropocene Reviewed.jpg"
+
+
         }
     },
     {
@@ -2230,8 +2204,7 @@
             "price": 6.99,
             "category": 15,
             "rating": 5.0,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607456965l/54482759._SX318_.jpg",
-            "image": "54482759._SX318_.jpg"
+            "image": "Call Me Athena.jpg"
         }
     },
     {
@@ -2245,8 +2218,7 @@
             "price": 8.99,
             "category": 15,
             "rating": 4.45,
-            "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1605310476l/54359466.jpg",
-            "image": "54359466.jpg"
+            "image": "Black Girl, Call Home.jpg"
         }
     }
 ]

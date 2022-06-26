@@ -149,11 +149,12 @@
             <div class="card  border-0 ">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="images" width="220" height="auto" src="{{ product.image }}" alt="{{ product.name }}">
+                    <img class="images" width="220" height="auto" src="{{ product.image.url }}"
+                        alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="#">
-                    <img class="images" width="220" height="auto" src="{{ MEDIA_URL }}no-image.png"
+                    <img class="images" width="220" height="auto" src="{{ MEDIA_URL }}default-book.svg"
                         alt="{{ product.name }}">
                 </a>
                 {% endif %}

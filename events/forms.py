@@ -29,7 +29,7 @@ class EventForm(forms.ModelForm):
             'end_time': 'Must be after Start time!',
             'event_description': 'Please enter a description',
             'month_book': "Please enter the month's book",
-            'book_author' :" Please enter the name of the author of the book"
+            'book_author': " Please enter the name of the author of the book"
             
             }
         widgets = {
@@ -47,8 +47,7 @@ class EventForm(forms.ModelForm):
                 ),
             }
 
-    #image = forms.ImageField(
-        #label='Image', required=False, widget=CustomClearableFileInput)
+    #image = forms.ImageField(label='Image', required=False, widget=CustomsCleareableFileInput)
 
     def __init__(self, *args, **kwargs):
         """
@@ -116,7 +115,6 @@ class CommentForm(forms.ModelForm):
     class Meta:
         """
         Form based on Comment model.
-        Other fields - author_comment, event and created_on are set in view
         """
         model = Comment
         fields = ('comment', )
@@ -135,8 +133,6 @@ class CommentForm(forms.ModelForm):
     def clean(self):
         """
         Override the clean method on form to include check on textarea field.
-        Raise error on comment field if length is too long. As Django doesn't
-        do a check for maxlength on this field type.
         """
         cleaned_data = super().clean()
         comment = cleaned_data.get('comment')
@@ -148,4 +144,3 @@ class CommentForm(forms.ModelForm):
                             'Comment is too long. Please shorten and re-submit'
                         )
                     )
-
