@@ -396,6 +396,7 @@ The site was tested on many different devices.
 <img width="531" alt="comment" src="https://user-images.githubusercontent.com/65717229/175828228-23c9931f-6cc0-4cf2-a655-b16b68794c0d.PNG">
 <img width="494" alt="comment-2" src="https://user-images.githubusercontent.com/65717229/175828229-14c8ed0a-601a-49ed-915c-67ef93171296.PNG">
 
+
 - Site owner
 
     - As the business owner, I would like to be able to edit and add products easily.
@@ -422,12 +423,18 @@ The site was tested on many different devices.
 <img width="513" alt="edit-event" src="https://user-images.githubusercontent.com/65717229/175828546-cb775db0-ccee-4970-afdc-361c3ade686b.PNG">
 <img width="534" alt="detail-event-management" src="https://user-images.githubusercontent.com/65717229/175828547-759885cc-fb45-452e-bc0c-09f1b15e239f.PNG">
 
-- As the business owner, I would like to be able to delete events.
+    - As the business owner, I would like to be able to delete events.
       - The items section will show buttons for the superuser to delete events.
       - A modal will ask them to confirm the deletion to prevent accidental deletion.
 
 <img width="489" alt="delete-3" src="https://user-images.githubusercontent.com/65717229/175828703-248f4947-4553-49b7-a14b-d7fa4d51647d.PNG">
-<img width="505" alt="delete-4" src="https://user-images.githubusercontent.com/65717229/175828706-87b460fe-dc00-4b24-b3f6-13a54508c233.PNG">
+<img width="502" alt="12" src="https://user-images.githubusercontent.com/65717229/175829157-3a415229-649a-45d7-a230-3944abb310cb.PNG">
+
+    - As the business owner, I would like to see who subscribed to the newsletter.
+
+<img width="926" alt="newsletter" src="https://user-images.githubusercontent.com/65717229/175829065-3b4dedea-42e9-4c80-ba3b-6bd281ec3414.PNG">
+<img width="899" alt="newsletter-success" src="https://user-images.githubusercontent.com/65717229/175829066-887a6a76-9878-49e2-bd0e-cfd6c498b19f.PNG">
+<img width="950" alt="newsletter-success-1" src="https://user-images.githubusercontent.com/65717229/175829064-300d49c8-bfa5-46d8-9c66-5ee784147a13.PNG">
 
 ### Validation
 
