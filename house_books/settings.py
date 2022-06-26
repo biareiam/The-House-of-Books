@@ -136,7 +136,7 @@ else:
         }
     }
 
-# uncomment to run the tests
+
 
 #DATABASES = {
     #'default': {
