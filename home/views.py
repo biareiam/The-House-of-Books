@@ -3,8 +3,6 @@ import pandas as pd
 from checkout.models import OrderLineItem
 from django.db.models import Count
 
-# Create your views here.
-
 
 def index(request):
     """ A view to return the index page """
@@ -33,7 +31,6 @@ def index(request):
         'products':products_df_dup.head(3).to_dict('records')
     }
     
-
     return render(request, 'home/index.html', context)
 
 
