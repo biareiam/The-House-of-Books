@@ -59,11 +59,9 @@
                     <div class="card h-100 border-0">
                         <a href="{% url 'event_details' event.id %}">
                             {% if event.image %}
-                            <img class="img-fluid" src="{{ event.image.url }}" alt="{{ event.name }}" width="350"
-                                height="250">
+                            <img src="{{ event.image.url }}" alt="{{ event.name }}" width="350" height="250">
                             {% else %}
-                            <img class="img-fluid" src="{{ MEDIA_URL }}default.png" alt="{{ event.name }}" width="350"
-                                height="250">
+                            <img src="{{ MEDIA_URL }}default.png" alt="{{ event.name }}" width="350" height="250">
                             {% endif %}
                         </a>
                         <div class="card-body pb-0 px-1 px-md-2">
