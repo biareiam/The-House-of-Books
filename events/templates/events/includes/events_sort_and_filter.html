@@ -50,7 +50,8 @@
                 {% if current_view == 'past' %}
                 <a href="{% url 'events' %}" class="btn general-btn ml-md-auto">View Upcoming events</a>
                 {% else %}
-                <a href="{% url 'events' %}?view=past" class="btn general-btn ml-md-auto">View Past events</a>
+                <a href="{% url 'events' %}?view=past" class="btn general-btn ml-md-auto past-event">View Past
+                    events</a>
 
                 {% endif %}
             </div>

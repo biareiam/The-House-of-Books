@@ -55,13 +55,15 @@
             {% include '../events/includes/events_sort_and_filter.html' %}
             <div class="row mt-3">
                 {% for event in events %}
-                <div class="col-12 col-sm-10 col-md-6 col-lg-4 col-xl-4 card-group">
+                <div class="col-sm-12 col-md-6 col-lg-4 card-group">
                     <div class="card h-100 border-0">
                         <a href="{% url 'event_details' event.id %}">
                             {% if event.image %}
-                            <img src="{{ event.image.url }}" alt="{{ event.name }}" width="350" height="250">
+                            <img class="img-fluid" src="{{ event.image.url }}" alt="{{ event.name }}" width="350"
+                                height="250">
                             {% else %}
-                            <img src="{{ MEDIA_URL }}default.png" alt="{{ event.name }}" width="350" height="250">
+                            <img class="img-fluid" src="{{ MEDIA_URL }}default.png" alt="{{ event.name }}" width="350"
+                                height="250">
                             {% endif %}
                         </a>
                         <div class="card-body pb-0 px-1 px-md-2">

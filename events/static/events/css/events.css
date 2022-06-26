@@ -99,6 +99,12 @@
     margin-bottom: 1rem;
 }
 
+@media(max-width:768px) {
+    #filterByCounty {
+        margin-bottom: 1rem !important;
+        margin-top: 1rem;
+    }
+}
 
 @media(max-width:375px) {
     .event-name h1 {
