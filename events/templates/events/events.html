@@ -55,7 +55,7 @@
             {% include '../events/includes/events_sort_and_filter.html' %}
             <div class="row mt-3">
                 {% for event in events %}
-                <div class="col-sm-12 col-md-6 col-lg-4 card-group">
+                <div class="col-sm-12 col-md-6 col-lg-4 card-group mt-4">
                     <div class="card h-100 border-0">
                         <a href="{% url 'event_details' event.id %}">
                             {% if event.image %}
@@ -163,19 +163,8 @@
 
                 </div>
                 {% endif %}
-                {% if forloop.counter|divisibleby:2 %}
-                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-
-                </div>
-                {% endif %}
                 {% if forloop.counter|divisibleby:3 %}
-                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:4 %}
-                <div class="col-12 d-none d-xl-block mb-5">
-
+                <div class="col-12 d-none d-sm-block d-md-block mb-5">
                 </div>
                 {% endif %}
                 {% endfor %}
