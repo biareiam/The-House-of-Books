@@ -329,7 +329,7 @@ built on top of the Python programming language. It was used to create the most 
   
 ## Testing
 
-The testing can be seen [here](https://github.com/biareiam/The-House-of-Books#house-of-books-testing-documentation).
+The testing can be seen [here](testing.md).
 
 ### Deployment
 

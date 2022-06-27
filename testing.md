@@ -223,8 +223,7 @@ The site was tested on many different devices.
 |----------------|----------------------------------------------------------|----------------------------------------------|--------------------|-----------|
 | Events         | The events page shows all the upcoming and past events.  | Open the events page and view all the events | All events visible | Pass      |
 |                |                                                          |                                              |                    |           |
-| Events Details |                                                          |                                              |                    |           |
-| Feature        | Expected                                                 | Testing                                      | Result             | Pass/Fail |
+
 
 ### Event Details
 | Feature       | Expected                                                                         | Testing                                                    | Result                | Pass/Fail |
