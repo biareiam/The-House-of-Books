@@ -439,4 +439,28 @@ The site was tested on many different devices.
 
 - W3C HTML Validator Passed tests without issues
 - W3C CSS Validator Passed tests without issues
-- PEP8 and AUTOPEP8. Online PEP8 warned about some long lines on the settings.py. 
+- PEP8 and AUTOPEP8. Online PEP8 warned about some long lines. 
+
+  - Home
+
+  ![home_app](https://user-images.githubusercontent.com/65717229/176390774-ec652216-80a2-4658-b33f-0823c844497a.PNG)
+
+  - Profile
+
+![profile_app](https://user-images.githubusercontent.com/65717229/176390754-9e6fd647-c0ab-4c0f-8e58-47a2dfe0f954.PNG)
+
+  - Products
+
+  ![product_app](https://user-images.githubusercontent.com/65717229/176390764-0351e018-a215-4c14-9880-b80c6abd7f84.PNG)
+
+  - Checkout
+
+  ![checkout_app](https://user-images.githubusercontent.com/65717229/176390770-e613c5e7-a2a6-4891-a67b-b63e0e903bff.PNG)
+
+  - Bag
+
+  ![bag_app](https://user-images.githubusercontent.com/65717229/176390776-7e295fb9-1ea3-4bb0-91c5-fc26ccc1f742.PNG)
+
+  - Events
+
+  ![event_app](https://user-images.githubusercontent.com/65717229/176390761-7a41a335-a14d-4588-bd00-d81f88a274a5.PNG)
