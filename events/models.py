@@ -48,7 +48,6 @@ class Event(models.Model):
     book_author = models.CharField(max_length=200, default="Jane Austen")
     other_image = models.ImageField(null=True, blank=True)
 
-
     @property
     def date_passed(self):
         """For superuser views so can flag event has passed"""
@@ -77,4 +76,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f'Comment by {self.author_comment}, {self.created_on}, on {self.event}'
-

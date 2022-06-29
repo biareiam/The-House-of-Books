@@ -1,7 +1,4 @@
-"""
-Testing home page views using Django
-"""
-
+""" Test Views for 'home' app"""
 from django.test import TestCase
 from django.shortcuts import reverse
 

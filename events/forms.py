@@ -2,7 +2,7 @@
 import datetime
 from django import forms
 from django.core.exceptions import ValidationError
-#from products.widgets import CustomClearableFileInput
+# from products.widgets import CustomClearableFileInput
 from .models import Event, County, Comment
 
 
@@ -16,7 +16,8 @@ class EventForm(forms.ModelForm):
         """
         model = Event
         fields = (
-            'month_book', 'book_author', 'location', 'county', 'date', 'start_time', 'end_time',
+            'month_book', 'book_author', 'location', 'county',
+            'date', 'start_time', 'end_time',
             'event_description', 'image', 'other_image',
         )
         labels = {
@@ -30,7 +31,6 @@ class EventForm(forms.ModelForm):
             'event_description': 'Please enter a description',
             'month_book': "Please enter the month's book",
             'book_author': " Please enter the name of the author of the book"
-            
             }
         widgets = {
             'date': forms.DateInput(
@@ -47,7 +47,8 @@ class EventForm(forms.ModelForm):
                 ),
             }
 
-    #image = forms.ImageField(label='Image', required=False, widget=CustomsCleareableFileInput)
+    # image = forms.ImageField(label='Image',
+    # required=False, widget=CustomsCleareableFileInput)
 
     def __init__(self, *args, **kwargs):
         """

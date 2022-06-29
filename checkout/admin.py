@@ -1,4 +1,4 @@
-""" Libraries """
+"""Admin for 'checkout' app"""
 from django.contrib import admin
 from .models import Order, OrderLineItem
 

@@ -1,3 +1,4 @@
+""" Templatetags test for 'bag' app"""
 from django.test import TestCase
 from .templatetags.bag_tools import calc_subtotal
 

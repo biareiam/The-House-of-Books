@@ -1,3 +1,4 @@
+""" Test models for 'products' app"""
 from django.test import TestCase
 from .models import Category, Product
 
@@ -58,4 +59,3 @@ class TestProductModel(TestCase):
             product.description, "The author of the engrossing international bestseller The Room on Rue Amelie returns with a moving story set amid the champagne vineyards of northern France during the darkest days of World War II, perfect for fans of Kristin Hannah's The Nightingale. Champagne, 1940: Ines has just married Michel, the owner of storied champagne house Maison Chauveau, when the Germans invade. As the danger mounts, Michel turns his back on his marriage to begin hiding munitions for the Resistance. Ines fears they'll be exposed, but for Celine, half-Jewish wife of Chauveau's chef de cave, the risk is even greater rumours abound of Jews being shipped east to an unspeakable fate. When Celine recklessly follows her heart in one desperate bid for happiness, and Ines makes a dangerous mistake with a Nazi collaborator, they risk the lives of those they love and the champagne house that ties them together. New York, 2019: Liv Kent has just lost everything when her eccentric French grandmother shows up unannounced, insisting on a trip to France. But the older woman has an ulterior motive and a tragic, decades-old story to share. When past and present finally collide, Liv finds herself on a road to salvation that leads right to the caves of the Maison Chauveau."
         )
         self.assertNotEqual(product.description, 'Not made of wool')
-

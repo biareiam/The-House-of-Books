@@ -10,6 +10,7 @@ from events.models import Event, County
 from .models import UserProfile, SavedEventList
 from .forms import UserProfileForm
 
+
 @login_required
 def profile(request):
     """ Display the user's profile. """
@@ -53,6 +54,7 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
 
 @require_POST
 @login_required

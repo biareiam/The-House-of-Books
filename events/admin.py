@@ -19,7 +19,8 @@ class EventAdmin(admin.ModelAdmin):
     Allow filtering by county, and search by name.
     """
     list_display = (
-        'name', 'location', 'county', 'date', 'event_description', 'date_passed',
+        'name', 'location', 'county', 'date',
+        'event_description', 'date_passed',
         )
     list_filter = ('county',)
     search_fields = ['name', 'location', ]

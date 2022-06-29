@@ -1,4 +1,4 @@
-"""Set up of django admin site for profiles app"""
+""" Admin for 'profile' app"""
 from django.contrib import admin
 from checkout.models import Order
 from .models import UserProfile, SavedEventList

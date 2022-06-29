@@ -1,4 +1,4 @@
-""" Libraries """
+""" Forms for 'profile' app"""
 from django import forms
 from .models import UserProfile
 

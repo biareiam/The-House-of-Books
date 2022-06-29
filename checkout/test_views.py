@@ -1,3 +1,4 @@
+""" test Views for 'checkout' app"""
 from django.test import TestCase
 
 from django.shortcuts import reverse, get_object_or_404
