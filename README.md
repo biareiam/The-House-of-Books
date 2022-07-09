@@ -31,8 +31,8 @@
 
 ## About
 
-House of Books is an eCommerce site aimed at book lovers looking for their next “new adventures”. The books are divided in different genres, making it easier for users to find what they are looking for. The site is designed to be responsive and easy to navigate on a range of devices to make it easily accessible for all users.
-This site was built for educational reasons and no deliveries will be fulfilled.
+House of Books is an e-commerce site for book lovers looking for their next "new adventures". The books are divided into different genres, making it easy for users to find what they are looking for. The website is designed to be responsive and easy to navigate across a wide range of devices to make it easy for all users to access. 
+This website is built for educational purposes only and no deliveries will be made.
 
 Link to the [site](http://houseofbooks22.herokuapp.com/)
 
@@ -47,23 +47,23 @@ Link to the [site](http://houseofbooks22.herokuapp.com/)
 | **1**                             | User/Shopper      | view individual products                                    | see what the books are about.                                                              |
 | **2**                             |                   | be able to add, edit quantity and remove items from my cart | buy it after browsing.                                                                     |
 | **3**                             |                   | see any special offers and new arrivals                     | take advantage of saving money on products I'd like to buy and be aware of new books.      |
-| **4**                             |                   | view current and past events                                | see what the events are about, when and where it will happens.                             |
+| **4**                             |                   | view current and past events                                | see what the events are about, and when and where they will happen.                             |
 | **5**                             |                   | save the events into a list                                 | get back to the events in a later stage if I desire to join it,                            |
 | **Registration and Accounts**     |                   |                                                             |                                                                                            |
-| **6**                             | User/Shopper      | register for an account                                     | keep track of my orders and check my personal details, being able to update it if needed.  |
-| **7**                             |                   | receive email confirmation upon signing up                  | verify my set up was successful.                                                           |
+| **6**                             | User/Shopper      | register for an account                                     | keep track of my orders and check my details, being able to update it if needed.  |
+| **7**                             |                   | receive email confirmation upon signing up                  | verify my set-up was successful.                                                           |
 | **8**                             |                   | be able to reset my password in case I forget it            | regain access to my account.                                                               |
-| **9**                             |                   | have the ability to log in to the site with my details      | view my orders and personal details.                                                       |
+| **9**                             |                   | can log in to the site with my details      | view my orders and personal details.                                                       |
 | **10**                            |                   | update my personal details.                                 | keep my personal information updated.                                                      |
 | **11**                            |                   | purchase from the site without having to create an account  | check out quickly and easily.                                                              |
 | **Searching products**            |                   |                                                             |                                                                                            |
-| **12**                            | User/Shopper      | search for specific products                                | find books related to the keyword researched for.                                          |
+| **12**                            | User/Shopper      | search for specific products                                | find books related to the keyword research.                                          |
 | **13**                            |                   | easily understand the search results                        | quickly decide which book interests me.                                                    |
 | **14**                            |                   | sort by price, name, category and rating                    | view a wide range and choose which book(s) I would like to purchase.                       |
 | **Checkout**                      |                   |                                                             |                                                                                            |
 | **15**                            | Shopper           | have a running total of my bag                              | stay within my budget and be aware of my delivery cost.                                    |
 | **16**                            |                   | view my bag contents                                        | keep track of which books I have selected and how many of them.                            |
-| **17**                            |                   | adjust the quantity of books to buy                         | update the order without going back to the product page.                                   |
+| **17**                            |                   | adjust the number of books to buy                         | update the order without going back to the product page.                                   |
 | **18**                            |                   | easily enter my payment details                             | checkout as quickly and easily as possible.                                                |
 | **19**                            |                   | Save the information I just entered on the checkout         | Easily create an account and have my information already saved.                            |
 | **20**                            |                   | view the full order before entering card details.           | check it before confirmation and make sure I have all I want to purchase.                  |
@@ -73,9 +73,10 @@ Link to the [site](http://houseofbooks22.herokuapp.com/)
 | **23**                            |                   | update a product                                            | change descriptions, price, categories, and images of the books.                           |
 | **24**                            |                   | delete a product                                            | remove books which are no longer available to be purchased.                                |
 | **25**                            |                   | add events                                                  | let users know about upcoming events.                                                      |
-| **26**                            |                   | edit events                                                 | change the informations regarding the events.                                              |
+| **26**                            |                   | edit events                                                 | change the information regarding the events.                                              |
 | **27**                            |                   | delete events                                               | remove the events, if needed.                                                              |
 |
+
 
 ## Design Choices
  
@@ -86,14 +87,14 @@ Link to the [site](http://houseofbooks22.herokuapp.com/)
   The site uses tons of blue and black. 
   
 ### Imagery and content
-  The images used were taken from these sources as well as the books descriptions, for education purpose:
+  The images used were taken from these sources as well as the descriptions of the books, for educational purposes:
  <br>
     - [Goodreads](https://www.goodreads.com/)
      <br>
     - [Easons](https://www.easons.com/)
     
 ### Wireframes
-  The wireframes, for desktop and mobile, were created using Balsamiq and can be found bellow:
+ The wireframes, for desktop and mobile, were created using Balsamiq and can be found below:
   
 ![wireframe](https://user-images.githubusercontent.com/65717229/175821262-12ee826f-e121-428d-9f1f-e9fdd7199aaf.png)
 
@@ -120,52 +121,52 @@ The navigation bar displays different links depending on whether the user is log
  
  ### Navigation - Header
 - All users, logged in or not, can:
-  - Navigate to home, view the different categories, special offers, and new arrivals. 
+  - Navigate to home, and view the different categories, special offers, and new arrivals. 
   - Create or login into their profile page.
   - Check their bag.
   - Search for a book.
 - Users logged in can access:
-  - Navigate to home, view the different categories, special offers, and new arrivals. 
+  - Navigate to home, and view the different categories, special offers, and new arrivals. 
   - Check their profile page.
   - Logout from their account. 
-  - Make a search for a book.
-- Super user logged in can access:
-  - Navigate to home, view the different categories, special offers, and new arrivals. 
+  - Search for a book.
+- Superusers logged in can access:
+  - Navigate to home, and view the different categories, special offers, and new arrivals. 
   - Product management, where they can add products to the site. 
   - Check their profile page. 
-  - Make a search for a book.
-- Users who are not logged in can:
-  - Navigate to home, view the different categories, special offers, and new arrivals. 
-  - Access register and login page.
-  - Make a search for a book.
+  - Search for a book.
+- Users who are not logged in a can:
+  - Navigate to home, and view the different categories, special offers, and new arrivals. 
+  - Access the register and login page.
+  - Search for a book.
  
  ### Create Profile
-- The users are able to:
+- The users can:
   - Create a profile to store their personal information and check their order history.
   - Confirm their details are correct via email verification.
 
 ### Log in to the profile page 
-- The users are able to:
-  - Log in to the profile page to see their orders history and personal information.
+- The users can:
+  - Log in to the profile page to see their order history and personal information.
   - If needed, users can update their personal information.
 
 ### Products Page
-- The users are able to:
+- The users can:
   - See all the books for sale on the site
   - Sort it by A-Z, Name, Category, and Price.
   - Check the price of a book
   - Check the different categories
   - Check the rating of a book 
   - Check who is the author of the book
-  - Check the image of the cover of the book
+  - Check the image on the cover of the book
 
 ### Product Details Page
-- The users are able to:
+- The users can:
   - Click the book cover to find out more about the book.
   - There, they can check the title of the book, author, rating, category, price and description. 
   - Add books to the cart.
   - Go back to the products page, if desired.
-- Super users are able to:
+- Super users can:
   - Add, edit and delete books. 
 
 ### Products Management
@@ -176,33 +177,33 @@ The navigation bar displays different links depending on whether the user is log
 
 ### Event Page
 - All users, logged in or not, can:
-  - Navigate to events, view the different events.
-  - Check the events details. 
+  - Navigate to events, and view the different events.
+  - Check the event details. 
 - Users logged in can access:
-  - Navigate to events, view the different events. 
-  - Check the events details.
+  - Navigate to events, and view the different events. 
+  - Check the event details.
   - Save/remove the events to "my events". 
   - Add comments to the events.
-  - Edit or delete thier own comments.
-- Super user logged in can access:
-  - Navigate to events, view the different events. 
+  - Edit or delete their comments made by themselves.
+- Superusers logged in can access:
+  - Navigate to events, and view the different events. 
   - Product management, where they can add products to the site. 
   - Check their profile page. 
-  - Make a search for a book.
-- Users who are not logged in can:
-  - Navigate to events, view the different events.
-  - Check the events details.
-  - Access register and login page.
+  - Search for a book.
+- Users who are not logged in, can:
+  - Navigate to events, and view the different events.
+  - Check the event details.
+  - Access the register and login page.
   - See all the comments.
 
 ### Event Details Page
-- The users are able to:
-  - Click the events and find out more about it.
+- The users can:
+  - Click the events and find out more about them.
   - Read the comments.
 - Users logged in can access:
   - Add/Remove events to the "My Events" session.
   - Leave a comment
-- Super users are able to:
+- Super users can:
   - Add, edit and delete events. 
 
 ### Event Management
@@ -212,38 +213,38 @@ The navigation bar displays different links depending on whether the user is log
   - Delete event. 
 
 ### Bag
-- The users are able to:
-  - Adjust number of books on the cart
+- The users can:
+  - Adjust the number of books on the cart
   - Find out delivery costs
   - Find out how much more they need to spend to get free delivery
-  - Clearly see the total of their items by quantity and how much it will cost.
+  - See the total of their items by quantity and how much they will cost.
   - Remove and add the number of the existing books on the cart. 
 
 ### Checkout
-- The users are able to:
+- The users can:
   - Save time as personal details are pulled from the profile page if the user is logged in.
   - Save their delivery information to their profile.
-  - Clearly see how much they will be charged for their items and delivery.
+  - See how much they will be charged for their items and delivery.
   - Can see a summary of their order before completing it.
   - Once the order is completed, the user can once again check the order, see the order number and be notified that a confirmation email was sent to the email provided.
 
 ### Footer 
 - All users can access:
   - The social media links, terms and conditions and privacy policy pages.
-  - sign up to the newsletter.
+  - sign up for the newsletter.
 
 ### Error pages
 #### 404.html
 - 404 pages created to redirect users back to the main site in case of an error.
   
 #### 403.html
-- 403 page created to redirect users back to the main site in case they try to access a page they are not authorized to.
+- 403 page was created to redirect users back to the main site in case they try to access a page they are not authorized to.
   
 #### 500.html
 - 500 error page created to redirect users to the main site after a server error.
 
 ## Future Features
-- A chat bot where users can ask questions on the site.
+- A chatbot where users can ask questions on the site.
 - The ability to add many filters to their search criteria at the same time or combine filters. 
 - Give the user the ability to track their orders.
 - A star rating or upvote functionality for the books.
@@ -251,12 +252,12 @@ The navigation bar displays different links depending on whether the user is log
 
 ## Web Marketing & Business
 
-As part of web marketing a Facebook page was created for The House of Books.
+As part of web marketing, a Facebook page was created for The House of Books.
 
 ![house](https://user-images.githubusercontent.com/65717229/175274998-7b2b56e4-6338-4ad6-8acc-c7005b647e4d.PNG)
 
 ## Responsive Design
-The site was designed to be mobile first as more users are using their mobile to shop online but this has been adapted to allow the same good experience for desktop and tablet.
+The site was designed to be mobile-first as more and more users are using their mobile devices to shop online, but this has been adapted to provide a similarly great experience. order for desktops and tablets.
 
 ## Defensive Design
 
@@ -265,31 +266,31 @@ The site was designed to be mobile first as more users are using their mobile to
 - If incorrect data is input, a warning text appears to notify the user that something is missing or gone wrong.
 
 **Default Image if none added**
-- In the event that a product is added without an image, a default image will be added. It is unlikely to happen due to the form validation, but just in case, a backup image was set.
+- If a product is added without an image, a default image will be added. It is unlikely to happen due to the form validation, but just in case, a backup image was set.
 
 **Unauthorized Attempts**
-- An error is launched if a user attempts to visit a part of the site which they should not have access to. 
+- An error is launched if a user attempts to visit a part of the site to which they should not have access. 
 
 **@login_required**
 - @login_required decorator added to restrict access to certain pages.
   - If a logged-out user tries to access a restricted page, they will be redirected to the login page.
-  - Only authorized users may perform certain actions, such as add, edit, delete books.
+  - Only authorized users may perform certain actions, such as add, edit, and delete books.
 
 **Bag**
-- Validation was put into place to ensure a minimum of 0 product and maximum of 99 products is added to the bag. 
+- Validation was put into place to ensure a minimum of 0 product and a maximum of 99 products is added to the bag. 
 - In the case that 0 is selected the item is removed from the bag.
-- Users can not add a negative number on the quantity of books to the bag.
+- Users can not add a negative number to the number of books in the bag.
 
 
 ## Database Schema
-  The database uses SQL through PostgreSQL and was originally formed from fixtures categories.json and products.json.The Datamodel schema is below :
+  The database uses SQL through PostgreSQL and was originally formed from fixtures categories.json and products.json.The Data model schema is below :
   
   ![data scheme](https://user-images.githubusercontent.com/65717229/175821121-a1c6f9c6-58cc-4c2c-9287-68eb0f1507b5.png)
 
 ### Database
 - Postgres
 - SQLite
-    - Cloud based database to hold the product, user, and order fields.
+    - Cloud-based database to hold the product, user, and order fields.
 
  ## Technologies
  
@@ -302,21 +303,21 @@ The site was designed to be mobile first as more users are using their mobile to
 
  ### Frameworks, Libraries, Programmes and Tools
 - Balsamiq was used to design the wireframes of the site. 
-- Panda Library is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+- Panda Library is a fast, powerful, flexible and easy-to-use open-source data analysis and manipulation tool,
 built on top of the Python programming language. It was used to create the most sold books section on the home page. 
 - tiny png was used to compress the images of the books, among others.
 - AWS to host media and static files.
 - To handle payments, Stripe was used. It is currently only set up to handle test payments.
 - Bootstrap v4.4.1 was used for responsiveness, layout, modals, and general styles on the frontend.
-- django-allauth was used for user registration and authentication.
-- Django countries was used to create a countries dropdown list in checkout form.
+- Django-allauth was used for user registration and authentication.
+- Django countries was used to create a countries dropdown list in the checkout form.
 - Bootstrap Icons were used for the icons used throughout the site.
 - W3C HTML validator to validate the HTML code
 - W3C CSS Validator to validate the CSS code
 - PEP8 checker to validate the Python code
-- "Privacy Policy" and "Terms and Conditions" Generators were used to create this useful links.
+- "Privacy Policy" and "Terms and Conditions" Generators were used to create these useful links.
 -  Generator to make the Terms of Use document
-- Mailchimp was used for the newsletter sign up form in the site footer.
+- Mailchimp was used for the newsletter sign-up form in the site footer.
 - Facebook was used to create the Facebook business page.
 - XML-Sitemaps.com was used to generate the sitemap.
 - Lucidchart was the tool used to create the ER diagram.
@@ -325,7 +326,7 @@ built on top of the Python programming language. It was used to create the most 
   - Git was used for version control (commit to Git and push to GitHub).
   
 **GitHub**
-  - Used to store, host and deploy the project files and source code after being pushed from Git. I also used it for the Project Kanban board to keep track and split tasks into smaller tasks to make them easier to fulfill.
+  - Used to store, host and deploy the project files and source code after being pushed from Git. I also used it for the Project Kanban board to keep track and split tasks into smaller tasks to make them easier to fulfil.
   
 ## Testing
 
@@ -335,7 +336,7 @@ The testing can be seen [here](testing.md).
 
 #### Gitpod Workspaces
 
-1. Starting from GitHub clone the Code Institute template by clicking Use This Template and copying to my repository under the name biareiam. The workspace is then launched by clicking GitPod - this action only needs to be performed once and then workspace reopened from GitPod.
+1. Starting from GitHub clone the Code Institute template by clicking Use This Template and copying it to my repository under the name biareiam. The workspace is then launched by clicking GitPod - this action only needs to be performed once and then the workspace is reopened from GitPod.
 2. Start the Gitpod Workspace which opens an online IDE editor window.
 
 #### Gitpod branching and committing to GitHub
@@ -346,19 +347,19 @@ The project has been deployed to Heroku and AWS. The steps for deployment were:
  
 - Create an account in Heroku;
 - Create a new app in Heroku: choose a unique name and region;
-- On the resources tab provide a new Postgres database (used free plan for this project);
-- Go back to gitpod and install dj_database_url and psycopg2 and freeze the requirements in requirements.txt file to ensure Heroku installs our apps requirements when we deploy;
+- On the resources tab provides a new Postgres database (used free plan for this project);
+- Go back to gitpod and install dj_database_url and psycopg2 and freeze the requirements in the requirements.txt file to ensure Heroku installs the requirements of our app when we deploy;
 - In settings.py import dj_database, comment out the default database configuration, replace it with a call to dj_database_url.parse and give it the database URL from Heroku (which can be found in the settings tab);
 - Migrate all the changes;
-- Import all the books, categories and subcategories using the command 'python3 manage.py load “data name”';
-- Create a super user using command 'python3 manage.py createsuperuser' and follow terminal instructions;
-- Create an if statement in settings.py to allow the system to take the database from os.environ if it exists otherwise it will use the default configuration.
+- Import all the books, categories and subcategories using the command 'python3 manage.py load “data-name”';
+- Create a super user using the command 'python3 manage.py create a superuser and follow terminal instructions;
+- Create an if statement in settings.py to allow the system to take the database from os. environ if it exists otherwise it will use the default configuration.
 - Create a Procfile to tell Heroku to create a web dyno;
-- Temporarily disable collect_static using command 'heroku config:set DISABLE_COLLECT_STATIC=1';
-- In settings.py add the hostname of the heroku app and a localhost so that gitpod will keep working;
+- Temporarily disable collect_static using command 'Heroku config:set DISABLE_COLLECT_STATIC=1';
+- In settings.py add the hostname of the Heroku app and localhost so that gitpod will keep working;
 - Deploy to Heroku;
-- In Heroku, inside the app, go to the Deploy tab and set it to deploy to github, search for the project repository and click connect. Once connected set up automatic deploys (due to recent issues shared by the Heroku team automatic deploys have been temporarily disabled);
-- Generate a secret key for the Heroku app and add it to the env.py file (which is included in .gitignore file to keep all the keys secret and safe);
+- In Heroku, inside the app, go to the Deploy tab and set it to deploy to Github, search for the project repository and click connect. Once connected set up automatic deploys (due to recent issues shared by the Heroku team automatic deploys have been temporarily disabled);
+- Generate a secret key for the Heroku app and add it to the env.py file (which is included in the .gitignore file to keep all the keys secret and safe);
 - In settings.py set up debug to true only if there is a variable called development in the environment;
 
 **Deployment to AWS S3**:
@@ -369,15 +370,15 @@ Create a bucket:
 
 - With a matching name with your app to keep things organized;
 - Select your closest region;
-- Uncheck 'block all public access' and acknowledge that the bucket will be public;
-- Under Bucket Ownership section select 'ACLs enabled';
+- Uncheck 'block all public access and acknowledge that the bucket will be public;
+- Under the Bucket Ownership section select 'ACLs enabled';
 - Select Create Bucket;
 
 Inside our new bucket:
 - In the properties tab turn on static website hosting to create a new endpoint accessible from the internet;
 - In the permissions tab we will make 3 changes:
   - Paste in new CORS Configuration: [ { "AllowedHeaders": [ "Authorization" ], "AllowedMethods": [ "GET" ], "AllowedOrigins": [ "*" ], "ExposeHeaders": [] } ]
-- In the policy tab click on policy generator and create a new policy and copy it in the policy editor and before saving add /* at the end of the resource key to allow access to all resources in the bucket;
+- In the policy tab click on policy generator and create a new policy and copy it into the policy editor before saving add /* at the end of the resource key to allow access to all resources in the bucket;
 - In the Access Control List tab click edit and enable List for Everyone (public access) and accept the warning box;
 - Now that the bucket is ready, we need to create a user to access it, we will create through the service called IAM (Identity Access Management):
   - Access IAM through the Services menu;
@@ -389,9 +390,9 @@ Inside our new bucket:
 - Now we need to create a user to put in the group: click Users in the sidebar menu;
 - Create the user houseofbooks-v3-staticfiles-user, select Programmatic Access and select Next;
 - From the list provided select manage-houseofbooks-v3 and click Create User;
-- Click on 'Download .csv' which will contain the users access key and secret access key that we will use to authenticate them from our Jango app. It is very important you download and save this CSV file as it won't be downloadable again after this process.
+- Click on 'Download .csv' which will contain the user's access key and secret access key that we will use to authenticate them from our Jango app. You must download and save this CSV file as it won't be downloadable again after this process.
 - Configure Django to connect to S3 using the keys we just created:
-- In settings.py file, under the Static Files section create an IF statement to check if there is an environment variable called USE_AWS in the environment;
+- In the settings.py file, under the Static Files section create an IF statement to check if there is an environment variable called USE_AWS in the environment;
 - In the IF statement define the AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME, access key and secret access key we will get from the environment to keep them secure;
 - In Heroku, in the Config Vars section of the Settings tab:
 - Add the AWS keys;
@@ -399,41 +400,41 @@ Inside our new bucket:
 - Remove the DISABLE_COLLECTSTATIC variable;
 - In settings.py in gitpod set up the bucket name;
 - Create a new file called custom_storages.py:
-- Import settings from django and s3boto3 storage class from django storages;
-- Create a new class called static_storages that inherits from django s3boto3;
+- Import settings from Django and s3boto3 storage class from Django storages;
+- Create a new class called static_storages that inherits from Django s3boto3;
 - Tell the class that we want to store static files in a location from the settings that we'll define in a moment;
-- Create an exact same class but for media;
+- Create the same class but for media;
 - In settings.py and set a variable that points to the new storage classes we just created and that the location it should save static files is a folder called 'static'. Do the same for media files;
 - Now we need to override and explicitly set the URLs for static and media files using our custom domain and the new locations.
-- Deploy to Heroku. Once the deployment to Heroku is successful, if we go to S3, we can see that we have a static folder in our bucket with all our static files in it. Basically, what is happening now, when our project is deployed to Heroku, it will run python3 manage.py collectstatic during the build process and will search through all the apps and project folders looking for static files. It will use the S3 custom domain setting with our custom storage classes that will tell the location where we want to save things. This means that when USE_AWS is set to TRUE, whenever collectstatic is run, static files will be collected into a static folder in our s3 bucket;
+- Deploy to Heroku. Once the deployment to Heroku is successful, if we go to S3, we can see that we have a static folder in our bucket with all our static files in it. What is happening now, is when our project is deployed to Heroku, it will run python3 manage.py collectstatic during the build process and will search through all the apps and project folders looking for static files. It will use the S3 custom domain setting with our custom storage classes that will tell the location where we want to save things. This means that when USE_AWS is set to TRUE, whenever collectstatic is run, static files will be collected into a static folder in our s3 bucket;
 - Go to S3 and create a new folder called 'media', inside this folder click 'upload', 'add files' and then select all the book cover images.
 
 Stripe:
 - Add all the Stripe keys to the Heroku Config Variables;
-- Create a new Stripe wehbhook endpoint using the new address: http://houseofbooks22.herokuapp.com/;
-- Test the webhook is working correctly by creating and test order through our new deployed site in Heroku;
+- Create a new Stripe webhook endpoint using the new address: http://houseofbooks22.herokuapp.com/;
+- Test the webhook is working correctly by creating and testing order through our new deployed site in Heroku;
 
 if you can not deploy through Heroku, it is possible to do it through Gitpod.
 
 #### How to run the project locally
-To clone this project from GitHub follow the instructions taken from GitHub Docs explained here:
+To clone this project from GitHub follows the instructions taken from GitHub Docs explained here:
   
 1. Navigate to the GitHub Repository
-2. To clone using HTTPS click the clipboard symbol under "Clone with HTTPS". To clone using SSH key click Use SSH then click the clipboard symbol. To clone using GitHub CLI select Use GitHub CLI and click the clipboard symbol.
+2. To clone using HTTPS click the clipboard symbol under "Clone with HTTPS". To clone using the SSH key click Use SSH then click the clipboard symbol. To clone using GitHub CLI select Use GitHub CLI and click the clipboard symbol.
 3. Open Git Bash
 4. Change the working directory to the location you want the cloned directory to be.
-5. Type 'git clone' and paste the url copied from step 3.
+5. Type 'git clone and paste the URL copied from step 3.
 6. Press 'enter' to create your clone.
 
 ### Credits
 #### Code
 - A good portion of the Django, Python and JavaScript code was developed following the Code Institute's Boutique Ado walkthrough.
 - CodeInstitute Full Stack Developer Course.
-- Code from - https://mdbootstrap.com/docs/standard/components/carousel/ - was used as inspiration for the creation of the carousel of the home page. 
+- Code from - https://mdbootstrap.com/docs/standard/components/carousel/ - was used as inspiration for the creation of the carousel on the home page. 
 - Code from - https://mdbootstrap.com/docs/standard/components/carousel/ - was used as inspiration to create the footer.
-- Code from https://stackoverflow.com/questions/55023534/how-to-get-10-of-the-best-seller-selling-products-in-django was used as an inpsiration to create the most sold books on the home page. 
-- Code from https://www.geeksforgeeks.org/e-commerce-website-using-django/ was used as an inpsiration to create the ecommerce site. 
-- Code from https://www.educative.io/answers/what-are-built-in-error-views-in-django was used as an inpsiration to create the error pages. 
+- Code from https://stackoverflow.com/questions/55023534/how-to-get-10-of-the-best-seller-selling-products-in-django was used as an inspiration to create the most sold books on the home page. 
+- Code from https://www.geeksforgeeks.org/e-commerce-website-using-django/ was used as an inspiration to create the e-commerce site. 
+- Code from https://www.educative.io/answers/what-are-built-in-error-views-in-django was used as an inspiration to create the error pages. 
 
     
 #### Content
@@ -441,7 +442,7 @@ To clone this project from GitHub follow the instructions taken from GitHub Docs
   
 #### Media
   - All the book images and descriptions were sourced from Goodreads and Easons. 
-  - All the events images werefrom Pexel.com
+  - All the events images wherefrom Pexel.com
 
 #### Acknowledgements
 
@@ -451,5 +452,3 @@ Disclaimer
 If there are any issues with the copyright of the content, please contact me. I will fix that as soon as possible. This project is for educational purposes only.
 
 Beatriz Amorim
-
-

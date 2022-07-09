@@ -2,7 +2,7 @@
 
 *This file contains the Testing section of the [full README.md file for house of books](README.md).*
 
-It is important to keep in mind that any email addresses used in the testing images in this document are temporary and do not belong to real users, similarly with any delivery details. [Temp-mail](https://temp-mail.org/en/) was used to generate the fake emails. 
+It is important to note that all email addresses used in the test images in this document are temporary and do not belong to the actual user, as well as the sending details. [Temp-mail](https://temp-mail.org/en/)  was used to generate fake emails.
 
 ### Automated Testing
 
@@ -12,15 +12,15 @@ It is important to keep in mind that any email addresses used in the testing ima
  
     - Test the calc_subtotal function works as expected.
     - Test the bag views work correctly.
-    - Test if the url works when loading the page.
+    - Test if the URL works when loading the page.
     - Test the correct template loads on page load.
     - Test the products page is accessible by name.
     - Test that the view_bag view works correctly.
-    - Test that the add to bag view works as expected.
+    - Test that the add-to-bag view works as expected.
     - Test that the add_to_bag function adds the item to the bag.
     - Test that the add_to_bag view adds the product to the bag.
     - Test that the add_to_bag view increases the quantity of an item if the item is already present in the shopping bag.
-    - Test that the adjusted bag view works as expected to calculate total.
+    - Test that the adjusted bag view works as expected to calculate a total.
     - Test that the add_to_bag view updates the quantity of an item if the item is already in the bag.
     - Test remove from bag view removes the product from the bag.
     - Test that the remove_from_bag view removes an item from the bag.
@@ -32,14 +32,14 @@ It is important to keep in mind that any email addresses used in the testing ima
   
     - Test the checkout page loads correctly.
     - Test that the cache_checkout_data view works as expected.
-    - Test if the url works when loading the page.
+    - Test if the URL works when loading the page.
     - Test the correct template loads on page load.
     - Test the products page is accessible by name.
     - Test get checkout view when items are in the bag.
-    - Test error msg appears when the bag empty.
+    - Test error msg appears when the bag is empty.
     - Test error msg appears when no stripe key.
 
-**Check if user is authenticated then autofill the form with details**
+**Check if the user is authenticated then autofill the form with details**
 
   Automated testing of models was completed to:
   
@@ -52,19 +52,19 @@ It is important to keep in mind that any email addresses used in the testing ima
     - Test to see if an email field is required.
     - Test to see if a phone number field is required.
     - Test to see if a country field is required.
-    - Test to see if town_or_city field is required.
-    - Test to see if street_address1 field is required.
+    - Test to see if the town_or_city field is required.
+    - Test to see if the street_address1 field is required.
     - Check if the field only displays certain fields.
 
 **Profiles**
 
   Automated testing of views was completed to:
   
-    - Test if the url works when loading the page.
+    - Test if the URL works when loading the page.
     - Test the correct template loads on page load.
     - Test the profile page is accessible by name.
-    - Test if the profile form works if form is valid.
-    - Test orders displayed on login to profile page.
+    - Test if the profile form works and if the form is valid.
+    - Test orders are displayed on the login to the profile page.
 
   Automated testing of models was completed to:
   
@@ -73,13 +73,13 @@ It is important to keep in mind that any email addresses used in the testing ima
     
   Automated testing of forms was completed to:
   
-    - Test that none of the form fields are required.
+    - Test that none of the form fields is required.
     
 **Products**
 
   Automated testing of views was completed to:
   
-    - Test if the url works when loading the page.
+    - Test if the URL works when loading the page.
     - Test the correct template loads on page load.
     - Test the products page is accessible by name.
     - Test products display.
@@ -87,14 +87,14 @@ It is important to keep in mind that any email addresses used in the testing ima
     - Test that the sort functionality works.
     - Test that the search functionality works as expected.
     - Test that the search error message displays correctly.
-    - Test product detail page loads via url.
+    - Test product detail page loads via URL.
     - Test product detail page loads via name.
-    - Test product detail page loads via template.
+    - Test product detail page loads via the template.
 
   Automated testing of models was completed to:
   
     - Test category model string method.
-    - Testing category models friendly name string method returns friendly name.
+    - Testing category models friendly name string method returns the friendly name.
     - Test product model string method.
     - Test that the product name is returned.
     - Test that the product description is returned.
@@ -112,15 +112,15 @@ It is important to keep in mind that any email addresses used in the testing ima
 
   Automated testing of views was completed to:
   
-    - Test if the url works when loading the page.
+    - Test if the URL works when loading the page.
     - Test the correct template loads on page load.
     - Test the home page is accessible by name.
-    - Test if the url works when loading the page.
+    - Test if the URL works when loading the page.
     - Test the correct template loads on page load.
     - Test the privacy page is accessible by name.
-    - Test if the url works when loading the page.
+    - Test if the URL works when loading the page.
     - Test the correct template loads on page load.
-    - Test the terms and conditions page is accessible by name.
+    - Test of the terms and conditions page is accessible by name.
 
 ### Manual Testing
 
@@ -137,38 +137,38 @@ The site was tested on many different devices.
 | **Feature**      | **Expected**                                                             | **Testing**                  | **Result**                                                                                                            | **Pass/Fail** |
 |:----------------:|:------------------------------------------------------------------------:|:----------------------------:|:---------------------------------------------------------------------------------------------------------------------:|:-------------:|
 | **Home button**  | To redirect to home page                                                 | Click the home button        | Button navigates to home                                                                                              | Pass          |
-| **Navbar links** | Clicking All books takes user to All books page                          | Click All books              | Redirected to All books page                                                                                          | Pass          |
-|          | Clicking category takes user to the specific category page               | Click each category in turn  | Redirected to specific category page                                                                                  | Pass          |
+| **Navbar links** | Clicking All books takes the user to the All books page                          | Click All books              | Redirected to All books page                                                                                          | Pass          |
+|          | Clicking category takes the user to the specific category page               | Click each category, in turn, | Redirected to specific category page                                                                                  | Pass          |
 |          | Click on bag icon and direct user to cart page                           | Click Bag                    | Redirected to cart page                                                                                               | Pass          |
-|          | Click on the events link and takes user to the events page               | Click Events                 | Redirected to Events Page                                                                                             | Pass          |
-|          | Searching using Search Bar displays the books in the books page          | Type "fantasy" in search bar | Redirected to a page in which the relevant results are displayed, "fantasy" in the title or on the book description.  | Pass          |
+|          | Click on the events link and takes the user to the events page               | Click Events                 | Redirected to Events Page                                                                                             | Pass          |
+|          | Searching using Search Bar displays the books on the books page          | Type "fantasy" in the search bar | Redirected to a page in which the relevant results are displayed, "fantasy" in the title or on the book description.  | Pass          |
 | **Footer**       | Redirect to Facebook in new tab                                          | Click Facebook icon          | Facebook page opened in new tab                                                                                       | Pass          |
 |          | Redirect to Instagram in new tab                                         | Click Instagram icon         | Instagram page opened in new tab                                                                                      | Pass          |
-|          | Redirect to Twitter in new tab                                           | Click Twkitter icon          | Twitter page opened in new tab                                                                                        | Pass          |
+|          | Redirect to Twitter in new tab                                           | Click Twitter icon          | Twitter page opened in new tab                                                                                        | Pass          |
 |          | Redirect to Pinterest in new tab                                         | Click Pinterest icon         | Pinterest page opened in new tab                                                                                      | Pass          |
-|          | Click on T&Cs and a pop up opens with the relevant information           | Click T&Cs                   | Terms and conditions page pop up                                                                                      | Pass          |
-|          | Click on Privacy Policy and a pop up opens with the relevant information | Click Privacy Policy         | Privacy Policy page pop up                                                                                            | Pass          |
+|          | Click on T&Cs and a pop-up opens with the relevant information           | Click T&Cs                   | Terms and conditions page pop up                                                                                      | Pass          |
+|          | Click on Privacy Policy and a pop-up opens with the relevant information | Click Privacy Policy         | Privacy Policy page pop-up | Pass          |
 
 
 ### Navigation
 | - When users are logged in    |                                                        |                                     |                                              |           |
 |-------------------------------|--------------------------------------------------------|-------------------------------------|----------------------------------------------|-----------|
 | Feature                       | Expected                                               | Testing                             | Result                                       | Pass/Fail |
-| Navbar links                  | Click on Profile takes user to their profile page      | Click Profile                       | Redirected to Profile Page                   | Pass      |
+| Navbar links                  | Click on Profile takes the user to their profile page      | Click Profile                       | Redirected to Profile Page                   | Pass      |
 |                               | Click Log Out and logs out the user                    | Click Log Out, it logs out the user | User logged out and redirected to books page | Pass      |
-|                               | Click on the bag icon and is directed to the bag page  | Click bag icon                      | Redirected to the bag page                   | Pass      |
-|                               | Click on My Events takes user to the events saved page | Click My Event                      | Redirected to the My Events page             | Pass      |
-| - When user are not logged in |                                                        |                                     |                                              |           |
+|                               | Click on the bag icon and be directed to the bag page  | Click bag icon                      | Redirected to the bag page                   | Pass      |
+|                               | Click on My Events takes the user to the events saved page | Click My Event                      | Redirected to the My Events page             | Pass      |
+| - When users are not logged in |                                                        |                                     |                                              |           |
 | Feature                       | Expected                                               | Testing                             | Result                                       | Pass/Fail |
-| Navbar links                  | Click Log In redirects to log in page                  | Click Log In                        | User redirected to Log In Page               | Pass      |
+| Navbar links                  | Click Log In redirects to log in page                  | Click Log In                        | User redirected to login Page               | Pass      |
 |                               | Click Register redirects to log in page                | Click Register                      | User redirected to Register Page             | Pass      |
-|                               | Click on the bag icon and is directed to the bag page  | Click bag icon                      | Redirected to the bag page                   | Pass      |
+|                               | Click on the bag icon and be directed to the bag page  | Click bag icon                      | Redirected to the bag page                   | Pass      |
 
 ### Home Page
 | Feature               | Expected                                                                                                    | Testing              | Result                                                    | Pass/Fail |
 |-----------------------|-------------------------------------------------------------------------------------------------------------|----------------------|-----------------------------------------------------------|-----------|
-| See more              | Clicking on the see more button and be redicted to the books page                                           | Click see more       | Redirected to the products page                           | Pass      |
-| See more (categories) | Click on see more on the category banner and be direct to the book page from that category.                 | Click see more       | Redirected to the products page from an specific category | Pass      |
+| See more              | Clicking on the see more button and be redirected to the books page                                           | Click see more       | Redirected to the products page                           | Pass      |
+| See more (categories) | Click on see more on the category banner and be direct to the book page from that category.                 | Click see more       | Redirected to the products page from a specific category | Pass      |
 | All categories        | Click on the "all categories" button and be directed to the books page where all the categories are present | Click all categories | Redirected to the products page with all the categories   | Pass      |
 | All books             | Click on the "all books" button and be directed to the all books page.                                      | Click all books      | Redirected to the products page                           | Pass      |
 
@@ -177,25 +177,25 @@ The site was tested on many different devices.
 |------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------|-----------|
 | Register functionality | Form validation for email requires @ symbol                                        | Attempt to register without @ in input field                        | Form validation requests valid email address               | Pass      |
 |                        | E-mail Again value must be same as Email value                                     | Attempt to register with incorrect email in email again input field | Form validation requests email address must match          | Pass      |
-|                        | Username must be between 4 and 15 characters                                       | Attempt to enter username with less than 4 characters               | Feedback error displayed                                   | Pass      |
-|                        | Username must be between 4 and 15 characters                                       | Attempt to enter username with more than 15 characters              | Form restricts the user from using more than 15 characters | Pass      |
-|                        | Password must be longer than 8 characters                                          | Attempt to enter password with less than 8 characters               | Form restricts the user from using less than 8 characters  | Pass      |
-|                        | Register with new user and password to be logged in and redirected to Profile page | Enter email address, name, username, password and click register    | New account registered and profile page shown              | Pass      |
+|                        | Username must be between 4 and 15 characters                                       | Attempt to enter a username with less than 4 characters               | Feedback error displayed                                   | Pass      |
+|                        | Username must be between 4 and 15 characters                                       | Attempt to enter a username with more than 15 characters              | Form restricts the user from using more than 15 characters | Pass      |
+|                        | Password must be longer than 8 characters                                          | Attempt to enter a password with less than 8 characters               | Form restricts the user from using less than 8 characters  | Pass      |
+|                        | Register with a new user and password to be logged in and redirected to Profile page | Enter an email address, name, username, and password and click register    | New account registered and profile page shown              | Pass      |
 
 ### Log In Page
 | Feature              | Expected                                                                                    | Testing                                           | Result                                                                              | Pass/Fail |
 |----------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------|-------------------------------------------------------------------------------------|-----------|
-| Log in functionality | Correct user/pass combination directs user to their profile page with name displayed in tab | Log in with correct username/password combination | Redirected to user profile page with name displayed in tab                          | Pass      |
+| Log in functionality | Correct user/pass combination directs the user to their profile page with name displayed in tab | Log in with correct username/password combination | Redirected to a user profile page with name displayed in tab                          | Pass      |
 |                      | Incorrect username/password combination shows error message                                 | Attempt to log in with incorrect credentials      | "The username and/or password you specified are not correct." error message appears | Pass      |
-| Link to Register     | Redirect to Register page                                                                   | Click link to register                            | Redirected to Register page                                                         | Pass      |
+| Link to Register     | Redirect to Register page                                                                   | Click the link to register                            | Redirected to Register page                                                         | Pass      |
 
 ### Profile Page
 | Feature              | Expected                                                           | Testing                                                                          | Result                                                              | Pass/Fail |
 |----------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------|
-| Personal Information | Personal information is visible if previously saved                | Navigate to Profile page, view personal information                              | The personal information is visible in Personal Information section | Pass      |
-|                      | Personal information can be updated                                | Navigate to Profile page, change personal information, click update information. | The personal information is updated with the new details.           | Pass      |
-| Order History        | Order History is visible if order placed while logged in           | Navigate to Profile page, view Order History Section                             | The Order History is visible                                        | Pass      |
-|                      | Order information can be accessed by clicking on the "view" button | Navigate to Profile page, view Order History Section, click on "View" button     | Order Information is visible                                        | Pass      |   |
+| Personal Information | Personal information is visible if previously saved                | Navigate to the Profile page, view personal information                              | The personal information is visible in the Personal Information section | Pass      |
+|                      | Personal information can be updated                                | Navigate to the Profile page, change personal information, and click update information. | The personal information is updated with the new details.           | Pass      |
+| Order History        | Order History is visible if an order is placed while logged in           | Navigate to the Profile page, view Order History Section                             | The Order History is visible                                        | Pass      |
+|                      | Order information can be accessed by clicking on the "view" button | Navigate to the Profile page, view Order History Section, click on the "View" button     | Order Information is visible                                        | Pass      |   |
 
 ### Books Pages
 
@@ -207,15 +207,15 @@ The site was tested on many different devices.
 ### Book Details
 | Feature         | Expected                                                                      | Testing                                                                 | Result                                                                                 | Pass/Fail |
 |-----------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|
-| Book Details    | Book description, among other informations are displayed for individual books | Open Book Detail page and view the book's information                   | Books details visible                                                                  | Pass      |
+| Book Details    | Book descriptions, among other information are displayed for individual books | Open Book Detail page and view the book's information                   | Books details visible                                                                  | Pass      |
 | Add to bag      | Clicking Add to bag adds the book to the bag                                  | Open Book Detail page click add to bag                                  | Book displayed in the bag                                                              | Pass      |
 | Add Product     |                                                                               |                                                                         |                                                                                        |           |
 | Feature         | Expected                                                                      | Testing                                                                 | Result                                                                                 | Pass/Fail |
-| Add new books   | Only admin is allowed to visit add a new book                                 | Log in as non-superuser and attempt to access /products/add/            | Redirect to home page, error message displayed "Sorry, only store owners can do that." | Pass      |
+| Add new books   | Only admin is allowed to visit add a new book                                 | Log in as non-superuser and attempt to access /products/add/            | Redirect to the home page, the error message displayed "Sorry, only store owners can do that." | Pass      |
 | Form Validation | Required fields must be completed to add the product                          | Attempt to add product without filling in a required field              | Error message "Please fill in this field"                                              | Pass      |
 | Edit Product    |                                                                               |                                                                         |                                                                                        |           |
 | Feature         | Expected                                                                      | Testing                                                                 | Result                                                                                 | Pass/Fail |
-| Edit books      | Only admin is allowed to visit edit a book's information                      | Log in as non-superuser and attempt to access /products/<item_id>/edit/ | Redirect to home page, error message displayed "Sorry, only store owners can do that." | Pass      |
+| Edit books      | Only admin is allowed to visit edit a book's information                      | Log in as non-superuser and attempt to access /products/<item_id>/edit/ | Redirect to the home page, the error message displayed "Sorry, only store owners can do that." | Pass      |
 | Form Validation | Required fields must be completed to edit the product                         | Attempt to edit product without filling in a required field             | Error message "Please fill in this field"                                              | Pass      |
 
 ### Events Pages
@@ -228,26 +228,26 @@ The site was tested on many different devices.
 ### Event Details
 | Feature       | Expected                                                                         | Testing                                                    | Result                | Pass/Fail |
 |---------------|----------------------------------------------------------------------------------|------------------------------------------------------------|-----------------------|-----------|
-| Event Details | Event description, among other informations are displayed for individual events. | Open an Event Detail page and view the event's information | Event details visible | Pass      |
+| Event Details | Event descriptions, among other information are displayed for individual events. | Open an Event Detail page and view the event's information | Event details visible | Pass      |
 
 ### Add Event
 | Feature         | Expected                                           | Testing                                                   | Result                                                                                 | Pass/Fail |
 |-----------------|----------------------------------------------------|-----------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|
-| Add new events  | Only admin is allowed to visit add a new event     | Log in as non-superuser and attempt to access /event/add/ | Redirect to home page, error message displayed "Sorry, only store owners can do that." | Pass      |
-| Form Validation | Required fields must be completed to add the event | Attempt to add event without filling in a required field  | Error message "Please fill in this field"                                              | Pass      |                                                                   
+| Add new events  | Only admin is allowed to visit add a new event     | Log in as non-superuser and attempt to access /event/add/ | Redirect to the home page, the error message displayed "Sorry, only store owners can do that." | Pass      |
+| Form Validation | Required fields must be completed to add the event | Attempt to add an event without filling in a required field  | Error message "Please fill in this field"                                              | Pass      |                                                                   
 
 ### Edit Events
 | Feature         | Expected                                                       | Testing                                                                | Result                                                                                 | Pass/Fail |
 |-----------------|----------------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------|
-| Edit events     | Only admin is allowed to visit and edit an event's information | Log in as non-superuser and attempt to access /events/<event_id>/edit/ | Redirect to home page, error message displayed "Sorry, only store owners can do that." | Pass      |
+| Edit events     | Only admin is allowed to visit and edit an event's information | Log in as a non-superuser and attempt to access /events/<event_id>/edit/ | Redirect to the home page, the error message displayed "Sorry, only store owners can do that." | Pass      |
 | Form Validation | Required fields must be completed to edit the event            | Attempt to edit event without filling in a required field              | Error message "Please fill in this field"                                              | Pass      |
 
 ### Bag
 | Feature      | Expected                                                                     | Testing                                                                | Result                        | Pass/Fail |
 |--------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------|-----------|
 | View Items   | Correct books are in the bag                                                 | Add book to bag, check quantity and total on the bag                   | Expected books are in the bag | Pass      |
-| Update Items | Update the number of a books in the bag and it will reflect in bag and price | Change number of books in bag and check quantity and total has updated | Total and quantity updated    | Pass      |
-| Remove Items | Click on the remove icon for item to be removed from the bag                 | Click remove beside relevant book                                      | Item removed from bag         | Pass      |
+| Update Items | Update the number of books in the bag and it will reflect in the bag and price | Change the number of books in the bag and check quantity and the total has updated | Total and quantity updated    | Pass      |
+| Remove Items | Click on the remove icon for the item to be removed from the bag                 | Click remove beside relevant book                                      | Item removed from bag         | Pass      |
 
 ### Checkout
 | Feature         | Expected                                      | Testing                                                  | Result                                    | Pass/Fail |
@@ -260,16 +260,16 @@ The site was tested on many different devices.
 ## User Stories 
 - Website experience
     - As a user, I would like to see what the website is selling.
-        - The website has numerous reference to being a book store.
+        - The website has numerous references to being a book store.
         - The home page has a link in its main hero section directing users to the products page.
 
 <img width="945" alt="home-page-see-more" src="https://user-images.githubusercontent.com/65717229/175826020-6e13f1c3-7b39-4939-97c7-ed6968ee15d7.PNG">
 
-        - The homepage also display some of the books' categories. By clicking on the "see more" on the categories banner, users are direct to the product page from that specific categories.
+        - The homepage also displays some of the books' categories. By clicking on the "see more" on the categories banner, users are direct to the product page from that specific category.
 
 <img width="782" alt="categories-banner" src="https://user-images.githubusercontent.com/65717229/175826160-241d3b77-c2e4-4e19-9f32-9ffa2b7b2b69.PNG">
 
-        - The homepage also has a best selling books section, which display the top 3 most sold books. 
+        - The homepage also has a best-selling books section, which displays the top 3 most sold books. 
 
 <img width="765" alt="most-sold" src="https://user-images.githubusercontent.com/65717229/175826230-f53dbbd6-e475-4eb7-8c5c-bb85b9d698b8.PNG">
 
@@ -279,7 +279,7 @@ The site was tested on many different devices.
 
     - As a user, I would like to be able to navigate the site easily.
         - The logo brings the users back to the home page from any page. 
-        - The main navigation has the logo, search bar, diffrent categories, events, the account, and the cart.
+        - The main navigation has the logo, search bar, different categories, events, the account, and the cart.
         - The main navigation is then accessed by clicking the burger menu, for smaller devices.
 
 <img width="944" alt="navmenu" src="https://user-images.githubusercontent.com/65717229/175826381-36f23c3f-6b27-4f74-9898-d3b015913bd8.PNG">
@@ -293,13 +293,13 @@ The site was tested on many different devices.
 - Searching for items
 
     - As a user, I would like to see all the products the book store is selling.
-        - Through the navigation bar and other buttons through the home page, users can be easily direct to the product page.
+        - Through the navigation bar and other buttons on the home page, users can be easily direct to the product page.
 
  <img width="943" alt="all-books" src="https://user-images.githubusercontent.com/65717229/175826696-66953c1a-f1d1-4604-8ae8-4c20fd2799b9.PNG">   
 
     - As a user, I would like to be able to search by category and see the available books.
         - The navigation menu contains a link for each category.
-        - The user can also click on the categories from an specific category and filter it to a particular category.
+        - The user can also click on the categories from a specific category and filter it to a particular category.
 
 <img width="943" alt="categories" src="https://user-images.githubusercontent.com/65717229/175826778-d405a00b-ca91-45a5-94ec-2d97bc45f906.PNG">
 <img width="930" alt="cat" src="https://user-images.githubusercontent.com/65717229/175826781-0d89f3af-305d-4170-8fd7-5325104d1eeb.PNG">
@@ -316,8 +316,8 @@ The site was tested on many different devices.
 
 - Shopping
 
-    - As a user, I would like to see the product price and description, among other informations.
-      - Upon clicking on an book image, the user is brought to the book page where the book's price and description are shown.
+    - As a user, I would like to see the product price and description, among other information.
+      - Upon clicking on a book image, the user is brought to the book page where the book's price and description are shown.
 
 <img width="642" alt="product-detail" src="https://user-images.githubusercontent.com/65717229/175827093-09f2c786-fca9-48bf-9032-627b55c853fe.PNG">
 
@@ -380,7 +380,7 @@ The site was tested on many different devices.
 <img width="526" alt="upcoming" src="https://user-images.githubusercontent.com/65717229/175827805-cc6e9074-752f-4a93-9c01-9f8da5c0c0b7.PNG">
 <img width="525" alt="past" src="https://user-images.githubusercontent.com/65717229/175827925-b0d7bdf6-495f-4af3-9966-c20ee139a4b4.PNG">
 
-    - As a user, when loged in, I would like to save the events which I am interested in.
+    - As a user, when logged in, I would like to save the events which I am interested in.
 
 <img width="570" alt="save" src="https://user-images.githubusercontent.com/65717229/175828046-c64875cc-bc4e-44a7-8c88-2bb3b238b2e0.PNG">
 <img width="577" alt="saved-event" src="https://user-images.githubusercontent.com/65717229/175828048-a0d80b5e-992a-4214-9db0-a1981e77a14d.PNG">
@@ -390,7 +390,7 @@ The site was tested on many different devices.
 <img width="363" alt="detail-event" src="https://user-images.githubusercontent.com/65717229/175828090-436c550a-a91c-4e24-8582-36139cec7387.PNG">
 
     - As a user, I would like to see all the comments on the events.
-      - user can edit and delete their own comments. 
+      - Users can edit and delete their own comments. 
 
 <img width="531" alt="comment" src="https://user-images.githubusercontent.com/65717229/175828228-23c9931f-6cc0-4cf2-a655-b16b68794c0d.PNG">
 <img width="494" alt="comment-2" src="https://user-images.githubusercontent.com/65717229/175828229-14c8ed0a-601a-49ed-915c-67ef93171296.PNG">
